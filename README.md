@@ -384,17 +384,21 @@ It helps more people discover free AWS learning resources.
 
 # 👨‍💻 Author
 
-## Carlos Valencia
+## ValenciaF. Carlos DevOps
 
-Cloud Architecture Student • AWS Learner • DevOps Enthusiast
+AWS Certified Cloud Practitioner | Cloud Architecture Student | DevOps Engineer
 
-GitHub
+Passionate about AWS, Cloud Architecture, Infrastructure Design, Automation, and Continuous Learning.
 
+🔗 GitHub  
 https://github.com/ValenciaFCarlos
 
-LinkedIn
+🔗 LinkedIn  
+https://www.linkedin.com/in/valencia-carlos-77a1b213b/
 
-https://linkedin.com/in/valencia-carlos
+☁️ Feel free to connect, collaborate, or contribute to this project.
+
+---
 
 ---
 
