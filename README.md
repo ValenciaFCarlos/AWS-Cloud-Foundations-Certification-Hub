@@ -1,14 +1,14 @@
 # 🚀 AWS Cloud Foundations & Certification Hub
 
-> <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/cc7766c3-a01e-4665-8748-59e3338fc1cd" />
+<img width="1983" height="793" alt="35d94dec-c9df-4e08-a812-cfab5e667703" src="https://github.com/user-attachments/assets/0278d99e-ae9a-44b8-a4ca-db9254cfd467" />
+
 
 > 🎯 **A complete learning hub for AWS Cloud Foundations and AWS Certified Cloud Practitioner (CLF-C02).**
 >
 > Study guides, architecture notes, certification preparation resources, and an interactive practice simulator designed to help you understand cloud computing—not just memorize services.
 >
 ---
-
-<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/aee58422-4682-45f3-b26f-30cb6b013a66" />
+<img width="245" height="283" alt="image" src="https://github.com/user-attachments/assets/8fed5ef1-f8c0-461f-9627-b843d96ee159" />
 
 
 ## ☁️ About This Project
@@ -366,8 +366,7 @@ LinkedIn:
 
 > ☁️ *Cloud is not about memorizing services. It is about understanding systems, architecture, trade-offs, and solving real business problems.*
 >
-> <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/a6a67059-b024-4e1c-8116-a7ccfc277ee9" />
-
+> <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/3362a902-aef9-42c8-a6a6-01b6a21b23ee" />
 
 ---
 
