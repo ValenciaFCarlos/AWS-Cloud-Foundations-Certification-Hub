@@ -24,6 +24,16 @@
 
 ---
 
+# 🚀 Practice Simulator Preview
+
+<p align="center">
+  <img src="./images/practice.png.png" alt="AWS CLF-C02 Practice Simulator">
+</p>
+
+> A completely free interactive simulator designed to reinforce AWS Cloud Practitioner concepts through practice, repetition, and concept-based learning.
+
+---
+
 ## 📋 Table of Contents
 
 - [☁️ About This Project](#️-about-this-project)
@@ -77,6 +87,18 @@ The simulator contains:
 - Light & Dark themes
 - Local progress persistence
 
+### 🆓 Completely Free
+
+This simulator is provided free of charge to help students, career changers, and cloud enthusiasts learn AWS Cloud concepts and prepare for the AWS Certified Cloud Practitioner (CLF-C02) exam.
+
+No subscriptions.
+
+No paywalls.
+
+No ads.
+
+Just learning.
+
 ### 👈 Start Here, Launch Now! 👉
 
 <p align="center">
@@ -97,6 +119,14 @@ https://valenciafcarlos.github.io/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCar
 ### 💻 Source Code
 
 https://github.com/ValenciaFCarlos/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCarlosDevOps
+
+---
+
+# 📸 Simulator Screenshot
+
+<p align="center">
+  <img src="./images/clf-c02-simulator-preview.png" alt="AWS CLF-C02 Simulator Preview">
+</p>
 
 ---
 
@@ -208,6 +238,8 @@ AWS-Cloud-Foundations-Certification-Hub
 ├── images/
 │   ├── banner-main.png
 │   ├── aws-certified-cloud-practitioner.svg
+│   ├── practice.png.png
+│   ├── clf-c02-simulator-preview.png
 │   └── good-luck.png
 │
 ├── guide/
@@ -216,48 +248,36 @@ AWS-Cloud-Foundations-Certification-Hub
 └── README.md
 ```
 
-> The Practice Simulator is maintained in a dedicated repository:
->
-> https://github.com/ValenciaFCarlos/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCarlosDevOps
-
----
-
-# 📚 Recommended AWS Resources
-
-### AWS Skill Builder
+📚 Recommended AWS Resources
+AWS Skill Builder
 
 https://skillbuilder.aws
 
-### AWS Cloud Practitioner Essentials
+AWS Cloud Practitioner Essentials
 
 https://skillbuilder.aws/learn
 
-### AWS Documentation
+AWS Documentation
 
 https://docs.aws.amazon.com
 
-### AWS Well-Architected Framework
+AWS Well-Architected Framework
 
 https://aws.amazon.com/architecture/well-architected/
 
----
-
-# 🤝 Contributing
+🤝 Contributing
 
 Contributions are welcome.
 
 Ways to contribute:
 
-- Report bugs
-- Suggest improvements
-- Submit pull requests
-- Improve documentation
-- Share study resources
-- Report ambiguous questions
-
----
-
-# ⚠️ Disclaimer
+Report bugs
+Suggest improvements
+Submit pull requests
+Improve documentation
+Share study resources
+Report ambiguous questions
+⚠️ Disclaimer
 
 This project is an independent educational resource.
 
@@ -267,45 +287,33 @@ AWS®, Amazon Web Services®, Cloud Practitioner®, and all related trademarks b
 
 Question content, notes, guides, and learning materials are provided for educational purposes only.
 
----
-
-# ⭐ Support the Project
+⭐ Support the Project
 
 If this repository helps you in your AWS learning journey, consider giving it a ⭐.
 
 It helps more people discover free AWS learning resources.
 
----
+👨‍💻 Author
+ValenciaF. Carlos DevOps
 
-# 👨‍💻 Author
-
-## ValenciaF. Carlos DevOps
-
-AWS Certified Cloud Practitioner   
-Cloud Architecture Student  
+AWS Certified Cloud Practitioner
+Cloud Architecture Student
 DevOps Engineer
 
-🔗 GitHub  
+🔗 GitHub
 https://github.com/ValenciaFCarlos
 
-🔗 LinkedIn  
+🔗 LinkedIn
 https://www.linkedin.com/in/valencia-carlos-77a1b213b/
 
 ☁️ Feel free to connect, collaborate, or contribute to this project.
 
----
+🎯 Good Luck
+<p align="center"> <img src="./images/good-luck.png" alt="Good Luck"> </p>
 
-## 🎯 Good Luck
+☁️ Cloud is not about memorizing services.
 
-<p align="center">
-  <img src="./images/good-luck.png" alt="Good Luck">
-</p>
+It is about understanding systems, architecture, trade-offs, and solving real business problems.
 
-> ☁️ Cloud is not about memorizing services.
->
-> It is about understanding systems, architecture, trade-offs, and solving real business problems.
-
----
-
-**Last Updated:** September 2026  
-**Certification Version:** AWS Certified Cloud Practitioner (CLF-C02)
+Last Updated: September 2026
+Certification Version: AWS Certified Cloud Practitioner (CLF-C02)
