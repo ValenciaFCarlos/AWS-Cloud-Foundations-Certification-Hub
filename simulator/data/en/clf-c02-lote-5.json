@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 401,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company internacional wants to migrate sus applications on-premises a AWS for aprovechar la infraestructura global. Qué componente de la infraestructura global de AWS ensures que los data permanezcan within los límites geográficos de un país específico by motivos de soberanía de data",
+    "options": {
+      "A": "AWS Edge Locations",
+      "B": "AWS Regions",
+      "C": "AWS Availability Zones",
+      "D": "AWS Local Zones"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Cada una de estas unidades geográficas principales es completamente independiente de las demás.",
+    "hint2": "La soberanía de data exige que la información no salga de la frontera nacional en la que se ubica la infraestructura.",
+    "explanation": "1. Option B is correct because correcta porque each AWS Region está diseñada for estar geográficamente aislada, garantizando que los data no se transfieran outside of ella a menos que el cliente lo configure explícitamente.\n2. The key requirement is el cumplimiento estricto de las leyes territoriales de soberanía de data.\n3. Distractors: A (Edge Locations) sirven for acelerar almacenamiento en caché global with CloudFront; C (AZs) son centros de data aislados within una misma Región; D (Local Zones) extienden cómputo cerca de centros urbanos específicos pero dependen de la Región principal.\n4. Key concept to learn: Concepto clave: Soberanía de data y aislamiento de las AWS Regions.",
+    "concept": "Soberanía de data e Infraestructura Global",
+    "service": "AWS Infrastructure"
+  },
+  {
+    "id": 402,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify aspectos de economía y escala",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A startup financiera no está segura del número exacto de users que accederán a su nueva plataforma durupon el primer año. Qué beneficio intrínseco of the cloud de AWS mitiga el riesgo financiero de realizar inversiones excesivas o insuficientes",
+    "options": {
+      "A": "Sustituir gastos variables by gastos fijos a largo plazo",
+      "B": "Dejar de adivinar los requisitos de capacidad",
+      "C": "Acceso exclusivo a servers dedicados without costo adicional",
+      "D": "Aumento del costo marginal by each nuevo usuario agregado"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "En el modelo tradicional on-premises se debía aprovisionar infraestructura for el pico máximo estimado.",
+    "hint2": "La nube allows ajustar dinámicamente los resources según la demanda real del momento.",
+    "explanation": "1. Option B is correct because correcta porque uno de los principales beneficios of the cloud es 'dejar de adivinar las necesidades de capacidad', escalando automáticamente towards arriba o towards abajo según la demanda real.\n2. The key requirement is eliminar la adivinación previa de capacidad y evitar el sobre-aprovisionamiento.\n3. Distractors: A invierte el concepto clave (AWS cambia CapEx fijo by OpEx variable); C es falso ya que las instancias dedicadas tienen costo superior; D es opuesto al principio de economías de escala.\n4. Key concept to learn: Concepto clave: Beneficios of the cloud de AWS.",
+    "concept": "Beneficios of the cloud de AWS",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 403,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Explain las 7 Rs de migración",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "An organization plans to retirar un on-premises data center. Al analyze su inventario de software, encuentra una aplicación heredada que rewants to una versión obsoleta de un sistema operativo que AWS no soporta en instancias EC2, y cuyo costo de reescritura no se justifica actualmente. Qué estrategia de migración debe aplicarse a esta aplicación",
+    "options": {
+      "A": "Rehost (Lift and shift)",
+      "B": "Retain (Retener / Mantener)",
+      "C": "Refactor (Reestructurar)",
+      "D": "Repurchase (Recomprar)"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Esta estrategia se aplica a sistemas que no pueden ser migrados inmediatamente by incompatibilidad o falta de justificación de negocio.",
+    "hint2": "No all las applications deben ir a la nube el primer día; algunas permanecen en su estado actual.",
+    "explanation": "1. Option B is correct because correcta porque 'Retain' consiste en conservar ciertas applications en el entorno local u origen without realizar cambios en ese momento, posponiendo su migración o manteniéndolas up to su obsolescencia.\n2. The key requirement is la imposibilidad técnica inmediata y la falta de justificación financiera for reescribir la aplicación.\n3. Distractors: A (Rehost) no es viable porque el SO no es soportado en EC2; C (Refactor) implica reescribir el código, lo cual se descartó by costs; D (Repurchase) implica cambiar a un SaaS de mercado.\n4. Key concept to learn: Concepto clave: Estrategias de migración a la nube (Las 7 Rs).",
+    "concept": "Estrategias de migración (Las 7 Rs)",
+    "service": "AWS Migration Evaluator"
+  },
+  {
+    "id": 404,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Define el AWS Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A solutions architect revisa una plataforma de comercio electrónico y recomienda deploy las instancias web detrás de un Application Load Balancer distribuido en dos Availability Zones. Qué pilar del AWS Well-Architected Framework se está fortaleciendo principalmente with esta medida",
+    "options": {
+      "A": "Operational Excellence",
+      "B": "Reliability (Reliability)",
+      "C": "Sustainability",
+      "D": "Optimización de Costes"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Este pilar asegura que el sistema pueda recuperarse automáticamente de fallas en componentes o infraestructura.",
+    "hint2": "La distribución Multi-AZ with balanceo de carga evita puntos únicos de fallo.",
+    "explanation": "1. Option B is correct because correcta porque el pilar de Reliability (Reliability) se centra en la capacidad de un sistema for recuperarse de interrupciones de infraestructura y mantener la disponibilidad continua through redundancia Multi-AZ.\n2. The key requirement is la fault tolerance de infraestructura y la high availability.\n3. Distractors: A (Operational Excellence) se refiere a la automatización de procesos y monitoreo; C (Sustainability) enfoca la huella ecológica; D (Costes) seeks to reducir el gasto en infraestructura.\n4. Key concept to learn: Concepto clave: AWS Well-Architected Framework (Pilar de Reliability).",
+    "concept": "AWS Well-Architected Framework",
+    "service": "AWS Well-Architected Tool"
+  },
+  {
+    "id": 405,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which término describe la capacidad of the cloud de AWS for permitir a los users deploy cientos de virtual servers en cuestión de minutos through la consola web o la CLI",
+    "options": {
+      "A": "Soberanía de red",
+      "B": "Agilidad",
+      "C": "Tolerancia a fallos estática",
+      "D": "Consolidación de activos"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Se refiere a la velocidad with la que las organizaciones pueden innovar y poner resources a disposición de sus equipos.",
+    "hint2": "Reduce drásticamente el tiempo de aprovisionamiento de meses a minutos.",
+    "explanation": "1. Option B is correct because correcta porque la 'Agilidad' representa la capacidad de aprovisionar resources tecnológicos en minutos, acelerando el tiempo de desarrollo e innovación de la empresa.\n2. The key requirement is la velocidad y facilidad for lanzar infraestructura on-demand.\n3. Distractors: A no existe como principio de nube; C es un término confuso without sustento técnico; D se refiere a fusión de centros de data, no a velocidad de aprovisionamiento.\n4. Key concept to learn: Concepto clave: Beneficios of the cloud de AWS (Agilidad).",
+    "concept": "Ventajas of the cloud",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 406,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Define el AWS Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company implementa políticas for apagar automáticamente los entornos de desarrollo e integración durupon los fines de semana y noches no laborales. A qué pilar del AWS Well-Architected Framework se alinea directamente esta práctica",
+    "options": {
+      "A": "Performance Efficiency",
+      "B": "Optimización de Costes",
+      "C": "Security",
+      "D": "Reliability"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Consiste en evitar pagar by resources de cómputo inactivos cuando nadie los está utilizando.",
+    "hint2": "Apagar resources no utilizados reduces directamente la factura mensual.",
+    "explanation": "1. Option B is correct because correcta porque la 'Optimización de Costes' fomenta eliminar gastos innecesarios, asegurando que solo se pague by el tiempo que los entornos están produciendo valor activo.\n2. The key requirement is reducir el gasto inutilizado en servers de desarrollo without impacto operacional.\n3. Distractors: A (Rendimiento) seeks to maximizar la velocidad de cómputo; C (Security) protege los activos; D (Reliability) seeks to evitar caídas de servicio.\n4. Key concept to learn: Concepto clave: Pilar de Optimización de Costes.",
+    "concept": "AWS Well-Architected Framework",
+    "service": "AWS Instance Scheduler"
+  },
+  {
+    "id": 407,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which es el beneficio financiero directo que experimenta una corporación al migrate sus workloads from on-premises data centers tradicionales towards la nube de AWS",
+    "options": {
+      "A": "Eliminación completa de la necesidad de administradores de TI",
+      "B": "Conversión de capital expenditures fijos (CapEx) en operational expenditures variables (OpEx)",
+      "C": "Garantía de cero costs by transferencia de data salientes a internet",
+      "D": "Congelación permanente del costo by hora de las instancias EC2"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "CapEx implica grandes inversiones iniciales en hardware físico; OpEx implica pagar by consumo según se use.",
+    "hint2": "La nube allows pagar una tarifa de suscripción/consumo continuo en lugar de comprar equipos by adelantado.",
+    "explanation": "1. Option B is correct because correcta porque la nube reemplaza la inversión inicial en hardware físico (CapEx) by un modelo de pago by consumo diario o mensual (OpEx).\n2. The key requirement is el cambio en la estructura contable de inversión de capital a gasto operativo.\n3. Distractors: A es falso porque aún se rewants to personal de TI for configure servicios; C es falso ya que el egreso de data a internet tiene costo; D es falso ya que AWS actualiza y reduces tarifas pero no las congela de forma fija congelada without compromisos.\n4. Key concept to learn: Concepto clave: Aspectos financieros of the cloud (CapEx vs OpEx).",
+    "concept": "Economía of the cloud",
+    "service": "AWS Pricing"
+  },
+  {
+    "id": 408,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Explain las 7 Rs de migración",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company wants to migrate su aplicación web monolithic a AWS. deciden reemplazar la base de data MySQL autogestionada instalada en un servidor local by Amazon RDS for MySQL, manteniendo el código del servidor de applications intacto. Qué estrategia de migración describe mejor este enfoque",
+    "options": {
+      "A": "Rehost (Lift and shift)",
+      "B": "Replatform (Lift, tinker, and shift)",
+      "C": "Refactor / Re-architect",
+      "D": "Relocate"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Implica realizar una optimización menor reemplazando un componente de infraestructura by un servicio administrado of the cloud.",
+    "hint2": "No se cambia el código central de la aplicación, solo la plataforma del motor subyacente.",
+    "explanation": "1. Option B is correct because correcta porque 'Replatform' consiste en mover la aplicación a la nube haciendo pequeñas optimizaciones (como adoptar RDS en lugar de administrar MySQL manualmente) without alterar la arquitectura del código.\n2. The key requirement is la adopción de un servicio administrado without reescritura de código.\n3. Distractors: A (Rehost) migraría el servidor MySQL within una instancia EC2 idéntica; C (Refactor) reescribiría la app towards microservicios o serverless; D (Relocate) mueve hipervisores de máquinas virtuales without cambios.\n4. Key concept to learn: Concepto clave: Estrategia Replatform (Lift, tinker, and shift).",
+    "concept": "Estrategias de migración",
+    "service": "AWS Database Migration Service"
+  },
+  {
+    "id": 409,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which componente de la infraestructura global de AWS está diseñado for ofrecer almacenamiento en caché de contenido estático y dinámico with la menor latencia posible for los users finales",
+    "options": {
+      "A": "AWS Region",
+      "B": "Ubicación de borde (Edge Location)",
+      "C": "Subred pública de VPC",
+      "D": "Availability Zone (AZ)"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Son puntos de presencia que utiliza la red de distribución de contenido (CDN) Amazon CloudFront.",
+    "hint2": "Están distribuidas en cientos de ciudades del mundo for estar cerca del cliente final.",
+    "explanation": "1. Option B is correct because correcta porque las 'Edge Locations' albergan los cachés regionales de CloudFront for servir data a los users finales with la menor latencia de red.\n2. The key requirement is la entrega rápida de contenido en caché geográficamente cercano al usuario.\n3. Distractors: A (Región) es la agrupación geográfica principal de AZs; C (Subred) es un rango de IPs within una VPC; D (AZ) son centros de data aislados within una Región.\n4. Key concept to learn: Concepto clave: Infraestructura Global (Ubicaciones de borde).",
+    "concept": "Infraestructura Global de AWS",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 410,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Define el AWS Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Al diseñar una arquitectura de microservicios, un equipo técnico decide sustituir las llamadas síncronas HTTP between componentes by una cola de mensajes en Amazon SQS. Qué principio de arquitectura distribuida están aplicando",
+    "options": {
+      "A": "Escalado vertical automatizado",
+      "B": "Desacoplamiento de componentes (Loose Coupling)",
+      "C": "Aprovisionamiento estático de capacidad",
+      "D": "Gestión centralizada de licencias"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Evita que la falla o lentitud en un servicio provoque la caída en caseach de los demás componentes.",
+    "hint2": "Las colas asíncronas aíslan los componentes for que trabajen de forma independiente.",
+    "explanation": "1. Option B is correct because correcta porque el desacoplamiento through colas de mensajes (como SQS) allows que los componentes de una aplicación operen de forma independiente without depender del estado o velocidad inmediata del otro.\n2. The key requirement is romper la dependencia rígida between servicios through comunicación asíncrona.\n3. Distractors: A es agrandar la capacidad de un servidor individual; C es un anti-patrón in the cloud; D se refiere a software comercial y licencias.\n4. Key concept to learn: Concepto clave: Principios de diseño en arquitectura de nube (Desacoplamiento).",
+    "concept": "Principios de diseño de arquitectura",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 411,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify aspectos de economía y escala",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "How logra AWS reducir de manera continua el precio unitario de muchos de sus servicios de infraestructura with el paso del tiempo",
+    "options": {
+      "A": "Aumentando los cobros de mantenimiento a los users más antiguos",
+      "B": "Aprovechando las economías de escala derivadas del uso masivo acumulado de miles de customers",
+      "C": "Limitando el ancho de banda disponible for las cuentas del nivel gratuito",
+      "D": "Subcontratando la seguridad física a empresas on-premises en each país"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "A mayor volumen global gestionado by AWS, menores son los costs de adquisición y operación de hardware.",
+    "hint2": "Estos ahorros operativos continuos son trasladados a los customers en forma de reducciones de precios.",
+    "explanation": "1. Option B is correct because correcta porque el principio de 'Economías de escala' allows que AWS compre e instale infraestructura masiva a menores costs unitarios, trasladando periódicamente esos descuentos a los customers.\n2. The key requirement is la relación between volumen acumulado de la plataforma y reducción de costs operativos.\n3. Distractors: A, C y D representan afirmaciones falsas y contrarias a las prácticas operativas oficiales de AWS.\n4. Key concept to learn: Concepto clave: Ventajas of the cloud (Economías de escala).",
+    "concept": "Economía of the cloud",
+    "service": "AWS Pricing"
+  },
+  {
+    "id": 412,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una cadena de medios de comunicación needs to lanzar un portal de noticias with alcance global en múltiples continentes de manera simultánea en pocas horas. Qué característica of the cloud de AWS hace esto factible",
+    "options": {
+      "A": "Instalación manual asistida by personal de AWS",
+      "B": "Despliegue global en minutos through infraestructura multi-región",
+      "C": "Exención de impuestos for transmisiones internacionales",
+      "D": "Uso de protocolos de red exclusivos de AWS incompatibles with internet"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permite deploy applications en varias AWS Regions en todo el mundo with un par de clics o through scripts.",
+    "hint2": "Facilita la expansión internacional inmediata without construir centros de data físicos en el extranjero.",
+    "explanation": "1. Option B is correct because correcta porque la ventaja de 'deploy globalmente en minutos' allows extender applications a múltiples AWS Regions instantáneamente for ofrecer low latency a users globales.\n2. The key requirement is la velocidad de expansión geográfica en múltiples continentes.\n3. Distractors: A es falso (es autoservicio on-demand); C es falso (no hay exención fiscal implícita); D es falso (AWS utiliza protocolos de red estándar como HTTP/S y TCP/IP).\n4. Key concept to learn: Concepto clave: Despliegue global en minutos.",
+    "concept": "Ventajas of the cloud",
+    "service": "AWS Global Infrastructure"
+  },
+  {
+    "id": 413,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Define el AWS Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "Which pilar del AWS Well-Architected Framework promueve la implementación de mecanismos for rastrear, clasificar y protect los data en reposo y en tránsito de manera automatizada",
+    "options": {
+      "A": "Excelente Operativa",
+      "B": "Security",
+      "C": "Performance Efficiency",
+      "D": "Reliability"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Abarca la confidencialidad e integridad de los data, la gestión de identidades y la mitigación de riesgos.",
+    "hint2": "El cifrado y la protección de información son componentes clave de este pilar.",
+    "explanation": "1. Option B is correct because correcta porque el pilar de 'Security' incluye las prácticas for protect los data en reposo y en tránsito, gestionar accesos e identidades y responder a incidentes de seguridad.\n2. The key requirement is la protección criptográfica y confidencialidad de la información de la empresa.\n3. Distractors: A se enfoca en procedimientos operativos; C en optimizar el uso de resources de cómputo; D en disponibilidad y recuperación upon fallos.\n4. Key concept to learn: Concepto clave: Well-Architected Framework (Pilar de Security).",
+    "concept": "AWS Well-Architected Framework",
+    "service": "AWS Security Hub"
+  },
+  {
+    "id": 414,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Explain las 7 Rs de migración",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "A company decide migrate sus servers on-premises de máquinas virtuales a instancias Amazon EC2 without modificar la configuración ni la arquitectura de las applications. Qué estrategia de migración representa esto",
+    "options": {
+      "A": "Rehost (Lift and Shift)",
+      "B": "Repurchase",
+      "C": "Retire",
+      "D": "Refactor"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Conocida popularmente como 'Lift and Shift', consiste en mover applications exactamente como están.",
+    "hint2": "Es la estrategia más rápida y de menor riesgo inicial cuando se seeks to salir rápidamente de un datacenter local.",
+    "explanation": "1. Option A is correct because correcta porque 'Rehost' consiste en trasladar servers y applications towards la nube without realizar modificaciones estructurales o de código.\n2. The key requirement is la migración directa 'tal cual' without cambios.\n3. Distractors: B es reemplazar by un SaaS; C es apagar sistemas; D es reescribir la aplicación for aprovechar servicios nativos of the cloud.\n4. Key concept to learn: Concepto clave: Estrategias de migración (Rehost).",
+    "concept": "Estrategias de migración",
+    "service": "AWS Application Migration Service"
+  },
+  {
+    "id": 415,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which modelo de despliegue of the cloud está using una organización que conecta de manera segura su on-premises data center privado with una Amazon VPC through un enlace dedicado AWS Direct Connect",
+    "options": {
+      "A": "Nube pública pura",
+      "B": "Nube híbrida",
+      "C": "Nube privada aislada",
+      "D": "Nube comunitaria no administrada"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Combina la infraestructura física local existente with los resources of the cloud pública de AWS de forma integrada.",
+    "hint2": "Permite a las empresas mantener sistemas heredados on-premises mientras aprovechan la capacidad de AWS.",
+    "explanation": "1. Option B is correct because correcta porque la 'Nube híbrida' integra la infraestructura local (on-premises) with entornos de nube pública (AWS) for compartir data y applications de forma segura.\n2. The key requirement is la coexistencia conectada between el datacenter local y AWS.\n3. Distractors: A utiliza únicamente resources in the cloud pública; C eliminates cualquier conexión with la nube pública; D se refiere a konsorcios compartidos between varias organizaciones without infraestructura propia.\n4. Key concept to learn: Concepto clave: Modelos de despliegue in the cloud (Nube Híbrida).",
+    "concept": "Modelos de despliegue in the cloud",
+    "service": "AWS Direct Connect"
+  },
+  {
+    "id": 416,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Define el AWS Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which de las siguientes acciones se alinea with el principio de diseño del pilar de Sustainability del AWS Well-Architected Framework",
+    "options": {
+      "A": "Mantener instancias EC2 encendidas continuamente a máxima capacidad by si acaso",
+      "B": "Maximizar la utilización eficiente del hardware y seleccionar servicios with la menor huella de carbono",
+      "C": "Aumentar el tamaño de los volúmenes EBS without monitor el espacio usado",
+      "D": "Deshabilitar las políticas de ciclo de vida en Amazon S3"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El pilar de Sustainability seeks to minimizar el impacto ambiental y el consumo de energía de las workloads.",
+    "hint2": "Aumentar la eficiencia de uso del hardware reduces la energía necesaria for mantener los data.",
+    "explanation": "1. Option B is correct because correcta porque el pilar de Sustainability enfatiza la reducción de residuos energéticos y la optimización de resources de cómputo for minimizar el impacto ambiental.\n2. The key requirement is la reducción del impacto ambiental y la maximización de la eficiencia del hardware.\n3. Distractors: A, C y D representan desperdicio de resources y prácticas contrarias a la sostenibilidad y eficiencia.\n4. Key concept to learn: Concepto clave: Well-Architected Framework (Pilar de Sustainability).",
+    "concept": "AWS Well-Architected Framework",
+    "service": "AWS Customer Carbon Footprint Tool"
+  },
+  {
+    "id": 417,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which marco de referencia de AWS proporciona orientación a las organizaciones for estructurar su proceso de adopción of the cloud a través de 6 perspectivas clave como Negocio, Personas y Gobernanza",
+    "options": {
+      "A": "AWS Well-Architected Framework",
+      "B": "AWS Cloud Adoption Framework (AWS CAF)",
+      "C": "AWS Service Level Agreement (SLA)",
+      "D": "AWS Infrastructure Blueprint"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Ayuda a crear un plan integral de transformación digital organizativa más allá de lo puramente técnico.",
+    "hint2": "Se divide en 6 perspectivas: Negocio, Personas, Gobernanza, Plataforma, Security u Operaciones.",
+    "explanation": "1. Option B is correct because correcta porque el 'AWS Cloud Adoption Framework (AWS CAF)' organiza el proceso de preparación y migración a la nube evaluando las perspectivas de negocio y tecnología.\n2. The key requirement is el enfoque estratégico y de transformación organizacional en 6 perspectivas.\n3. Distractors: A evalúa la arquitectura técnica de workloads específicas; C define compromisos de disponibilidad garantizada; D no es un marco oficial de adopción.\n4. Key concept to learn: Concepto clave: AWS Cloud Adoption Framework (AWS CAF).",
+    "concept": "AWS CAF",
+    "service": "AWS Cloud Adoption Framework"
+  },
+  {
+    "id": 418,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Explain las 7 Rs de migración",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company identifica una aplicación interna de procesamiento de nóminas obsoleta y decide cancelar su licencia for contratar un servicio SaaS moderno in the cloud. Qué estrategia de migración se aplicó",
+    "options": {
+      "A": "Rehost",
+      "B": "Repurchase (Recomprar / Drop and shop)",
+      "C": "Refactor",
+      "D": "Replatform"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Consiste en sustituir la solución existente by un producto comercial empaquetado o SaaS (Software como Servicio).",
+    "hint2": "También se conoce popularmente como 'Drop and shop'.",
+    "explanation": "1. Option B is correct because correcta porque 'Repurchase' implica descontinuar una aplicación propia o heredada for comprar una solución diferente, generalmente SaaS.\n2. The key requirement is el reemplazo completo by una aplicación comercial SaaS de mercado.\n3. Distractors: A migra la app actual without cambios; C la reescribe internamente; D ajusta la plataforma without cambiar el código central.\n4. Key concept to learn: Concepto clave: Estrategia de migración Repurchase.",
+    "concept": "Estrategias de migración",
+    "service": "AWS Marketplace"
+  },
+  {
+    "id": 419,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Define el AWS Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which pilar del AWS Well-Architected Framework se enfoca en la capacidad de run y monitor sistemas for entregar valor empresarial y mejorar continuamente los procedimientos de soporte",
+    "options": {
+      "A": "Operational Excellence",
+      "B": "Security",
+      "C": "Reliability",
+      "D": "Performance Efficiency"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Incluye la automatización de cambios through Infraestructura como Código y la preparación upon eventos operacionales.",
+    "hint2": "Responde a cómo se gestionan y mantienen las applications en el día a día.",
+    "explanation": "1. Option A is correct because correcta porque la 'Operational Excellence' abarca la gestión y monitoreo continuo de sistemas, la ejecución de cambios automatizados y la mejora continua de procesos.\n2. The key requirement is el monitoreo de operaciones, procedimientos de soporte y automatización de procesos.\n3. Distractors: B aborda la protección de data e identidades; C se enfoca en la recuperación upon fallas; D aborda el uso eficiente del cómputo.\n4. Key concept to learn: Concepto clave: Pilar de Operational Excellence.",
+    "concept": "AWS Well-Architected Framework",
+    "service": "AWS Systems Manager"
+  },
+  {
+    "id": 420,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which es el beneficio de contar with múltiples Availability Zones (AZs) within each AWS Region",
+    "options": {
+      "A": "Permite que las applications tengan rendimiento garantizado without pagar by ancho de banda",
+      "B": "Proporciona high availability y tolerancia a fallos al aislar problemas de infraestructura física",
+      "C": "Garantiza que las instancias EC2 sean gratuitas si el servidor físico se apaga",
+      "D": "Elimina la necesidad de utilizar cuentas de usuario en IAM"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Las AZs están separadas geográficamente by varios kilómetros within una Región pero conectadas by red de alta velocidad.",
+    "hint2": "Si una AZ sufre una interrupción eléctrica o física, las demás continúan funcionando normalmente.",
+    "explanation": "1. Option B is correct because correcta porque la separación e independencia física de las AZs within una Región allows construir arquitecturas tolerantes a fallos y altamente disponibles.\n2. The key requirement is el aislamiento de fallas físicas between centros de data within una misma Región.\n3. Distractors: A, C y D representan afirmaciones falsas e incoherentes with la arquitectura de AWS.\n4. Key concept to learn: Concepto clave: Availability Zones y tolerancia a fallos.",
+    "concept": "Infraestructura Global",
+    "service": "AWS Regions and AZs"
+  },
+  {
+    "id": 421,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify aspectos de economía y escala",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company de software wants to probar un nuevo prototipo durupon una semana without incurrir en contratos a largo plazo ni pagos iniciales. Qué principio de precios de AWS se aplica a esta situación",
+    "options": {
+      "A": "Pago by uso on-demand (Pay-as-you-go)",
+      "B": "Facturación fija anual obligatoria",
+      "C": "Compromiso de uso mínimo de 3 años",
+      "D": "Depósito en garantía no reembolsable"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Permite aprovisionar resources temporales y pagar únicamente by los minutos u horas exactas en que estuvieron activos.",
+    "hint2": "No exige compromisos permanentes de permanencia.",
+    "explanation": "1. Option A is correct because correcta porque el modelo 'Pay-as-you-go' de AWS allows pagar solo by los resources que consume la aplicación without compromisos de permanencia ni cobros by cancelación.\n2. The key requirement is la flexibilidad de pruebas temporales without inversión fija ni contratos prolongados.\n3. Distractors: B, C y D representan esquemas rígidos tradicionales ajenos al modelo básico on-demand of the cloud.\n4. Key concept to learn: Concepto clave: Modelo de pay-as-you-go de AWS.",
+    "concept": "Modelos de precios",
+    "service": "AWS On-Demand"
+  },
+  {
+    "id": 422,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Define el AWS Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An organization implementa pruebas de carga automatizadas en un entorno staging idéntico al de producción before each lanzamiento. Qué principio de diseño del AWS Well-Architected Framework respalda esta actividad",
+    "options": {
+      "A": "Adivinar las necesidades de capacidad before lanzar",
+      "B": "Probar sistemas a escala de producción",
+      "C": "Utilizar procesos manuales for cambios arquitectónicos",
+      "D": "Diseñar applications monolíticas rígidas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "En la nube se pueden crear entornos temporales de gran escala for realizar pruebas reales y destruirlos inmediatamente después.",
+    "hint2": "Permite validar el comportamiento bajo estrés without incurrir en costs fijos permanentes.",
+    "explanation": "1. Option B is correct because correcta porque la nube allows aprovisionar entornos temporales equivalentes a producción for probar el rendimiento y la fiabilidad bajo carga real antes del despliegue.\n2. The key requirement is la validación previa de sistemas a la misma escala que enfrentarán en producción real.\n3. Distractors: A es un anti-patrón; C promueve errores manuales; D evita la flexibilidad y escalabilidad.\n4. Key concept to learn: Concepto clave: Principio de diseño 'Probar a escala de producción'.",
+    "concept": "AWS Well-Architected Framework",
+    "service": "AWS CloudFormation"
+  },
+  {
+    "id": 423,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Explain las 7 Rs de migración",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Durupon un proyecto de migración towards AWS, una auditoría revela que 15 servers on-premises ejecutan sistemas de pruebas que fueron abandonados hace dos años by la empresa. Qué estrategia de las 7 Rs debe aplicarse a estos servers",
+    "options": {
+      "A": "Retire (Retirar / Apagar)",
+      "B": "Rehost",
+      "C": "Refactor",
+      "D": "Replatform"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consiste en desmantelar y apagar de forma segura los activos de TI que ya no aportan ningún valor comercial.",
+    "hint2": "Reduce los costs de migración y la superficie de ataque de la empresa.",
+    "explanation": "1. Option A is correct because correcta porque 'Retire' implica apagar e identificar activos obsoletos o without uso for no gastar tiempo ni dinero migrándolos a la nube.\n2. The key requirement is la eliminación segura de activos inútiles o en desuso.\n3. Distractors: B, C y D gastarían resources migrando o adaptando servers innecesarios.\n4. Key concept to learn: Concepto clave: Estrategia de migración Retire.",
+    "concept": "Estrategias de migración",
+    "service": "AWS Migration Evaluator"
+  },
+  {
+    "id": 424,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which componente de la infraestructura de AWS allows a los customers run servicios seleccionados como EC2 y EBS directamente within sus propios centros de data físicos on-premises for lograr latencias ultra bajas",
+    "options": {
+      "A": "AWS Outposts",
+      "B": "AWS Snowball Edge",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Entrega racks de hardware físico administrados by AWS en las instalaciones del cliente.",
+    "hint2": "Ofrece la misma experiencia operativa, APIs e infraestructura que la nube de AWS pero on-premises.",
+    "explanation": "1. Option A is correct because correcta porque 'AWS Outposts' extiende los servers, servicios e infraestructura nativa de AWS a casi cualquier on-premises data center o instalación física del cliente.\n2. The key requirement is la ejecución de infraestructura nativa de AWS dentro del on-premises data center del cliente.\n3. Distractors: B (Snowball Edge) es for migración de data o cómputo desconectado en el borde; C (Transit Gateway) es un concentrador de red de VPCs; D (Route 53) es el DNS gestionado de AWS.\n4. Key concept to learn: Concepto clave: Nube híbrida y AWS Outposts.",
+    "concept": "Infraestructura Híbrida",
+    "service": "AWS Outposts"
+  },
+  {
+    "id": 425,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Define the AWS Shared Responsibility Model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "En el Modelo de Responsabilidad Compartida de AWS, de cuál de las siguientes tareas es responsable el cliente cuando ejecuta una instancia Amazon EC2",
+    "options": {
+      "A": "Instalación de parches de seguridad en el sistema operativo invitado",
+      "B": "Mantenimiento físico de las tarjetas madre de los servers",
+      "C": "Reemplazo de discos duros defectuosos en la zona de disponibilidad",
+      "D": "Protección contra incendios en el centro de data"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "AWS gestiona la seguridad 'DE' la nube (física, hardware, hipervisor); el cliente la seguridad 'EN' la nube.",
+    "hint2": "En IaaS (EC2), el sistema operativo within la máquina virtual pertenece enteramente a la gestión del cliente.",
+    "explanation": "1. Option A is correct because correcta porque el parcheo y actualización del sistema operativo instalado within la instancia EC2 es responsabilidad directa del cliente.\n2. The key requirement is delimitar las responsabilidades dentro del modelo IaaS en el sistema operativo invitado.\n3. Distractors: B, C y D son responsabilidades exclusivas de AWS respecto a la infraestructura física y mantenimiento del hardware.\n4. Key concept to learn: Concepto clave: Modelo de Responsabilidad Compartida en IaaS.",
+    "concept": "Modelo de Responsabilidad Compartida",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 426,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Define AWS IAM capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A developer needs to que una aplicación Python que se ejecuta en una instancia Amazon EC2 lea archivos almacenados en un bucket privado de Amazon S3. Cuál es la práctica recomendada y más segura for otorgar este acceso",
+    "options": {
+      "A": "Almacenar claves de acceso de un usuario IAM dentro del código fuente de la aplicación",
+      "B": "Asignar un IAM Role with los permisos necesarios a la instancia EC2",
+      "C": "Hacer que el bucket de S3 sea completamente público for lecturas",
+      "D": "Crear una política de contraseña permanente for la máquina virtual"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Evita incrustar credenciales secretas o claves estáticas en el código de las applications.",
+    "hint2": "El servicio AWS STS genera credenciales temporales automáticas que la instancia asume de forma transparente.",
+    "explanation": "1. Option B is correct because correcta porque asignar un IAM Role a la instancia EC2 proporciona credenciales temporales seguras without exponer claves de acceso fijas en el código de la aplicación.\n2. The key requirement is la autenticación de applications en EC2 through credenciales temporales según el principio de menor privilegio.\n3. Distractors: A expone credenciales estáticas que podrían filtrarse; C compromete la seguridad al hacer públicos los data de S3; D no administra autorizaciones de API de AWS.\n4. Key concept to learn: Concepto clave: IAM Roles for instancias EC2.",
+    "concept": "Gestión de Identidades y Accesos",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 427,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to inspeccionar continuamente el tráfico web for prevenir ataques de inyección SQL, Cross-Site Scripting (XSS) y bloquear direcciones IP maliciosas en la capa de aplicación. Qué servicio debe desplegar",
+    "options": {
+      "A": "AWS Shield Standard",
+      "B": "AWS WAF (Web Application Firewall)",
+      "C": "Amazon Inspector",
+      "D": "AWS Key Management Service (KMS)"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Actúa como un firewall de nivel 7 (capa de aplicación) for filtrar patrones de tráfico HTTP/HTTPS.",
+    "hint2": "Permite crear reglas personalizadas for inspeccionar los campos de las solicitudes web.",
+    "explanation": "1. Option B is correct because correcta porque AWS WAF protege las applications web en la Capa 7 del modelo OSI contra exploits comunes como SQLi y XSS through reglas de filtrado.\n2. The key requirement is la protección de applications web HTTPS en la Capa 7.\n3. Distractors: A (Shield) mitiga ataques DDoS en capas 3/4 de red; C (Inspector) seeks to vulnerabilidades en SO y paquetes; D (KMS) administra claves criptográficas.\n4. Key concept to learn: Concepto clave: AWS WAF vs AWS Shield.",
+    "concept": "Security de applications web",
+    "service": "AWS WAF"
+  },
+  {
+    "id": 428,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "El departamento de auditoría exige monitor la cuenta de AWS for detectar comportamientos inusuales como llamadas API no autorizadas from ubicaciones geográficas atípicas o la creación inesperada de resources. Qué servicio basado en aprendizaje automático cumple esta función",
+    "options": {
+      "A": "AWS CloudTrail",
+      "B": "Amazon GuardDuty",
+      "C": "Amazon Macie",
+      "D": "AWS Artifact"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Analiza de forma inteligente fuentes como VPC Flow Logs, registros de DNS y eventos de CloudTrail en seeks to de amenazas.",
+    "hint2": "Su función principal es la detección inteligente de amenazas y comportamientos anómalos.",
+    "explanation": "1. Option B is correct because correcta porque Amazon GuardDuty es un servicio de detección inteligente de amenazas que monitorea constantemente en seeks to de actividad maliciosa o no autorizada usando ML.\n2. The key requirement is la detección automatizada de comportamientos sospechosos e inteligencia de amenazas.\n3. Distractors: A (CloudTrail) solo registra los logs de eventos pero no detecta anomalías by sí mismo; C (Macie) descubre PII en S3; D (Artifact) es el portal de informes de cumplimiento.\n4. Key concept to learn: Concepto clave: Detección inteligente de amenazas with Amazon GuardDuty.",
+    "concept": "Detección de amenazas",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 429,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An organization needs to escanear automáticamente las imágenes de contenedores almacenadas en Amazon ECR en seeks to de vulnerabilidades de software conocidas (CVEs) before su despliegue. Qué servicio realiza este escaneo",
+    "options": {
+      "A": "Amazon Inspector",
+      "B": "Amazon Macie",
+      "C": "AWS Security Hub",
+      "D": "AWS KMS"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Analiza instancias EC2, funciones Lambda e imágenes de contenedor en ECR buscando vulnerabilidades y parches faltantes.",
+    "hint2": "Sincroniza su base de data with repositorios de vulnerabilidades y exposiciones comunes (CVE).",
+    "explanation": "1. Option A is correct because correcta porque Amazon Inspector realiza evaluaciones automatizadas de vulnerabilidades de software en instancias EC2, paquetes e imágenes de contenedores en ECR.\n2. The key requirement is el escaneo de vulnerabilidades de código y dependencias de software (CVEs).\n3. Distractors: B (Macie) descubre data personales/sensibles en S3; C (Security Hub) consolida hallazgos de múltiples servicios; D (KMS) administra claves criptográficas.\n4. Key concept to learn: Concepto clave: Escaneo de vulnerabilidades with Amazon Inspector.",
+    "concept": "Evaluación de vulnerabilidades",
+    "service": "Amazon Inspector"
+  },
+  {
+    "id": 430,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Compliance resources and tools",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "A company de salud en EE.UU. rewants to verificar si AWS cuenta with las certificaciones HIPAA pertinentes y needs to firmar un Business Associate Addendum (BAA) with AWS. A través de qué portal debe solicitarlo",
+    "options": {
+      "A": "AWS Trusted Advisor",
+      "B": "AWS Artifact",
+      "C": "AWS Systems Manager",
+      "D": "AWS Config"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es el portal centralizado for descargar informes de auditoría, certificaciones ISO/SOC y firmar acuerdos legales de cumplimiento.",
+    "hint2": "Permite acceder on-demand a la documentación oficial de cumplimiento de AWS.",
+    "explanation": "1. Option B is correct because correcta porque AWS Artifact es el recurso donde los customers pueden acceder a informes de cumplimiento, atestaciones de seguridad y firmar acuerdos como el BAA de HIPAA.\n2. The key requirement is la descarga de informes oficiales de auditoría y acuerdos legales de cumplimiento.\n3. Distractors: A (Trusted Advisor) brinda recomendaciones de optimización de cuenta; C (Systems Manager) administra servers; D (Config) audita cambios de configuración interna.\n4. Key concept to learn: Concepto clave: AWS Artifact for cumplimiento legal y auditoría.",
+    "concept": "Cumplimiento y gobernanza",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 431,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Define AWS IAM capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Un administrador needs to garantizar que los empleados del departamento de finanzas solo puedan acceder a los buckets de S3 que tengan la etiqueta 'Departamento=Finanzas'. Qué mecanismo de IAM allows restringir permisos basándose en etiquetas o condiciones específicas",
+    "options": {
+      "A": "IAM User Passwords",
+      "B": "Condiciones en las políticas de IAM (IAM Policy Conditions)",
+      "C": "Grupos de Security with estado",
+      "D": "Políticas de rotación en KMS"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Utiliza el bloque 'Condition' within la declaración JSON de la política de IAM.",
+    "hint2": "Permite evaluate atributos de contexto como etiquetas, dirección IP de origen o presencia de MFA.",
+    "explanation": "1. Option B is correct because correcta porque el elemento 'Condition' en una política de IAM allows otorgar o denegar accesos basándose en etiquetas de resources (ABAC), horarios o IPs.\n2. The key requirement is la restricción fina de permisos through atributos y condiciones de contexto.\n3. Distractors: A solo valida autenticación de consola; C (Grupos de Security) filtra tráfico de red, no llamadas de API a S3; D (KMS) gestiona claves de cifrado.\n4. Key concept to learn: Concepto clave: Evaluación de condiciones en políticas IAM.",
+    "concept": "Control de acceso fino",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 432,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de seguridad de AWS allows gestionar de forma centralizada reglas de firewall en múltiples cuentas de AWS Organizations, incluyendo AWS WAF, AWS Shield Advanced y VPC Security Groups",
+    "options": {
+      "A": "AWS Firewall Manager",
+      "B": "AWS Network ACL",
+      "C": "Amazon Detective",
+      "D": "AWS Control Tower"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Simplifica la administración de seguridad de red en entornos de múltiples cuentas.",
+    "hint2": "Permite deploy automáticamente reglas de protección a medida que se crean nuevas cuentas o resources.",
+    "explanation": "1. Option A is correct because correcta porque AWS Firewall Manager administra centralmente reglas de seguridad y protección de red (WAF, Shield, Security Groups) en all las cuentas de una organización.\n2. The key requirement is la aplicación centralizada y automatizada de políticas de firewall multi-cuenta.\n3. Distractors: B (NACL) actúa solo en una subred individual; C (Detective) investiga la causa raíz de incidentes; D (Control Tower) orquesta el aprovisionamiento multi-cuenta.\n4. Key concept to learn: Concepto clave: Gestión de políticas de seguridad with AWS Firewall Manager.",
+    "concept": "Security de red multi-cuenta",
+    "service": "AWS Firewall Manager"
+  },
+  {
+    "id": 433,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Define the AWS Shared Responsibility Model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Al utilizar una relational database administrada como Amazon RDS for PostgreSQL, cuál de las siguientes tareas continúa siendo responsabilidad del cliente",
+    "options": {
+      "A": "Instalación de parches en el sistema operativo del servidor de base de data",
+      "B": "Diseño de las tablas, índices y gestión de users de la base de data",
+      "C": "Reemplazo de discos físicos upon fallos de hardware en el datacenter",
+      "D": "Mantenimiento del motor de hipervisor subyacente"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "En servicios administrados (PaaS), AWS administra el SO y el software de la base de data, pero los data y esquemas son del cliente.",
+    "hint2": "El cliente siempre mantiene el control y la responsabilidad over los data estructurados que almacena.",
+    "explanation": "1. Option B is correct because correcta porque en RDS (PaaS), el cliente es responsable de la configuración del esquema, los data almacenados y los accesos de usuario a la base de data.\n2. The key requirement is identificar el límite de responsabilidad en servicios PaaS administrados.\n3. Distractors: A, C y D son tareas operativas que RDS asume automáticamente en nombre del cliente.\n4. Key concept to learn: Concepto clave: Responsabilidad compartida en Amazon RDS.",
+    "concept": "Modelo de Responsabilidad Compartida",
+    "service": "Amazon RDS"
+  },
+  {
+    "id": 434,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una aplicación web needs to store las contraseñas de conexión a una relational database y rewants to que estas credenciales se rotan automáticamente each 30 días without intervención manual. Qué servicio debe utilizarse",
+    "options": {
+      "A": "AWS Systems Manager Parameter Store (Standard)",
+      "B": "AWS Secrets Manager",
+      "C": "AWS KMS",
+      "D": "Amazon S3 Versioning"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Integra funciones AWS Lambda automáticas for rotar credenciales de bases de data relacionales como RDS.",
+    "hint2": "Cifra los secretos through integración with AWS KMS.",
+    "explanation": "1. Option B is correct because correcta porque AWS Secrets Manager está diseñado específicamente for store y rotar automáticamente credenciales, API keys y secretos through funciones Lambda.\n2. The key requirement is la rotación automática periódica e integrada de credenciales de base de data.\n3. Distractors: A (Parameter Store) almacena parámetros pero la rotación automática avanzada rewants to Secrets Manager; C (KMS) administra las claves de cifrado, no la lógica del secreto; D guarda versiones de archivos en S3.\n4. Key concept to learn: Concepto clave: Gestión y rotación de secretos with AWS Secrets Manager.",
+    "concept": "Gestión de credenciales",
+    "service": "AWS Secrets Manager"
+  },
+  {
+    "id": 435,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Define AWS IAM capabilities",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which principio de seguridad establece que a each usuario, aplicación o servicio se le deben otorgar únicamente los permisos indispensables for cumplir sus tareas específicas",
+    "options": {
+      "A": "Principio de redundancia geográfica",
+      "B": "Principio del menor privilegio (Least Privilege)",
+      "C": "Principio de separación de subredes",
+      "D": "Principio de high availability"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Evita otorgar accesos de administrador indiscriminados a all los users.",
+    "hint2": "Ayuda a mitigar el impacto si una cuenta o credencial resulta comprometida.",
+    "explanation": "1. Option B is correct because correcta porque el 'Principio del menor privilegio' dicta otorgar únicamente los permisos estrictamente necesarios for completar una función laboral y nada más.\n2. The key requirement is la minimización proactiva de accesos y superficie de riesgo.\n3. Distractors: A, C y D son principios válidos de arquitectura o redes, pero no se refieren al control de accesos de IAM.\n4. Key concept to learn: Concepto clave: Principio del menor privilegio en IAM.",
+    "concept": "Prácticas recomendadas de IAM",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 436,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which diferencia técnica principal existe between los Security Groups y las Network Access Control Lists (NACLs) within una Amazon VPC",
+    "options": {
+      "A": "Los Security Groups operan a nivel de subred y no tienen estado; las NACLs operan a nivel de instancia y tienen estado",
+      "B": "Los Security Groups operan a nivel de instancia y tienen estado (stateful); las NACLs operan a nivel de subred y no tienen estado (stateless)",
+      "C": "Los Security Groups permiten reglas de denegación explícita; las NACLs solo permiten reglas de acceso",
+      "D": "Las NACLs se aplican únicamente a instancias EC2 de Windows; los Security Groups a instancias de Linux"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "En un firewall 'stateful' (Security Group), si la solicitud entrupon es permitida, la respuesta saliente se allows automáticamente.",
+    "hint2": "Un firewall 'stateless' (NACL) rewants to reglas explícitas tanto for el tráfico de entrada como for el de salida.",
+    "explanation": "1. Option B is correct because correcta porque los Security Groups protegen instancias individuales de forma 'stateful' (with estado), mientras que las NACLs protegen subredes completas de forma 'stateless' (without estado y evaluando reglas ordenadas).\n2. The key requirement is comparar el nivel de aplicación (instancia vs subred) y el comportamiento del estado (stateful vs stateless).\n3. Distractors: A invierte los conceptos; C invierte los tipos de reglas (NACLs admiten deny explícito, SG no); D es totalmente falso.\n4. Key concept to learn: Concepto clave: Security Groups vs Network ACLs.",
+    "concept": "Security de red en VPC",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 437,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to descubrir y clasificar automáticamente información de identificación personal (PII), como números de tarjetas de crédito o pasaportes, almacenada en sus buckets de Amazon S3. Qué servicio debe activar",
+    "options": {
+      "A": "Amazon Inspector",
+      "B": "Amazon Macie",
+      "C": "AWS CloudTrail",
+      "D": "Amazon GuardDuty"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Utiliza algoritmos de aprendizaje automático y reconocimiento de patrones for analyze data sensibles en Amazon S3.",
+    "hint2": "Genera hallazgos detallados over buckets with data sensibles expuestos o mal configurados.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Macie es un servicio de seguridad que utiliza aprendizaje automático for descubrir, clasificar y protect data sensibles (PII) en Amazon S3.\n2. The key requirement is la detección automatizada de PII y data confidenciales en buckets S3.\n3. Distractors: A (Inspector) seeks to vulnerabilidades en SO e imágenes de contenedor; C (CloudTrail) registra llamadas a la API; D (GuardDuty) detecta amenazas de red e identidades.\n4. Key concept to learn: Concepto clave: Clasificación de data sensibles with Amazon Macie.",
+    "concept": "Protección de data sensibles",
+    "service": "Amazon Macie"
+  },
+  {
+    "id": 438,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Compliance resources and tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which herramienta de AWS analiza continuamente las configuraciones de los resources desplegados for verificar si cumplen with las normas internas de la empresa y genera alertas cuando un recurso no cumple with las reglas",
+    "options": {
+      "A": "AWS Config",
+      "B": "AWS CloudTrail",
+      "C": "Amazon CloudWatch",
+      "D": "AWS Control Tower"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Mantiene un historial detallado de los cambios de configuración de los resources a lo largo del tiempo.",
+    "hint2": "Permite evaluate reglas como 'all los volúmenes EBS deben estar cifrados'.",
+    "explanation": "1. Option A is correct because correcta porque AWS Config audita, evalúa y rastrea de forma continua las configuraciones de los resources de AWS comparándolas with reglas de cumplimiento préconfiguradas.\n2. The key requirement is la auditoría y seguimiento continuo del estado de configuración de los resources.\n3. Distractors: B (CloudTrail) registra eventos y llamadas API ('quién hizo qué'); C (CloudWatch) monitorea métricas de rendimiento y logs; D (Control Tower) configura un entorno multi-cuenta through guardarraíles.\n4. Key concept to learn: Concepto clave: Auditoría de configuración with AWS Config.",
+    "concept": "Gobernanza y auditoría",
+    "service": "AWS Config"
+  },
+  {
+    "id": 439,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Define the AWS Shared Responsibility Model",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Según el Modelo de Responsabilidad Compartida de AWS, cuál de los siguientes aspectos es responsabilidad EXCLUSIVA de AWS",
+    "options": {
+      "A": "Configuración de las reglas de entrada del Security Group",
+      "B": "Security física y controles de acceso biométrico en los centros de data",
+      "C": "Gestión de permisos de users en IAM",
+      "D": "Cifrado del lado del cliente before subir data a S3"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "AWS es responsable de la seguridad 'DE' la nube, lo que incluye la infraestructura física global.",
+    "hint2": "El cliente no tiene acceso ni responsabilidad over las instalaciones físicas donde residen los servers.",
+    "explanation": "1. Option B is correct because correcta porque AWS es totalmente responsable de la protección física, ambiental y perimetral de all sus centros de data e infraestructura global.\n2. The key requirement is identificar el control de la seguridad física e infraestructura subyacente.\n3. Distractors: A, C y D son configuraciones y data administrados by el cliente within su cuenta.\n4. Key concept to learn: Concepto clave: Responsabilidad de AWS en la infraestructura física.",
+    "concept": "Modelo de Responsabilidad Compartida",
+    "service": "AWS Global Infrastructure"
+  },
+  {
+    "id": 440,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de AWS ofrece protección administrada contra ataques de Denegación de Servicio Distribuido (DDoS) e incluye una versión estándar gratuita activada automáticamente for all los customers",
+    "options": {
+      "A": "AWS WAF",
+      "B": "AWS Shield",
+      "C": "Amazon GuardDuty",
+      "D": "AWS Network Firewall"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Protege en las capas 3 y 4 de la red (red y transporte) contra inundaciones de tráfico como SYN floods.",
+    "hint2": "Ofrece los niveles Standard (gratuito) y Advanced (de pago with soporte 24/7 de respuesta DDoS).",
+    "explanation": "1. Option B is correct because correcta porque AWS Shield ofrece protección DDoS administrada, with la versión Shield Standard activada de forma automática y gratuita en all los servicios de AWS.\n2. The key requirement is la mitigación de ataques DDoS en capas de red without costo adicional en su nivel básico.\n3. Distractors: A (WAF) protege en capa 7 contra exploits web; C (GuardDuty) es detección de amenazas inteligible; D (Network Firewall) filtra paquetes with estado a nivel de VPC.\n4. Key concept to learn: Concepto clave: Protección DDoS with AWS Shield.",
+    "concept": "Protección contra DDoS",
+    "service": "AWS Shield"
+  },
+  {
+    "id": 441,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Define AWS IAM capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A corporation utiliza Microsoft Active Directory en sus on-premises facilities. Desea que sus empleados accedan a la consola de AWS using sus mismas credenciales corporativas through Single Sign-On (SSO). Qué servicio debe implementar",
+    "options": {
+      "A": "AWS IAM Identity Center (sucesor de AWS Single Sign-On)",
+      "B": "Amazon Cognito User Pools",
+      "C": "AWS Secrets Manager",
+      "D": "AWS Key Management Service"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Permite integrar proveedores de identidad externos (como Active Directory u Okta) through SAML 2.0.",
+    "hint2": "Simplifica la gestión de accesos centralizados for empleados en múltiples cuentas de AWS.",
+    "explanation": "1. Option A is correct because correcta porque AWS IAM Identity Center administra el acceso de inicio de sesión único (SSO) for empleados integrando directorios corporativos on-premises como Active Directory.\n2. The key requirement is la federación e integración SSO de empleados with Active Directory empresarial.\n3. Distractors: B (Cognito) es for autenticar users finales de applications móviles/web externas (B2C); C guarda claves/secretos; D administra claves de cifrado.\n4. Key concept to learn: Concepto clave: AWS IAM Identity Center vs Amazon Cognito.",
+    "concept": "Federación de identidades",
+    "service": "AWS IAM Identity Center"
+  },
+  {
+    "id": 442,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "A company rewants to un módulo de seguridad de hardware dedicado (HSM) de un solo inquilino que cumpla with los estándares regulatorios estritos FIPS 140-2 Nivel 3 for gestionar sus propias claves de cifrado. Qué servicio cumple with este nivel de aislamiento",
+    "options": {
+      "A": "AWS Key Management Service (KMS)",
+      "B": "AWS CloudHSM",
+      "C": "AWS Secrets Manager",
+      "D": "AWS Certificate Manager"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Proporciona hardware criptográfico dedicado within la VPC del cliente bajo su control exclusivo.",
+    "hint2": "A diferencia de KMS (que es un servicio administrado multi-inquilino), CloudHSM otorga control total del hardware.",
+    "explanation": "1. Option B is correct because correcta porque AWS CloudHSM es un dispositivo HSM dedicado de un solo inquilino in the cloud que cumple with la norma FIPS 140-2 Nivel 3.\n2. The key requirement is el aislamiento by hardware dedicado y cumplimiento FIPS 140-2 Nivel 3.\n3. Distractors: A (KMS) es un servicio administrado multitenant; C guarda secretos y contraseñas; D administra certificados SSL/TLS.\n4. Key concept to learn: Concepto clave: AWS CloudHSM vs AWS KMS.",
+    "concept": "Hardware criptográfico dedicado",
+    "service": "AWS CloudHSM"
+  },
+  {
+    "id": 443,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Compliance resources and tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A corporation needs to aplicar políticas centralizadas de seguridad for prohibir el uso de ciertos servicios no autorizados (como Amazon DynamoDB) en all las cuentas de sus filiales. Qué característica debe utilizar",
+    "options": {
+      "A": "Políticas de Control de Servicio (SCPs) en AWS Organizations",
+      "B": "Políticas de usuario en IAM",
+      "C": "Grupos de Security en Amazon VPC",
+      "D": "Reglas de enrutamiento en Route 53"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Establece guardarraíles de permisos a nivel multi-cuenta from la cuenta administradora de la organización.",
+    "hint2": "Las SCPs imponen límites máximos de permisos incluso over el usuario administrador de las cuentas secundarias.",
+    "explanation": "1. Option A is correct because correcta porque las Service Control Policies (SCPs) de AWS Organizations permiten definir barreras de seguridad y restricciones de servicios centralizadas en múltiples cuentas.\n2. The key requirement is restringir permisos y servicios a nivel estructural multi-cuenta.\n3. Distractors: B se aplica solo within una cuenta individual y puede ser modifieach by un admin local; C filtra tráfico de red; D enruta tráfico DNS.\n4. Key concept to learn: Concepto clave: Gobernanza multi-cuenta with SCPs.",
+    "concept": "Gobernanza multi-cuenta",
+    "service": "AWS Organizations"
+  },
+  {
+    "id": 444,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Define AWS IAM capabilities",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which recomendación de seguridad prioritaria aplica al usuario raíz (Root User) de una cuenta recien creada en AWS",
+    "options": {
+      "A": "Compartir las credenciales with el equipo de soporte técnico",
+      "B": "Activar inmediatamente la Autenticación de Múltiples Factores (MFA) y no usar la cuenta for tareas diarias",
+      "C": "Generar claves de acceso estáticas for el desarrollo diario",
+      "D": "Desactivar las alertas de facturación for evitar correos"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El usuario raíz tiene permisos ilimitados e irrestrictos over all los resources y la facturación de la cuenta.",
+    "hint2": "Se deben crear users de IAM o roles for las actividades cotidianas y protect el Root with MFA.",
+    "explanation": "1. Option B is correct because correcta porque la mejor práctica fundamental es asegurar el usuario raíz through MFA y limitar su uso exclusivamente a tareas administrativas de cuenta insustituibles.\n2. The key requirement is la protección estricta y restricción del uso del usuario raíz.\n3. Distractors: A, C y D representan fallas severas de seguridad y anti-patrón in the cloud.\n4. Key concept to learn: Concepto clave: Aseguramiento del usuario raíz (Root User).",
+    "concept": "Security de cuenta raíz",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 445,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de AWS proporciona un panel centralizado que agrega y prioriza los hallazgos de seguridad generados by servicios como GuardDuty, Inspector, Macie e IAM Access Analyzer",
+    "options": {
+      "A": "AWS Security Hub",
+      "B": "AWS Artifact",
+      "C": "AWS Systems Manager",
+      "D": "Amazon CloudWatch"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Ofrece una vista consolidada del estado de cumplimiento y seguridad en múltiples cuentas.",
+    "hint2": "Ejecuta comprobaciones automatizadas según los estándares de seguridad de AWS (como CIS AWS Foundations).",
+    "explanation": "1. Option A is correct because correcta porque AWS Security Hub centraliza, organiza y prioriza las alertas y hallazgos de seguridad provenientes de múltiples servicios de AWS y socios.\n2. The key requirement is la agregación y vista centralizada de hallazgos de seguridad multi-servicio.\n3. Distractors: B (Artifact) es el portal de informes de cumplimiento; C gestiona servers; D monitorea métricas operativas.\n4. Key concept to learn: Concepto clave: Consolidación de seguridad with AWS Security Hub.",
+    "concept": "Gestión de seguridad centralizada",
+    "service": "AWS Security Hub"
+  },
+  {
+    "id": 446,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de AWS allows registrar y realizar un seguimiento de all las llamadas a la API realizadas en una cuenta, proporcionando un historial de auditoría de quién realizó qué acción y cuándo",
+    "options": {
+      "A": "AWS CloudTrail",
+      "B": "Amazon CloudWatch",
+      "C": "AWS Config",
+      "D": "VPC Flow Logs"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Capta la actividad de la consola, AWS CLI, SDKs y servicios de AWS en archivos de registro.",
+    "hint2": "Es la herramienta fundamental for investigaciones forenses y auditoría de eventos de gestión.",
+    "explanation": "1. Option A is correct because correcta porque AWS CloudTrail registra las llamadas a las API y las acciones de los users within la cuenta, proporcionando un registro de auditoría completo.\n2. The key requirement is la auditoría histórica de llamadas a la API ('quién, qué y cuándo').\n3. Distractors: B (CloudWatch) monitorea métricas de rendimiento e impresiones de applications; C (Config) audita cambios de configuración de resources; D capta tráfico IP de la red VPC.\n4. Key concept to learn: Concepto clave: Registro de auditoría with AWS CloudTrail.",
+    "concept": "Auditoría de eventos API",
+    "service": "AWS CloudTrail"
+  },
+  {
+    "id": 447,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Define the AWS Shared Responsibility Model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company aloja su aplicación en contenedores over AWS Fargate. Cuál de las siguientes actividades es responsabilidad del cliente dentro del Modelo de Responsabilidad Compartida",
+    "options": {
+      "A": "Aseguramiento del sistema operativo del servidor subyacente que ejecuta el contenedor",
+      "B": "Parcheo y mantenimiento del hipervisor de infraestructura",
+      "C": "Security e instalación de dependencias within la imagen del contenedor",
+      "D": "Mantenimiento físico de los racks del centro de data"
+    },
+    "correct": [
+      "C"
+    ],
+    "hint1": "En soluciones serverless de contenedores (Fargate), AWS gestiona el SO del host y el hipervisor.",
+    "hint2": "El cliente únicamente es responsable del código de la aplicación, las dependencias y la configuración de la imagen.",
+    "explanation": "1. Option C is correct because correcta porque en AWS Fargate (serverless), el cliente mantiene la responsabilidad del contenido de la imagen del contenedor, las librerías y la configuración de su aplicación.\n2. The key requirement is delimitar la responsabilidad del cliente en arquitecturas serverless de contenedores.\n3. Distractors: A, B y D son administrados automáticamente by AWS como parte del servicio gestionado Fargate.\n4. Key concept to learn: Concepto clave: Responsabilidad compartida en AWS Fargate.",
+    "concept": "Modelo de Responsabilidad Compartida",
+    "service": "AWS Fargate"
+  },
+  {
+    "id": 448,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de AWS allows solicitar, administrar y deploy fácilmente certificados SSL/TLS públicos gratuitos for su uso with Application Load Balancers o CloudFront",
+    "options": {
+      "A": "AWS Key Management Service (KMS)",
+      "B": "AWS Certificate Manager (ACM)",
+      "C": "AWS Secrets Manager",
+      "D": "AWS IAM Identity Center"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Elimina el proceso manual de renovación de certificados de seguridad for tráfico cifrado HTTPS.",
+    "hint2": "Realiza la renovación automática de los certificados públicos before su fecha de caducidad.",
+    "explanation": "1. Option B is correct because correcta porque AWS Certificate Manager (ACM) gestiona y renueva automáticamente certificados SSL/TLS públicos without costo adicional cuando se usan with servicios soportados como ALB o CloudFront.\n2. The key requirement is la gestión automatizada de certificados SSL/TLS for cifrado HTTPS en tránsito.\n3. Distractors: A (KMS) gestiona claves de cifrado en reposo; C almacena contraseñas; D administra accesos SSO de users.\n4. Key concept to learn: Concepto clave: Certificados SSL/TLS with AWS ACM.",
+    "concept": "Cifrado en tránsito",
+    "service": "AWS Certificate Manager"
+  },
+  {
+    "id": 449,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company wants to capturar información detallada over las direcciones IP de origen, destino, puertos y protocolo del tráfico que entra y sale de sus interfaces de red virtuales within una VPC. Qué función debe habilitar",
+    "options": {
+      "A": "AWS CloudTrail Event History",
+      "B": "VPC Flow Logs",
+      "C": "AWS Config Recorder",
+      "D": "Amazon Route 53 Health Checks"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Registra el tráfico IP aceptado y rechazado a nivel de interfaz de red (ENI), subred o VPC entera.",
+    "hint2": "Los data se pueden enviar a Amazon CloudWatch Logs o Amazon S3 for su posterior análisis de seguridad.",
+    "explanation": "1. Option B is correct because correcta porque VPC Flow Logs captura el tráfico de red IP que fluye a través de las interfaces within una VPC for diagnósticos de red y auditoría de seguridad.\n2. The key requirement is el registro del tráfico de red IP en interfaces de red virtuales.\n3. Distractors: A registra llamadas de API de administración; C rastrea cambios en la configuración de resources; D monitorea disponibilidad de endpoints públicos.\n4. Key concept to learn: Concepto clave: Registros de red with VPC Flow Logs.",
+    "concept": "Diagnóstico de red",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 450,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Define AWS IAM capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which tipo de entidad de IAM se utiliza for otorgar permisos temporales a servicios de AWS (como una función Lambda) for que puedan interactuar with otros resources without necesidad de claves de acceso fijas",
+    "options": {
+      "A": "Usuario de IAM (IAM User)",
+      "B": "Grupo de IAM (IAM Group)",
+      "C": "Rol de IAM (IAM Role)",
+      "D": "Política de IAM (IAM Policy)"
+    },
+    "correct": [
+      "C"
+    ],
+    "hint1": "No tiene credenciales permanentes (como contraseñas o claves de acceso) asociadas.",
+    "hint2": "Es asumido by entidades de confianza for obtener credenciales de seguridad temporales emitidas by AWS STS.",
+    "explanation": "1. Option C is correct because correcta porque un IAM Role otorga permisos temporales a servicios o users autenticados without requerir credenciales permanentes.\n2. The key requirement is la concesión de acceso temporal without credenciales fijas a servicios de AWS.\n3. Distractors: A representa una identidad fija for humanos o applications with claves estáticas; B es una colección de users; D es el documento JSON que define los permisos pero no es una identidad by sí misma.\n4. Key concept to learn: Concepto clave: Uso de IAM Roles for servicios.",
+    "concept": "Credenciales temporales",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 451,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "Después de recibir un hallazgo crítico en Security Hub over un incidente potencial, un equipo de respuesta a incidentes needs to visualizar gráficos de relaciones históricas between IPs, eventos de CloudTrail y logs de VPC for identificar la causa raíz. Qué servicio simplifica este análisis visual",
+    "options": {
+      "A": "Amazon Detective",
+      "B": "Amazon GuardDuty",
+      "C": "AWS Config",
+      "D": "Amazon Inspector"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Procesa automáticamente data de eventos de CloudTrail, VPC Flow Logs y GuardDuty for construir un grafo visual interactivo.",
+    "hint2": "Ayuda a los analistas de seguridad a investigar e aislar rápidamente la causa raíz de hallazgos de seguridad complejos.",
+    "explanation": "1. Option A is correct because correcta porque Amazon Detective analiza e investiga visualmente la causa raíz de problemas de seguridad using grafos y aprendizaje automático.\n2. The key requirement is la investigación visual de la causa raíz de hallazgos de seguridad preexistentes.\n3. Distractors: B (GuardDuty) genera el hallazgo inicial pero no construye el mapa analítico profundo; C audita estados de configuración; D escanea vulnerabilidades en SO.\n4. Key concept to learn: Concepto clave: Investigación de incidentes with Amazon Detective.",
+    "concept": "Análisis forense de seguridad",
+    "service": "Amazon Detective"
+  },
+  {
+    "id": 452,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Define the AWS Shared Responsibility Model",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "En el Modelo de Responsabilidad Compartida, cuál de las siguientes opciones describe el tipo de data cuyo cifrado y control de acceso es SIEMPRE responsabilidad del cliente independientemente del servicio utilizado",
+    "options": {
+      "A": "Los data de los customers (Customer Data)",
+      "B": "El código fuente del hipervisor Nitro",
+      "C": "Los registros del firmware de los conmutadores de red",
+      "D": "Las imágenes del sistema operativo de los hosts físicos"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "El cliente mantiene la propiedad total y la responsabilidad de la clasificación y protección de su contenido.",
+    "hint2": "AWS nunca accede ni altera los data del cliente without autorización explícita.",
+    "explanation": "1. Option A is correct because correcta porque los data cargados o procesados by el cliente son responsabilidad absoluta del cliente en cuanto a su clasificación, cifrado y control de accesos.\n2. The key requirement is la propiedad y control exclusivo over los data de cliente.\n3. Distractors: B, C y D representan software e infraestructura interna gestionada exclusivamente by AWS.\n4. Key concept to learn: Concepto clave: Custodia y responsabilidad de los data del cliente.",
+    "concept": "Modelo de Responsabilidad Compartida",
+    "service": "AWS Security"
+  },
+  {
+    "id": 453,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Security services overview",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de AWS proporciona un cortafuegos with estado (stateful) a nivel de VPC for filtrar el tráfico de red de entrada y salida a escala de toda la red virtual, protegiendo subredes enteras",
+    "options": {
+      "A": "AWS WAF",
+      "B": "AWS Network Firewall",
+      "C": "AWS Shield Standard",
+      "D": "Amazon Inspector"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Aplica inspección profunda de paquetes (DPI) e inspección de protocolos a nivel de VPC.",
+    "hint2": "A diferencia de un Security Group, allows definir reglas complejas de filtrado de dominio y prevención de intrucciones (IPS) for toda la VPC.",
+    "explanation": "1. Option B is correct because correcta porque AWS Network Firewall es un servicio de cortafuegos de red administrado que ofrece inspección with estado for protect VPCs completas.\n2. The key requirement is la inspección de red with estado a nivel de toda la VPC.\n3. Distractors: A (WAF) actúa en Capa 7 HTTP; C (Shield) mitiga DDoS; D escanea vulnerabilidades de software.\n4. Key concept to learn: Concepto clave: Protección de red with AWS Network Firewall.",
+    "concept": "Security de red VPC",
+    "service": "AWS Network Firewall"
+  },
+  {
+    "id": 454,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Compliance resources and tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An entity bancaria needs to evaluate el cumplimiento continuo de sus controles de seguridad with respecto al estándar PCI-DSS y recopilar automáticamente evidencias for los auditores externos. Qué servicio automates la recolección de pruebas de auditoría",
+    "options": {
+      "A": "AWS Audit Manager",
+      "B": "AWS Artifact",
+      "C": "AWS Trusted Advisor",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Mapes continuamente el uso de resources de AWS with marcos de control como PCI-DSS, HIPAA o SOC 2.",
+    "hint2": "Agrupa automáticamente la evidencia (logs, configuraciones) en informes listos for auditorías.",
+    "explanation": "1. Option A is correct because correcta porque AWS Audit Manager automates la recolección continua de evidencia for simplificar la evaluación de riesgos y cumplimiento de normativas.\n2. The key requirement is la recolección continua y automatizada de evidencias for auditorías de cumplimiento.\n3. Distractors: B (Artifact) es el repositorio estático de informes de AWS; C da recomendaciones operativas; D almacena logs de llamadas API without mapeo normativo automatizado.\n4. Key concept to learn: Concepto clave: Automatización de auditorías with AWS Audit Manager.",
+    "concept": "Auditoría continua de cumplimiento",
+    "service": "AWS Audit Manager"
+  },
+  {
+    "id": 455,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company rewants to run un proceso by lotes (batch) que toma 4 horas each noche. El trabajo puede ser interrumpido y reanudado en cualquier momento without perder progreso. Qué modelo de compra de Amazon EC2 ofrece la opción MÁS económica for esta workload",
+    "options": {
+      "A": "Instancias On-Demand",
+      "B": "Instancias Spot",
+      "C": "Reserved Instances de 3 años",
+      "D": "Dedicated Hosts"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Ofrece descuentos de up to un 90% en comparación with los precios on-demand al utilizar capacidad inactiva de AWS.",
+    "hint2": "Las instancias pueden ser recuperadas by AWS with un aviso previo de 2 minutos.",
+    "explanation": "1. Option B is correct because correcta porque las instancias Spot son ideales for trabajos flexibles y tolerantes a interrupciones, ofreciendo el mayor descuento de cómputo en EC2.\n2. The key requirement is la tolerancia a interrupciones combinada with el costo más bajo posible.\n3. Distractors: A es for cargas ininterrumpibles without compromiso; C rewants to pagar by 3 años fijos no aptos for 4 horas diarias; D es for licencias dedicadas de alto costo.\n4. Key concept to learn: Concepto clave: Modelos de compra de EC2 (Instancias Spot).",
+    "concept": "Cómputo económico",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 456,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una aplicación financiera rewants to un block storage de alto rendimiento adjunto a una instancia EC2. Los data deben persistir incluso si la instancia se detiene o se elimina. Qué servicio debe utilizarse",
+    "options": {
+      "A": "Amazon EC2 Instance Store",
+      "B": "Amazon EBS (Elastic Block Store)",
+      "C": "Amazon S3 Glacier Deep Archive",
+      "D": "AWS Snowball"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Proporciona volúmenes de block storage persistentes vinculados by red a las instancias EC2 within la misma AZ.",
+    "hint2": "A diferencia de Instance Store, los data sobrevivirán al apagado o terminación de la maquina virtual.",
+    "explanation": "1. Option B is correct because correcta porque Amazon EBS ofrece block storage persistente e independiente del ciclo de vida de la instancia EC2.\n2. The key requirement is el block storage persistente tras la terminación de la instancia.\n3. Distractors: A (Instance Store) es almacenamiento efímero que pierde los data al apagar la instancia; C (Glacier) es for archivo de objetos a largo plazo; D es un dispositivo físico de migración.\n4. Key concept to learn: Concepto clave: Amazon EBS vs EC2 Instance Store.",
+    "concept": "Almacenamiento en bloques",
+    "service": "Amazon EBS"
+  },
+  {
+    "id": 457,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Un grupo de 50 servers EC2 ejecutando Linux necesitan acceder simultáneamente a un file system compartido through el protocolo NFS. Qué servicio de almacenamiento administrado es el adecuado",
+    "options": {
+      "A": "Amazon EBS",
+      "B": "Amazon EFS (Elastic File System)",
+      "C": "Amazon S3 Standard",
+      "D": "AWS Storage Gateway Tape Gateway"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Proporciona un file system POSIX escalable y compartido accesible en red by múltiples instancias Linux.",
+    "hint2": "Se escala automáticamente a medida que se añaden o eliminan archivos without necesidad de aprovisionar capacidad.",
+    "explanation": "1. Option B is correct because correcta porque Amazon EFS es un file system NFS administrado diseñado for ser montado de forma concurrente by múltiples instancias Linux en varias AZs.\n2. The key requirement is el acceso NFS compartido simultáneo for múltiples servers Linux.\n3. Distractors: A (EBS) normalmente se conecta a una sola instancia a la vez within la misma AZ; C (S3) es object storage accesible vía HTTP API, no un file system POSIX/NFS; D emula cintas magnéticas.\n4. Key concept to learn: Concepto clave: Sistemas de archivos compartidos with Amazon EFS.",
+    "concept": "Almacenamiento de archivos compartido",
+    "service": "Amazon EFS"
+  },
+  {
+    "id": 458,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una aplicación móvil global rewants to una NoSQL database clave-valor capaz de manejar millones de solicitudes by segundo with latencias estables de un solo dígito en milisegundos y escalado totalmente administrado. Qué servicio debe elegirse",
+    "options": {
+      "A": "Amazon RDS for MySQL",
+      "B": "Amazon DynamoDB",
+      "C": "Amazon Redshift",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es una NoSQL database totalmente administrada (serverless) basada en documentos y pares clave-valor.",
+    "hint2": "Ofrece throughput on-demand o provisionado with rendimiento ultra rápido a cualquier escala.",
+    "explanation": "1. Option B is correct because correcta porque Amazon DynamoDB ofrece rendimiento NoSQL clave-valor de alta escala with latencia de milisegundos de un solo dígito y administración serverless.\n2. The key requirement is el modelo de data NoSQL clave-valor de alta concurrencia y latencia ultra baja.\n3. Distractors: A (RDS) es una relational database SQL; C (Redshift) es un data warehouse analítico; D (Neptune) es una base de data de grafos.\n4. Key concept to learn: Concepto clave: Base de data NoSQL with Amazon DynamoDB.",
+    "concept": "Bases de data NoSQL",
+    "service": "Amazon DynamoDB"
+  },
+  {
+    "id": 459,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to migrate su base de data PostgreSQL local towards la nube de AWS. Buscan la máxima compatibilidad relacional pero with una velocidad up to 3 veces mayor y replicación automática de 6 copias de data a través de 3 Availability Zones. Qué motor es el indicado",
+    "options": {
+      "A": "Amazon Aurora",
+      "B": "Amazon DynamoDB",
+      "C": "Amazon ElastiCache",
+      "D": "Amazon DocumentDB"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Es el motor relacional nativo de AWS compatible with MySQL y PostgreSQL.",
+    "hint2": "Sefor la capa de cómputo del almacenamiento, auto-escalando el volumen up to 128 TB.",
+    "explanation": "1. Option A is correct because correcta porque Amazon Aurora es el motor relacional nativo de alta velocidad compatible with PostgreSQL/MySQL que replica data automáticamente 6 veces en 3 AZs.\n2. The key requirement is la alta velocidad relacional compatible with PostgreSQL y tolerancia Multi-AZ nativa.\n3. Distractors: B (DynamoDB) es NoSQL; C (ElastiCache) es caché en memoria; D (DocumentDB) es NoSQL compatible with MongoDB.\n4. Key concept to learn: Concepto clave: Amazon Aurora vs RDS tradicional.",
+    "concept": "Bases de data relacionales de alto rendimiento",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 460,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify networking services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to crear una red virtual aislada in the AWS Cloud donde pueda definir sus propios bloques de direcciones IP CIDR, subredes públicas y privadas, y tablas de enrutamiento. Qué servicio es el pilar de esta arquitectura",
+    "options": {
+      "A": "AWS Direct Connect",
+      "B": "Amazon VPC (Virtual Private Cloud)",
+      "C": "Amazon Route 53",
+      "D": "AWS Transit Gateway"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permite aprovisionar una sección lógicamente aislada of the cloud de AWS donde lanzar resources en una red virtual definida by el cliente.",
+    "hint2": "Equivale a tener una red física propia in the cloud.",
+    "explanation": "1. Option B is correct because correcta porque Amazon VPC allows crear la red virtual privada que sirve de contenedor lógicamente aislado for all los resources de AWS.\n2. The key requirement is el aislamiento lógico de red y definición personalizada de CIDR y subredes.\n3. Distractors: A (Direct Connect) es el enlace dedicado físico; C (Route 53) es DNS; D (Transit Gateway) interconecta múltiples VPCs.\n4. Key concept to learn: Concepto clave: Fundamentos de Amazon VPC.",
+    "concept": "Redes virtuales aisladas",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 461,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify networking services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Instancias EC2 ubicadas en una subred privada necesitan descargar actualizaciones de seguridad from internet. Por políticas de seguridad, ninguna conexión iniciada from internet debe poder ingresar a estas instancias. Qué componente de red debe desplegarse en la subred pública",
+    "options": {
+      "A": "Internet Gateway (IGW)",
+      "B": "NAT Gateway",
+      "C": "VPC Peering Connection",
+      "D": "Virtual Private Gateway (VGW)"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permite que los resources en una subred privada se conecten a internet (salida) pero impide que internet inicie conexiones towards ellos (entrada).",
+    "hint2": "Se ubica en la subred pública y utiliza una Elastic IP asignada.",
+    "explanation": "1. Option B is correct because correcta porque un NAT Gateway allows el tráfico saliente a internet from subredes privadas bloqueando cualquier conexión entrupon no solicitada.\n2. The key requirement is permitir solo tráfico saliente unidireccional towards internet from subredes privadas.\n3. Distractors: A (IGW) allows conexiones bidireccionales directas (rewants to IP pública en la instancia); C conecta dos VPCs; D conecta una VPN local.\n4. Key concept to learn: Concepto clave: Conectividad saliente segura with NAT Gateway.",
+    "concept": "Acceso saliente a internet",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 462,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A developer wants to run una aplicación en contenedores without tener que seleccionar el tipo de instancia EC2, configure el sistema operativo o gestionar la capacidad de los servers subyacentes. Qué motor de cómputo serverless for contenedores debe utilizar",
+    "options": {
+      "A": "Amazon EC2 Reserved Instances",
+      "B": "AWS Fargate",
+      "C": "AWS Batch",
+      "D": "Amazon Lightsail"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es el motor de cómputo without servidor for Amazon ECS y Amazon EKS.",
+    "hint2": "Elimina la necesidad de aprovisionar y gestionar servers EC2 for los contenedores.",
+    "explanation": "1. Option B is correct because correcta porque AWS Fargate es la tecnología de cómputo serverless que ejecuta contenedores (ECS/EKS) without necesidad de gestionar instancias EC2 subyacentes.\n2. The key requirement is la ejecución de contenedores in the cloud with un enfoque 100% serverless without servers.\n3. Distractors: A exige administrar instancias EC2 manualmente; C es for procesamiento by lotes masivo; D es un VPS preconfigurado for proyectos simples.\n4. Key concept to learn: Concepto clave: Contenedores Serverless with AWS Fargate.",
+    "concept": "Contenedores without servidor",
+    "service": "AWS Fargate"
+  },
+  {
+    "id": 463,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which servicio de cómputo de AWS ejecuta código en respuesta a eventos (como la subida de un archivo a S3) y cobra únicamente by los milisegundos de tiempo de ejecución consumidos",
+    "options": {
+      "A": "Amazon EC2",
+      "B": "AWS Lambda",
+      "C": "AWS Elastic Beanstalk",
+      "D": "Amazon Outposts"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es el servicio insigne de arquitectura orientada a eventos e Infraestructura Serverless.",
+    "hint2": "Escala automáticamente from cero up to miles de ejecuciones concurrentes by segundo.",
+    "explanation": "1. Option B is correct because correcta porque AWS Lambda ejecuta código without servidor en respuesta a eventos y cobra exactamente by el tiempo consumido en milisegundos.\n2. The key requirement is la ejecución de código orientada a eventos with cobro by milisegundo without servers permanentes.\n3. Distractors: A cobra by hora/segundo que el servidor esté activo; C es PaaS for deploy applications web completas; D es infraestructura local.\n4. Key concept to learn: Concepto clave: Cómputo serverless with AWS Lambda.",
+    "concept": "Cómputo orientado a eventos",
+    "service": "AWS Lambda"
+  },
+  {
+    "id": 464,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify developer and integration services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una arquitectura de microservicios procesa pedidos de customers. Si el servicio de procesamiento de pagos experimenta una falla temporal, los pedidos no deben perderse y deben acumularse de forma segura up to que el servicio se recupere. Qué servicio de desacoplamiento debe colocarse between los componentes",
+    "options": {
+      "A": "Amazon SNS",
+      "B": "Amazon SQS (Simple Queue Service)",
+      "C": "AWS Step Functions",
+      "D": "Amazon API Gateway"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Ofrece un modelo de cola (pull-based) donde los mensajes se retienen up to by 14 días si el consumidor no los ha procesado.",
+    "hint2": "Permite que los componentes se desacoplen for soportar picos de tráfico o fallas temporales.",
+    "explanation": "1. Option B is correct because correcta porque Amazon SQS retiene los mensajes en una cola segura up to que el servicio de consumo esté disponible for procesarlos (modelo pull).\n2. The key requirement is el almacenamiento en cola de mensajes for desacoplar componentes y evitar pérdida de data upon fallas de consumidores.\n3. Distractors: A (SNS) es modelo pub/sub (push) que envía notificaciones de inmediato; C orquesta flujos de trabajo; D gestiona puntos de enlace API.\n4. Key concept to learn: Concepto clave: Desacoplamiento through colas with Amazon SQS.",
+    "concept": "Mensajería asíncrona",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 465,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify developer and integration services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Un sistema needs to enviar una alerta inmediata by correo electrónico y SMS a un grupo de administradores each vez que una métrica de CloudWatch supere un umbral crítico. Qué servicio allows enviar este mensaje a múltiples suscriptores simultáneamente (modelo pub/sub)",
+    "options": {
+      "A": "Amazon SQS",
+      "B": "Amazon SNS (Simple Notification Service)",
+      "C": "AWS CodePipeline",
+      "D": "Amazon EventBridge"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Ofrece un modelo de publicación/suscripción (pub/sub) de tipo push.",
+    "hint2": "Un solo mensaje publicado en un 'Topic' de SNS se distribuye masivamente a múltiples tipos de suscriptores (email, SMS, Lambda, SQS).",
+    "explanation": "1. Option B is correct because correcta porque Amazon SNS distribuye mensajes (push) instantáneamente a múltiples suscriptores through canales variados como SMS o correo.\n2. The key requirement is la distribución masiva tipo pub/sub (push) towards múltiples receptores.\n3. Distractors: A (SQS) es una cola punto a punto basada en extracción (pull); C es for orquestar pipelines CI/CD; D es un bus de eventos for enrutamiento de reglas complejas.\n4. Key concept to learn: Concepto clave: Amazon SNS vs Amazon SQS.",
+    "concept": "Notificaciones pub/sub",
+    "service": "Amazon SNS"
+  },
+  {
+    "id": 466,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company rewants to store petabytes de archivos médicos a los que se accede muy raras veces en el año, pero cuando se solicitan, deben estar disponibles en pocos milisegundos. Qué clase de almacenamiento en Amazon S3 ofrece la opción MÁS económica for esta necesidad específica",
+    "options": {
+      "A": "S3 Standard",
+      "B": "S3 Glacier Flexible Retrieval",
+      "C": "S3 Glacier Instant Retrieval",
+      "D": "S3 Glacier Deep Archive"
+    },
+    "correct": [
+      "C"
+    ],
+    "hint1": "Diseñado for data de archivo de acceso infrecuente (1-2 veces al año) que requieren acceso inmediato en milisegundos.",
+    "hint2": "A diferencia de Glacier Flexible Retrieval (que toma minutos u horas), Instant Retrieval entrega el objeto al instante.",
+    "explanation": "1. Option C is correct because correcta porque S3 Glacier Instant Retrieval ofrece el menor costo de almacenamiento for archivos que se leen rara vez pero exigen recuperación inmediata en milisegundos.\n2. The key requirement is el menor costo de almacenamiento combinado with acceso inmediato en milisegundos.\n3. Distractors: A (S3 Standard) es más caro by GB for data poco consultados; B (Glacier Flexible) toma de 1 a 5 minutos; D (Deep Archive) toma up to 12 horas.\n4. Key concept to learn: Concepto clave: Clases de almacenamiento de Amazon S3.",
+    "concept": "Clases de almacenamiento de S3",
+    "service": "Amazon S3"
+  },
+  {
+    "id": 467,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which característica de Amazon S3 allows mover automáticamente objetos between diferentes clases de almacenamiento (by ejemplo, de S3 Standard a S3 Glacier) basándose en la antigüedad del archivo",
+    "options": {
+      "A": "S3 Bucket Policies",
+      "B": "Políticas de Ciclo de Vida de S3 (S3 Lifecycle Policies)",
+      "C": "S3 Multipart Upload",
+      "D": "S3 Versioning"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Define reglas automatizadas for transicionar objetos a clases más económicas o eliminarlos after X días.",
+    "hint2": "Permite optimizar costs de almacenamiento without intervención manual continua.",
+    "explanation": "1. Option B is correct because correcta porque las Políticas de Ciclo de Vida de S3 automatizan la transición de objetos a clases de menor costo o su eliminación según su antigüedad.\n2. The key requirement is la automatización del ciclo de vida y transición between clases de S3 by edad del archivo.\n3. Distractors: A administra permisos de acceso; C acelera la subida de archivos grandes; D conserva versiones históricas de objetos.\n4. Key concept to learn: Concepto clave: Políticas de ciclo de vida de Amazon S3.",
+    "concept": "Gestión de almacenamiento",
+    "service": "Amazon S3"
+  },
+  {
+    "id": 468,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify analytics services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Un analista de data needs to run consultas SQL ad-hoc directamente over un conjunto de archivos CSV y Parquet almacenados en Amazon S3 without necesidad de cargar los data en una base de data ni aprovisionar servers. Qué servicio serverless debe usar",
+    "options": {
+      "A": "Amazon Redshift",
+      "B": "Amazon Athena",
+      "C": "Amazon EMR",
+      "D": "Amazon Kinesis Data Streams"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es un servicio de consultas SQL interactivo y totalmente without servidor (serverless) que analiza data directamente en S3.",
+    "hint2": "El cobro se basa únicamente en la cantidad de terabytes de data escaneados by each consulta.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Athena allows analyze archivos alojados en Amazon S3 through SQL estándar without infraestructura ni procesos de carga ETL previa.\n2. The key requirement is la ejecución de consultas SQL serverless directas over Amazon S3.\n3. Distractors: A (Redshift) rewants to aprovisionar un clúster de Data Warehouse; C (EMR) procesa Big Data with Hadoop/Spark; D gestiona flujos de streaming en tiempo real.\n4. Key concept to learn: Concepto clave: Consultas analíticas en S3 with Amazon Athena.",
+    "concept": "Analítica serverless",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 469,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify analytics services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A corporation needs to un almacén de data (Data Warehouse) a escala de petabytes capaz de consolidar data de múltiples fuentes y realizar análisis complejos de Inteligencia de Negocios (BI) with alto rendimiento. Qué servicio es el indicado",
+    "options": {
+      "A": "Amazon RDS for PostgreSQL",
+      "B": "Amazon Redshift",
+      "C": "Amazon DynamoDB",
+      "D": "AWS Glue"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Utiliza almacenamiento columnar y procesamiento masivo en paralelo (MPP) diseñado específicamente for analítica OLAP a gran escala.",
+    "hint2": "Se integra with herramientas de visualización de BI como Amazon QuickSight.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Redshift es el servicio de Data Warehouse in the cloud totalmente administrado for análisis masivo a escala de petabytes.\n2. The key requirement is el almacenamiento y análisis OLAP masivo estilo Data Warehouse a gran escala.\n3. Distractors: A (RDS) es for bases de data transaccionales OLTP; C (DynamoDB) es NoSQL operacional; D (Glue) es for procesos ETL.\n4. Key concept to learn: Concepto clave: Data Warehouse with Amazon Redshift.",
+    "concept": "Data Warehouse analítico",
+    "service": "Amazon Redshift"
+  },
+  {
+    "id": 470,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify analytics services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which servicio de AWS allows a los users crear paneles (dashboards) interactivos y gráficos visuales de Inteligencia de Negocios (BI) alimentados by data de S3, Redshift o RDS",
+    "options": {
+      "A": "Amazon QuickSight",
+      "B": "AWS Glue",
+      "C": "Amazon Kendra",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Es un servicio de BI without servidor impulsado by aprendizaje automático for crear visualizaciones atractivas.",
+    "hint2": "Utiliza el motor SPICE en memoria for responder de forma rápida a la interacción with los gráficos.",
+    "explanation": "1. Option A is correct because correcta porque Amazon QuickSight es el servicio de inteligencia empresarial (BI) y creación de dashboards gráficos interactivos in the cloud.\n2. The key requirement is la creación de dashboards e informes gráficos de Business Intelligence.\n3. Distractors: B (Glue) es integración de data ETL; C (Kendra) es búsqueda empresarial with IA; D registra llamadas API.\n4. Key concept to learn: Concepto clave: Visualización de data with Amazon QuickSight.",
+    "concept": "Inteligencia de Negocios",
+    "service": "Amazon QuickSight"
+  },
+  {
+    "id": 471,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AI/ML services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A developer wants to agregar la capacidad de convertir texto escrito en archivos de audio with voz humana sintetizada en múltiples idiomas a su aplicación. Qué servicio de IA de AWS proporciona esta función without requerir conocimientos de ML",
+    "options": {
+      "A": "Amazon Transcribe",
+      "B": "Amazon Polly",
+      "C": "Amazon Comprehend",
+      "D": "Amazon Translate"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Convierte texto escrito en voz hablada with sonido natural using aprendizaje profundo (Text-to-Speech).",
+    "hint2": "Ofrece múltiples voces y acentos realistas en decenas de idiomas.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Polly es el servicio de IA administrado que transforma texto en voz hablada (Text-to-Speech).\n2. The key requirement is la conversión de texto a audio de voz sintetizada.\n3. Distractors: A (Transcribe) convierte audio de voz a texto (Speech-to-Text); C (Comprehend) realiza análisis de sentimiento en texto; D (Translate) traduce texto between idiomas.\n4. Key concept to learn: Concepto clave: Amazon Polly vs Amazon Transcribe.",
+    "concept": "Servicios de IA de AWS",
+    "service": "Amazon Polly"
+  },
+  {
+    "id": 472,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AI/ML services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company rewants to transcribir automáticamente grabaciones de llamadas de servicio al cliente en formato MP3 a texto escrito for evaluate la calidad de la atención. Qué servicio de IA cumple with esta necesidad",
+    "options": {
+      "A": "Amazon Transcribe",
+      "B": "Amazon Polly",
+      "C": "Amazon Rekognition",
+      "D": "Amazon Lex"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Utiliza reconocimiento automático del habla (ASR) for convertir audio en texto preciso (Speech-to-Text).",
+    "hint2": "Soporta la identificación de múltiples hablantes y filtrado de vocabulario personalizado.",
+    "explanation": "1. Option A is correct because correcta porque Amazon Transcribe convierte archivos de audio o streaming de voz a texto escrito (Speech-to-Text).\n2. The key requirement is la transcripción de voz hablada en formato de audio towards texto escrito.\n3. Distractors: B (Polly) convierte texto a voz; C (Rekognition) analiza imágenes y video; D (Lex) construye chatbots conversacionales.\n4. Key concept to learn: Concepto clave: Transcripción de voz a texto with Amazon Transcribe.",
+    "concept": "Servicios de IA de AWS",
+    "service": "Amazon Transcribe"
+  },
+  {
+    "id": 473,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AI/ML services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de Inteligencia Artificial administrado allows analyze automáticamente imágenes y videos for identificar objetos, caras, texto y contenido inapropiado",
+    "options": {
+      "A": "Amazon Textract",
+      "B": "Amazon Rekognition",
+      "C": "Amazon Comprehend",
+      "D": "Amazon SageMaker"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Proporciona capacidades de visión artificial (Computer Vision) through APIs sencillas.",
+    "hint2": "Permite realizar búsqueda de rostros y detección de etiquetas en imágenes without entrenar modelos propios.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Rekognition ofrece análisis automatizado de visión artificial for imágenes y videos.\n2. The key requirement is el análisis visual e identificación de objetos y caras en archivos de imagen/video.\n3. Distractors: A (Textract) extrae texto y tablas de documentos PDF/escaneados; C (Comprehend) es for PLN de texto; D (SageMaker) es la plataforma integral for crear y entrenar modelos propios de ML from cero.\n4. Key concept to learn: Concepto clave: Visión artificial with Amazon Rekognition.",
+    "concept": "Servicios de IA de AWS",
+    "service": "Amazon Rekognition"
+  },
+  {
+    "id": 474,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AI/ML services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An entity bancaria recibe miles de solicitudes de préstamos escaneadas en papel. Necesitan un servicio que extraiga automáticamente no solo el texto escrito, sino también la estructura de las tablas y los campos de los formularios. Qué servicio deben utilizar",
+    "options": {
+      "A": "Amazon Rekognition",
+      "B": "Amazon Textract",
+      "C": "Amazon Comprehend",
+      "D": "Amazon Lex"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Va más allá de un OCR básico al comprender la disposición de tablas, formularios y pares clave-valor en documentos.",
+    "hint2": "Extrae data estructurados de facturas, recibos y documentos de identidad de forma automática.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Textract extrae automáticamente texto manuscrito, impreso, tablas y data de formularios a partir de documentos escaneados.\n2. The key requirement is la extracción de texto estructurado, formularios y tablas from imágenes de documentos.\n3. Distractors: A es for análisis de imágenes/fotos generales; C es for análisis de texto procesado; D construye chatbots.\n4. Key concept to learn: Concepto clave: Extracción de documentos with Amazon Textract.",
+    "concept": "Servicios de IA de AWS",
+    "service": "Amazon Textract"
+  },
+  {
+    "id": 475,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify developer and integration services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Un equipo de infraestructura wants to aprovisionar y actualizar un conjunto repetible de VPCs, subredes e instancias EC2 through el uso de plantillas declarativas escritas en JSON o YAML. Qué servicio de Infraestructura como Código (IaC) deben usar",
+    "options": {
+      "A": "AWS Systems Manager",
+      "B": "AWS CloudFormation",
+      "C": "AWS Elastic Beanstalk",
+      "D": "AWS CodeDeploy"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permite definir la infraestructura deseada en archivos de texto denominados 'Templates'.",
+    "hint2": "Crea, actualiza o eliminates all los resources de forma coordinada en conjuntos llamados 'Stacks'.",
+    "explanation": "1. Option B is correct because correcta porque AWS CloudFormation es el servicio nativo de Infraestructura como Código (IaC) que aprovisiona resources de AWS a partir de plantillas JSON/YAML.\n2. The key requirement is la definición declarativa e automatizada de infraestructura through plantillas de texto.\n3. Distractors: A administra instancias y parches; C es PaaS for código de applications; D automates el despliegue del código de la app over servers.\n4. Key concept to learn: Concepto clave: Infraestructura como Código with AWS CloudFormation.",
+    "concept": "Infraestructura como Código",
+    "service": "AWS CloudFormation"
+  },
+  {
+    "id": 476,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify developer and integration services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company de desarrollo wants to alojar sus repositorios de código fuente en un servicio Git privado, seguro y altamente escalable without necesidad de administrar sus propios servers Git. Qué servicio debe utilizar",
+    "options": {
+      "A": "AWS CodeCommit",
+      "B": "AWS CodeBuild",
+      "C": "AWS CodeDeploy",
+      "D": "AWS CodeArtifact"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Es el servicio administrado de control de código fuente que aloja repositorios Git privados.",
+    "hint2": "Se integra with IAM for controlar los permisos de lectura y escritura en las ramas de código.",
+    "explanation": "1. Option A is correct because correcta porque AWS CodeCommit proporciona repositorios de control de versiones Git privados y administrados in the AWS Cloud.\n2. The key requirement is el alojamiento administrado de repositorios de código fuente compatibles with Git.\n3. Distractors: B (CodeBuild) compila y prueba código; C (CodeDeploy) despliega artefactos en servers; D (CodeArtifact) almacena paquetes y dependencias (npm, pip, maven).\n4. Key concept to learn: Concepto clave: Suite de herramientas for desarrolladores de AWS.",
+    "concept": "Control de código fuente",
+    "service": "AWS CodeCommit"
+  },
+  {
+    "id": 477,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una pequeña empresa wants to lanzar un blog simple en WordPress. No tienen experiencia administrando redes ni servers in the cloud y prefieren un servicio with precio mensual bajo y fijo que incluya cómputo, almacenamiento y DNS preconfigurados. Qué servicio es el más adecuado",
+    "options": {
+      "A": "Amazon EC2 with volúmenes EBS provisionados",
+      "B": "Amazon Lightsail",
+      "C": "AWS Batch",
+      "D": "AWS Outposts"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Diseñado como una Plataforma de Servidores Virtuales Privados (VPS) fácil de usar for proyectos sencillos.",
+    "hint2": "Incluye todo lo necesario (cómputo, almacenamiento, transferencia) bajo una tarifa fija mensual predecible.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Lightsail ofrece virtual servers preconfigurados with paquetes simplificados y costs fijos mensuales ideales for proyectos sencillos como WordPress.\n2. The key requirement is la simplicidad preconfigurada y costo mensual fijo without complejidad de VPC/EBS.\n3. Distractors: A rewants to configure manualmente VPC, SG, EBS y no tiene tarifa fija simplificada; C es for cómputo masivo by lotes; D es infraestructura física local.\n4. Key concept to learn: Concepto clave: Amazon Lightsail for proyectos sencillos.",
+    "concept": "Servidores virtuales simplificados",
+    "service": "Amazon Lightsail"
+  },
+  {
+    "id": 478,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A corporation needs to transferir 500 Terabytes de data from su on-premises data center towards Amazon S3. Su conexión a internet es lenta y tardaría más de un año en completar la subida. Qué servicio físico de transferencia masiva de data debe solicitar",
+    "options": {
+      "A": "AWS DataSync",
+      "B": "Dispositivo de la familia AWS Snowball",
+      "C": "Amazon S3 Transfer Acceleration",
+      "D": "AWS Storage Gateway"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es un dispositivo físico resistente que AWS envía by correo seguro a las instalaciones del cliente.",
+    "hint2": "El cliente copia los data directamente al dispositivo by red local y lo envía de regreso a AWS for su carga en S3.",
+    "explanation": "1. Option B is correct because correcta porque AWS Snowball es un dispositivo físico diseñado for migrate volúmenes de data masivos (decenas o cientos de terabytes) without utilizar la red de internet.\n2. The key requirement is la migración física de gran volumen outside of línea due to restricciones de ancho de banda de internet.\n3. Distractors: A (DataSync) utiliza la red de internet/VPN for sincronización; C acelera transferencias over la red through CloudFront; D es for almacenamiento híbrido continuo.\n4. Key concept to learn: Concepto clave: Migración de data with AWS Snow Family.",
+    "concept": "Migración masiva de data",
+    "service": "AWS Snowball"
+  },
+  {
+    "id": 479,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify networking services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de enrutamiento DNS administrado by AWS traduce nombres de dominio legibles for humanos (como www.ejemplo.com) en direcciones IP numéricas y ofrece politicas de enrutamiento basadas en latencia o geolocalización",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "Amazon Route 53",
+      "C": "AWS Direct Connect",
+      "D": "Amazon API Gateway"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es un servicio DNS altamente disponible (with un SLA del 100%) y escalable.",
+    "hint2": "Soporta registro de dominios, verificación de salud de servers y políticas de enrutamiento avanzadas.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Route 53 es el servicio DNS in the cloud que gestiona la resolución de nombres de dominio y las políticas de tráfico web.\n2. The key requirement is la resolución de nombres de dominio DNS y políticas de enrutamiento inteligente de tráfico.\n3. Distractors: A (CloudFront) es una CDN for acelerar contenido; C es la línea de fibra física dedicada; D gestiona entradas API.\n4. Key concept to learn: Concepto clave: Servicio DNS Amazon Route 53.",
+    "concept": "Servicios DNS",
+    "service": "Amazon Route 53"
+  },
+  {
+    "id": 480,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify networking services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to acelerar la entrega de video y assets estáticos a users globales through el almacenamiento en caché de estos archivos en ubicaciones de borde repartidas by todo el mundo. Qué servicio deben implementar",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Global Accelerator",
+      "C": "Amazon Route 53",
+      "D": "AWS Transit Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Es la red de distribución de contenido (CDN) global de AWS.",
+    "hint2": "Almacena en caché copias del contenido en Edge Locations for servirlo with low latency.",
+    "explanation": "1. Option A is correct because correcta porque Amazon CloudFront es la CDN de AWS que almacena en caché contenido estático y dinámico en las ubicaciones de borde a nivel mundial.\n2. The key requirement is el almacenamiento en caché de archivos y entrega through una red CDN en ubicaciones de borde.\n3. Distractors: B (Global Accelerator) optimizes rutas IP a través de la red global de AWS without store archivos en caché; C es el DNS; D interconecta VPCs.\n4. Key concept to learn: Concepto clave: Redes de distribución de contenido (CDN) with Amazon CloudFront.",
+    "concept": "Red de entrega de contenido CDN",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 481,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify developer and integration services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which servicio de orquestación serverless allows a los desarrolladores coordinar múltiples funciones AWS Lambda y servicios de AWS en flujos de trabajo visuales paso a paso with manejo de errores",
+    "options": {
+      "A": "AWS Step Functions",
+      "B": "Amazon EventBridge",
+      "C": "AWS CloudFormation",
+      "D": "AWS CodePipeline"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Utiliza máquinas de estado (state machines) for conectar componentes without escribir código de pegamento complejo.",
+    "hint2": "Maneja reintentos, tiempos de espera y ramas condicionales en el flujo de trabajo.",
+    "explanation": "1. Option A is correct because correcta porque AWS Step Functions coordina servicios y funciones Lambda en flujos de trabajo visuales y de estado administrados.\n2. The key requirement is la orquestación visual de máquinas de estado between funciones Lambda y microservicios.\n3. Distractors: B (EventBridge) enruta eventos síncronos o asíncronos through reglas pero no mantiene el estado de un workflow largo; C aprovisiona infraestructura; D es for pipelines de integración continua CI/CD.\n4. Key concept to learn: Concepto clave: Orquestación with AWS Step Functions.",
+    "concept": "Orquestación de microservicios",
+    "service": "AWS Step Functions"
+  },
+  {
+    "id": 482,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which servicio de AWS proporciona una solución de almacenamiento híbrido que allows a las applications on-premises utilizar almacenamiento en S3 como si fuera un file system local through un protocolo de archivos (NFS/SMB)",
+    "options": {
+      "A": "AWS Storage Gateway (S3 File Gateway)",
+      "B": "AWS Snowball Edge",
+      "C": "AWS DataSync",
+      "D": "Amazon EBS"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Conecta dispositivos o máquinas virtuales on-premises with el object storage de AWS S3 de forma transparente.",
+    "hint2": "Ofrece un caché local for proporcionar acceso de low latency a los data usados frecuentemente.",
+    "explanation": "1. Option A is correct because correcta porque AWS Storage Gateway (en su modalidad S3 File Gateway) allows a los servers on-premises montar buckets de S3 como compartimentos de archivos NFS/SMB.\n2. The key requirement is la integración de almacenamiento híbrido local respaldado by Amazon S3 through protocolos NFS/SMB.\n3. Distractors: B es for migración física outside of línea; C es un motor de transferencia de data rápido over red; D es block storage within una VPC de AWS.\n4. Key concept to learn: Concepto clave: Almacenamiento híbrido with AWS Storage Gateway.",
+    "concept": "Almacenamiento híbrido",
+    "service": "AWS Storage Gateway"
+  },
+  {
+    "id": 483,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una red social needs to store y consultar relaciones complejas between users, amigos, publicaciones y comentarios de forma rápida. Qué tipo de base de data administrada by AWS es la más adecuada for este modelo de data en grafo",
+    "options": {
+      "A": "Amazon Aurora",
+      "B": "Amazon Neptune",
+      "C": "Amazon ElastiCache",
+      "D": "Amazon DocumentDB"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es un servicio de base de data de grafos (Graph Database) altamente disponible y administrado.",
+    "hint2": "Soporta lenguajes de consulta de grafos populares como Apache TinkerPop Gremlin y SPARQL.",
+    "explanation": "1. Option B is correct because correcta porque Amazon Neptune está optimizado for store y consultar conjuntos de data with conexiones y relaciones complejas en modelos de grafos.\n2. The key requirement is el procesamiento de modelos de data de grafos y relaciones en redes de data altamente vinculadas.\n3. Distractors: A es relacional SQL; C es caché en memoria; D es base de data documental compatible with MongoDB.\n4. Key concept to learn: Concepto clave: Base de data de grafos with Amazon Neptune.",
+    "concept": "Bases de data de grafos",
+    "service": "Amazon Neptune"
+  },
+  {
+    "id": 484,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Para acelerar el tiempo de respuesta de una aplicación web que realiza lecturas repetitivas a una relational database, un arquitecto decide implementar una capa de almacenamiento en caché en memoria. Qué servicio administrado debe seleccionar",
+    "options": {
+      "A": "Amazon ElastiCache (Redis o Memcached)",
+      "B": "Amazon DynamoDB Accelerator (DAX)",
+      "C": "Amazon Redshift",
+      "D": "Amazon RDS Read Replicas"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Proporciona un almacén de data en memoria (In-Memory) de ultra alta velocidad compatible with Redis o Memcached.",
+    "hint2": "Descarga la presión de lectura de las bases de data relacionales tradicionales como RDS.",
+    "explanation": "1. Option A is correct because correcta porque Amazon ElastiCache proporciona almacenamiento en caché en memoria for bases de data relacionales o applications web reduciendo la latencia a microsegundos.\n2. The key requirement is la capa de caché en memoria for bases de data relacionales.\n3. Distractors: B (DAX) es la caché específica for DynamoDB (NoSQL), no for relacionales generales; C es Data Warehouse; D son réplicas de lectura relacionales que leen de disco.\n4. Key concept to learn: Concepto clave: Caché en memoria with Amazon ElastiCache.",
+    "concept": "Almacenamiento en caché en memoria",
+    "service": "Amazon ElastiCache"
+  },
+  {
+    "id": 485,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una universidad needs to run simulaciones científicas masivas que requieren miles de trabajos de cómputo by lotes. Necesitan un servicio que gestione automáticamente las colas de trabajos, el aprovisionamiento de las instancias EC2 necesarias y su posterior apagado. Qué servicio deben elegir",
+    "options": {
+      "A": "AWS Batch",
+      "B": "AWS Elastic Beanstalk",
+      "C": "Amazon Lightsail",
+      "D": "AWS CloudFormation"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Planifica, programa y ejecuta eficientemente workloads de cómputo by lotes (batch) a cualquier escala.",
+    "hint2": "Aprovisiona dinámicamente la cantidad óptima de resources de cómputo (instancias On-Demand o Spot) según el volumen de la cola.",
+    "explanation": "1. Option A is correct because correcta porque AWS Batch automates la gestión de infraestructura y colas for run workloads by lotes a gran escala.\n2. The key requirement is la automatización de la ejecución y escalado de cómputo masivo by lotes (batch processing).\n3. Distractors: B es PaaS for applications web continuas; C es for VPS simples; D es Infraestructura como Código.\n4. Key concept to learn: Concepto clave: Procesamiento by lotes with AWS Batch.",
+    "concept": "Cómputo by lotes",
+    "service": "AWS Batch"
+  },
+  {
+    "id": 486,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify developer and integration services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which servicio de AWS proporciona una plataforma como servicio (PaaS) que allows a los desarrolladores subir el código de su aplicación en Java, Python o Node.js for que AWS gestione automáticamente el aprovisionamiento, balanceo de carga y Auto Scaling",
+    "options": {
+      "A": "AWS Elastic Beanstalk",
+      "B": "Amazon EC2",
+      "C": "AWS CloudFormation",
+      "D": "AWS CodeDeploy"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Es la solución PaaS de AWS for deploy y escalar applications y servicios web without preocuparse by la infraestructura subyacente.",
+    "hint2": "El desarrollador solo sube su código y Beanstalk se encarga del despliegue completo manteniendo el control total si se desea.",
+    "explanation": "1. Option A is correct because correcta porque AWS Elastic Beanstalk es un servicio PaaS que abstrae la gestión de la infraestructura desplegando y escalando applications automáticamente a partir del código suministrado.\n2. The key requirement is el despliegue administrado tipo PaaS for código de aplicación web.\n3. Distractors: B exige administrar servers e infraestructura de forma manual (IaaS); C es for describir IaC en YAML; D ejecuta el despliegue pero no aprovisiona la plataforma automáticamente.\n4. Key concept to learn: Concepto clave: Plataforma como Servicio with AWS Elastic Beanstalk.",
+    "concept": "Plataforma como Servicio PaaS",
+    "service": "AWS Elastic Beanstalk"
+  },
+  {
+    "id": 487,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify analytics services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company recopila millones de eventos de clics web en tiempo real from applications móviles. Necesitan un servicio que capture, procese y transmita este flujo continuo de data with low latency towards Amazon S3. Qué servicio es el más adecuado",
+    "options": {
+      "A": "Amazon Kinesis Data Streams / Firehose",
+      "B": "AWS Glue",
+      "C": "Amazon Athena",
+      "D": "AWS Storage Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Diseñado específicamente for la ingestión y procesamiento de flujos de data en tiempo real (streaming).",
+    "hint2": "Kinesis Data Firehose puede cargar automáticamente los data en tiempo real towards S3, Redshift u OpenSearch.",
+    "explanation": "1. Option A is correct because correcta porque la familia Amazon Kinesis captura y procesa streams de data en tiempo real a escala masiva.\n2. The key requirement is la ingestión y transmisión de flujos continuos de data en tiempo real (streaming).\n3. Distractors: B (Glue) es for procesamiento ETL by lotes; C realiza consultas SQL over data estáticos en S3; D conecta almacenamiento local.\n4. Key concept to learn: Concepto clave: Procesamiento de streaming with Amazon Kinesis.",
+    "concept": "Procesamiento de data en tiempo real",
+    "service": "Amazon Kinesis"
+  },
+  {
+    "id": 488,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AI/ML services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which plataforma integral de AWS proporciona un entorno de trabajo completo for que los ingenieros de data y científicos creen, entrenen, optimicen y desplieguen modelos personalizados de Aprendizaje Automático (ML) a escala",
+    "options": {
+      "A": "Amazon SageMaker AI",
+      "B": "Amazon Rekognition",
+      "C": "Amazon Bedrock",
+      "D": "Amazon Comprehend"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Proporciona notebooks Jupyter administrados, algoritmos optimizados y herramientas de entrenamiento y despliegue de modelos de ML.",
+    "hint2": "A diferencia de los servicios de IA pre-entrenados, allows construir modelos totalmente personalizados with código propio.",
+    "explanation": "1. Option A is correct because correcta porque Amazon SageMaker AI es la plataforma integral for el desarrollo, entrenamiento y despliegue de modelos personalizados de aprendizaje automático.\n2. The key requirement is la creación y entrenamiento de modelos personalizados de Machine Learning from cero o with algoritmos propios.\n3. Distractors: B y D son servicios de IA with modelos pre-entrenados by AWS for visión o lenguaje; C es el servicio for modelos fundacionales de IA generativa.\n4. Key concept to learn: Concepto clave: Plataforma de Machine Learning with Amazon SageMaker AI.",
+    "concept": "Plataforma de Machine Learning",
+    "service": "Amazon SageMaker AI"
+  },
+  {
+    "id": 489,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.1: Compare AWS pricing models",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company plans to run una relational database crítica de manera continua durupon los próximos 3 años. Tienen plena certeza de sus necesidades de cómputo y desean obtener el máximo ahorro posible en comparación with el precio on-demand. Qué opción debe elegir",
+    "options": {
+      "A": "Instancias On-Demand",
+      "B": "Instancias Spot",
+      "C": "Reserved Instances / Savings Plans de 3 años",
+      "D": "Instancias dedicadas without compromiso"
+    },
+    "correct": [
+      "C"
+    ],
+    "hint1": "Exige un compromiso de uso continuo de 1 o 3 años a cambio de descuentos de up to el 72%.",
+    "hint2": "Es la mejor opción for workloads estables with un perfil de uso predecible de estado uniforme.",
+    "explanation": "1. Option C is correct because correcta porque las Instancias Reservadas y los Savings Plans ofrecen los mayores descuentos for workloads predecibles y continuas with un compromiso de 1 o 3 años.\n2. The key requirement is el compromiso de uso continuo by 3 años for una carga estable que no puede ser interrumpida.\n3. Distractors: A es más costsa al no tener compromiso; B (Spot) puede ser interrumpida y no es apta for bases de data de producción crítica continua; D no otorga descuentos by compromiso.\n4. Key concept to learn: Concepto clave: Modelos de precios de EC2 (Instancias Reservadas / Savings Plans).",
+    "concept": "Modelos de compra de cómputo",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 490,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Identify billing and cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Un director de TI wants to recibir una alerta automatizada by correo electrónico en cuanto los costs acumulados de la cuenta de AWS alcancen el 80% del presupuesto de $5,000 asignado for el mes en curso. Qué herramienta debe configurar",
+    "options": {
+      "A": "AWS Cost Explorer",
+      "B": "AWS Budgets",
+      "C": "AWS Pricing Calculator",
+      "D": "Informe de costo y uso de AWS (CUR)"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permite establecer presupuestos personalizados de costo o uso y configure alertas proactivas basadas en valores reales o pronosticados.",
+    "hint2": "A diferencia de Cost Explorer (que analiza el pasado), este servicio envía notificaciones proactivas automatizadas.",
+    "explanation": "1. Option B is correct because correcta porque AWS Budgets allows configure límites presupuestarios personalizados y enviar alertas automáticas by email o SNS al superar un porcentaje umbral definido.\n2. The key requirement is la configuración de alertas proactivas upon sobrecosts presupuestados.\n3. Distractors: A (Cost Explorer) sirve for visualizar y analyze gastos pasados; C se usa before comprar; D genera archivos CSV detallados en S3.\n4. Key concept to learn: Concepto clave: Presupuestos y alertas with AWS Budgets.",
+    "concept": "Control presupuestario y alertas",
+    "service": "AWS Budgets"
+  },
+  {
+    "id": 491,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Identify billing and cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company wants to estimar el costo mensual aproximado que tendría el despliegue de una nueva arquitectura que incluye 10 instancias EC2, 2 bases de data RDS y un bucket S3 ANTES de comenzar a aprovisionar los resources en AWS. Qué herramienta debe utilizar",
+    "options": {
+      "A": "AWS Cost Explorer",
+      "B": "AWS Pricing Calculator",
+      "C": "Consola de Facturación de AWS",
+      "D": "AWS Trusted Advisor"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Es una herramienta gratuita basada en la web for modelar y estimar los costs esperados de los servicios de AWS before su compra o uso.",
+    "hint2": "Permite agregar múltiples servicios y exportar un desglose detallado de los costs proyectados.",
+    "explanation": "1. Option B is correct because correcta porque AWS Pricing Calculator se utiliza antes del despliegue for estimar y planificar los costs anticipados de una arquitectura en AWS.\n2. The key requirement is la estimación previa de costs before aprovisionar infraestructura.\n3. Distractors: A (Cost Explorer) analiza gastos de resources ya consumidos; C muestra facturas pasadas/actuales; D evalúa buenas prácticas de resources activos.\n4. Key concept to learn: Concepto clave: Estimación previa de costs with AWS Pricing Calculator.",
+    "concept": "Estimación de costs previa",
+    "service": "AWS Pricing Calculator"
+  },
+  {
+    "id": 492,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Identify billing and cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which herramienta de gestión financiera de AWS ofrece gráficos interactivos for analyze las tendencias de gasto histórico de los últimos 12 meses y genera pronósticos de costs for los siguientes meses",
+    "options": {
+      "A": "AWS Cost Explorer",
+      "B": "AWS Pricing Calculator",
+      "C": "AWS License Manager",
+      "D": "AWS Purchase Order Management"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Permite filtrar y agrupar los gastos by cuenta, servicio, etiqueta de asignación de costs o región.",
+    "hint2": "Proporciona informes predefinidos y la capacidad de crear vistas personalizadas de los costs pasados.",
+    "explanation": "1. Option A is correct because correcta porque AWS Cost Explorer allows visualizar, analyze y crear gráficos over los costs históricos y patrones de consumo consumidos a lo largo del tiempo.\n2. The key requirement is el análisis de tendencias históricas de gastos y generación de pronósticos de uso activo.\n3. Distractors: B es for estimaciones previas a la compra; C gestiona licencias de software de terceros; D gestiona órdenes de compra contables.\n4. Key concept to learn: Concepto clave: Análisis de gasto histórico with AWS Cost Explorer.",
+    "concept": "Visualización de costs",
+    "service": "AWS Cost Explorer"
+  },
+  {
+    "id": 493,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS Support plans and resources",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Una pequeña empresa utiliza AWS for entornos de pruebas no críticos. Necesitan acceso a soporte técnico by correo electrónico en horario laboral with un tiempo de respuesta menor a 12 horas for consultas de arquitectura básica. Cuál es el plan de soporte MÍNIMO que cumple este requisito",
+    "options": {
+      "A": "AWS Support Plan — Basic",
+      "B": "AWS Support Plan — Developer",
+      "C": "AWS Support Plan — Business",
+      "D": "AWS Support Plan — Enterprise"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Proporciona soporte de orientación arquitectónica y resolución de problemas by correo electrónico en horas de oficina.",
+    "hint2": "Es la opción económica recomendada for cuentas with entornos de desarrollo o pruebas.",
+    "explanation": "1. Option B is correct because correcta porque el plan Developer Support incluye asistencia técnica by correo en horario laboral with tiempo de respuesta <12 horas a un precio básico muy accesible.\n2. The key requirement is el nivel mínimo de pago with soporte by correo for entornos de desarrollo en horario laboral.\n3. Distractors: A (Basic) no incluye soporte técnico by casos; C (Business) incluye soporte 24/7 by teléfono/chat; D es el nivel más alto for sistemas críticos.\n4. Key concept to learn: Concepto clave: Planes de soporte de AWS (Plan Developer).",
+    "concept": "Planes de soporte de AWS",
+    "service": "AWS Support"
+  },
+  {
+    "id": 494,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS Support plans and resources",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Una aplicación de comercio electrónico que procesa millones de dólares en ventas tiene sus servers en producción caídos by un problema crítico. Cuentan with el plan de soporte AWS Business Support. Cuál es el SLA de tiempo de respuesta garantizado by AWS for este caso de 'Production System Down'",
+    "options": {
+      "A": "Menos de 15 minutos",
+      "B": "Menos de 1 hora",
+      "C": "Menos de 4 horas",
+      "D": "Menos de 24 horas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El plan Business Support ensures una respuesta técnica en menos de 1 hora for eventos donde un sistema de producción resulta gravemente afectado o caído.",
+    "hint2": "El tiempo de respuesta de <15 minutos está reservado únicamente for el plan Enterprise Support (o Enterprise On-Ramp) en caso de sistemas críticos de negocio.",
+    "explanation": "1. Option B is correct because correcta porque el plan Business Support establece un compromiso de respuesta (SLA) menor a 1 hora for incidentes donde un sistema de producción está caído ('Production System Down').\n2. The key requirement is el SLA de respuesta del plan Business Support upon fallas de producción.\n3. Distractors: A (<15 min) corresponde al plan Enterprise Support for 'Business Critical System Down'; C (<4h) es for sistemas de producción impactados pero no caídos completamente; D no refleja el nivel de servicio de producción.\n4. Key concept to learn: Concepto clave: SLAs de respuesta en los planes de soporte de AWS.",
+    "concept": "Escalera de tiempos de respuesta de soporte",
+    "service": "AWS Support"
+  },
+  {
+    "id": 495,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS Support plans and resources",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Which figura o rol técnico de AWS está dedicado exclusivamente a los customers with el plan Enterprise Support for brindar asesoría técnica proactiva, revisiones arquitectónicas y actuar como su punto de contacto principal within AWS",
+    "options": {
+      "A": "AWS Concierge Support Team",
+      "B": "Technical Account Manager (TAM)",
+      "C": "Arquitecto de Soluciones de AWS",
+      "D": "Gerente de Facturación Unificada"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Acompaña al cliente en su viaje a la nube ofreciendo orientación operativa y estratégica constante.",
+    "hint2": "Solo está disponible como un recurso dedicado en los planes Enterprise Support y Enterprise On-Ramp.",
+    "explanation": "1. Option B is correct because correcta porque el Technical Account Manager (TAM) es el asesor técnico asignado exclusivamente en el plan Enterprise Support for ayudar en la gobernanza y excelencia operativa.\n2. The key requirement is la figura técnica dedieach asignada a la cuenta en el plan Enterprise.\n3. Distractors: A (Concierge) atiende problemas de facturación y cuentas, no arquitectónicos; C es un rol de ventas/soluciones general; D no es un término de rol oficial de soporte.\n4. Key concept to learn: Concepto clave: Rol del Technical Account Manager (TAM).",
+    "concept": "Soporte Enterprise",
+    "service": "AWS Support"
+  },
+  {
+    "id": 496,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Identify billing and cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A corporation administra 20 cuentas de AWS pertenecientes a diferentes filiales. Desea consolidar la facturación en una sola cuenta pagadora maestra for simplificar los pagos y aprovechar descuentos by volumen masivo de almacenamiento en S3. Qué servicio debe configurar",
+    "options": {
+      "A": "Facturación Unifieach (Consolidated Billing) en AWS Organizations",
+      "B": "AWS Cost Explorer Multi-Account",
+      "C": "AWS Service Catalog",
+      "D": "AWS License Manager"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Combina el consumo de all las cuentas vinculadas for calcular tramos de descuento by volumen acumulado.",
+    "hint2": "Genera una sola factura centralizada consolidada asignada a la cuenta administradora.",
+    "explanation": "1. Option A is correct because correcta porque la Facturación Unifieach (Consolidated Billing) en AWS Organizations centraliza el pago de múltiples cuentas y acumula el volumen total de uso for alcanzar tarifas reducidas by escala.\n2. The key requirement is la consolidación del pago de múltiples cuentas y acumulación de uso for descuentos by volumen.\n3. Distractors: B es for visualizar informes pero no unifica el pago legal; C gestiona catálogos de servicios aprobados; D gestiona licencias de software.\n4. Key concept to learn: Concepto clave: Facturación Unifieach (Consolidated Billing).",
+    "concept": "Facturación consolidada multi-cuenta",
+    "service": "AWS Organizations"
+  },
+  {
+    "id": 497,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.1: Compare AWS pricing models",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "En cuál de los siguientes escenarios de red AWS cobra una tarifa by la transferencia de data (Data Transfer Out)",
+    "options": {
+      "A": "Transferencia de data entrantes from internet towards un bucket de Amazon S3",
+      "B": "Transferencia de data between dos instancias EC2 ubicadas en la misma Availability Zone using direcciones IP privadas",
+      "C": "Transferencia de data salientes from un bucket de Amazon S3 towards internet",
+      "D": "Transferencia de data between servicios de AWS ubicados within la misma Región a través de un VPC Endpoint"
+    },
+    "correct": [
+      "C"
+    ],
+    "hint1": "Como regla general en AWS, el ingreso de data (Data Transfer IN) from internet es gratuito, mientras que el egreso (Data Transfer OUT) a internet se cobra by Gigabyte.",
+    "hint2": "Las transferencias salientes towards internet generan cobros progresivos según el volumen transferido.",
+    "explanation": "1. Option C is correct because correcta porque AWS cobra la transferencia de data salientes (Data Transfer Out) from sus servicios towards internet público.\n2. The key requirement is la identificación de eventos with costo by egreso de data towards internet.\n3. Distractors: A (Data Transfer IN) es totalmente gratuito; B (tráfico inter-EC2 intra-AZ by IP privada) tiene costo cero o despreciable según interfaz; D within la misma región by VPC endpoint es tráfico interno without egreso a internet.\n4. Key concept to learn: Concepto clave: Precios de transferencia de data en AWS.",
+    "concept": "Cobros by transferencia de data",
+    "service": "AWS Data Transfer"
+  },
+  {
+    "id": 498,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Identify billing and cost management tools",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "Un equipo de finanzas needs to desglosar y filtrar los costs de la factura mensual de AWS by departamento (by ejemplo, 'CentroDeCostos=102' o 'Proyecto=MobileApp'). Qué mecanismo de etiquetado deben activar",
+    "options": {
+      "A": "Etiquetas de asignación de costs (Cost Allocation Tags)",
+      "B": "Políticas de control de servicio (SCPs)",
+      "C": "Reglas de cumplimiento de AWS Config",
+      "D": "Etiquetas de VPC Peering"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Permite que AWS incluya las claves y valores de las etiquetas asociadas a los resources directamente en las herramientas de facturación.",
+    "hint2": "Pueden ser etiquetas creadas by AWS o definidas a medida by el usuario.",
+    "explanation": "1. Option A is correct because correcta porque las 'Cost Allocation Tags' organizan y categorizan los resources en los informes de facturación de AWS facilitando la atribución precisa de gastos by departamento o proyecto.\n2. The key requirement is la categorización y desglose de la factura through etiquetas de resources.\n3. Distractors: B aplica guardarraíles de seguridad; C audita configuraciones de resources; D se refiere a enrutamiento de red.\n4. Key concept to learn: Concepto clave: Asignación de costs through etiquetas.",
+    "concept": "Categorización de costs",
+    "service": "AWS Cost Allocation Tags"
+  },
+  {
+    "id": 499,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS Support plans and resources",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Un usuario with el plan de soporte 'Developer' intenta run una verificación completa de seguridad y límites de servicio en AWS Trusted Advisor pero nota que solo tiene acceso a 7 verificaciones básicas. Qué debe hacer for desbloquear los controles completos (Full Trusted Advisor Checks)",
+    "options": {
+      "A": "Actualizar su plan de soporte al nivel Business o Enterprise",
+      "B": "Crear un caso de soporte with categoría de emergencia",
+      "C": "Solicitar un aumento de cuota en AWS Service Quotas",
+      "D": "Habilitar la autenticación de múltiples factores en el usuario raíz"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Los planes Basic y Developer solo incluyen 7 verificaciones básicas de Trusted Advisor.",
+    "hint2": "El acceso a la suite completa de verificaciones en los 5 pilares rewants to los planes Business, Enterprise On-Ramp o Enterprise.",
+    "explanation": "1. Option A is correct because correcta porque las comprobaciones completas de AWS Trusted Advisor están reservadas for los planes de soporte de nivel Business o Enterprise.\n2. The key requirement is la actualización del plan de soporte for acceder a los controles completos de Trusted Advisor.\n3. Distractors: B no cambia el nivel del plan de soporte; C eleva límites de resources individuales; D es una buena práctica de seguridad pero no desbloquea las comprobaciones de Trusted Advisor.\n4. Key concept to learn: Concepto clave: Trusted Advisor en los planes de soporte.",
+    "concept": "Acceso a verificaciones de Trusted Advisor",
+    "service": "AWS Trusted Advisor"
+  },
+  {
+    "id": 500,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Identify billing and cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which archivo de data detallado, almacenado periódicamente en un bucket de S3 en formato CSV, proporciona el desglose más exhaustivo y granulado posible de los costs y el consumo by hora de each recurso de la cuenta de AWS",
+    "options": {
+      "A": "Informe de costo y uso de AWS (AWS Cost and Usage Report — CUR)",
+      "B": "Resumen Ejecutivo de AWS Pricing Calculator",
+      "C": "Log de eventos de AWS CloudTrail",
+      "D": "Historial de métricas de Amazon CloudWatch"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Contiene el conjunto de data de facturación más detallado disponible en la plataforma.",
+    "hint2": "Incluye metadata adicionales de los resources, etiquetas de costs, tarifas with descuento e información de instancias reservadas.",
+    "explanation": "1. Option A is correct because correcta porque el AWS Cost and Usage Report (CUR) entrega los registros de facturación with el mayor nivel de detalle granulado by hora for su análisis with Athena o herramientas de BI.\n2. The key requirement is la generación de informes detallados y granulados a nivel de hora exportables en CSV towards S3.\n3. Distractors: B es una estimación previa; C registra eventos de API without información contable detallada; D guarda métricas operativas como uso de CPU.\n4. Key concept to learn: Concepto clave: Informe de costo y uso de AWS (CUR).",
+    "concept": "Reportes granulados de facturación",
+    "service": "AWS Cost and Usage Report"
+  }
+]

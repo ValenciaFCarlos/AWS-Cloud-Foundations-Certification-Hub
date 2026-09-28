@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 801,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A mobile gaming company needs to launch new test servers in minutes instead of weeks. Which AWS Cloud advantage directly supports this agility?",
+    "options": {
+      "A": "Mandatory fixed annual payments for compute capacity",
+      "B": "Rapid, self-service, on-demand resource provisioning",
+      "C": "Exclusive access to dedicated physical hardware at no extra cost",
+      "D": "Total elimination of encryption for data in transit"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Think about how quickly resources can be created in the console or CLI.",
+    "hint2": "Rule out options that involve fixed costs or dedicated hardware.",
+    "explanation": "1. Option B is correct because on-demand provisioning allows creating instances in minutes.\n2. Key requirement: speed and agility in launching.\n3. Distractors: A describes CapEx; C mentions unnecessary dedicated hardware; D is a security risk.\n4. Key lesson: Agility stems from automated on-demand provisioning.",
+    "concept": "Cloud Agility",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 802,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "How does AWS manage to offer continually lower pay-as-you-go prices as its customer base grows?",
+    "options": {
+      "A": "Passing physical maintenance costs on to customers",
+      "B": "Aggregating massive usage from hundreds of thousands of customers to achieve economies of scale",
+      "C": "Charging fixed monthly fees regardless of usage",
+      "D": "Restricting access to international regions"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Consider the financial benefit derived from AWS's large customer volume.",
+    "hint2": "Massive usage enables negotiating better hardware and infrastructure prices.",
+    "explanation": "1. Option B is correct because economies of scale reduce unit costs by aggregating global usage.\n2. Key requirement: understand the economic principle behind the price reductions.\n3. Distractors: A and C contradict the AWS model; D does not influence aggregate pricing.\n4. Key lesson: Economies of scale = higher aggregate usage, lower prices.",
+    "concept": "Economies of Scale",
+    "service": "AWS Pricing"
+  },
+  {
+    "id": 803,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify aspect of AWS Cloud economics",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A web application experiences sudden traffic spikes during flash sales and then returns to low traffic. Which AWS concept describes the ability to automatically adapt infrastructure to these fluctuations?",
+    "options": {
+      "A": "Fixed fault tolerance",
+      "B": "Elasticity",
+      "C": "Static governance",
+      "D": "Fixed provisioned capacity"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "It is the ability to automatically increase and decrease resources based on actual demand.",
+    "hint2": "Distinguish between vertical scaling and the dynamic nature of elasticity.",
+    "explanation": "1. Option B is correct because elasticity automatically adjusts capacity up and down.\n2. Key requirement: Respond dynamically to demand peaks and valleys.\n3. Distractors: A and C do not address capacity scaling; D causes overspending or outages.\n4. Key lesson: Elasticity = automatic adaptation to demand dynamically.",
+    "concept": "Elasticity",
+    "service": "Auto Scaling"
+  },
+  {
+    "id": 804,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A banking organization in Germany must ensure that its customers' data never leaves German territory due to strict regulations. How does AWS's regional structure help meet this requirement?",
+    "options": {
+      "A": "AWS automatically replicates all data across every region in the world",
+      "B": "Customers choose the specific AWS Region (e.g., eu-central-1 Frankfurt) where their data is stored, and AWS does not move it without authorization",
+      "C": "AWS Regions have no defined geographic boundaries",
+      "D": "The root account dynamically decides the physical location every 24 hours"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "In AWS, the customer retains full control over the geographic location of their data by selecting the Region.",
+    "hint2": "AWS guarantees that data remains in the Region chosen by the customer.",
+    "explanation": "1. Option B is correct because Region selection determines the physical location and sovereignty of the data.\n2. Key requirement: Compliance with local data sovereignty regulations.\n3. Distractors: A violates data privacy; C is false; D is incorrect.\n4. Key lesson: Data sovereignty = customer control over the storage Region.",
+    "concept": "Data Sovereignty",
+    "service": "AWS Regions"
+  },
+  {
+    "id": 805,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An IT operations team wants to automate infrastructure deployments using templates and treat changes as evolving code. Which pillar of the AWS Well-Architected Framework supports this practice?",
+    "options": {
+      "A": "Operational Excellence",
+      "B": "Sustainability",
+      "C": "Cost Optimization",
+      "D": "Performance Efficiency"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "This pillar focuses on running and monitoring systems, and continuously improving operational processes.",
+    "hint2": "Pay attention to the principle of 'performing operations as code'.",
+    "explanation": "1. Option A is correct because Operational Excellence promotes operations as code and automated infrastructure.\n2. Key requirement: Automate operations and changes through code.\n3. Distractors: B is environmental; C focuses on spending; D on speed/compute.\n4. Key lesson: Operations as code is a key principle of the Operational Excellence pillar.",
+    "concept": "Operational Excellence",
+    "service": "Well-Architected Framework"
+  },
+  {
+    "id": 806,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which Well-Architected pillar emphasizes protecting data in transit and at rest, strong identity management, and traceability through audit logs?",
+    "options": {
+      "A": "Reliability",
+      "B": "Security",
+      "C": "Cost Optimization",
+      "D": "Operational Excellence"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Look for the pillar focused on confidentiality, integrity, and asset protection.",
+    "hint2": "The keywords are data protection, encryption, and identities.",
+    "explanation": "1. Option B is correct because the Security pillar protects information and systems in the cloud.\n2. Key requirement: Protection of data, identities, and traceability.\n3. Distractors: A deals with availability; C with costs; D with operational processes.\n4. Key lesson: The Security pillar addresses identities, encryption, network protection, and traceability.",
+    "concept": "Security Pillar",
+    "service": "Well-Architected Framework"
+  },
+  {
+    "id": 807,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company requires its application to automatically recover from component failures and scale dynamically to meet demand without interruption. Which Well-Architected Framework pillar addresses this resilience?",
+    "options": {
+      "A": "Reliability",
+      "B": "Sustainability",
+      "C": "Performance Efficiency",
+      "D": "Cost Optimization"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "This pillar focuses on preventing and quickly recovering from service disruptions.",
+    "hint2": "It relates failure recovery to system resilience.",
+    "explanation": "1. Option A is correct because Reliability ensures a system works correctly and recovers from failures.\n2. Key requirement: Automatic failure recovery and resilience.\n3. Distractors: B focuses on environmental impact; C on efficient compute use; D on budget.\n4. Key lesson: Reliability = recovering from disruptions and resilient scaling.",
+    "concept": "Reliability Pillar",
+    "service": "Well-Architected Framework"
+  },
+  {
+    "id": 808,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "When designing a solution, an architect decides to use serverless architectures such as AWS Lambda instead of keeping EC2 servers running continuously to process sporadic events. Which pillar promotes the democratization of advanced technologies and efficient use of computing resources?",
+    "options": {
+      "A": "Performance Efficiency",
+      "B": "Security",
+      "C": "Operational Excellence",
+      "D": "Sustainability"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It refers to using computing resources efficiently to meet system requirements.",
+    "hint2": "Focus on the appropriate selection of resources and advanced serverless technologies.",
+    "explanation": "1. Option A is correct because Performance Efficiency drives the optimal and efficient selection of technology.\n2. Key requirement: Use the optimal compute type for the workload.\n3. Distractors: B is protection; C is operations; D is long-term environmental consumption.\n4. Key lesson: Performance Efficiency = selecting and monitoring optimal resources.",
+    "concept": "Performance Efficiency",
+    "service": "Well-Architected Framework"
+  },
+  {
+    "id": 809,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which Well-Architected pillar includes the principle of 'adopt a consumption model' and measures overall efficiency by eliminating undifferentiated heavy lifting spend?",
+    "options": {
+      "A": "Cost Optimization",
+      "B": "Reliability",
+      "C": "Security",
+      "D": "Operational Excellence"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It is about running systems to deliver business value at the lowest possible price.",
+    "hint2": "Identify the economic and financial pillar of the framework.",
+    "explanation": "1. Option A is correct because Cost Optimization seeks to maximize business value by reducing unnecessary expenses.\n2. Key requirement: Pay only for what is used and attribute expenditure accurately.\n3. Distractors: B, C, and D correspond to other, non-financial pillars.\n4. Key lesson: Cost Optimization = consumption model and eliminating undifferentiated spend.",
+    "concept": "Cost Optimization",
+    "service": "Well-Architected Framework"
+  },
+  {
+    "id": 810,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand Well-Architected Framework",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An organization wants to minimize the environmental impact of its cloud workloads by reducing the energy consumption of its compute resources. Which Well-Architected pillar covers this goal?",
+    "options": {
+      "A": "Sustainability",
+      "B": "Security",
+      "C": "Reliability",
+      "D": "Operational Excellence"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "This pillar addresses the environmental impacts and ecological footprint of cloud usage.",
+    "hint2": "The keywords are energy consumption and environmental impact.",
+    "explanation": "1. Option A is correct because the Sustainability pillar focuses on minimizing overall environmental impact.\n2. Key requirement: Maximize energy efficiency and resource utilization.\n3. Distractors: B, C, and D do not focus on ecological or carbon footprint.\n4. Key lesson: Sustainability = understanding and minimizing environmental impact.",
+    "concept": "Sustainability Pillar",
+    "service": "Well-Architected Framework"
+  },
+  {
+    "id": 811,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "In the AWS Cloud Adoption Framework (CAF), which perspective helps ensure cloud investments align with organizational financial strategies and business outcomes?",
+    "options": {
+      "A": "Business Perspective",
+      "B": "Platform Perspective",
+      "C": "Operations Perspective",
+      "D": "Security Perspective"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "This perspective involves financial managers, budget owners, and strategists.",
+    "hint2": "Relate ROI alignment to the Business area.",
+    "explanation": "1. Option A is correct because the CAF Business perspective ensures adoption creates business value and ROI.\n2. Key requirement: Alignment between financial strategy and technology adoption goals.\n3. Distractors: B addresses technical architecture; C addresses IT operations; D addresses risk.\n4. Key lesson: CAF Business perspective = business value, monetization, and financial model.",
+    "concept": "AWS CAF - Business",
+    "service": "AWS CAF"
+  },
+  {
+    "id": 812,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which AWS CAF perspective serves as a bridge between technology and business culture, focusing on staff training, accelerating change, and organizational design?",
+    "options": {
+      "A": "People Perspective",
+      "B": "Governance Perspective",
+      "C": "Security Perspective",
+      "D": "Platform Perspective"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It focuses on cultural evolution, cloud training, and workforce fluency.",
+    "hint2": "Talent management and cultural change belong to People.",
+    "explanation": "1. Option A is correct because the CAF People perspective prepares the organization for cultural and skills transformation.\n2. Key requirement: Skills development and organizational change management.\n3. Distractors: B focuses on governance; C on risk; D on architecture.\n4. Key lesson: CAF People perspective = culture, continuous learning, and cloud fluency.",
+    "concept": "AWS CAF - People",
+    "service": "AWS CAF"
+  },
+  {
+    "id": 813,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to coordinate its cloud initiatives through portfolio management, benefits measurement, and program risk management. Which AWS CAF perspective guides these activities?",
+    "options": {
+      "A": "Governance Perspective",
+      "B": "Platform Perspective",
+      "C": "People Perspective",
+      "D": "Business Perspective"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It helps orchestrate cloud initiatives while maximizing organizational benefits and minimizing risks.",
+    "hint2": "Associate project management and data governance with Governance.",
+    "explanation": "1. Option A is correct because the CAF Governance perspective organizes transformation programs and risk control.\n2. Key requirement: Orchestrate initiatives and manage project portfolios.\n3. Distractors: B is technical; C is cultural; D is business strategy.\n4. Key lesson: CAF Governance = portfolio management, data governance, and risk.",
+    "concept": "AWS CAF - Governance",
+    "service": "AWS CAF"
+  },
+  {
+    "id": 814,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which technical AWS CAF perspective supports building a scalable hybrid cloud architecture, data engineering, and modernizing existing applications?",
+    "options": {
+      "A": "Platform Perspective",
+      "B": "Operations Perspective",
+      "C": "People Perspective",
+      "D": "Business Perspective"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It centers on technical infrastructure, data architecture, and environment provisioning.",
+    "hint2": "It is the perspective responsible for the technology foundation and CI/CD tooling.",
+    "explanation": "1. Option A is correct because the Platform perspective defines the technical architecture and infrastructure services.\n2. Key requirement: Design and modernize technology platforms.\n3. Distractors: B deals with daily operational support; C with culture; D with business benefits.\n4. Key lesson: CAF Platform = platform architecture, CI/CD, and data engineering.",
+    "concept": "AWS CAF - Platform",
+    "service": "AWS CAF"
+  },
+  {
+    "id": 815,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A CISO team needs to define controls for the confidentiality, integrity, and availability of workloads on AWS. Which AWS CAF perspective covers these capabilities?",
+    "options": {
+      "A": "Security Perspective",
+      "B": "Operations Perspective",
+      "C": "Governance Perspective",
+      "D": "Platform Perspective"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It addresses identity management, data protection, and security incident response.",
+    "hint2": "It is the perspective focused on cybersecurity posture.",
+    "explanation": "1. Option A is correct because the CAF Security perspective covers data protection and vulnerability management.\n2. Key requirement: Ensure confidentiality, integrity, and regulatory compliance.\n3. Distractors: B is service delivery; C is projects; D is infrastructure.\n4. Key lesson: CAF Security = asset protection, access management, and incident response.",
+    "concept": "AWS CAF - Security",
+    "service": "AWS CAF"
+  },
+  {
+    "id": 816,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which perspective of the AWS CAF framework ensures cloud services are run, monitored, and maintained at a level that meets the business's operational needs (observability, incident management, and patching)?",
+    "options": {
+      "A": "Operations Perspective",
+      "B": "Business Perspective",
+      "C": "Platform Perspective",
+      "D": "Governance Perspective"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It focuses on observability, change management, and continuous maintenance of services.",
+    "hint2": "It is the perspective that oversees day-to-day operational health.",
+    "explanation": "1. Option A is correct because the Operations perspective ensures excellence in day-to-day operational performance.\n2. Key requirement: Observability, service continuity, and incident response.\n3. Distractors: B is business strategy; C is architecture; D is portfolio management.\n4. Key lesson: CAF Operations = observability, patch and incident management.",
+    "concept": "AWS CAF - Operations",
+    "service": "AWS CAF"
+  },
+  {
+    "id": 817,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to quickly migrate 200 on-premises virtual servers to Amazon EC2 without making any modifications to application code or operating systems ('lift-and-shift'). Which migration strategy describes this approach?",
+    "options": {
+      "A": "Rehost",
+      "B": "Refactor",
+      "C": "Repurchase",
+      "D": "Retire"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Popularly known as 'lift-and-shift', it moves machines without changing their configuration.",
+    "hint2": "Rule out options that require changing code or migrating to SaaS.",
+    "explanation": "1. Option A is correct because Rehost involves moving applications to the cloud without structural modifications.\n2. Key requirement: Fast 'lift-and-shift' migration without code changes.\n3. Distractors: B involves modifying code; C is switching to SaaS software; D is decommissioning the system.\n4. Key lesson: Rehost = lift-and-shift with no modifications.",
+    "concept": "Rehost Strategy",
+    "service": "AWS Migration"
+  },
+  {
+    "id": 818,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "During a migration project, an organization decides to move its on-premises relational database to Amazon RDS to reduce OS patch-management overhead, while keeping the application code intact ('lift-tinker-and-shift'). Which migration strategy applies?",
+    "options": {
+      "A": "Replatform",
+      "B": "Rehost",
+      "C": "Retain",
+      "D": "Refactor"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Known as 'lift-tinker-and-shift', it makes minor optimizations at the managed infrastructure level without changing the core logic.",
+    "hint2": "Moving from a self-managed DB to managed RDS is a classic example.",
+    "explanation": "1. Option A is correct because Replatform makes infrastructure optimizations (such as adopting managed services) without changing the application's architecture.\n2. Key requirement: Reduce management overhead by switching to a managed service without touching code.\n3. Distractors: B keeps the virtual machine intact; D rewrites the entire architecture; C does not migrate anything.\n4. Key lesson: Replatform = lift-tinker-and-shift with managed services.",
+    "concept": "Replatform Strategy",
+    "service": "AWS Migration"
+  },
+  {
+    "id": 819,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company wants to redesign a legacy monolithic application into a serverless, microservices-based architecture using AWS Lambda and Amazon DynamoDB to take advantage of native cloud scalability. Which migration strategy does this represent?",
+    "options": {
+      "A": "Refactor / Re-architect",
+      "B": "Rehost",
+      "C": "Repurchase",
+      "D": "Retire"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It involves deeply modifying the architecture and code to become 100% cloud-native.",
+    "hint2": "The keywords are complete redesign into microservices/serverless.",
+    "explanation": "1. Option A is correct because Refactor/Re-architect reimagines the application with cloud-native features.\n2. Key requirement: Deep code and architecture changes for the cloud.\n3. Distractors: B does not change code; C purchases a commercial SaaS product; D removes the application.\n4. Key lesson: Refactor = rewriting the architecture to fully leverage cloud-native capabilities.",
+    "concept": "Refactor Strategy",
+    "service": "AWS Migration"
+  },
+  {
+    "id": 820,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An organization decides to abandon its self-managed on-premises CRM system and implement a cloud SaaS service such as Salesforce, available through AWS Marketplace. Which of the 6 Rs strategies does this decision describe?",
+    "options": {
+      "A": "Repurchase (Drop-and-Shop)",
+      "B": "Rehost",
+      "C": "Replatform",
+      "D": "Retain"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "This occurs when a company replaces legacy software with a software-as-a-service (SaaS) solution.",
+    "hint2": "It is the 'drop-and-shop' approach toward an existing commercial solution.",
+    "explanation": "1. Option A is correct because Repurchase involves replacing the current application with a different SaaS product or license.\n2. Key requirement: Migrate by switching to a ready-made commercial SaaS solution.\n3. Distractors: B and C move the existing system; D keeps the on-premises system unchanged.\n4. Key lesson: Repurchase = replacing with a cloud SaaS solution.",
+    "concept": "Repurchase Strategy",
+    "service": "AWS Migration"
+  },
+  {
+    "id": 821,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "During the pre-migration application inventory and discovery process, a company finds that 15% of its servers run obsolete applications that no department uses anymore. Which migration strategy should be applied to these servers?",
+    "options": {
+      "A": "Retire",
+      "B": "Rehost",
+      "C": "Retain",
+      "D": "Replatform"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It involves shutting down or decommissioning resources that no longer add business value.",
+    "hint2": "If the application is not used, the logical step is to deactivate it.",
+    "explanation": "1. Option A is correct because Retire eliminates redundant or useless components identified during discovery.\n2. Key requirement: Identify and shut down unused, obsolete applications.\n3. Distractors: B and D would waste money migrating unneeded systems; C would unnecessarily keep the servers running on-premises.\n4. Key lesson: Retire = shut down unused applications to save resources.",
+    "concept": "Retire Strategy",
+    "service": "AWS Migration"
+  },
+  {
+    "id": 822,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company has a critical mainframe with recent hardware investments and legal dependencies that prevent its immediate migration. They decide to keep it in their on-premises data center for now. Which strategy does this represent?",
+    "options": {
+      "A": "Retain",
+      "B": "Retire",
+      "C": "Rehost",
+      "D": "Repurchase"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It involves postponing migration and keeping the application in its original environment for business or legal reasons.",
+    "hint2": "Keeping it on-premises for now is equivalent to Retain.",
+    "explanation": "1. Option A is correct because Retain means keeping applications in their current environment without modifying or migrating them for now.\n2. Key requirement: Deliberately keep an on-premises system due to constraints.\n3. Distractors: B would remove a useful system; C would move it to the cloud; D would purchase another solution.\n4. Key lesson: Retain = keeping the system in its original location for strategic reasons.",
+    "concept": "Retain Strategy",
+    "service": "AWS Migration"
+  },
+  {
+    "id": 823,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "What financial change does an organization experience when migrating from a traditional on-premises data center to the AWS Cloud?",
+    "options": {
+      "A": "Changing a variable operating expense (OpEx) model for fixed capital expenditures (CapEx)",
+      "B": "Changing high upfront capital expenditures (CapEx) for variable operating expenses (OpEx)",
+      "C": "Completely eliminating IT operating costs",
+      "D": "Paying for the physical depreciation costs of AWS servers"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "AWS eliminates the need to purchase physical hardware upfront (CapEx), replacing it with pay-as-you-consume (OpEx).",
+    "hint2": "CapEx = upfront investment in physical assets; OpEx = operating expenses based on usage.",
+    "explanation": "1. Option B is correct because the cloud allows replacing CapEx with variable OpEx.\n2. Key requirement: Transformation of the traditional IT financial model to the cloud.\n3. Distractors: A reverses the terms; C is false since the cloud still generates variable expenses; D depreciation is AWS's responsibility.\n4. Key lesson: AWS allows replacing upfront CapEx with on-demand OpEx.",
+    "concept": "CapEx to OpEx",
+    "service": "AWS Financials"
+  },
+  {
+    "id": 824,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the AWS Cloud and its value proposition",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "What is a direct consequence of the massive economies of scale that AWS achieves?",
+    "options": {
+      "A": "Periodic price reductions on services as global adoption increases",
+      "B": "A proportional increase in the cost per gigabyte consumed",
+      "C": "A mandatory minimum storage commitment per customer",
+      "D": "Differentiated rates based exclusively on company size"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "As customer volume increases, AWS operates more efficiently and has historically passed those savings on to customers.",
+    "hint2": "Think about the multiple price reductions AWS has made over time.",
+    "explanation": "1. Option A is correct because economies of scale reduce unit costs and lower prices.\n2. Key requirement: Direct effect of massive scale on service pricing.\n3. Distractors: B is the opposite; C and D are traditional models not applied at AWS.\n4. Key lesson: AWS's economies of scale drive continuous price reductions.",
+    "concept": "Benefits of Scale",
+    "service": "AWS Pricing"
+  },
+  {
+    "id": 825,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Under the AWS Shared Responsibility Model, a company configures encryption at rest for its S3 buckets using AWS KMS. What is the customer responsible for in this scenario?",
+    "options": {
+      "A": "The physical security of the hard drives where the bucket is stored",
+      "B": "Managing bucket policy permissions and key access configuration",
+      "C": "The physical destruction of disks with defective sectors",
+      "D": "Maintaining the firmware of AWS's network cards"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "The customer manages everything 'IN' the cloud (data, permissions, key configuration, and policies).",
+    "hint2": "AWS is responsible for the infrastructure and physical durability.",
+    "explanation": "1. Option B is correct because the customer is responsible for configuring access policies and data permissions.\n2. Key requirement: Distinguish customer responsibility in encrypted storage services.\n3. Distractors: A, C, and D correspond to security 'OF' the cloud, which AWS assumes.\n4. Key lesson: Customer = security 'IN' the cloud (data, permissions, policies).",
+    "concept": "Shared Responsibility Model",
+    "service": "Amazon S3 / AWS KMS"
+  },
+  {
+    "id": 826,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "When running an Amazon EC2 instance (IaaS), which of the following tasks is the EXCLUSIVE responsibility of the customer?",
+    "options": {
+      "A": "Applying security patches to the guest operating system and updating applications",
+      "B": "Maintenance of the physical host hardware",
+      "C": "Replacing defective power supplies in the data center",
+      "D": "Physical security of the data center building"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "EC2 is an IaaS service where the customer manages the guest OS, firewall, and installed software.",
+    "hint2": "Everything related to the operating system and above is the customer's task.",
+    "explanation": "1. Option A is correct because in IaaS the customer manages the guest operating system and its patches.\n2. Key requirement: Customer responsibility in IaaS (EC2).\n3. Distractors: B, C, and D are the physical responsibility of AWS's infrastructure.\n4. Key lesson: In EC2, the customer patches the guest OS and maintains the software.",
+    "concept": "Shared Responsibility - EC2",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 827,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Unlike EC2, Amazon RDS is a managed service (PaaS). How does responsibility change with Amazon RDS?",
+    "options": {
+      "A": "The customer must manually install patches for the underlying operating system",
+      "B": "AWS manages the operating system, database engine patches, and physical infrastructure, while the customer manages DB user accounts and query optimization",
+      "C": "AWS is responsible for creating the customer's data tables",
+      "D": "The customer is responsible for maintaining the hardware on which the database runs"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "In PaaS (RDS), AWS takes on management of the operating system and relational engine patches.",
+    "hint2": "The customer retains control over the schema, DB users, and data.",
+    "explanation": "1. Option B is correct because in RDS, AWS manages the operating system and DB engine.\n2. Key requirement: Understand how PaaS reduces the customer's operational burden.\n3. Distractors: A applies to EC2; C and D confuse application and hardware responsibilities.\n4. Key lesson: In PaaS (RDS), AWS handles the OS and database engine patches.",
+    "concept": "Shared Responsibility - RDS",
+    "service": "Amazon RDS"
+  },
+  {
+    "id": 828,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Understand AWS Cloud security and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which security best practice ensures that IAM users and roles have only the permissions necessary to perform their specific tasks and nothing more?",
+    "options": {
+      "A": "Principle of Least Privilege",
+      "B": "Universal Public Access",
+      "C": "Decentralized Single Sign-On",
+      "D": "Open Inline Policies"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It consists of granting only the permissions strictly necessary for a function.",
+    "hint2": "It appears frequently in AWS security guidance.",
+    "explanation": "1. Option A is correct because the principle of least privilege minimizes security risks by granting only strictly necessary access.\n2. Key requirement: Apply the IAM access control best practice.\n3. Distractors: B and D are security vulnerabilities; C is not a least-privilege practice.\n4. Key lesson: Principle of least privilege = grant only the minimum permission required.",
+    "concept": "Principle of Least Privilege",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 829,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Understand AWS Cloud security and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A security administrator requires all users with access to the management console to enter a temporary code generated by a mobile app in addition to their password. Which concept does this practice represent?",
+    "options": {
+      "A": "Multi-Factor Authentication (MFA)",
+      "B": "API Key Rotation",
+      "C": "Unauthenticated Single Sign-On",
+      "D": "Asymmetric Public Key Encryption"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It combines something you know (password) with something you have (mobile device/token).",
+    "hint2": "It adds an essential second layer of protection to login.",
+    "explanation": "1. Option A is correct because MFA requires two or more verification factors to log in.\n2. Key requirement: Protect accounts through two-factor verification.\n3. Distractors: B is for programmatic credentials; C and D do not address user login verification.\n4. Key lesson: MFA combines two or more factors (password + token).",
+    "concept": "Multi-Factor Authentication",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 830,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Understand AWS Cloud security and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An application running on an EC2 instance needs to access an Amazon S3 bucket. What is the MOST secure way to grant this access according to AWS best practices?",
+    "options": {
+      "A": "Store static Access Keys (ID and Secret Key) inside the application's source code",
+      "B": "Assign an IAM Role to the EC2 instance with the necessary permissions",
+      "C": "Make the S3 bucket public to avoid using credentials",
+      "D": "Use root account credentials in the server configuration"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Roles provide temporary credentials that are rotated automatically without exposing static keys.",
+    "hint2": "Never embed permanent secret keys in code.",
+    "explanation": "1. Option B is correct because IAM roles provide secure temporary credentials to EC2 instances.\n2. Key requirement: Avoid static keys embedded in code.\n3. Distractors: A and D expose high-risk credentials; C removes the bucket's security.\n4. Key lesson: Use IAM Roles so instances and services can access other services without static keys.",
+    "concept": "IAM Roles",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 831,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company suffers Distributed Denial of Service (DDoS) cyberattacks at the network layer (Layers 3 and 4) targeting its servers. Which AWS service provides automatic, free protection against the most common DDoS attacks?",
+    "options": {
+      "A": "AWS Shield Standard",
+      "B": "AWS WAF",
+      "C": "Amazon Inspector",
+      "D": "AWS Secrets Manager"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It comes enabled by default and is free for all AWS customers.",
+    "hint2": "Shield Standard protects against DDoS attacks at Layers 3/4.",
+    "explanation": "1. Option A is correct because AWS Shield Standard provides automatic DDoS protection at Layers 3 and 4 at no additional cost.\n2. Key requirement: Automatic network-layer DDoS protection.\n3. Distractors: B operates at Layer 7 (HTTP); C assesses vulnerabilities; D stores secrets.\n4. Key lesson: AWS Shield Standard = free DDoS protection at Layers 3 and 4.",
+    "concept": "AWS Shield Standard",
+    "service": "AWS Shield"
+  },
+  {
+    "id": 832,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An online store needs to filter incoming HTTP requests to block SQL injection and Cross-Site Scripting (XSS) attacks at the application layer (Layer 7). Which service serves this purpose?",
+    "options": {
+      "A": "AWS WAF (Web Application Firewall)",
+      "B": "AWS Shield Standard",
+      "C": "AWS Key Management Service (KMS)",
+      "D": "Amazon Macie"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It lets you create rules to inspect HTTP/HTTPS traffic and block malicious patterns like SQLi and XSS.",
+    "hint2": "It differs from Shield in that it inspects the content of the web request at Layer 7.",
+    "explanation": "1. Option A is correct because AWS WAF protects web applications by analyzing HTTP/HTTPS traffic at Layer 7.\n2. Key requirement: Filter specific web threats such as SQLi and XSS.\n3. Distractors: B protects against network-layer DDoS; C manages keys; D discovers PII in S3.\n4. Key lesson: AWS WAF = Layer 7 firewall against SQLi and XSS.",
+    "concept": "AWS WAF",
+    "service": "AWS WAF"
+  },
+  {
+    "id": 833,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A regulated organization requires exclusive control over dedicated cryptographic key management hardware, complying with the FIPS 140-2 Level 3 standard. Which service satisfies this strict requirement?",
+    "options": {
+      "A": "AWS CloudHSM",
+      "B": "AWS KMS",
+      "C": "AWS Secrets Manager",
+      "D": "AWS IAM Identity Center"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "CloudHSM provides dedicated hardware security modules (HSMs) in the AWS cloud.",
+    "hint2": "KMS is a multi-tenant service managed by AWS; CloudHSM gives full control of the hardware.",
+    "explanation": "1. Option A is correct because AWS CloudHSM offers dedicated hardware regulated under FIPS 140-2 Level 3.\n2. Key requirement: Exclusive dedicated hardware for cryptographic keys.\n3. Distractors: B is a shared managed service run by AWS; C manages secrets; D handles single sign-on.\n4. Key lesson: CloudHSM = dedicated hardware encryption module.",
+    "concept": "AWS CloudHSM",
+    "service": "AWS CloudHSM"
+  },
+  {
+    "id": 834,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which intelligent threat detection service continuously monitors VPC flow logs, DNS logs, and CloudTrail events using machine learning to identify malicious behavior such as unauthorized cryptocurrency mining?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS Config",
+      "C": "AWS Certificate Manager (ACM)",
+      "D": "AWS Artifact"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It is a threat detection service that analyzes data sources such as network logs and API events using ML.",
+    "hint2": "It is enabled with one click and does not require installing agents.",
+    "explanation": "1. Option A is correct because GuardDuty uses threat intelligence and ML to analyze VPC, DNS, and CloudTrail logs.\n2. Key requirement: Intelligent, agentless threat and anomaly detection.\n3. Distractors: B tracks configuration changes; C manages SSL; D provides audit reports.\n4. Key lesson: Amazon GuardDuty = ML-based intelligent threat detection.",
+    "concept": "Amazon GuardDuty",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 835,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to automatically scan its EC2 instances, container images in Amazon ECR, and AWS Lambda functions for known software vulnerabilities (CVEs). Which service performs this scan?",
+    "options": {
+      "A": "Amazon Inspector",
+      "B": "Amazon Macie",
+      "C": "AWS Shield",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A security assessment service that finds software vulnerabilities in EC2, ECR, and Lambda.",
+    "hint2": "It is associated with vulnerability discovery and network exposure.",
+    "explanation": "1. Option A is correct because Amazon Inspector scans for software vulnerabilities in EC2, ECR, and Lambda.\n2. Key requirement: Automated vulnerability (CVE) assessment.\n3. Distractors: B classifies sensitive PII data; C combats DDoS; D logs API calls.\n4. Key lesson: Amazon Inspector = automated vulnerability scanning for EC2, ECR, and Lambda.",
+    "concept": "Amazon Inspector",
+    "service": "Amazon Inspector"
+  },
+  {
+    "id": 836,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A healthcare company wants to review its Amazon S3 buckets to discover and identify sensitive data such as Personally Identifiable Information (PII) or credit card numbers. Which service uses machine learning for this task?",
+    "options": {
+      "A": "Amazon Macie",
+      "B": "Amazon Inspector",
+      "C": "AWS Config",
+      "D": "AWS WAF"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It uses ML and pattern intelligence to discover and classify PII stored in Amazon S3.",
+    "hint2": "Keywords: PII, sensitive data, S3 buckets.",
+    "explanation": "1. Option A is correct because Amazon Macie automatically discovers and protects sensitive data in S3.\n2. Key requirement: Discovery of PII and confidential data in S3.\n3. Distractors: B looks for OS/package vulnerabilities; C audits configurations; D is an HTTP firewall.\n4. Key lesson: Amazon Macie = discovery of PII and sensitive data in Amazon S3.",
+    "concept": "Amazon Macie",
+    "service": "Amazon Macie"
+  },
+  {
+    "id": 837,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An external auditor requests a copy of the PCI-DSS compliance report for AWS's physical infrastructure and the ISO 27001 certification from a company. Through which AWS self-service portal can these documents be downloaded on demand?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Trusted Advisor",
+      "C": "AWS Support Center",
+      "D": "AWS Systems Manager"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A self-service portal for accessing AWS security and compliance reports.",
+    "hint2": "It allows direct downloads of AWS third-party audits.",
+    "explanation": "1. Option A is correct because AWS Artifact provides on-demand access to AWS compliance documents and reports.\n2. Key requirement: Obtaining AWS certifications and compliance reports.\n3. Distractors: B offers best-practice recommendations; C manages tickets; D manages instances.\n4. Key lesson: AWS Artifact = on-demand downloads of AWS compliance reports.",
+    "concept": "AWS Artifact",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 838,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An administrator notices that a critical EC2 instance was deleted at midnight. Which AWS service should they check to answer 'who performed the action, from which IP address, and at what time'?",
+    "options": {
+      "A": "AWS CloudTrail",
+      "B": "Amazon CloudWatch",
+      "C": "AWS Config",
+      "D": "Amazon GuardDuty"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It logs account activity and API calls to AWS services.",
+    "hint2": "It keeps a history of actions performed by users or roles.",
+    "explanation": "1. Option A is correct because CloudTrail logs all API calls and interactions with the AWS account.\n2. Key requirement: Auditing and history of API calls ('who did what').\n3. Distractors: B monitors metrics and performance; C keeps a history of configuration state; D detects threats.\n4. Key lesson: AWS CloudTrail = auditing of events and API calls.",
+    "concept": "AWS CloudTrail",
+    "service": "AWS CloudTrail"
+  },
+  {
+    "id": 839,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to continuously assess the compliance of its resource configurations (for example, checking whether any Security Group allows SSH open to the Internet) and record state changes over time. Which service provides this functionality?",
+    "options": {
+      "A": "AWS Config",
+      "B": "AWS CloudTrail",
+      "C": "AWS Shield",
+      "D": "Amazon CloudWatch"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It evaluates, audits, and records AWS resource configurations over time.",
+    "hint2": "It differs from CloudTrail because it focuses on the resource's configuration STATE.",
+    "explanation": "1. Option A is correct because AWS Config evaluates and records resource configuration changes against desired rules.\n2. Key requirement: Inventory and history of resource configuration state.\n3. Distractors: B logs API events; C is DDoS protection; D monitors operational metrics.\n4. Key lesson: AWS Config = continuous inventory and audit of resource configurations.",
+    "concept": "AWS Config",
+    "service": "AWS Config"
+  },
+  {
+    "id": 840,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which service centralizes and consolidates security alerts (findings) from GuardDuty, Inspector, Macie, and IAM Access Analyzer into a single unified control dashboard?",
+    "options": {
+      "A": "AWS Security Hub",
+      "B": "AWS Control Tower",
+      "C": "AWS Organizations",
+      "D": "AWS Firewall Manager"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A tool that aggregates and prioritizes security findings from multiple AWS accounts and services.",
+    "hint2": "It functions as a centralized security posture dashboard.",
+    "explanation": "1. Option A is correct because AWS Security Hub aggregates and normalizes security findings from multiple services.\n2. Key requirement: A centralized, unified view of security posture.\n3. Distractors: B automates account creation with guardrails; C manages accounts; D manages centralized WAF rules.\n4. Key lesson: AWS Security Hub = unified aggregation of security findings.",
+    "concept": "AWS Security Hub",
+    "service": "AWS Security Hub"
+  },
+  {
+    "id": 841,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Understand AWS Cloud security and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An application requires storing database passwords with automatic periodic rotation without human intervention. Which service is specifically designed for this task?",
+    "options": {
+      "A": "AWS Secrets Manager",
+      "B": "AWS KMS",
+      "C": "Amazon S3 Standard",
+      "D": "AWS IAM Access Key"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It protects secrets (credentials, API keys) and offers automatic rotation integrated with RDS.",
+    "hint2": "KMS manages encryption keys; it does not directly store/rotate credentials.",
+    "explanation": "1. Option A is correct because AWS Secrets Manager encrypts and manages automatic credential rotation.\n2. Key requirement: Store credentials with scheduled automatic rotation.\n3. Distractors: B creates keys to encrypt data but does not handle DB password rotation; C is object storage; D are static credentials.\n4. Key lesson: AWS Secrets Manager = storage and automatic rotation of credentials.",
+    "concept": "AWS Secrets Manager",
+    "service": "AWS Secrets Manager"
+  },
+  {
+    "id": 842,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Understand AWS Cloud security and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company manages 50 AWS accounts in AWS Organizations. They want to let their employees use their existing corporate Active Directory credentials for single sign-on (SSO) across all accounts. Which service enables this?",
+    "options": {
+      "A": "AWS IAM Identity Center (successor to AWS SSO)",
+      "B": "AWS Secrets Manager",
+      "C": "AWS Certificate Manager",
+      "D": "AWS KMS"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It lets you connect workforce identity sources (Active Directory, Okta) and manage multi-account SSO access.",
+    "hint2": "It connects your corporate directory to your AWS accounts.",
+    "explanation": "1. Option A is correct because IAM Identity Center manages centralized SSO access across multi-account environments.\n2. Key requirement: Federated SSO with Active Directory across multiple accounts.\n3. Distractors: B is for credentials; C for SSL certificates; D for cryptographic keys.\n4. Key lesson: IAM Identity Center = multi-account single sign-on (SSO).",
+    "concept": "IAM Identity Center",
+    "service": "AWS IAM Identity Center"
+  },
+  {
+    "id": 843,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A governance team wants to centrally restrict which AWS services (for example, preventing users from creating EC2 instances outside the us-east-1 region) can run in an organization's member accounts. Which mechanism should they use?",
+    "options": {
+      "A": "Service Control Policies (SCPs)",
+      "B": "IAM Inline Policies",
+      "C": "VPC Security Groups",
+      "D": "Network ACLs"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "AWS Organizations SCPs set a maximum permission boundary for member accounts.",
+    "hint2": "SCPs do not grant permissions; they define the maximum limits allowed.",
+    "explanation": "1. Option A is correct because Service Control Policies (SCPs) enforce central account-level permission boundaries within AWS Organizations.\n2. Key requirement: Maximum multi-account governance boundary.\n3. Distractors: B affects individual users; C and D are network firewalls.\n4. Key lesson: SCPs = centralized security and governance guardrails at the account level.",
+    "concept": "Service Control Policies",
+    "service": "AWS Organizations"
+  },
+  {
+    "id": 844,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A large corporation wants to automate the creation of new AWS accounts following security best practices, applying a landing zone configured with preventive and detective guardrails. Which service provides this automation?",
+    "options": {
+      "A": "AWS Control Tower",
+      "B": "AWS Config",
+      "C": "AWS Service Catalog",
+      "D": "AWS Auto Scaling"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It offers a fast way to set up and govern a secure multi-account environment based on a Landing Zone.",
+    "hint2": "It automatically configures Organizations, SSO, GuardDuty, and governance rules.",
+    "explanation": "1. Option A is correct because AWS Control Tower automates the creation of secure multi-account Landing Zone environments.\n2. Key requirement: Set up and govern multi-account environments with pre-configured guardrails.\n3. Distractors: B audits individual configurations; C manages application catalogs; D scales instances.\n4. Key lesson: AWS Control Tower = automation of Landing Zone and multi-account guardrails.",
+    "concept": "AWS Control Tower",
+    "service": "AWS Control Tower"
+  },
+  {
+    "id": 845,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which official AWS document specifies prohibited uses of AWS cloud services, such as conducting illegal activities, email spam, or violating the security of third-party networks?",
+    "options": {
+      "A": "AWS Acceptable Use Policy (AUP)",
+      "B": "Shared Responsibility Model",
+      "C": "AWS SLA",
+      "D": "Support Level Agreement"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It establishes the ethical and legal rules for using AWS infrastructure.",
+    "hint2": "It details which behaviors are not permitted on the platform.",
+    "explanation": "1. Option A is correct because the AUP defines the prohibited uses of the AWS cloud.\n2. Key requirement: Terms that prohibit abusive or illegal activities.\n3. Distractors: B defines the security division of responsibility; C defines availability commitments; D addresses technical support.\n4. Key lesson: AWS AUP = terms and prohibitions against misuse.",
+    "concept": "AWS AUP",
+    "service": "AWS Governance"
+  },
+  {
+    "id": 846,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company wants to conduct penetration testing on its AWS-hosted infrastructure. According to AWS rules, for which of the following resources can customers perform penetration testing WITHOUT prior approval?",
+    "options": {
+      "A": "Amazon EC2 instances and Amazon RDS databases",
+      "B": "AWS's underlying physical hypervisor",
+      "C": "Physical facilities of AWS Data Centers",
+      "D": "AWS employees' internal network"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "AWS allows penetration testing without prior authorization on 8 customer-managed resources (EC2, RDS, Lambda, CloudFront, etc.).",
+    "hint2": "Testing of the physical infrastructure or hypervisor is strictly prohibited.",
+    "explanation": "1. Option A is correct because AWS allows PenTests on the customer's own resources, such as EC2 and RDS, without prior notice.\n2. Key requirement: Know AWS's policy on authorized security testing.\n3. Distractors: B, C, and D correspond to AWS's protected physical infrastructure and facilities.\n4. Key lesson: Customers can assess the security of their own EC2/RDS without prior approval.",
+    "concept": "Penetration Testing",
+    "service": "AWS Security"
+  },
+  {
+    "id": 847,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to protect data as it travels between its customers' web browsers and its AWS servers using HTTPS. What type of encryption is being applied?",
+    "options": {
+      "A": "Encryption in Transit",
+      "B": "Encryption at Rest",
+      "C": "Static Block Hashing",
+      "D": "Network-less Hardware Tokenization"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Encryption in transit protects information as it moves across the network using protocols such as TLS/SSL.",
+    "hint2": "HTTPS is the standard implementation of encryption in transit for web traffic.",
+    "explanation": "1. Option A is correct because HTTPS/TLS guarantees encryption in transit as data moves across the network.\n2. Key requirement: Protecting data while it is transmitted over the network.\n3. Distractors: B protects data stored on disk (S3, EBS, RDS); C and D do not correspond to the HTTPS flow.\n4. Key lesson: Encryption in transit = protecting data in motion via SSL/TLS.",
+    "concept": "Encryption in Transit",
+    "service": "AWS Security"
+  },
+  {
+    "id": 848,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which AWS service facilitates the provisioning, management, and deployment of free public and private SSL/TLS certificates for use with Amazon CloudFront and Elastic Load Balancing?",
+    "options": {
+      "A": "AWS Certificate Manager (ACM)",
+      "B": "AWS KMS",
+      "C": "AWS IAM",
+      "D": "AWS CloudHSM"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "ACM manages the lifecycle of SSL/TLS certificates and renews them automatically.",
+    "hint2": "Use it whenever you need HTTPS connections in services like CloudFront or ELB.",
+    "explanation": "1. Option A is correct because ACM manages and deploys SSL/TLS certificates for free, integrated with services like ELB and CloudFront.\n2. Key requirement: Provision and renew SSL/TLS certificates for HTTPS traffic.\n3. Distractors: B manages cryptographic data keys; C manages users; D is dedicated hardware.\n4. Key lesson: AWS Certificate Manager (ACM) = SSL/TLS certificate management.",
+    "concept": "AWS ACM",
+    "service": "AWS ACM"
+  },
+  {
+    "id": 849,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which network feature acts as a stateful firewall at the EC2 instance level, automatically allowing inbound response traffic if the outbound request was allowed?",
+    "options": {
+      "A": "Security Groups",
+      "B": "Network ACLs (NACLs)",
+      "C": "VPC Route Table",
+      "D": "Internet Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Security Groups are stateful: responses to allowed outbound traffic are automatically accepted.",
+    "hint2": "NACLs are stateless and operate at the subnet level.",
+    "explanation": "1. Option A is correct because Security Groups are stateful virtual firewalls at the instance level.\n2. Key requirement: Stateful firewall at the EC2 instance level.\n3. Distractors: B is a stateless firewall at the subnet level; C routes traffic; D connects the VPC to the Internet.\n4. Key lesson: Security Groups = stateful, at the EC2 instance level.",
+    "concept": "Security Groups",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 850,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which VPC security component acts as a stateless firewall at the subnet level, requiring explicit rules for both inbound and outbound traffic?",
+    "options": {
+      "A": "Network ACL (NACL)",
+      "B": "Security Group",
+      "C": "NAT Gateway",
+      "D": "VPC Peering"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "NACLs evaluate numbered rules in order at the subnet level and do not remember connection state.",
+    "hint2": "Key reminder: NACL = stateless + subnet; Security Group = stateful + instance.",
+    "explanation": "1. Option A is correct because a Network ACL (NACL) is a stateless security layer for subnets.\n2. Key requirement: Stateless firewall at the subnet level.\n3. Distractors: B is stateful at the instance level; C allows outbound Internet access for private subnets; D connects VPCs.\n4. Key lesson: NACLs = stateless, at the subnet level.",
+    "concept": "Network ACLs",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 851,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A security team wants to identify which resources (such as S3 buckets or SQS queues) have been shared externally outside their AWS organization. Which IAM feature helps analyze and verify this external accessibility?",
+    "options": {
+      "A": "IAM Access Analyzer",
+      "B": "IAM Credentials Report",
+      "C": "AWS Trusted Advisor",
+      "D": "Amazon Inspector"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It uses automated reasoning to analyze policies and identify resources shared with external entities.",
+    "hint2": "It follows the principle of verifying access granted outside the account.",
+    "explanation": "1. Option A is correct because IAM Access Analyzer detects policies that grant public or external access to resources.\n2. Key requirement: Analyze permissions shared outside the organization.\n3. Distractors: B generates a report on user password status; C gives general best practices; D scans for OS vulnerabilities.\n4. Key lesson: IAM Access Analyzer = analysis of external access to resources.",
+    "concept": "IAM Access Analyzer",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 852,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Understand AWS Cloud security and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which downloadable IAM report lists all users in the account and the current status of their credentials, including passwords, access keys, and MFA activation status?",
+    "options": {
+      "A": "IAM Credential Report",
+      "B": "AWS Config Access Report",
+      "C": "AWS Cost and Usage Report",
+      "D": "PCI Artifact Report"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A downloadable CSV file showing the security credential status of all IAM users in the account.",
+    "hint2": "Useful for quick audits of passwords and stale credentials.",
+    "explanation": "1. Option A is correct because the IAM Credential Report audits the status of the account's passwords, keys, and MFA.\n2. Key requirement: Generate a user credential audit listing.\n3. Distractors: B does not exist under that name; C is about costs; D is about external AWS audits.\n4. Key lesson: IAM Credential Report = audit status of IAM user credentials.",
+    "concept": "IAM Credential Report",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 853,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Understand AWS Cloud security and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which of the following tasks MUST be performed using the AWS account root user's credentials and should NOT be done with an IAM user?",
+    "options": {
+      "A": "Closing the AWS account or changing the AWS Support plan",
+      "B": "Creating an Amazon S3 bucket",
+      "C": "Launching an EC2 instance",
+      "D": "Creating a new IAM user group"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "The root user has unlimited, absolute access and is the only one who can perform critical tasks such as closing the account.",
+    "hint2": "Best practices require restricting root usage to only essential, unusual tasks.",
+    "explanation": "1. Option A is correct because closing the account or changing support plans requires root authentication.\n2. Key requirement: Task reserved exclusively for the Root user.\n3. Distractors: B, C, and D can and should be performed by authorized IAM users or roles.\n4. Key lesson: The Root user should be protected with MFA and used only for exclusive tasks like closing the account.",
+    "concept": "AWS Root User",
+    "service": "AWS Account"
+  },
+  {
+    "id": 854,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An engineer discovers that an IP address belonging to AWS's infrastructure is attempting brute-force attacks against their on-premises servers. Which AWS team should this malicious behavior be reported to?",
+    "options": {
+      "A": "AWS Trust & Safety / AWS Abuse Team",
+      "B": "AWS Concierge Support",
+      "C": "AWS Professional Services",
+      "D": "AWS Solutions Architects"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "The AWS Abuse Team investigates and intervenes when AWS resources are used for malicious or illegal purposes.",
+    "hint2": "It is contacted directly through the AWS abuse report form.",
+    "explanation": "1. Option A is correct because the Abuse Team handles reports of malicious activity originating from AWS.\n2. Key requirement: Report misuse or illegal use of AWS resources.\n3. Distractors: B handles billing; C migration consulting; D architecture design.\n4. Key lesson: AWS Abuse Team = reporting attacks or spam originating from AWS IPs.",
+    "concept": "AWS Abuse Team",
+    "service": "AWS Support"
+  },
+  {
+    "id": 855,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A startup is testing a new software prototype for one week. They need virtual servers with no long-term commitments or upfront payments, and the ability to cancel at any time. Which EC2 purchasing model is most suitable?",
+    "options": {
+      "A": "On-Demand Instances",
+      "B": "Reserved Instances",
+      "C": "3-Year Dedicated Hosts",
+      "D": "1-Year Capacity Reservations"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "You pay by the hour or second with no long-term contracts, ideal for short-term testing.",
+    "hint2": "The key requirement is having no permanent commitments.",
+    "explanation": "1. Option A is correct because On-Demand requires no upfront commitments or contracts.\n2. Key requirement: Short-term workload with no commitment.\n3. Distractors: B and C require 1- to 3-year contracts; D requires a financial commitment.\n4. Key lesson: On-Demand = maximum flexibility with no upfront contracts.",
+    "concept": "EC2 On-Demand",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 856,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A data analytics company runs batch processing jobs that are interruption-tolerant and can resume at any time. They want the greatest possible discount (up to 90%) by taking advantage of spare EC2 capacity. Which model should they choose?",
+    "options": {
+      "A": "Spot Instances",
+      "B": "On-Demand Instances",
+      "C": "Convertible Reserved Instances",
+      "D": "Scheduled Reserved Instances"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It uses AWS's spare compute capacity at large discounts, but AWS can interrupt it with a 2-minute warning.",
+    "hint2": "The keywords are fault tolerance and maximum discount.",
+    "explanation": "1. Option A is correct because Spot Instances offer up to 90% off by using unused EC2 capacity.\n2. Key requirement: Interruption-tolerant jobs seeking the lowest cost.\n3. Distractors: B is more expensive; C and D require time commitments and do not provide the greatest savings on spare capacity.\n4. Key lesson: Spot Instances = interruption-tolerant workloads with maximum savings.",
+    "concept": "EC2 Spot Instances",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 857,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A critical production database must run continuously 24/7 for the next 3 years with constant capacity. Which EC2 purchasing model offers the greatest savings for this predictable, long-term usage?",
+    "options": {
+      "A": "Reserved Instances (Standard Reserved Instances)",
+      "B": "Spot Instances",
+      "C": "On-Demand Instances",
+      "D": "Dynamic EC2 Fleets"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It offers up to a 75% discount over On-Demand in exchange for a 1- or 3-year commitment for stable workloads.",
+    "hint2": "For 3 years of continuous use, the commitment guarantees the lowest fixed cost.",
+    "explanation": "1. Option A is correct because Reserved Instances reward continuous, long-term commitments with significant discounts.\n2. Key requirement: Predictable 24/7 workload for 3 years.\n3. Distractors: B can be interrupted (not suitable for continuous production); C is expensive for continuous use; D does not provide discounts for fixed commitment.\n4. Key lesson: Reserved Instances = significant savings for stable, continuous workloads.",
+    "concept": "EC2 Reserved Instances",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 858,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A developer needs to create a Python function that processes images every time a user uploads a file to Amazon S3. They do not want to provision or manage servers and only want to pay for the milliseconds the code runs. Which service should they use?",
+    "options": {
+      "A": "AWS Lambda",
+      "B": "Amazon EC2",
+      "C": "Amazon Lightsail",
+      "D": "AWS Outposts"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It is AWS's quintessential event-driven serverless compute service.",
+    "hint2": "You only pay for execution time without managing infrastructure.",
+    "explanation": "1. Option A is correct because AWS Lambda runs code in response to events without managing servers.\n2. Key requirement: Serverless compute triggered by events.\n3. Distractors: B charges for a running server; C is a managed VPS; D is local physical hardware.\n4. Key lesson: AWS Lambda = event-triggered serverless compute.",
+    "concept": "AWS Lambda",
+    "service": "AWS Lambda"
+  },
+  {
+    "id": 859,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A development team deploys applications in Docker containers. They want to run their containers on Amazon ECS without having to provision or manage the underlying EC2 instances. Which serverless compute engine for containers should they select?",
+    "options": {
+      "A": "AWS Fargate",
+      "B": "Amazon EC2 Auto Scaling",
+      "C": "AWS Batch",
+      "D": "Amazon EMR"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate is a serverless compute engine for Amazon ECS and EKS that removes the need to manage EC2 servers.",
+    "hint2": "It lets you run containers without managing the underlying virtual machine cluster.",
+    "explanation": "1. Option A is correct because AWS Fargate runs containers without requiring the customer to manage EC2 servers.\n2. Key requirement: Serverless containers with no instance management.\n3. Distractors: B manages groups of EC2 instances; C is for batch jobs; D is for Big Data processing on Hadoop.\n4. Key lesson: AWS Fargate = serverless compute engine for containers.",
+    "concept": "AWS Fargate",
+    "service": "AWS Fargate"
+  },
+  {
+    "id": 860,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Identify compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A team of web developers wants to quickly deploy a Java application by uploading only the source code. They want AWS to automatically handle capacity provisioning, load balancing, auto scaling, and health monitoring. Which PaaS service provides this?",
+    "options": {
+      "A": "AWS Elastic Beanstalk",
+      "B": "AWS CloudFormation",
+      "C": "AWS OpsWorks",
+      "D": "AWS CodeDeploy"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It is a Platform as a Service (PaaS) solution for deploying web applications quickly and easily.",
+    "hint2": "You upload the code and Beanstalk handles deployment and scaling automatically.",
+    "explanation": "1. Option A is correct because Elastic Beanstalk is a PaaS service that automates application deployment.\n2. Key requirement: Upload code and let AWS automatically manage the underlying infrastructure.\n3. Distractors: B is Infrastructure as Code using JSON/YAML; C uses Chef/Puppet; D automates deployments to already-configured servers.\n4. Key lesson: AWS Elastic Beanstalk = PaaS for fast web application development and deployment.",
+    "concept": "AWS Elastic Beanstalk",
+    "service": "AWS Elastic Beanstalk"
+  },
+  {
+    "id": 861,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company has millions of client contract PDF files that are accessed infrequently but must be IMMEDIATELY available within milliseconds when a customer requests them. Which S3 storage class offers the lowest storage cost while meeting this latency requirement?",
+    "options": {
+      "A": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+      "B": "S3 Glacier Deep Archive",
+      "C": "S3 Glacier Flexible Retrieval",
+      "D": "S3 Standard"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It offers lower storage costs than S3 Standard for infrequently accessed data with immediate, millisecond retrieval.",
+    "hint2": "Deep Archive and Flexible Retrieval take minutes or hours to retrieve objects.",
+    "explanation": "1. Option A is correct because S3 Standard-IA is designed for infrequent access with millisecond availability.\n2. Key requirement: Lowest storage cost + immediate millisecond access.\n3. Distractors: B and C take hours or minutes to deliver files; D has a higher storage rate.\n4. Key lesson: S3 Standard-IA = infrequent access with instant, millisecond retrieval.",
+    "concept": "S3 Storage Classes",
+    "service": "Amazon S3"
+  },
+  {
+    "id": 862,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A financial institution must retain audit records for 10 years for regulatory compliance. This data is almost never accessed, and a 12-hour retrieval time is acceptable. Which S3 storage class is the MOST cost-effective for this use case?",
+    "options": {
+      "A": "S3 Glacier Deep Archive",
+      "B": "S3 Standard",
+      "C": "S3 Intelligent-Tiering",
+      "D": "Amazon EBS st1"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It is the lowest-cost storage class in all of AWS for long-term archiving with 12-hour retrieval times.",
+    "hint2": "Keywords: the absolute lowest price and long-term archiving.",
+    "explanation": "1. Option A is correct because S3 Glacier Deep Archive is AWS's cheapest archival option.\n2. Key requirement: Minimum absolute cost for long-term regulatory archiving.\n3. Distractors: B is for frequent access; C incurs monitoring charges; D is block storage.\n4. Key lesson: S3 Glacier Deep Archive = AWS's most cost-effective storage class.",
+    "concept": "S3 Glacier Deep Archive",
+    "service": "Amazon S3 Glacier"
+  },
+  {
+    "id": 863,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An analytics platform receives data files with unpredictable and changing access patterns. They want to automatically optimize costs without paying retrieval fees or requiring manual lifecycle analysis. Which S3 storage class should they use?",
+    "options": {
+      "A": "S3 Intelligent-Tiering",
+      "B": "S3 One Zone-IA",
+      "C": "S3 Standard",
+      "D": "S3 Glacier Instant Retrieval"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It automatically moves objects between frequent and infrequent access tiers based on actual usage patterns.",
+    "hint2": "It does not charge retrieval fees and automates savings.",
+    "explanation": "1. Option A is correct because S3 Intelligent-Tiering optimizes costs by automatically moving objects based on access patterns.\n2. Key requirement: Unpredictable or changing access patterns with no retrieval costs.\n3. Distractors: B requires knowing it will be in a single AZ; C is expensive for infrequent data; D is for fixed archival.\n4. Key lesson: S3 Intelligent-Tiering = automatic optimization with no retrieval cost.",
+    "concept": "S3 Intelligent-Tiering",
+    "service": "Amazon S3"
+  },
+  {
+    "id": 864,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An application running a relational database server on Amazon EC2 requires a persistent, ultra-high-performance virtual hard disk volume (block storage) attached exclusively to that instance within a single Availability Zone. Which service provides this block storage?",
+    "options": {
+      "A": "Amazon EBS (Elastic Block Store)",
+      "B": "Amazon EFS (Elastic File System)",
+      "C": "Amazon S3",
+      "D": "AWS Storage Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "EBS provides block storage volumes attached to EC2 instances (like a virtual hard disk).",
+    "hint2": "It differs from EFS (shared NFS files) and S3 (objects via HTTP).",
+    "explanation": "1. Option A is correct because EBS provides dedicated block storage for EC2 instances.\n2. Key requirement: Block-level disk attached to an EC2 instance for a database.\n3. Distractors: B is a shared, multi-instance file system; C is object storage; D connects on-premises storage.\n4. Key lesson: Amazon EBS = persistent block storage for EC2.",
+    "concept": "Amazon EBS",
+    "service": "Amazon EBS"
+  },
+  {
+    "id": 865,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A cluster of 50 Linux web servers on Amazon EC2 distributed across multiple Availability Zones needs to simultaneously access the same shared file directory using the NFS protocol. Which managed storage service meets this need?",
+    "options": {
+      "A": "Amazon EFS (Elastic File System)",
+      "B": "Amazon EBS",
+      "C": "EC2 Instance Store",
+      "D": "S3 Glacier Deep Archive"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "EFS is a scalable, managed NFS file system that can be mounted on hundreds of EC2 instances simultaneously.",
+    "hint2": "The keyword is simultaneous NFS access from multiple EC2 instances across several AZs.",
+    "explanation": "1. Option A is correct because EFS supports the NFS protocol for simultaneous multi-AZ access on Linux.\n2. Key requirement: NFS file system shared among multiple EC2 instances simultaneously.\n3. Distractors: B attaches to only one instance at a time (except specific Multi-Attach); C is temporary and not shared; D is for archiving.\n4. Key lesson: Amazon EFS = multi-AZ shared NFS files for Linux.",
+    "concept": "Amazon EFS",
+    "service": "Amazon EFS"
+  },
+  {
+    "id": 866,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A video processing application requires an extremely high-speed cache disk with the maximum possible IOPS. The team accepts that data will be lost if the EC2 instance is stopped or terminated. Which storage type offers this direct physical performance?",
+    "options": {
+      "A": "EC2 Instance Store",
+      "B": "Amazon EBS gp3 Volumes",
+      "C": "Amazon EFS Standard",
+      "D": "AWS Storage Gateway Volume"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Instance Store consists of SSD/HDD disks physically attached to the EC2 instance's host server, offering maximum IOPS but ephemeral/non-persistent data.",
+    "hint2": "It is erased when the instance is stopped or terminated.",
+    "explanation": "1. Option A is correct because Instance Store provides the highest physical performance but is ephemeral.\n2. Key requirement: Maximum IOPS performance with tolerance for ephemeral data.\n3. Distractors: B and C are network drives slower than the local bus; D is for hybrid environments.\n4. Key lesson: EC2 Instance Store = ultra-high performance but ephemeral, non-persistent data.",
+    "concept": "EC2 Instance Store",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 867,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company needs to migrate a shared Windows file system used by native Microsoft applications that rely on the SMB protocol and Active Directory integration. Which managed AWS service provides this storage?",
+    "options": {
+      "A": "Amazon FSx for Windows File Server",
+      "B": "Amazon EFS",
+      "C": "Amazon S3",
+      "D": "Amazon EBS st1"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "FSx for Windows File Server offers a fully managed native Windows file system with SMB support.",
+    "hint2": "EFS focuses on Linux/NFS, while FSx for Windows is for Microsoft/SMB environments.",
+    "explanation": "1. Option A is correct because FSx for Windows File Server provides native SMB file storage and AD integration.\n2. Key requirement: Native Windows file system with the SMB protocol.\n3. Distractors: B is for Linux/NFS; C is object storage; D is a single block volume.\n4. Key lesson: Amazon FSx for Windows = native Microsoft SMB files.",
+    "concept": "Amazon FSx",
+    "service": "Amazon FSx"
+  },
+  {
+    "id": 868,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An organization needs to connect its on-premises servers with AWS cloud storage to maintain a local cache of frequently accessed files while backing up the rest to Amazon S3. Which hybrid storage service enables this integration?",
+    "options": {
+      "A": "AWS Storage Gateway",
+      "B": "AWS DataSync",
+      "C": "AWS Snowball Edge",
+      "D": "Amazon CloudFront"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It integrates on-premises systems with AWS storage (S3, EBS, Glacier), offering a low-latency local cache.",
+    "hint2": "It works as a bridge between the on-premises data center and S3.",
+    "explanation": "1. Option A is correct because Storage Gateway acts as a hybrid storage bridge between on-premises and AWS.\n2. Key requirement: Hybrid storage integration with a local cache.\n3. Distractors: B is for bulk data transfer over the network; C is a physical device for transport; D is a content delivery CDN.\n4. Key lesson: AWS Storage Gateway = hybrid storage bridge between on-premises and AWS.",
+    "concept": "AWS Storage Gateway",
+    "service": "AWS Storage Gateway"
+  },
+  {
+    "id": 869,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A developer needs to deploy a relational (SQL) database compatible with MySQL or PostgreSQL that includes automatic backups, operating system patching, and a Multi-AZ high-availability option with synchronous replication. Which managed service should they use?",
+    "options": {
+      "A": "Amazon RDS (Relational Database Service)",
+      "B": "Amazon DynamoDB",
+      "C": "Amazon ElastiCache",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A managed relational database service (RDS) that supports MySQL, PostgreSQL, MariaDB, Oracle, and SQL Server.",
+    "hint2": "It provides relational SQL capabilities with automatic patching and backups.",
+    "explanation": "1. Option A is correct because RDS manages structured relational databases with backups and Multi-AZ support.\n2. Key requirement: Managed relational SQL database.\n3. Distractors: B is NoSQL key-value; C is an in-memory cache; D is a graph database.\n4. Key lesson: Amazon RDS = managed relational (SQL) databases.",
+    "concept": "Amazon RDS",
+    "service": "Amazon RDS"
+  },
+  {
+    "id": 870,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company requires a high-performance relational database that is fully compatible with MySQL and PostgreSQL, but delivers up to 5 times the throughput of standard MySQL and automatically replicates 6 copies of its data across 3 Availability Zones. Which AWS-native database engine should they choose?",
+    "options": {
+      "A": "Amazon Aurora",
+      "B": "Amazon DynamoDB",
+      "C": "Amazon Redshift",
+      "D": "Amazon DocumentDB"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "AWS's cloud-optimized native relational engine, compatible with MySQL/PostgreSQL, with auto-scaling storage and 6-copy replication.",
+    "hint2": "It stands out for enterprise-grade relational performance at a fraction of the cost of commercial databases.",
+    "explanation": "1. Option A is correct because Aurora is AWS's high-performance native relational engine compatible with MySQL/PostgreSQL.\n2. Key requirement: Maximum relational performance with auto-scaling storage across 6 copies in 3 AZs.\n3. Distractors: B is NoSQL; C is an analytical Data Warehouse; D is MongoDB-compatible.\n4. Key lesson: Amazon Aurora = ultra-high-performance native relational database.",
+    "concept": "Amazon Aurora",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 871,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An e-commerce site needs a fully managed (serverless) NoSQL key-value database that delivers consistent single-digit-millisecond latency at any scale of traffic. Which service meets this need?",
+    "options": {
+      "A": "Amazon DynamoDB",
+      "B": "Amazon RDS",
+      "C": "Amazon Athena",
+      "D": "Amazon OpenSearch Service"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A fully managed NoSQL key-value and document database with automatic scaling and millisecond latency.",
+    "hint2": "Ideal for low-latency workloads at massive scale without rigid schemas.",
+    "explanation": "1. Option A is correct because DynamoDB is AWS's serverless NoSQL key-value database with millisecond latency.\n2. Key requirement: Serverless NoSQL key-value with consistent millisecond latency.\n3. Distractors: B is structured relational; C analyzes files in S3 using SQL; D is for full-text search.\n4. Key lesson: Amazon DynamoDB = ultra-low-latency serverless NoSQL key-value database.",
+    "concept": "Amazon DynamoDB",
+    "service": "Amazon DynamoDB"
+  },
+  {
+    "id": 872,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "To improve response times for a read-heavy web application, an architect wants to place an in-memory caching layer in front of the relational database using Redis or Memcached. Which managed service should they implement?",
+    "options": {
+      "A": "Amazon ElastiCache",
+      "B": "Amazon DynamoDB Accelerator (DAX)",
+      "C": "Amazon MemoryDB for Redis",
+      "D": "Amazon Redshift"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A managed in-memory storage service (Redis or Memcached) to reduce database read latency.",
+    "hint2": "It accelerates queries by storing frequent results in RAM.",
+    "explanation": "1. Option A is correct because ElastiCache manages in-memory Redis or Memcached clusters to speed up reads.\n2. Key requirement: In-memory caching layer (Redis/Memcached) in front of databases.\n3. Distractors: B is a cache exclusive to DynamoDB; C is a durable primary in-memory database; D is a Data Warehouse.\n4. Key lesson: Amazon ElastiCache = managed in-memory cache (Redis/Memcached).",
+    "concept": "Amazon ElastiCache",
+    "service": "Amazon ElastiCache"
+  },
+  {
+    "id": 873,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Identify database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A business intelligence team needs to analyze petabytes of structured data and interact with data visualization (BI) tools by running complex analytical (OLAP) queries. Which petabyte-scale data warehouse service should they use?",
+    "options": {
+      "A": "Amazon Redshift",
+      "B": "Amazon RDS",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Secrets Manager"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It is AWS's petabyte-scale, columnar cloud data warehouse service for analytical (OLAP) processing.",
+    "hint2": "Designed for complex analytical queries over large volumes of historical data.",
+    "explanation": "1. Option A is correct because Redshift is AWS's data warehouse for large-scale OLAP analytics.\n2. Key requirement: Petabyte-scale data warehouse for complex analytical (OLAP) queries.\n3. Distractors: B is for OLTP transactions; C is a read cache; D stores credentials.\n4. Key lesson: Amazon Redshift = data warehouse for massive-scale (OLAP) analytics.",
+    "concept": "Amazon Redshift",
+    "service": "Amazon Redshift"
+  },
+  {
+    "id": 874,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network and analytics services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A data analyst needs to run occasional queries using standard SQL directly against JSON and CSV files stored in an Amazon S3 bucket, without loading the data into a database or managing infrastructure. Which serverless service enables this direct querying?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon EMR",
+      "D": "AWS Glue"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "An interactive, serverless query service that lets you analyze data directly in S3 using standard SQL.",
+    "hint2": "You pay only for the terabytes scanned per query.",
+    "explanation": "1. Option A is correct because Athena runs serverless SQL queries directly against data stored in S3.\n2. Key requirement: Analyze files in S3 using SQL without loading them into databases or managing servers.\n3. Distractors: B requires provisioning a Data Warehouse cluster; C is for Hadoop/Spark clusters; D is for ETL.\n4. Key lesson: Amazon Athena = serverless SQL queries over objects in Amazon S3.",
+    "concept": "Amazon Athena",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 875,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which AWS service lets you provision a logically isolated section of the AWS cloud where the customer can launch resources into a user-defined virtual network (controlling IP ranges, subnets, and routing tables)?",
+    "options": {
+      "A": "Amazon VPC (Virtual Private Cloud)",
+      "B": "AWS Direct Connect",
+      "C": "Amazon Route 53",
+      "D": "AWS Transit Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Amazon VPC is the virtual private network where you create your own network topology in the cloud.",
+    "hint2": "It lets you control public/private subnets, IP addresses, and gateways.",
+    "explanation": "1. Option A is correct because Amazon VPC provides an isolated, private virtual network environment in AWS.\n2. Key requirement: A logically isolated, user-defined network.\n3. Distractors: B is a dedicated physical network connection; C is DNS; D connects multiple VPCs.\n4. Key lesson: Amazon VPC = isolated virtual private network in the AWS cloud.",
+    "concept": "Amazon VPC",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 876,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Within an Amazon VPC, what is the main difference between a public subnet and a private subnet?",
+    "options": {
+      "A": "A public subnet has a direct route to an Internet Gateway, while a private subnet has no direct route to the Internet",
+      "B": "The public subnet only accepts IPv6 traffic and the private subnet only IPv4",
+      "C": "Private subnets do not allow communication with instances in other subnets",
+      "D": "Public subnets do not require Security Groups"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A subnet is public if its route table is configured to send traffic to an Internet Gateway.",
+    "hint2": "Instances in private subnets do not have a public IP directly accessible from the Internet.",
+    "explanation": "1. Option A is correct because the presence of a route to an Internet Gateway in the route table defines a subnet as public.\n2. Key requirement: Differentiate Internet connectivity between public and private subnets.\n3. Distractors: B, C, and D contain false technical claims about subnets.\n4. Key lesson: Public subnet = route to Internet Gateway; Private subnet = no direct route to the Internet.",
+    "concept": "VPC Subnets",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 877,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "EC2 instances hosted in a private subnet need to download security updates from the Internet, but must NOT accept unsolicited inbound connections from outside. Which managed VPC component enables this secure outbound access to the Internet?",
+    "options": {
+      "A": "NAT Gateway",
+      "B": "Internet Gateway",
+      "C": "VPC Peering",
+      "D": "AWS Direct Connect"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A NAT Gateway allows instances in private subnets to connect out to the Internet while preventing the Internet from initiating connections to them (inbound).",
+    "hint2": "The Internet Gateway allows direct bidirectional traffic in public subnets.",
+    "explanation": "1. Option A is correct because a NAT Gateway enables secure outbound Internet access for private subnets without exposing them to inbound traffic.\n2. Key requirement: Outbound Internet connection for private subnets with no unsolicited inbound traffic.\n3. Distractors: B allows bidirectional public access; C connects two VPCs; D is a dedicated physical line.\n4. Key lesson: NAT Gateway = outbound Internet access for private subnets.",
+    "concept": "NAT Gateway",
+    "service": "Amazon VPC"
+  },
+  {
+    "id": 878,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company requires a dedicated, private physical network connection between its on-premises data center and AWS infrastructure to bypass the public Internet, ensuring consistent bandwidth and lower latency. Which service meets this need?",
+    "options": {
+      "A": "AWS Direct Connect",
+      "B": "AWS Site-to-Site VPN",
+      "C": "Amazon Route 53",
+      "D": "AWS Transit Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It establishes a private, dedicated network connection from the customer's premises to AWS.",
+    "hint2": "Unlike VPN, it does not travel over the public Internet.",
+    "explanation": "1. Option A is correct because AWS Direct Connect establishes dedicated private network links without going over the public Internet.\n2. Key requirement: Dedicated private physical connection between on-premises and AWS, bypassing the Internet.\n3. Distractors: B is an encrypted tunnel over the public Internet; C is a DNS service; D simplifies multi-VPC network topology.\n4. Key lesson: AWS Direct Connect = dedicated private physical network bypassing the public Internet.",
+    "concept": "AWS Direct Connect",
+    "service": "AWS Direct Connect"
+  },
+  {
+    "id": 879,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which fully managed cloud Domain Name System (DNS) service translates human-readable domain names (e.g., www.example.com) into numeric IP addresses and offers routing with health checks?",
+    "options": {
+      "A": "Amazon Route 53",
+      "B": "Amazon CloudFront",
+      "C": "AWS Direct Connect",
+      "D": "Amazon VPC"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It is the highly available (100% SLA) cloud DNS service offering domain registration, routing, and health checks.",
+    "hint2": "Named after port 53, where the DNS protocol operates.",
+    "explanation": "1. Option A is correct because Amazon Route 53 is AWS's scalable, authoritative DNS service.\n2. Key requirement: Domain Name System (DNS) service and health checks.\n3. Distractors: B is a content CDN; C is a dedicated network link; D is a virtual network.\n4. Key lesson: Amazon Route 53 = managed cloud DNS and traffic routing with health checks.",
+    "concept": "Amazon Route 53",
+    "service": "Amazon Route 53"
+  },
+  {
+    "id": 880,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A media platform streams video content to users around the world. They want to cache static and dynamic content at edge locations near end users to minimize delivery latency. Which content delivery network (CDN) service should they use?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Global Accelerator",
+      "C": "Amazon Route 53",
+      "D": "AWS Storage Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "CloudFront is AWS's global CDN that distributes content using a worldwide network of edge locations for low latency.",
+    "hint2": "Global caching close to end customers.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is the content delivery network (CDN) that caches files at edge locations.\n2. Key requirement: Worldwide, low-latency content delivery through edge caching.\n3. Distractors: B optimizes network routes via Anycast but does not cache content; C is DNS; D is hybrid storage.\n4. Key lesson: Amazon CloudFront = global distribution CDN based on edge locations.",
+    "concept": "Amazon CloudFront",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 881,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify network services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A global gaming application uses static Anycast IPs to route user traffic through AWS's optimized private network to its endpoints across multiple regions, boosting performance by up to 60%. Which service provides this network acceleration?",
+    "options": {
+      "A": "AWS Global Accelerator",
+      "B": "Amazon CloudFront",
+      "C": "AWS Direct Connect",
+      "D": "AWS Transit Gateway"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It uses AWS's global network and static Anycast IP addresses to optimize traffic routes to your applications.",
+    "hint2": "Unlike CloudFront (which caches content), Global Accelerator optimizes the route over AWS's private network.",
+    "explanation": "1. Option A is correct because AWS Global Accelerator optimizes global network routing using Anycast and AWS's private infrastructure.\n2. Key requirement: Static Anycast IP addresses and private network acceleration without caching.\n3. Distractors: B is for HTTP caching-based distribution; C is a dedicated local physical link; D connects VPC networks.\n4. Key lesson: AWS Global Accelerator = Anycast IP and route optimization across AWS's global network.",
+    "concept": "AWS Global Accelerator",
+    "service": "AWS Global Accelerator"
+  },
+  {
+    "id": 882,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify integration services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An e-commerce website needs to process purchase orders by sending them to a billing service. If the billing service experiences a traffic spike or fails temporarily, orders must not be lost. Which fully managed message queue service lets you decouple application components?",
+    "options": {
+      "A": "Amazon SQS (Simple Queue Service)",
+      "B": "Amazon SNS",
+      "C": "AWS Step Functions",
+      "D": "Amazon Kinesis"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A managed message queuing service (SQS) that decouples components and holds messages in a queue until consumers process them.",
+    "hint2": "It enables asynchronous, queue-based decoupling.",
+    "explanation": "1. Option A is correct because Amazon SQS offers message queues to decouple components and prevent data loss from traffic spikes.\n2. Key requirement: Decouple applications asynchronously using message queues.\n3. Distractors: B is for pub/sub notifications; C is a workflow orchestrator; D is for real-time streaming.\n4. Key lesson: Amazon SQS = message queues for decoupling application components.",
+    "concept": "Amazon SQS",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 883,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify integration services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An alerting system must simultaneously send an email notification, an SMS message, and trigger a Lambda function when a critical server alert is generated. Which Publisher/Subscriber (Pub/Sub) messaging service should it implement?",
+    "options": {
+      "A": "Amazon SNS (Simple Notification Service)",
+      "B": "Amazon SQS",
+      "C": "AWS Amplify",
+      "D": "Amazon SES"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Amazon SNS uses the Pub/Sub model to deliver a single message to multiple subscribers (email, SMS, Lambda, SQS, HTTP) simultaneously.",
+    "hint2": "'Fan-out' messaging from one publisher to multiple subscribers.",
+    "explanation": "1. Option A is correct because SNS implements 'fan-out' Pub/Sub messaging to multiple subscriber types simultaneously.\n2. Key requirement: Deliver one event to multiple different destinations (Email, SMS, Lambda).\n3. Distractors: B is a single-consumer queue; C is a web/mobile framework; D sends bulk marketing/transactional emails.\n4. Key lesson: Amazon SNS = Pub/Sub messaging and mass notifications.",
+    "concept": "Amazon SNS",
+    "service": "Amazon SNS"
+  },
+  {
+    "id": 884,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify management and governance services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A DevOps team wants to repeatably and automatically provision and update all of its cloud infrastructure (VPCs, EC2, RDS) by writing code files in JSON or YAML format. Which Infrastructure as Code (IaC) service should they use?",
+    "options": {
+      "A": "AWS CloudFormation",
+      "B": "AWS Config",
+      "C": "AWS Systems Manager",
+      "D": "AWS Service Catalog"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "An Infrastructure as Code (IaC) service that lets you model and provision resources using JSON/YAML templates.",
+    "hint2": "Define your entire architecture through declarative code.",
+    "explanation": "1. Option A is correct because CloudFormation is AWS's native Infrastructure as Code (IaC) service.\n2. Key requirement: Provision repeatable infrastructure using JSON/YAML templates.\n3. Distractors: B audits configuration changes; C runs OS commands; D is for authorized enterprise catalogs.\n4. Key lesson: AWS CloudFormation = Infrastructure as Code (IaC) with JSON/YAML templates.",
+    "concept": "AWS CloudFormation",
+    "service": "AWS CloudFormation"
+  },
+  {
+    "id": 885,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify management and governance services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A systems administrator needs to monitor CPU usage on their EC2 instances in real time, configure alarms that send notifications if CPU exceeds 85%, and collect operating system logs. Which service provides this operational visibility?",
+    "options": {
+      "A": "Amazon CloudWatch",
+      "B": "AWS CloudTrail",
+      "C": "AWS Trusted Advisor",
+      "D": "AWS Health Dashboard"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It monitors resources and applications by collecting metrics and logs and configuring real-time alarms.",
+    "hint2": "CloudWatch focuses on performance and metrics; CloudTrail on auditing API calls.",
+    "explanation": "1. Option A is correct because Amazon CloudWatch measures performance, collects operational metrics, and generates alarms.\n2. Key requirement: Monitor CPU usage, metrics, and configure operational alarms.\n3. Distractors: B audits API calls; C recommends optimizations; D shows the overall health status of AWS services.\n4. Key lesson: Amazon CloudWatch = real-time metrics, alarms, and log monitoring.",
+    "concept": "Amazon CloudWatch",
+    "service": "Amazon CloudWatch"
+  },
+  {
+    "id": 886,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify management and governance services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A team of IT administrators wants to start a secure console (shell) session on their EC2 servers without opening the SSH port (22) in their Security Groups or managing SSH keys (.pem). Which AWS Systems Manager capability enables this secure administration?",
+    "options": {
+      "A": "AWS Systems Manager Session Manager",
+      "B": "AWS Cloud9",
+      "C": "AWS Client VPN",
+      "D": "AWS Auto Scaling"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Session Manager allows administration of EC2 and on-premises nodes through a browser or CLI without port 22 or SSH keys.",
+    "hint2": "Greater security by removing the need for management ports open to the Internet.",
+    "explanation": "1. Option A is correct because SSM Session Manager provides secure shell access without exposing network ports or SSH keys.\n2. Key requirement: Console access without opening port 22 or using static SSH keys.\n3. Distractors: B is a browser-based IDE; C is a VPN for remote users; D adjusts the number of instances.\n4. Key lesson: Systems Manager Session Manager = shell access without port 22 or SSH keys.",
+    "concept": "AWS Systems Manager",
+    "service": "AWS Systems Manager"
+  },
+  {
+    "id": 887,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify management and governance services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company wants to check whether its AWS environment follows best practices across 5 key categories: Cost Optimization, Performance, Security, Fault Tolerance, and Service Limits. Which online tool performs these automatic checks?",
+    "options": {
+      "A": "AWS Trusted Advisor",
+      "B": "AWS Compute Optimizer",
+      "C": "AWS Cost Explorer",
+      "D": "AWS Well-Architected Tool"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It evaluates the AWS environment against best practices across five key pillars and offers real-time recommendations.",
+    "hint2": "It shows green, yellow, and red alerts depending on the resource's status.",
+    "explanation": "1. Option A is correct because AWS Trusted Advisor continuously analyzes the environment, offering recommendations across 5 key pillars.\n2. Key requirement: Real-time checks on costs, security, performance, fault tolerance, and limits.\n3. Distractors: B only suggests EC2/EBS sizing; C analyzes historical costs; D is a manual architecture questionnaire.\n4. Key lesson: AWS Trusted Advisor = automatic best-practice recommendations.",
+    "concept": "AWS Trusted Advisor",
+    "service": "AWS Trusted Advisor"
+  },
+  {
+    "id": 888,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify management and governance services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An engineer suspects that an application failure is due to a widespread outage of the Amazon S3 service in the us-east-1 region. Which personalized dashboard provides clear information about the operational status and events affecting their AWS account's resources?",
+    "options": {
+      "A": "AWS Health Dashboard (Personal Health Dashboard)",
+      "B": "Amazon CloudWatch Dashboard",
+      "C": "AWS Service Catalog",
+      "D": "AWS Knowledge Center"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It offers a personalized view of the health of AWS services that directly support your account's resources.",
+    "hint2": "It shows notifications for scheduled maintenance and service degradation events.",
+    "explanation": "1. Option A is correct because the AWS Health Dashboard notifies you of service events that specifically affect your account.\n2. Key requirement: View the operational status of the AWS services underlying your infrastructure.\n3. Distractors: B shows dashboards of your own metrics; C manages application catalogs; D is a repository of questions/answers.\n4. Key lesson: AWS Health Dashboard = alerts about the status and health of the AWS services in your account.",
+    "concept": "AWS Health Dashboard",
+    "service": "AWS Health"
+  },
+  {
+    "id": 889,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.1: Compare AWS pricing models",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An organization wants to commit to a fixed hourly spend (e.g., $10/hour for 1 or 3 years) to reduce its compute service costs, gaining the flexibility to automatically apply discounts to EC2 instances, AWS Fargate, and AWS Lambda regardless of Region. Which pricing option should they select?",
+    "options": {
+      "A": "Compute Savings Plans",
+      "B": "EC2 Standard Reserved Instances",
+      "C": "On-Demand Instances",
+      "D": "S3 volume pricing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Compute Savings Plans offer maximum flexibility, applying to EC2, Fargate, and Lambda in any region.",
+    "hint2": "It offers up to a 66% discount by combining multiple compute services.",
+    "explanation": "1. Option A is correct because Compute Savings Plans cover EC2, Fargate, and Lambda, offering maximum flexibility.\n2. Key requirement: Hourly spend-commitment discounts applicable to EC2, Fargate, and Lambda.\n3. Distractors: B applies exclusively to EC2 instances; C provides no commitment discounts; D is for storage.\n4. Key lesson: Compute Savings Plans = compute flexibility (EC2, Fargate, Lambda).",
+    "concept": "Savings Plans",
+    "service": "AWS Billing"
+  },
+  {
+    "id": 890,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An architecture team is designing a new cloud project and needs to estimate projected monthly costs before migrating or creating resources on AWS. Which free public online tool should they use?",
+    "options": {
+      "A": "AWS Pricing Calculator",
+      "B": "AWS Cost Explorer",
+      "C": "AWS Budgets",
+      "D": "AWS Cost and Usage Report"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "A web-based tool for modeling and estimating the expected costs of your AWS solutions before creating them.",
+    "hint2": "It does not require an active AWS account to produce preliminary estimates.",
+    "explanation": "1. Option A is correct because the AWS Pricing Calculator lets you estimate projected future costs without spending anything.\n2. Key requirement: Estimate projected costs in advance, before deploying resources.\n3. Distractors: B analyzes past, historical costs; C sets limits and alerts; D delivers detailed CSV reports for an active account.\n4. Key lesson: AWS Pricing Calculator = estimating future costs before building.",
+    "concept": "AWS Pricing Calculator",
+    "service": "AWS Pricing Calculator"
+  },
+  {
+    "id": 891,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A financial manager needs to visualize, analyze, and track spending and usage history for the last 12 months, as well as forecast projected costs for the coming months. Which console tool provides this graphical interface?",
+    "options": {
+      "A": "AWS Cost Explorer",
+      "B": "AWS Pricing Calculator",
+      "C": "AWS Artifact",
+      "D": "AWS Service Catalog"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It lets you visualize cost history, filter spending by tags or services, and view future projections.",
+    "hint2": "It focuses on consumption data and history for the active account.",
+    "explanation": "1. Option A is correct because AWS Cost Explorer visually analyzes an AWS account's historical and projected spending.\n2. Key requirement: Visualize and analyze consumption history for recent months.\n3. Distractors: B estimates future, not-yet-created projects; C downloads compliance reports; D manages software catalogs.\n4. Key lesson: AWS Cost Explorer = graphical analysis of historical costs and trends.",
+    "concept": "AWS Cost Explorer",
+    "service": "AWS Cost Explorer"
+  },
+  {
+    "id": 892,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company wants to define a maximum monthly budget limit for its account and receive automatic email notifications when actual or forecasted costs exceed 80% of the set limit. Which service allows configuring these alerts?",
+    "options": {
+      "A": "AWS Budgets",
+      "B": "AWS Cost Explorer",
+      "C": "AWS Pricing Calculator",
+      "D": "AWS Cost and Usage Report"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "It lets you set custom budgets and send alerts (Email/SNS) when costs exceed, or are forecast to exceed, thresholds.",
+    "hint2": "It is the service oriented toward setting limits and receiving preventive warnings.",
+    "explanation": "1. Option A is correct because AWS Budgets tracks costs and generates active notifications when thresholds are exceeded.\n2. Key requirement: Define custom budgets with preventive email alerts.\n3. Distractors: B visualizes trends; C provides preliminary estimates; D provides detailed usage reports for databases.\n4. Key lesson: AWS Budgets = setting budget limits and spending alerts.",
+    "concept": "AWS Budgets",
+    "service": "AWS Budgets"
+  },
+  {
+    "id": 893,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "When using Consolidated Billing in AWS Organizations to combine multiple AWS accounts under a single payer account, what is a key financial benefit?",
+    "options": {
+      "A": "Combining usage across all accounts to qualify for accumulated volume discounts",
+      "B": "Free, unlimited access to EC2 instances across all accounts",
+      "C": "Completely free interregional data transfer",
+      "D": "Permanent tax exemption"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consolidated billing combines the usage of all member accounts to reach aggregated volume-discount thresholds.",
+    "hint2": "It also lets you pay for all accounts with a single invoice.",
+    "explanation": "1. Option A is correct because consolidated billing adds up the consumption volume of all accounts to access better volume-discount tiers.\n2. Key requirement: Financial benefit derived from combining multiple accounts into a centralized invoice.\n3. Distractors: B, C, and D are false financial claims not offered by AWS Organizations.\n4. Key lesson: Consolidated billing = single invoice + aggregated volume discounts.",
+    "concept": "Consolidated Billing",
+    "service": "AWS Organizations"
+  },
+  {
+    "id": 894,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company's finance department needs to break down and attribute monthly AWS costs to specific projects, departments, or environments (e.g., 'CostCenter: 101' or 'Environment: Production'). Which AWS mechanism allows classifying resource costs?",
+    "options": {
+      "A": "Cost Allocation Tags",
+      "B": "Security Groups",
+      "C": "Service Control Policies (SCPs)",
+      "D": "Points of Presence (Edge Locations)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Tags are key-value pairs assigned to resources that can be activated in the billing console to organize and attribute costs.",
+    "hint2": "They make it easier to measure return on investment (ROI) by department.",
+    "explanation": "1. Option A is correct because Cost Allocation Tags organize and attribute resource costs in billing reports.\n2. Key requirement: Categorize and identify AWS spending by department or project.\n3. Distractors: B are virtual firewalls; C are governance rules; D are CDN network nodes.\n4. Key lesson: Cost Allocation Tags = tagging resources to break down costs.",
+    "concept": "Cost Allocation Tags",
+    "service": "AWS Billing"
+  },
+  {
+    "id": 895,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Understand AWS support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "Which AWS support plan is included by default for all AWS customers at no additional cost and provides access to official documentation, community forums, and billing support?",
+    "options": {
+      "A": "AWS Support Plan — Basic",
+      "B": "AWS Support Plan — Developer",
+      "C": "AWS Support Plan — Business",
+      "D": "AWS Support Plan — Enterprise"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "The Basic plan is free for all users and includes access to health dashboards and billing support.",
+    "hint2": "It does not include 24/7 technical support from engineers for architecture issues.",
+    "explanation": "1. Option A is correct because the Basic plan is included at no cost on all AWS accounts.\n2. Key requirement: Default free support plan.\n3. Distractors: B, C, and D are paid plans that offer access to technical support engineers.\n4. Key lesson: Basic Support Plan = free, covers billing and access to documentation.",
+    "concept": "Plan Basic",
+    "service": "AWS Support"
+  },
+  {
+    "id": 896,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Understand AWS support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An independent developer is building an application on AWS and needs email-based technical support during business hours to resolve configuration questions, with a response time of under 12 hours for guidance on system issues. What is the CHEAPEST paid support plan?",
+    "options": {
+      "A": "AWS Support Plan — Developer",
+      "B": "AWS Support Plan — Basic",
+      "C": "AWS Support Plan — Business",
+      "D": "AWS Support Plan — Enterprise"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "The Developer plan is intended for testing or development, with business-hours email access to support engineers.",
+    "hint2": "It offers a <12h response time for system guidance.",
+    "explanation": "1. Option A is correct because the Developer plan is the entry-level paid tier aimed at non-critical development and testing.\n2. Key requirement: Low-cost email technical support for testing/development.\n3. Distractors: B does not include architecture technical support; C and D offer 24/7 phone/chat support for production.\n4. Key lesson: Developer Support Plan = affordable business-hours email technical support.",
+    "concept": "Plan Developer",
+    "service": "AWS Support"
+  },
+  {
+    "id": 897,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Understand AWS support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A company runs critical production workloads on AWS. They require 24/7 technical support by phone, chat, and email with a response time of under 1 hour for production system outages. Which support plan covers this minimum level required for production?",
+    "options": {
+      "A": "AWS Support Plan — Business",
+      "B": "AWS Support Plan — Developer",
+      "C": "AWS Support Plan — Basic",
+      "D": "AWS Support Plan — Free Tier"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "The Business plan is designed for production workloads and offers 24/7 phone/chat/email support with SLA <1h.",
+    "hint2": "Full access to AWS Trusted Advisor checks.",
+    "explanation": "1. Option A is correct because the Business plan provides 24/7 phone, chat, and email access with <1h response for production outages.\n2. Key requirement: 24/7 phone/chat support with 1-hour SLA for production.\n3. Distractors: B only provides email support during business hours; C lacks technical support; D does not exist.\n4. Key lesson: Business Support Plan = 24/7 phone/chat support for production environments.",
+    "concept": "Business Support Plan",
+    "service": "AWS Support"
+  },
+  {
+    "id": 898,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Understand AWS support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "A large corporation runs mission-critical systems on which its entire business depends. They require a dedicated, assigned Technical Account Manager (TAM) and a guaranteed response time of under 15 minutes for critical business outages. Which support plan should they purchase?",
+    "options": {
+      "A": "AWS Support Plan — Enterprise Support",
+      "B": "AWS Support Plan — Business",
+      "C": "AWS Support Plan — Developer",
+      "D": "AWS Support Plan — Standard"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Enterprise Support is the top tier that includes a dedicated TAM and <15-minute response for 'business-critical system down'.",
+    "hint2": "Provides a dedicated Technical Account Manager (TAM).",
+    "explanation": "1. Option A is correct because Enterprise Support offers a dedicated TAM and response in under 15 minutes for mission-critical emergencies.\n2. Key requirement: Allocation of a TAM and <15 min response time for mission-critical issues.\n3. Distractors: B responds in 1 hour and does not include a dedicated TAM; C and D do not meet mission-critical SLAs.\n4. Key lesson: Enterprise Support = assigned TAM + <15 min response time.",
+    "concept": "Enterprise Support Plan",
+    "service": "AWS Support"
+  },
+  {
+    "id": 899,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Understand AWS support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "What is the primary role of an AWS Technical Account Manager (TAM) provided to Enterprise Support plan customers?",
+    "options": {
+      "A": "Serve as your dedicated technical point of contact, providing proactive guidance, architectural reviews, and optimization best practices",
+      "B": "Write the source code for the customer's applications",
+      "C": "Approve or decline the account's credit card payments",
+      "D": "Physically repair servers in AWS's data centers"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "The TAM is a dedicated technical advisor helping customers plan, design, and optimize cloud architectures.",
+    "hint2": "Offers proactive guidance on adoption and best practices.",
+    "explanation": "1. Option A is correct because the TAM provides dedicated technical assistance and proactive advisory to Enterprise customers.\n2. Key requirement: Function and value of the TAM role in AWS Support.\n3. Distractors: B, C, and D do not correspond to the consulting and technical advisory role of the TAM.\n4. Key lesson: Technical Account Manager (TAM) = dedicated technical advisor exclusive to Enterprise Support.",
+    "concept": "Technical Account Manager (TAM)",
+    "service": "AWS Support"
+  },
+  {
+    "id": 900,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand cost management tools",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "An organization needs to quickly purchase and deploy third-party software (such as Palo Alto firewalls or pre-licensed databases), with billing integrated directly into its consolidated AWS invoice. Which digital software catalog should they explore?",
+    "options": {
+      "A": "AWS Marketplace",
+      "B": "AWS Service Catalog",
+      "C": "AWS Partner Network (APN)",
+      "D": "AWS Artifact"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "AWS Marketplace is a digital catalog with thousands of software offerings from independent software vendors (ISVs) billed directly through AWS.",
+    "hint2": "Simplifies the procurement and deployment of third-party solutions.",
+    "explanation": "1. Option A is correct because AWS Marketplace allows purchasing, deploying, and managing third-party software billed on the AWS account.\n2. Key requirement: Acquiring third-party commercial software solutions integrated into the AWS bill.\n3. Distractors: B is for cataloging approved internal resources; C is the partner network; D provides compliance reports.\n4. Key lesson: AWS Marketplace = digital store to buy third-party software integrated into the AWS bill.",
+    "concept": "AWS Marketplace",
+    "service": "AWS Marketplace"
+  }
+]

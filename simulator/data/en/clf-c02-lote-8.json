@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 701,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the benefits of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Beneficios of the cloud - Caso #1] a company multinacional de venta al por menor experimenta fluctuacionis masivas de tráfico durante campañas promocionalis flash. Buscan eliminar el desperdicio de infraestructura pagando únicamente por los servidoris necesarios en cada minuto exacto. Which AWS Cloud benefit se appliis directamente aquí?",
+    "options": {
+      "A": "Soberanía territorial fija de servidoris",
+      "B": "Eliminación de la adivinación de la capacidad through escalado elástico",
+      "C": "Sustitución de revisionis de seguridad por automatización",
+      "D": "Conversión de operational expendituris en costos fijos de capital"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Piensa en ajustar la infraestructura a la demanda real in real time.",
+    "hint2": "Evita pagar por capacidad ociosa durante todo el año.",
+    "explanation": "1. Option B is correct because la elasticidad in the cloud allows escalar la capacidad automáticamente según la demanda real, evitando el sobre-aprovisionamiento.\n2. The key requirement is ajustar la capacidad dinámicamente sin adivinar el pico máximo.\n3. Distractoris: A distorsiona la elasticidad con soberanía; C confunde seguridad con cómputo; D invierte la propuesta de valor (AWS cambia CapEx por OpEx).\n4. Lección clave: Dejar de adivinar la capacidad.",
+    "concept": "Elasticidad y Ajuste de Capacidad",
+    "service": "AWS Auto Scaling"
+  },
+  {
+    "id": 702,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify design principles of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Well-Architected Framework - Caso #2] Una institución de investigación médica requiris que sus científicos de datos puedan desplegar rápidamente servidoris de procesamiento de genomas en cuestión de minutos sin tener que esperar semanas por adquisicionis físicas de hardware. ¿Qué principio of the cloud of AWS representa este escenario?",
+    "options": {
+      "A": "Agilidad y velocidad de despliegue",
+      "B": "Gestión de parchis física",
+      "C": "Aumento del costo de capital (CapEx)",
+      "D": "Despliegue exclusivo en data centers localis"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows aprovisionar recursos en minutos con unos pocos clics o llamadas a API.",
+    "hint2": "Reduce el tiempo de comercialización e innovación.",
+    "explanation": "1. Option A is correct because la agilidad in the cloud reduce drásticamente el tiempo necesario to provision infraestructura de semanas a minutos.\n2. The key requirement is la velocidad para disponer de recursos de TI on-demand.\n3. Distractoris: B is an AWS responsibility; C is opuesto a la reducción de CapEx; D contradice el modelo in the cloud pública.\n4. Lección clave: Agilidad operativa in AWS.",
+    "concept": "Agilidad y Velocidad of the cloud",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 703,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Estrategias de migración y AWS CAF - Caso #3] Al diseñar una arquitectura de high availability para una aplicación crítica, un arquitecto decide separar el módulo de procesamiento de pagos del frontend web utilizando colas de mensajis. ¿Qué principio de diseño del Well-Architected Framework se está implementando?",
+    "options": {
+      "A": "Acoplamiento denso entre componentis",
+      "B": "Desacoplamiento de componentis (Decouple components)",
+      "C": "Diseño monolítico centralizado",
+      "D": "Aprovisionamiento estático masivo"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Busca el principio de acoplamiento débil entre microservicios.",
+    "hint2": "Si un componente falla, la cola storis los mensajis sin congelar el frontend.",
+    "explanation": "1. Option B is correct because desacoplar componentis through arquitectura orientada a eventos o colas evita fallos en cadena y mejora la resiliencia.\n2. The key requirement is aislar fallos entre módulos independientis.\n3. Distractoris: A is un antipatrón riesgoso; C dificulta el escalado independiente; D genera costos innecesarios.\n4. Lección clave: Desacoplamiento de sistemas en Well-Architected.",
+    "concept": "Principio de Diseño: Desacoplamiento",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 704,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand cloud economics concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[OpEx vs CapEx y Economía of the cloud - Caso #4] a company de medios digitalis desea llevar a cabo la migración de su data center tradicional to the cloud of AWS sin realizar modificacionis en el código fuente de sus aplicacionis legacy. ¿Qué estrategia de migración (de las 7 Rs) must emplear?",
+    "options": {
+      "A": "Rehost (Lift and Shift)",
+      "B": "Refactor / Re-architect",
+      "C": "Retire",
+      "D": "Repurchase"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consiste en mover aplicacionis to the cloud sin modificar su arquitectura o código.",
+    "hint2": "is la estrategia más rápida para migracionis inicialis.",
+    "explanation": "1. Option A is correct because Rehost implica trasladar servidoris y aplicacionis directamente to the cloud manteniendo su estado actual sin cambios de código.\n2. The key requirement is migrar sin modificar el código fuente.\n3. Distractoris: B exige escribir el código de nuevo; C desmantela la app; D cambia por un producto SaaS comercial.\n4. Lección clave: Estrategias de migración de las 7 Rs.",
+    "concept": "Estrategia de Migración: Rehost",
+    "service": "AWS Application Migration Service"
+  },
+  {
+    "id": 705,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the benefits of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Beneficios of the cloud - Caso #5] a company multinacional de venta al por menor experimenta fluctuacionis masivas de tráfico durante campañas promocionalis flash. Buscan eliminar el desperdicio de infraestructura pagando únicamente por los servidoris necesarios en cada minuto exacto. Which AWS Cloud benefit se appliis directamente aquí?",
+    "options": {
+      "A": "Soberanía territorial fija de servidoris",
+      "B": "Eliminación de la adivinación de la capacidad through escalado elástico",
+      "C": "Sustitución de revisionis de seguridad por automatización",
+      "D": "Conversión de operational expendituris en costos fijos de capital"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Piensa en ajustar la infraestructura a la demanda real in real time.",
+    "hint2": "Evita pagar por capacidad ociosa durante todo el año.",
+    "explanation": "1. Option B is correct because la elasticidad in the cloud allows escalar la capacidad automáticamente según la demanda real, evitando el sobre-aprovisionamiento.\n2. The key requirement is ajustar la capacidad dinámicamente sin adivinar el pico máximo.\n3. Distractoris: A distorsiona la elasticidad con soberanía; C confunde seguridad con cómputo; D invierte la propuesta de valor (AWS cambia CapEx por OpEx).\n4. Lección clave: Dejar de adivinar la capacidad.",
+    "concept": "Elasticidad y Ajuste de Capacidad",
+    "service": "AWS Auto Scaling"
+  },
+  {
+    "id": 706,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify design principles of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "[Well-Architected Framework - Caso #6] Una institución de investigación médica requiris que sus científicos de datos puedan desplegar rápidamente servidoris de procesamiento de genomas en cuestión de minutos sin tener que esperar semanas por adquisicionis físicas de hardware. ¿Qué principio of the cloud of AWS representa este escenario?",
+    "options": {
+      "A": "Agilidad y velocidad de despliegue",
+      "B": "Gestión de parchis física",
+      "C": "Aumento del costo de capital (CapEx)",
+      "D": "Despliegue exclusivo en data centers localis"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows aprovisionar recursos en minutos con unos pocos clics o llamadas a API.",
+    "hint2": "Reduce el tiempo de comercialización e innovación.",
+    "explanation": "1. Option A is correct because la agilidad in the cloud reduce drásticamente el tiempo necesario to provision infraestructura de semanas a minutos.\n2. The key requirement is la velocidad para disponer de recursos de TI on-demand.\n3. Distractoris: B is an AWS responsibility; C is opuesto a la reducción de CapEx; D contradice el modelo in the cloud pública.\n4. Lección clave: Agilidad operativa in AWS.",
+    "concept": "Agilidad y Velocidad of the cloud",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 707,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Estrategias de migración y AWS CAF - Caso #7] Al diseñar una arquitectura de high availability para una aplicación crítica, un arquitecto decide separar el módulo de procesamiento de pagos del frontend web utilizando colas de mensajis. ¿Qué principio de diseño del Well-Architected Framework se está implementando?",
+    "options": {
+      "A": "Acoplamiento denso entre componentis",
+      "B": "Desacoplamiento de componentis (Decouple components)",
+      "C": "Diseño monolítico centralizado",
+      "D": "Aprovisionamiento estático masivo"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Busca el principio de acoplamiento débil entre microservicios.",
+    "hint2": "Si un componente falla, la cola storis los mensajis sin congelar el frontend.",
+    "explanation": "1. Option B is correct because desacoplar componentis through arquitectura orientada a eventos o colas evita fallos en cadena y mejora la resiliencia.\n2. The key requirement is aislar fallos entre módulos independientis.\n3. Distractoris: A is un antipatrón riesgoso; C dificulta el escalado independiente; D genera costos innecesarios.\n4. Lección clave: Desacoplamiento de sistemas en Well-Architected.",
+    "concept": "Principio de Diseño: Desacoplamiento",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 708,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand cloud economics concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[OpEx vs CapEx y Economía of the cloud - Caso #8] a company de medios digitalis desea llevar a cabo la migración de su data center tradicional to the cloud of AWS sin realizar modificacionis en el código fuente de sus aplicacionis legacy. ¿Qué estrategia de migración (de las 7 Rs) must emplear?",
+    "options": {
+      "A": "Rehost (Lift and Shift)",
+      "B": "Refactor / Re-architect",
+      "C": "Retire",
+      "D": "Repurchase"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consiste en mover aplicacionis to the cloud sin modificar su arquitectura o código.",
+    "hint2": "is la estrategia más rápida para migracionis inicialis.",
+    "explanation": "1. Option A is correct because Rehost implica trasladar servidoris y aplicacionis directamente to the cloud manteniendo su estado actual sin cambios de código.\n2. The key requirement is migrar sin modificar el código fuente.\n3. Distractoris: B exige escribir el código de nuevo; C desmantela la app; D cambia por un producto SaaS comercial.\n4. Lección clave: Estrategias de migración de las 7 Rs.",
+    "concept": "Estrategia de Migración: Rehost",
+    "service": "AWS Application Migration Service"
+  },
+  {
+    "id": 709,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the benefits of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Beneficios of the cloud - Caso #9] a company multinacional de venta al por menor experimenta fluctuacionis masivas de tráfico durante campañas promocionalis flash. Buscan eliminar el desperdicio de infraestructura pagando únicamente por los servidoris necesarios en cada minuto exacto. Which AWS Cloud benefit se appliis directamente aquí?",
+    "options": {
+      "A": "Soberanía territorial fija de servidoris",
+      "B": "Eliminación de la adivinación de la capacidad through escalado elástico",
+      "C": "Sustitución de revisionis de seguridad por automatización",
+      "D": "Conversión de operational expendituris en costos fijos de capital"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Piensa en ajustar la infraestructura a la demanda real in real time.",
+    "hint2": "Evita pagar por capacidad ociosa durante todo el año.",
+    "explanation": "1. Option B is correct because la elasticidad in the cloud allows escalar la capacidad automáticamente según la demanda real, evitando el sobre-aprovisionamiento.\n2. The key requirement is ajustar la capacidad dinámicamente sin adivinar el pico máximo.\n3. Distractoris: A distorsiona la elasticidad con soberanía; C confunde seguridad con cómputo; D invierte la propuesta de valor (AWS cambia CapEx por OpEx).\n4. Lección clave: Dejar de adivinar la capacidad.",
+    "concept": "Elasticidad y Ajuste de Capacidad",
+    "service": "AWS Auto Scaling"
+  },
+  {
+    "id": 710,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify design principles of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Well-Architected Framework - Caso #10] Una institución de investigación médica requiris que sus científicos de datos puedan desplegar rápidamente servidoris de procesamiento de genomas en cuestión de minutos sin tener que esperar semanas por adquisicionis físicas de hardware. ¿Qué principio of the cloud of AWS representa este escenario?",
+    "options": {
+      "A": "Agilidad y velocidad de despliegue",
+      "B": "Gestión de parchis física",
+      "C": "Aumento del costo de capital (CapEx)",
+      "D": "Despliegue exclusivo en data centers localis"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows aprovisionar recursos en minutos con unos pocos clics o llamadas a API.",
+    "hint2": "Reduce el tiempo de comercialización e innovación.",
+    "explanation": "1. Option A is correct because la agilidad in the cloud reduce drásticamente el tiempo necesario to provision infraestructura de semanas a minutos.\n2. The key requirement is la velocidad para disponer de recursos de TI on-demand.\n3. Distractoris: B is an AWS responsibility; C is opuesto a la reducción de CapEx; D contradice el modelo in the cloud pública.\n4. Lección clave: Agilidad operativa in AWS.",
+    "concept": "Agilidad y Velocidad of the cloud",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 711,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Estrategias de migración y AWS CAF - Caso #11] Al diseñar una arquitectura de high availability para una aplicación crítica, un arquitecto decide separar el módulo de procesamiento de pagos del frontend web utilizando colas de mensajis. ¿Qué principio de diseño del Well-Architected Framework se está implementando?",
+    "options": {
+      "A": "Acoplamiento denso entre componentis",
+      "B": "Desacoplamiento de componentis (Decouple components)",
+      "C": "Diseño monolítico centralizado",
+      "D": "Aprovisionamiento estático masivo"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Busca el principio de acoplamiento débil entre microservicios.",
+    "hint2": "Si un componente falla, la cola storis los mensajis sin congelar el frontend.",
+    "explanation": "1. Option B is correct because desacoplar componentis through arquitectura orientada a eventos o colas evita fallos en cadena y mejora la resiliencia.\n2. The key requirement is aislar fallos entre módulos independientis.\n3. Distractoris: A is un antipatrón riesgoso; C dificulta el escalado independiente; D genera costos innecesarios.\n4. Lección clave: Desacoplamiento de sistemas en Well-Architected.",
+    "concept": "Principio de Diseño: Desacoplamiento",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 712,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand cloud economics concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[OpEx vs CapEx y Economía of the cloud - Caso #12] a company de medios digitalis desea llevar a cabo la migración de su data center tradicional to the cloud of AWS sin realizar modificacionis en el código fuente de sus aplicacionis legacy. ¿Qué estrategia de migración (de las 7 Rs) must emplear?",
+    "options": {
+      "A": "Rehost (Lift and Shift)",
+      "B": "Refactor / Re-architect",
+      "C": "Retire",
+      "D": "Repurchase"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consiste en mover aplicacionis to the cloud sin modificar su arquitectura o código.",
+    "hint2": "is la estrategia más rápida para migracionis inicialis.",
+    "explanation": "1. Option A is correct because Rehost implica trasladar servidoris y aplicacionis directamente to the cloud manteniendo su estado actual sin cambios de código.\n2. The key requirement is migrar sin modificar el código fuente.\n3. Distractoris: B exige escribir el código de nuevo; C desmantela la app; D cambia por un producto SaaS comercial.\n4. Lección clave: Estrategias de migración de las 7 Rs.",
+    "concept": "Estrategia de Migración: Rehost",
+    "service": "AWS Application Migration Service"
+  },
+  {
+    "id": 713,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the benefits of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Beneficios of the cloud - Caso #13] a company multinacional de venta al por menor experimenta fluctuacionis masivas de tráfico durante campañas promocionalis flash. Buscan eliminar el desperdicio de infraestructura pagando únicamente por los servidoris necesarios en cada minuto exacto. Which AWS Cloud benefit se appliis directamente aquí?",
+    "options": {
+      "A": "Soberanía territorial fija de servidoris",
+      "B": "Eliminación de la adivinación de la capacidad through escalado elástico",
+      "C": "Sustitución de revisionis de seguridad por automatización",
+      "D": "Conversión de operational expendituris en costos fijos de capital"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Piensa en ajustar la infraestructura a la demanda real in real time.",
+    "hint2": "Evita pagar por capacidad ociosa durante todo el año.",
+    "explanation": "1. Option B is correct because la elasticidad in the cloud allows escalar la capacidad automáticamente según la demanda real, evitando el sobre-aprovisionamiento.\n2. The key requirement is ajustar la capacidad dinámicamente sin adivinar el pico máximo.\n3. Distractoris: A distorsiona la elasticidad con soberanía; C confunde seguridad con cómputo; D invierte la propuesta de valor (AWS cambia CapEx por OpEx).\n4. Lección clave: Dejar de adivinar la capacidad.",
+    "concept": "Elasticidad y Ajuste de Capacidad",
+    "service": "AWS Auto Scaling"
+  },
+  {
+    "id": 714,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify design principles of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Well-Architected Framework - Caso #14] Una institución de investigación médica requiris que sus científicos de datos puedan desplegar rápidamente servidoris de procesamiento de genomas en cuestión de minutos sin tener que esperar semanas por adquisicionis físicas de hardware. ¿Qué principio of the cloud of AWS representa este escenario?",
+    "options": {
+      "A": "Agilidad y velocidad de despliegue",
+      "B": "Gestión de parchis física",
+      "C": "Aumento del costo de capital (CapEx)",
+      "D": "Despliegue exclusivo en data centers localis"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows aprovisionar recursos en minutos con unos pocos clics o llamadas a API.",
+    "hint2": "Reduce el tiempo de comercialización e innovación.",
+    "explanation": "1. Option A is correct because la agilidad in the cloud reduce drásticamente el tiempo necesario to provision infraestructura de semanas a minutos.\n2. The key requirement is la velocidad para disponer de recursos de TI on-demand.\n3. Distractoris: B is an AWS responsibility; C is opuesto a la reducción de CapEx; D contradice el modelo in the cloud pública.\n4. Lección clave: Agilidad operativa in AWS.",
+    "concept": "Agilidad y Velocidad of the cloud",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 715,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Estrategias de migración y AWS CAF - Caso #15] Al diseñar una arquitectura de high availability para una aplicación crítica, un arquitecto decide separar el módulo de procesamiento de pagos del frontend web utilizando colas de mensajis. ¿Qué principio de diseño del Well-Architected Framework se está implementando?",
+    "options": {
+      "A": "Acoplamiento denso entre componentis",
+      "B": "Desacoplamiento de componentis (Decouple components)",
+      "C": "Diseño monolítico centralizado",
+      "D": "Aprovisionamiento estático masivo"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Busca el principio de acoplamiento débil entre microservicios.",
+    "hint2": "Si un componente falla, la cola storis los mensajis sin congelar el frontend.",
+    "explanation": "1. Option B is correct because desacoplar componentis through arquitectura orientada a eventos o colas evita fallos en cadena y mejora la resiliencia.\n2. The key requirement is aislar fallos entre módulos independientis.\n3. Distractoris: A is un antipatrón riesgoso; C dificulta el escalado independiente; D genera costos innecesarios.\n4. Lección clave: Desacoplamiento de sistemas en Well-Architected.",
+    "concept": "Principio de Diseño: Desacoplamiento",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 716,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand cloud economics concepts",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "[OpEx vs CapEx y Economía of the cloud - Caso #16] a company de medios digitalis desea llevar a cabo la migración de su data center tradicional to the cloud of AWS sin realizar modificacionis en el código fuente de sus aplicacionis legacy. ¿Qué estrategia de migración (de las 7 Rs) must emplear?",
+    "options": {
+      "A": "Rehost (Lift and Shift)",
+      "B": "Refactor / Re-architect",
+      "C": "Retire",
+      "D": "Repurchase"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consiste en mover aplicacionis to the cloud sin modificar su arquitectura o código.",
+    "hint2": "is la estrategia más rápida para migracionis inicialis.",
+    "explanation": "1. Option A is correct because Rehost implica trasladar servidoris y aplicacionis directamente to the cloud manteniendo su estado actual sin cambios de código.\n2. The key requirement is migrar sin modificar el código fuente.\n3. Distractoris: B exige escribir el código de nuevo; C desmantela la app; D cambia por un producto SaaS comercial.\n4. Lección clave: Estrategias de migración de las 7 Rs.",
+    "concept": "Estrategia de Migración: Rehost",
+    "service": "AWS Application Migration Service"
+  },
+  {
+    "id": 717,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the benefits of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Beneficios of the cloud - Caso #17] a company multinacional de venta al por menor experimenta fluctuacionis masivas de tráfico durante campañas promocionalis flash. Buscan eliminar el desperdicio de infraestructura pagando únicamente por los servidoris necesarios en cada minuto exacto. Which AWS Cloud benefit se appliis directamente aquí?",
+    "options": {
+      "A": "Soberanía territorial fija de servidoris",
+      "B": "Eliminación de la adivinación de la capacidad through escalado elástico",
+      "C": "Sustitución de revisionis de seguridad por automatización",
+      "D": "Conversión de operational expendituris en costos fijos de capital"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Piensa en ajustar la infraestructura a la demanda real in real time.",
+    "hint2": "Evita pagar por capacidad ociosa durante todo el año.",
+    "explanation": "1. Option B is correct because la elasticidad in the cloud allows escalar la capacidad automáticamente según la demanda real, evitando el sobre-aprovisionamiento.\n2. The key requirement is ajustar la capacidad dinámicamente sin adivinar el pico máximo.\n3. Distractoris: A distorsiona la elasticidad con soberanía; C confunde seguridad con cómputo; D invierte la propuesta de valor (AWS cambia CapEx por OpEx).\n4. Lección clave: Dejar de adivinar la capacidad.",
+    "concept": "Elasticidad y Ajuste de Capacidad",
+    "service": "AWS Auto Scaling"
+  },
+  {
+    "id": 718,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify design principles of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Well-Architected Framework - Caso #18] Una institución de investigación médica requiris que sus científicos de datos puedan desplegar rápidamente servidoris de procesamiento de genomas en cuestión de minutos sin tener que esperar semanas por adquisicionis físicas de hardware. ¿Qué principio of the cloud of AWS representa este escenario?",
+    "options": {
+      "A": "Agilidad y velocidad de despliegue",
+      "B": "Gestión de parchis física",
+      "C": "Aumento del costo de capital (CapEx)",
+      "D": "Despliegue exclusivo en data centers localis"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows aprovisionar recursos en minutos con unos pocos clics o llamadas a API.",
+    "hint2": "Reduce el tiempo de comercialización e innovación.",
+    "explanation": "1. Option A is correct because la agilidad in the cloud reduce drásticamente el tiempo necesario to provision infraestructura de semanas a minutos.\n2. The key requirement is la velocidad para disponer de recursos de TI on-demand.\n3. Distractoris: B is an AWS responsibility; C is opuesto a la reducción de CapEx; D contradice el modelo in the cloud pública.\n4. Lección clave: Agilidad operativa in AWS.",
+    "concept": "Agilidad y Velocidad of the cloud",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 719,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Estrategias de migración y AWS CAF - Caso #19] Al diseñar una arquitectura de high availability para una aplicación crítica, un arquitecto decide separar el módulo de procesamiento de pagos del frontend web utilizando colas de mensajis. ¿Qué principio de diseño del Well-Architected Framework se está implementando?",
+    "options": {
+      "A": "Acoplamiento denso entre componentis",
+      "B": "Desacoplamiento de componentis (Decouple components)",
+      "C": "Diseño monolítico centralizado",
+      "D": "Aprovisionamiento estático masivo"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Busca el principio de acoplamiento débil entre microservicios.",
+    "hint2": "Si un componente falla, la cola storis los mensajis sin congelar el frontend.",
+    "explanation": "1. Option B is correct because desacoplar componentis through arquitectura orientada a eventos o colas evita fallos en cadena y mejora la resiliencia.\n2. The key requirement is aislar fallos entre módulos independientis.\n3. Distractoris: A is un antipatrón riesgoso; C dificulta el escalado independiente; D genera costos innecesarios.\n4. Lección clave: Desacoplamiento de sistemas en Well-Architected.",
+    "concept": "Principio de Diseño: Desacoplamiento",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 720,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand cloud economics concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[OpEx vs CapEx y Economía of the cloud - Caso #20] a company de medios digitalis desea llevar a cabo la migración de su data center tradicional to the cloud of AWS sin realizar modificacionis en el código fuente de sus aplicacionis legacy. ¿Qué estrategia de migración (de las 7 Rs) must emplear?",
+    "options": {
+      "A": "Rehost (Lift and Shift)",
+      "B": "Refactor / Re-architect",
+      "C": "Retire",
+      "D": "Repurchase"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consiste en mover aplicacionis to the cloud sin modificar su arquitectura o código.",
+    "hint2": "is la estrategia más rápida para migracionis inicialis.",
+    "explanation": "1. Option A is correct because Rehost implica trasladar servidoris y aplicacionis directamente to the cloud manteniendo su estado actual sin cambios de código.\n2. The key requirement is migrar sin modificar el código fuente.\n3. Distractoris: B exige escribir el código de nuevo; C desmantela la app; D cambia por un producto SaaS comercial.\n4. Lección clave: Estrategias de migración de las 7 Rs.",
+    "concept": "Estrategia de Migración: Rehost",
+    "service": "AWS Application Migration Service"
+  },
+  {
+    "id": 721,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.1: Define the benefits of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Beneficios of the cloud - Caso #21] a company multinacional de venta al por menor experimenta fluctuacionis masivas de tráfico durante campañas promocionalis flash. Buscan eliminar el desperdicio de infraestructura pagando únicamente por los servidoris necesarios en cada minuto exacto. Which AWS Cloud benefit se appliis directamente aquí?",
+    "options": {
+      "A": "Soberanía territorial fija de servidoris",
+      "B": "Eliminación de la adivinación de la capacidad through escalado elástico",
+      "C": "Sustitución de revisionis de seguridad por automatización",
+      "D": "Conversión de operational expendituris en costos fijos de capital"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Piensa en ajustar la infraestructura a la demanda real in real time.",
+    "hint2": "Evita pagar por capacidad ociosa durante todo el año.",
+    "explanation": "1. Option B is correct because la elasticidad in the cloud allows escalar la capacidad automáticamente según la demanda real, evitando el sobre-aprovisionamiento.\n2. The key requirement is ajustar la capacidad dinámicamente sin adivinar el pico máximo.\n3. Distractoris: A distorsiona la elasticidad con soberanía; C confunde seguridad con cómputo; D invierte la propuesta de valor (AWS cambia CapEx por OpEx).\n4. Lección clave: Dejar de adivinar la capacidad.",
+    "concept": "Elasticidad y Ajuste de Capacidad",
+    "service": "AWS Auto Scaling"
+  },
+  {
+    "id": 722,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.2: Identify design principles of the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Well-Architected Framework - Caso #22] Una institución de investigación médica requiris que sus científicos de datos puedan desplegar rápidamente servidoris de procesamiento de genomas en cuestión de minutos sin tener que esperar semanas por adquisicionis físicas de hardware. ¿Qué principio of the cloud of AWS representa este escenario?",
+    "options": {
+      "A": "Agilidad y velocidad de despliegue",
+      "B": "Gestión de parchis física",
+      "C": "Aumento del costo de capital (CapEx)",
+      "D": "Despliegue exclusivo en data centers localis"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows aprovisionar recursos en minutos con unos pocos clics o llamadas a API.",
+    "hint2": "Reduce el tiempo de comercialización e innovación.",
+    "explanation": "1. Option A is correct because la agilidad in the cloud reduce drásticamente el tiempo necesario to provision infraestructura de semanas a minutos.\n2. The key requirement is la velocidad para disponer de recursos de TI on-demand.\n3. Distractoris: B is an AWS responsibility; C is opuesto a la reducción de CapEx; D contradice el modelo in the cloud pública.\n4. Lección clave: Agilidad operativa in AWS.",
+    "concept": "Agilidad y Velocidad of the cloud",
+    "service": "AWS Cloud"
+  },
+  {
+    "id": 723,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.3: Understand benefits and strategies of AWS Cloud migration",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Estrategias de migración y AWS CAF - Caso #23] Al diseñar una arquitectura de high availability para una aplicación crítica, un arquitecto decide separar el módulo de procesamiento de pagos del frontend web utilizando colas de mensajis. ¿Qué principio de diseño del Well-Architected Framework se está implementando?",
+    "options": {
+      "A": "Acoplamiento denso entre componentis",
+      "B": "Desacoplamiento de componentis (Decouple components)",
+      "C": "Diseño monolítico centralizado",
+      "D": "Aprovisionamiento estático masivo"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Busca el principio de acoplamiento débil entre microservicios.",
+    "hint2": "Si un componente falla, la cola storis los mensajis sin congelar el frontend.",
+    "explanation": "1. Option B is correct because desacoplar componentis through arquitectura orientada a eventos o colas evita fallos en cadena y mejora la resiliencia.\n2. The key requirement is aislar fallos entre módulos independientis.\n3. Distractoris: A is un antipatrón riesgoso; C dificulta el escalado independiente; D genera costos innecesarios.\n4. Lección clave: Desacoplamiento de sistemas en Well-Architected.",
+    "concept": "Principio de Diseño: Desacoplamiento",
+    "service": "Amazon SQS"
+  },
+  {
+    "id": 724,
+    "domain": "Cloud Concepts",
+    "task": "Task 1.4: Understand cloud economics concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[OpEx vs CapEx y Economía of the cloud - Caso #24] a company de medios digitalis desea llevar a cabo la migración de su data center tradicional to the cloud of AWS sin realizar modificacionis en el código fuente de sus aplicacionis legacy. ¿Qué estrategia de migración (de las 7 Rs) must emplear?",
+    "options": {
+      "A": "Rehost (Lift and Shift)",
+      "B": "Refactor / Re-architect",
+      "C": "Retire",
+      "D": "Repurchase"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Consiste en mover aplicacionis to the cloud sin modificar su arquitectura o código.",
+    "hint2": "is la estrategia más rápida para migracionis inicialis.",
+    "explanation": "1. Option A is correct because Rehost implica trasladar servidoris y aplicacionis directamente to the cloud manteniendo su estado actual sin cambios de código.\n2. The key requirement is migrar sin modificar el código fuente.\n3. Distractoris: B exige escribir el código de nuevo; C desmantela la app; D cambia por un producto SaaS comercial.\n4. Lección clave: Estrategias de migración de las 7 Rs.",
+    "concept": "Estrategia de Migración: Rehost",
+    "service": "AWS Application Migration Service"
+  },
+  {
+    "id": 725,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[shared responsibility model - Caso #1] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 726,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 727,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Identify AWS access management capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[IAM e Identidadis - Caso #3] Un equipo de seguridad necesita implementar una política donde los desarrolladoris solo tengan acceso a recursos S3 específicos durante sus horas de trabajo y solo si utilizan Autenticación Multifactor (MFA). Which component de IAM allows definir estas restriccionis detalladas?",
+    "options": {
+      "A": "Módulo de hardware dedicado CloudHSM",
+      "B": "Políticas Jare de IAM con bloquis de condición (Condition)",
+      "C": "security groups de VPC",
+      "D": "Tipos de instancia EC2 dedicadas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permiten añadir elementos Condition en documentos Jare como aws:MultiFactorAuthPresent y límitis de horario.",
+    "hint2": "is el mecanismo estándar de evaluación de acceso en IAM.",
+    "explanation": "1. Option B is correct because las políticas Jare de IAM admiten la clave Condition para exigir MFA o limitar solicitudis según la IP o el tiempo.\n2. The key requirement is configurar condicionis granularis en la autorización.\n3. Distractoris: A administra clavis criptográficas; C filtra network traffic IP; D is cómputo dedicado.\n4. Lección clave: Políticas Jare y condicionis de IAM.",
+    "concept": "IAM Policiis y Condicionis de Acceso",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 728,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Identify components and resources for security",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Protección y Cifrado - Caso #4] a systems administrator detecta que varias instancias EC2 públicas han comenzado a realizar conexionis salientis sospechosas hacia direccionis IP conocidas de redis de bots de criptomonedas. Which service de detección inteligente de amenazas basado en Machine Learning alerts automáticamente sobre este comportamiento?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS WAF",
+      "C": "AWS Shield Standard",
+      "D": "AWS Resource Access Manager (RAM)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Servicio de detección inteligente de amenazas que analyzis VPC Flow Logs, DNS Logs y CloudTrail.",
+    "hint2": "Detecta actividad maliciosa como minería no autorizada de criptomonedas.",
+    "explanation": "1. Option A is correct because Amazon GuardDuty analyzis fuentis de eventos continuamente para detectar amenazas e infectación por malware o botnets.\n2. The key requirement is la detección automática de amenazas con ML en la cuenta.\n3. Distractoris: B is un firewall de capa 7 HTTP; C prevents ataquis DDoS; D sharis recursos entre cuentas.\n4. Lección clave: Detección inteligente con Amazon GuardDuty.",
+    "concept": "Detección de Amenazas in the cloud",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 729,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[shared responsibility model - Caso #5] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 730,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 731,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Identify AWS access management capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[IAM e Identidadis - Caso #7] Un equipo de seguridad necesita implementar una política donde los desarrolladoris solo tengan acceso a recursos S3 específicos durante sus horas de trabajo y solo si utilizan Autenticación Multifactor (MFA). Which component de IAM allows definir estas restriccionis detalladas?",
+    "options": {
+      "A": "Módulo de hardware dedicado CloudHSM",
+      "B": "Políticas Jare de IAM con bloquis de condición (Condition)",
+      "C": "security groups de VPC",
+      "D": "Tipos de instancia EC2 dedicadas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permiten añadir elementos Condition en documentos Jare como aws:MultiFactorAuthPresent y límitis de horario.",
+    "hint2": "is el mecanismo estándar de evaluación de acceso en IAM.",
+    "explanation": "1. Option B is correct because las políticas Jare de IAM admiten la clave Condition para exigir MFA o limitar solicitudis según la IP o el tiempo.\n2. The key requirement is configurar condicionis granularis en la autorización.\n3. Distractoris: A administra clavis criptográficas; C filtra network traffic IP; D is cómputo dedicado.\n4. Lección clave: Políticas Jare y condicionis de IAM.",
+    "concept": "IAM Policiis y Condicionis de Acceso",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 732,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Identify components and resources for security",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Protección y Cifrado - Caso #8] a systems administrator detecta que varias instancias EC2 públicas han comenzado a realizar conexionis salientis sospechosas hacia direccionis IP conocidas de redis de bots de criptomonedas. Which service de detección inteligente de amenazas basado en Machine Learning alerts automáticamente sobre este comportamiento?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS WAF",
+      "C": "AWS Shield Standard",
+      "D": "AWS Resource Access Manager (RAM)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Servicio de detección inteligente de amenazas que analyzis VPC Flow Logs, DNS Logs y CloudTrail.",
+    "hint2": "Detecta actividad maliciosa como minería no autorizada de criptomonedas.",
+    "explanation": "1. Option A is correct because Amazon GuardDuty analyzis fuentis de eventos continuamente para detectar amenazas e infectación por malware o botnets.\n2. The key requirement is la detección automática de amenazas con ML en la cuenta.\n3. Distractoris: B is un firewall de capa 7 HTTP; C prevents ataquis DDoS; D sharis recursos entre cuentas.\n4. Lección clave: Detección inteligente con Amazon GuardDuty.",
+    "concept": "Detección de Amenazas in the cloud",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 733,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[shared responsibility model - Caso #9] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 734,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 735,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Identify AWS access management capabilities",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[IAM e Identidadis - Caso #11] Un equipo de seguridad necesita implementar una política donde los desarrolladoris solo tengan acceso a recursos S3 específicos durante sus horas de trabajo y solo si utilizan Autenticación Multifactor (MFA). Which component de IAM allows definir estas restriccionis detalladas?",
+    "options": {
+      "A": "Módulo de hardware dedicado CloudHSM",
+      "B": "Políticas Jare de IAM con bloquis de condición (Condition)",
+      "C": "security groups de VPC",
+      "D": "Tipos de instancia EC2 dedicadas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permiten añadir elementos Condition en documentos Jare como aws:MultiFactorAuthPresent y límitis de horario.",
+    "hint2": "is el mecanismo estándar de evaluación de acceso en IAM.",
+    "explanation": "1. Option B is correct because las políticas Jare de IAM admiten la clave Condition para exigir MFA o limitar solicitudis según la IP o el tiempo.\n2. The key requirement is configurar condicionis granularis en la autorización.\n3. Distractoris: A administra clavis criptográficas; C filtra network traffic IP; D is cómputo dedicado.\n4. Lección clave: Políticas Jare y condicionis de IAM.",
+    "concept": "IAM Policiis y Condicionis de Acceso",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 736,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Identify components and resources for security",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Protección y Cifrado - Caso #12] a systems administrator detecta que varias instancias EC2 públicas han comenzado a realizar conexionis salientis sospechosas hacia direccionis IP conocidas de redis de bots de criptomonedas. Which service de detección inteligente de amenazas basado en Machine Learning alerts automáticamente sobre este comportamiento?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS WAF",
+      "C": "AWS Shield Standard",
+      "D": "AWS Resource Access Manager (RAM)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Servicio de detección inteligente de amenazas que analyzis VPC Flow Logs, DNS Logs y CloudTrail.",
+    "hint2": "Detecta actividad maliciosa como minería no autorizada de criptomonedas.",
+    "explanation": "1. Option A is correct because Amazon GuardDuty analyzis fuentis de eventos continuamente para detectar amenazas e infectación por malware o botnets.\n2. The key requirement is la detección automática de amenazas con ML en la cuenta.\n3. Distractoris: B is un firewall de capa 7 HTTP; C prevents ataquis DDoS; D sharis recursos entre cuentas.\n4. Lección clave: Detección inteligente con Amazon GuardDuty.",
+    "concept": "Detección de Amenazas in the cloud",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 737,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[shared responsibility model - Caso #13] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 738,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 739,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Identify AWS access management capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[IAM e Identidadis - Caso #15] Un equipo de seguridad necesita implementar una política donde los desarrolladoris solo tengan acceso a recursos S3 específicos durante sus horas de trabajo y solo si utilizan Autenticación Multifactor (MFA). Which component de IAM allows definir estas restriccionis detalladas?",
+    "options": {
+      "A": "Módulo de hardware dedicado CloudHSM",
+      "B": "Políticas Jare de IAM con bloquis de condición (Condition)",
+      "C": "security groups de VPC",
+      "D": "Tipos de instancia EC2 dedicadas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permiten añadir elementos Condition en documentos Jare como aws:MultiFactorAuthPresent y límitis de horario.",
+    "hint2": "is el mecanismo estándar de evaluación de acceso en IAM.",
+    "explanation": "1. Option B is correct because las políticas Jare de IAM admiten la clave Condition para exigir MFA o limitar solicitudis según la IP o el tiempo.\n2. The key requirement is configurar condicionis granularis en la autorización.\n3. Distractoris: A administra clavis criptográficas; C filtra network traffic IP; D is cómputo dedicado.\n4. Lección clave: Políticas Jare y condicionis de IAM.",
+    "concept": "IAM Policiis y Condicionis de Acceso",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 740,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Identify components and resources for security",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "[Servicios de Protección y Cifrado - Caso #16] a systems administrator detecta que varias instancias EC2 públicas han comenzado a realizar conexionis salientis sospechosas hacia direccionis IP conocidas de redis de bots de criptomonedas. Which service de detección inteligente de amenazas basado en Machine Learning alerts automáticamente sobre este comportamiento?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS WAF",
+      "C": "AWS Shield Standard",
+      "D": "AWS Resource Access Manager (RAM)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Servicio de detección inteligente de amenazas que analyzis VPC Flow Logs, DNS Logs y CloudTrail.",
+    "hint2": "Detecta actividad maliciosa como minería no autorizada de criptomonedas.",
+    "explanation": "1. Option A is correct because Amazon GuardDuty analyzis fuentis de eventos continuamente para detectar amenazas e infectación por malware o botnets.\n2. The key requirement is la detección automática de amenazas con ML en la cuenta.\n3. Distractoris: B is un firewall de capa 7 HTTP; C prevents ataquis DDoS; D sharis recursos entre cuentas.\n4. Lección clave: Detección inteligente con Amazon GuardDuty.",
+    "concept": "Detección de Amenazas in the cloud",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 741,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[shared responsibility model - Caso #17] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 742,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 743,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Identify AWS access management capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[IAM e Identidadis - Caso #19] Un equipo de seguridad necesita implementar una política donde los desarrolladoris solo tengan acceso a recursos S3 específicos durante sus horas de trabajo y solo si utilizan Autenticación Multifactor (MFA). Which component de IAM allows definir estas restriccionis detalladas?",
+    "options": {
+      "A": "Módulo de hardware dedicado CloudHSM",
+      "B": "Políticas Jare de IAM con bloquis de condición (Condition)",
+      "C": "security groups de VPC",
+      "D": "Tipos de instancia EC2 dedicadas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permiten añadir elementos Condition en documentos Jare como aws:MultiFactorAuthPresent y límitis de horario.",
+    "hint2": "is el mecanismo estándar de evaluación de acceso en IAM.",
+    "explanation": "1. Option B is correct because las políticas Jare de IAM admiten la clave Condition para exigir MFA o limitar solicitudis según la IP o el tiempo.\n2. The key requirement is configurar condicionis granularis en la autorización.\n3. Distractoris: A administra clavis criptográficas; C filtra network traffic IP; D is cómputo dedicado.\n4. Lección clave: Políticas Jare y condicionis de IAM.",
+    "concept": "IAM Policiis y Condicionis de Acceso",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 744,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Identify components and resources for security",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Protección y Cifrado - Caso #20] a systems administrator detecta que varias instancias EC2 públicas han comenzado a realizar conexionis salientis sospechosas hacia direccionis IP conocidas de redis de bots de criptomonedas. Which service de detección inteligente de amenazas basado en Machine Learning alerts automáticamente sobre este comportamiento?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS WAF",
+      "C": "AWS Shield Standard",
+      "D": "AWS Resource Access Manager (RAM)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Servicio de detección inteligente de amenazas que analyzis VPC Flow Logs, DNS Logs y CloudTrail.",
+    "hint2": "Detecta actividad maliciosa como minería no autorizada de criptomonedas.",
+    "explanation": "1. Option A is correct because Amazon GuardDuty analyzis fuentis de eventos continuamente para detectar amenazas e infectación por malware o botnets.\n2. The key requirement is la detección automática de amenazas con ML en la cuenta.\n3. Distractoris: B is un firewall de capa 7 HTTP; C prevents ataquis DDoS; D sharis recursos entre cuentas.\n4. Lección clave: Detección inteligente con Amazon GuardDuty.",
+    "concept": "Detección de Amenazas in the cloud",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 745,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[shared responsibility model - Caso #21] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 746,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 747,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Identify AWS access management capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[IAM e Identidadis - Caso #23] Un equipo de seguridad necesita implementar una política donde los desarrolladoris solo tengan acceso a recursos S3 específicos durante sus horas de trabajo y solo si utilizan Autenticación Multifactor (MFA). Which component de IAM allows definir estas restriccionis detalladas?",
+    "options": {
+      "A": "Módulo de hardware dedicado CloudHSM",
+      "B": "Políticas Jare de IAM con bloquis de condición (Condition)",
+      "C": "security groups de VPC",
+      "D": "Tipos de instancia EC2 dedicadas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permiten añadir elementos Condition en documentos Jare como aws:MultiFactorAuthPresent y límitis de horario.",
+    "hint2": "is el mecanismo estándar de evaluación de acceso en IAM.",
+    "explanation": "1. Option B is correct because las políticas Jare de IAM admiten la clave Condition para exigir MFA o limitar solicitudis según la IP o el tiempo.\n2. The key requirement is configurar condicionis granularis en la autorización.\n3. Distractoris: A administra clavis criptográficas; C filtra network traffic IP; D is cómputo dedicado.\n4. Lección clave: Políticas Jare y condicionis de IAM.",
+    "concept": "IAM Policiis y Condicionis de Acceso",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 748,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Identify components and resources for security",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Protección y Cifrado - Caso #24] a systems administrator detecta que varias instancias EC2 públicas han comenzado a realizar conexionis salientis sospechosas hacia direccionis IP conocidas de redis de bots de criptomonedas. Which service de detección inteligente de amenazas basado en Machine Learning alerts automáticamente sobre este comportamiento?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS WAF",
+      "C": "AWS Shield Standard",
+      "D": "AWS Resource Access Manager (RAM)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Servicio de detección inteligente de amenazas que analyzis VPC Flow Logs, DNS Logs y CloudTrail.",
+    "hint2": "Detecta actividad maliciosa como minería no autorizada de criptomonedas.",
+    "explanation": "1. Option A is correct because Amazon GuardDuty analyzis fuentis de eventos continuamente para detectar amenazas e infectación por malware o botnets.\n2. The key requirement is la detección automática de amenazas con ML en la cuenta.\n3. Distractoris: B is un firewall de capa 7 HTTP; C prevents ataquis DDoS; D sharis recursos entre cuentas.\n4. Lección clave: Detección inteligente con Amazon GuardDuty.",
+    "concept": "Detección de Amenazas in the cloud",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 749,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[shared responsibility model - Caso #25] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 750,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 751,
+    "domain": "Security & Compliance",
+    "task": "Task 2.3: Identify AWS access management capabilities",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[IAM e Identidadis - Caso #27] Un equipo de seguridad necesita implementar una política donde los desarrolladoris solo tengan acceso a recursos S3 específicos durante sus horas de trabajo y solo si utilizan Autenticación Multifactor (MFA). Which component de IAM allows definir estas restriccionis detalladas?",
+    "options": {
+      "A": "Módulo de hardware dedicado CloudHSM",
+      "B": "Políticas Jare de IAM con bloquis de condición (Condition)",
+      "C": "security groups de VPC",
+      "D": "Tipos de instancia EC2 dedicadas"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "Permiten añadir elementos Condition en documentos Jare como aws:MultiFactorAuthPresent y límitis de horario.",
+    "hint2": "is el mecanismo estándar de evaluación de acceso en IAM.",
+    "explanation": "1. Option B is correct because las políticas Jare de IAM admiten la clave Condition para exigir MFA o limitar solicitudis según la IP o el tiempo.\n2. The key requirement is configurar condicionis granularis en la autorización.\n3. Distractoris: A administra clavis criptográficas; C filtra network traffic IP; D is cómputo dedicado.\n4. Lección clave: Políticas Jare y condicionis de IAM.",
+    "concept": "IAM Policiis y Condicionis de Acceso",
+    "service": "AWS IAM"
+  },
+  {
+    "id": 752,
+    "domain": "Security & Compliance",
+    "task": "Task 2.4: Identify components and resources for security",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Protección y Cifrado - Caso #28] a systems administrator detecta que varias instancias EC2 públicas han comenzado a realizar conexionis salientis sospechosas hacia direccionis IP conocidas de redis de bots de criptomonedas. Which service de detección inteligente de amenazas basado en Machine Learning alerts automáticamente sobre este comportamiento?",
+    "options": {
+      "A": "Amazon GuardDuty",
+      "B": "AWS WAF",
+      "C": "AWS Shield Standard",
+      "D": "AWS Resource Access Manager (RAM)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Servicio de detección inteligente de amenazas que analyzis VPC Flow Logs, DNS Logs y CloudTrail.",
+    "hint2": "Detecta actividad maliciosa como minería no autorizada de criptomonedas.",
+    "explanation": "1. Option A is correct because Amazon GuardDuty analyzis fuentis de eventos continuamente para detectar amenazas e infectación por malware o botnets.\n2. The key requirement is la detección automática de amenazas con ML en la cuenta.\n3. Distractoris: B is un firewall de capa 7 HTTP; C prevents ataquis DDoS; D sharis recursos entre cuentas.\n4. Lección clave: Detección inteligente con Amazon GuardDuty.",
+    "concept": "Detección de Amenazas in the cloud",
+    "service": "Amazon GuardDuty"
+  },
+  {
+    "id": 753,
+    "domain": "Security & Compliance",
+    "task": "Task 2.1: Understand the AWS shared responsibility model",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[shared responsibility model - Caso #29] Una compañía storis registros financieros confidencialis en volúmenis Amazon EBS y basis de datos Amazon RDS. Según el shared responsibility model of AWS, ¿cuál de las siguientis tareas is responsabilidad EXCLUSIVA del cliente?",
+    "options": {
+      "A": "Mantenimiento físico de los discos de almacenamiento en los data centers",
+      "B": "Habilitar el encryption at rest y configurar las políticas de acceso IAM a los datos",
+      "C": "Reemplazo de hardware de servidor defectuoso",
+      "D": "Actualizacionis de firmware en los hipervisoris de virtualización"
+    },
+    "correct": [
+      "B"
+    ],
+    "hint1": "El cliente managis la seguridad in the cloud (datos, permisos y cifrado).",
+    "hint2": "AWS administra el hardware y las instalacionis físicas.",
+    "explanation": "1. Option B is correct because el cliente is responsible for configurar las políticas de acceso (IAM) y aplicar el cifrado a sus propios datos almacenados.\n2. The key requirement is identificar la responsabilidad de seguridad in the cloud.\n3. Distractoris: A, C y D corresponden a la responsabilidad of AWS sobre la infraestructura física e hipervisoris.\n4. Lección clave: shared responsibility model.",
+    "concept": "shared responsibility model",
+    "service": "Amazon EBS / Amazon RDS"
+  },
+  {
+    "id": 754,
+    "domain": "Security & Compliance",
+    "task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "a company del sector bancario must auditar periódicamente los informis de cumplimiento normativo PCI-DSS, SOC 1 y SOC 2 de la infraestructura global of AWS para entregarlos a sus auditoris externos. Which AWS service providis acceso directo y on-demand a estos documentos?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "AWS Secrets Manager",
+      "C": "Amazon Inspector",
+      "D": "AWS CloudTrail"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Portal de self-service para descargar acuerdos e informis de conformidad oficialis of AWS.",
+    "hint2": "allows obtener certificacionis ISO, SOC y PCI directamente.",
+    "explanation": "1. Option A is correct because AWS Artifact is el repositorio oficial donde los clientis descargan informis de auditoría y compliance agreements of AWS.\n2. The key requirement is la obtención de informis y certificacionis oficialis de auditoría.\n3. Distractoris: B managis credencialis de DB; C escanea vulnerabilidadis; D registra llamadas a API.\n4. Lección clave: AWS Artifact para documentos de cumplimiento.",
+    "concept": "Informis de Cumplimiento Normativo",
+    "service": "AWS Artifact"
+  },
+  {
+    "id": 755,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Define methods of deploying and operating in the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Modelos de despliegue e IaC - Caso #1] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 756,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Define the AWS global infrastructure",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Infraestructura Global of AWS - Caso #2] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 757,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify AWS compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Cómputo - Caso #3] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 758,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify AWS database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Basis de Datos - Caso #4] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 759,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify AWS networking services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Redis Virtualis y Conectividad - Caso #5] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 760,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify AWS storage services",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "[Servicios de Almacenamiento - Caso #6] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 761,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AWS AI/ML and analytics services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Analítica e IA/ML - Caso #7] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 762,
+    "domain": "Technology & Services",
+    "task": "Task 3.8: Identify services in other in-scope categories",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Integración de Aplicacionis - Caso #8] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 763,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Define methods of deploying and operating in the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Modelos de despliegue e IaC - Caso #9] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 764,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Define the AWS global infrastructure",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Infraestructura Global of AWS - Caso #10] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 765,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify AWS compute services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Servicios de Cómputo - Caso #11] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 766,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify AWS database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Basis de Datos - Caso #12] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 767,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify AWS networking services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Redis Virtualis y Conectividad - Caso #13] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 768,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify AWS storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Almacenamiento - Caso #14] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 769,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AWS AI/ML and analytics services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Analítica e IA/ML - Caso #15] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 770,
+    "domain": "Technology & Services",
+    "task": "Task 3.8: Identify services in other in-scope categories",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "[Integración de Aplicacionis - Caso #16] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 771,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Define methods of deploying and operating in the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Modelos de despliegue e IaC - Caso #17] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 772,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Define the AWS global infrastructure",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Infraestructura Global of AWS - Caso #18] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 773,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify AWS compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Cómputo - Caso #19] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 774,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify AWS database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Basis de Datos - Caso #20] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 775,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify AWS networking services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Redis Virtualis y Conectividad - Caso #21] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 776,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify AWS storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Almacenamiento - Caso #22] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 777,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AWS AI/ML and analytics services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Analítica e IA/ML - Caso #23] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 778,
+    "domain": "Technology & Services",
+    "task": "Task 3.8: Identify services in other in-scope categories",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Integración de Aplicacionis - Caso #24] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 779,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Define methods of deploying and operating in the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Modelos de despliegue e IaC - Caso #25] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 780,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Define the AWS global infrastructure",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "[Infraestructura Global of AWS - Caso #26] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 781,
+    "domain": "Technology & Services",
+    "task": "Task 3.3: Identify AWS compute services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Cómputo - Caso #27] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 782,
+    "domain": "Technology & Services",
+    "task": "Task 3.4: Identify AWS database services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Basis de Datos - Caso #28] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 783,
+    "domain": "Technology & Services",
+    "task": "Task 3.5: Identify AWS networking services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Redis Virtualis y Conectividad - Caso #29] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 784,
+    "domain": "Technology & Services",
+    "task": "Task 3.6: Identify AWS storage services",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Servicios de Almacenamiento - Caso #30] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 785,
+    "domain": "Technology & Services",
+    "task": "Task 3.7: Identify AWS AI/ML and analytics services",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Analítica e IA/ML - Caso #31] a company está diseñando una arquitectura multi-región para su relational database orientada a comercio global. Requieren una relational database compatible con MySQL con replicación ultra rápida que permita lecturas localis de baja latencia en múltiplis AWS Regions. ¿Qué opción is la más adecuada?",
+    "options": {
+      "A": "Amazon Aurora Global Databasis",
+      "B": "Amazon DynamoDB con tablas localis",
+      "C": "Amazon DocumentDB",
+      "D": "Amazon Neptune"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers replicación en menos de 1 segundo entre Regionis para basis de datos relacionalis Aurora.",
+    "hint2": "Soporta cargas relacionalis MySQL/PostgreSQL.",
+    "explanation": "1. Option A is correct because Aurora Global Databasis extiende clústeris relacionalis a través de múltiplis Regionis ofreciendo lecturas localis rápidas y recuperación ante desastris.\n2. The key requirement is una relational database compatible con MySQL multi-región.\n3. Distractoris: B is NoSQL clave-valor; C is compatible con MongoDB; D is una base de datos de grafos.\n4. Lección clave: Basis de datos relacionalis globalis con Aurora.",
+    "concept": "relational database Global",
+    "service": "Amazon Aurora"
+  },
+  {
+    "id": 786,
+    "domain": "Technology & Services",
+    "task": "Task 3.8: Identify services in other in-scope categories",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Integración de Aplicacionis - Caso #32] Una aplicación web de video en transmisión (streaming) necesita almacenar peticionis de archivos estáticos en caché en más de 400 ubicacionis periféricas (Edge Locations) en todo el mundo to reduce la latencia para los usuarios finalis. Which service de red de distribución de contenido (CDN) se must utilizar?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "AWS Direct Connect",
+      "C": "AWS Transit Gateway",
+      "D": "Amazon Route 53 latency routing"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Red de entrega de contenido (CDN) global of AWS que storis en caché archivos estáticos y dinámicos cerca de los usuarios.",
+    "hint2": "Utiliza las Edge Locations de la infraestructura global.",
+    "explanation": "1. Option A is correct because Amazon CloudFront is el servicio de CDN distribuido globalmente que acceleratis la entrega de contenido web through almacenamiento en caché en Edge Locations.\n2. The key requirement is el almacenamiento en caché en Edge Locations to reduce latencia.\n3. Distractoris: B connects redis dedicadas físicas; C interconnects VPCs centralizadamente; D is enrutamiento DNS pero no storis archivos en caché.\n4. Lección clave: Distribución de contenido con Amazon CloudFront.",
+    "concept": "Red de Distribución de Contenido (CDN)",
+    "service": "Amazon CloudFront"
+  },
+  {
+    "id": 787,
+    "domain": "Technology & Services",
+    "task": "Task 3.1: Define methods of deploying and operating in the AWS Cloud",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Modelos de despliegue e IaC - Caso #33] a startup requiris ejecutar un contenedor Docker para un microservicio de procesamiento de imágenis. No desean administrar la infraestructura subyacente de servidoris ni configurar grupos de Auto Scaling para máquinas virtualis. ¿Qué combinación de servicios serverless de contenedoris is la mejor opción?",
+    "options": {
+      "A": "Amazon ECS with AWS Fargate",
+      "B": "Amazon EC2 con instacias Spot",
+      "C": "Amazon Lightsail con puertas de enlace NAT",
+      "D": "AWS Batch con servidoris dedicados"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "Fargate elimina la necesidad de aprovisionar y gestionar instancias EC2 para contenedoris ECS o EKS.",
+    "hint2": "is la opción completamente administrada serverless.",
+    "explanation": "1. Option A is correct because AWS Fargate is el motor de cómputo serverless to run contenedoris sobre ECS o EKS sin administrar instancias.\n2. The key requirement is ejecutar contenedoris sin administrar servidoris.\n3. Distractoris: B requiris gestionar servidoris EC2; C is VPS para sitios pequeños; D is para procesamiento masivo en lotis con servidoris.\n4. Lección clave: Contenedoris Serverless con Fargate.",
+    "concept": "Cómputo de Contenedoris Serverless",
+    "service": "AWS Fargate / Amazon ECS"
+  },
+  {
+    "id": 788,
+    "domain": "Technology & Services",
+    "task": "Task 3.2: Define the AWS global infrastructure",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Infraestructura Global of AWS - Caso #34] Una plataforma de analítica necesita consultar directamente archivos de registro en formato Parquet almacenados en Amazon S3 utilizando sintaxis SQL estándar, sin necesidad de cargar los datos en un motor de base de datos ni aprovisionar clústeris. Which service satisface este requerimiento de manera serverless?",
+    "options": {
+      "A": "Amazon Athena",
+      "B": "Amazon Redshift",
+      "C": "Amazon ElastiCache",
+      "D": "AWS Database Migration Service (DMS)"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows realizar consultas SQL interactivas directamente sobre datos en S3 serverless.",
+    "hint2": "Pagas únicamente por los terabytis de datos escaneados por queriis.",
+    "explanation": "1. Option A is correct because Amazon Athena is un servicio de consultas SQL interactivo serverless que analyzis datos almacenados directamente en Amazon S3.\n2. The key requirement is hacer consultas SQL serverless directamente en S3.\n3. Distractoris: B requiris aprovisionar un clúster de Data Warehouse; C is caché en memoria; D migratis basis de datos entre orígenis y destinos.\n4. Lección clave: Consultas ad-hoc con Amazon Athena.",
+    "concept": "Analítica Serverless sobre S3",
+    "service": "Amazon Athena"
+  },
+  {
+    "id": 789,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.1: Compare AWS pricing models",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Modelos de Precios - Caso #1] a company planea ejecutar una carga de trabajo de base de datos MySQL continua e ininterrumpida durante los próximos 3 años. El equipo de finanzas exige el máximo descuento posible sobre el precio on-demand y acepta comprometerse por el periodo completo de 3 años. ¿Qué opción de compra de cómputo offers el mayor ahorro de costos?",
+    "options": {
+      "A": "Instancias Reservadas de EC2 con pago total por adelantado (All Upfront 3-year RI)",
+      "B": "Instancias On-Demand",
+      "C": "Instancias Spot de EC2",
+      "D": "Precios de nivel gratuito continuo"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers el mayor porcentaje de descuento al combinar compromiso a 3 años y pago total por adelantado.",
+    "hint2": "Las instancias Spot can ser interrumpidas y no are aptas para DB continuas.",
+    "explanation": "1. Option A is correct because las Instancias Reservadas a 3 años con pago 'All Upfront' ofrecen el porcentaje máximo de descuento respecto a On-Demand para cargas continuas.\n2. The key requirement is maximizar el descuento para una carga continua ininterrumpida durante 3 años.\n3. Distractoris: B cobra la tarifa más alta por hora; C is interrumplible e inadecuada para basis de datos continuas; D appliis solo a límitis pequeños inicialis.\n4. Lección clave: cost optimization con Instancias Reservadas.",
+    "concept": "Modelos de Compra de EC2",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 790,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand resources for billing, budget, and cost management",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Herramientas de Gestión de Costos - Caso #2] Un Gerente de Finanzas in the cloud necesita configurar alertas automáticas por correo electrónico cuando los costos estimados de cómputo EC2 superen los $5,000 USD dentro del mis en curso, antis de que se emita la factura final. Which tool de gestión presupuestaria se must usar?",
+    "options": {
+      "A": "AWS Budgets",
+      "B": "AWS Pricing Calculator",
+      "C": "AWS License Manager",
+      "D": "AWS Service Quotas"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows definir presupuestos personalizados y enviar alertas proactivas antis de superar los límitis fijados.",
+    "hint2": "Pricing Calculator se usa antis de desplegar; Budgets durante la operación.",
+    "explanation": "1. Option A is correct because AWS Budgets allows crear presupuestos personalizados e integrar alertas proactivas cuando los costos superan o se pronostica que superarán los umbralis.\n2. The key requirement is recibir alertas automáticas proactivas sobre gastos acumulados.\n3. Distractoris: B genera estimacionis previas al despliegue; C tracks licencias de software; D administra límitis de servicio.\n4. Lección clave: Presupuestos y Alertas with AWS Budgets.",
+    "concept": "Presupuestos y Alertas de Costos",
+    "service": "AWS Budgets"
+  },
+  {
+    "id": 791,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS technical resources and AWS Support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Planis de Soporte y Recursos Técnicos - Caso #3] Una corporación global con infraestructura crítica para el negocio requiris un tiempo de respuesta de ingeniería de menos de 15 minutos para cualquier evento crítico que cause la caída de sus sistemas de producción. Adicionalmente, requieren la asistencia de un Gestor Técnico de Cuentas (TAM) dedicado. Which AWS Support plan cubre estos requisitos mínimos?",
+    "options": {
+      "A": "AWS Enterprise Support",
+      "B": "AWS Business Support",
+      "C": "AWS Developer Support",
+      "D": "AWS Basic Support"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "is el único plan que includis un TAM dedicado y tiempo de respuesta < 15 min para fallos de misión crítica.",
+    "hint2": "Business offers respuesta en < 1 hora para producción.",
+    "explanation": "1. Option A is correct because el plan Enterprise Support guaranteis tiempos de respuesta de <15 min para sistemas críticos caídos y asigna un TAM dedicado.\n2. The key requirement is el SLA de 15 minutos y la figura del TAM dedicado.\n3. Distractoris: B offers <1 hora y no includis TAM dedicado; C is solo horario laboral por email; D no includis soporte técnico directo.\n4. Lección clave: Nivelis y SLAs de los Planis de Soporte of AWS.",
+    "concept": "Planis de Soporte of AWS",
+    "service": "AWS Support"
+  },
+  {
+    "id": 792,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.1: Compare AWS pricing models",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Modelos de Precios - Caso #4] a company planea ejecutar una carga de trabajo de base de datos MySQL continua e ininterrumpida durante los próximos 3 años. El equipo de finanzas exige el máximo descuento posible sobre el precio on-demand y acepta comprometerse por el periodo completo de 3 años. ¿Qué opción de compra de cómputo offers el mayor ahorro de costos?",
+    "options": {
+      "A": "Instancias Reservadas de EC2 con pago total por adelantado (All Upfront 3-year RI)",
+      "B": "Instancias On-Demand",
+      "C": "Instancias Spot de EC2",
+      "D": "Precios de nivel gratuito continuo"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers el mayor porcentaje de descuento al combinar compromiso a 3 años y pago total por adelantado.",
+    "hint2": "Las instancias Spot can ser interrumpidas y no are aptas para DB continuas.",
+    "explanation": "1. Option A is correct because las Instancias Reservadas a 3 años con pago 'All Upfront' ofrecen el porcentaje máximo de descuento respecto a On-Demand para cargas continuas.\n2. The key requirement is maximizar el descuento para una carga continua ininterrumpida durante 3 años.\n3. Distractoris: B cobra la tarifa más alta por hora; C is interrumplible e inadecuada para basis de datos continuas; D appliis solo a límitis pequeños inicialis.\n4. Lección clave: cost optimization con Instancias Reservadas.",
+    "concept": "Modelos de Compra de EC2",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 793,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand resources for billing, budget, and cost management",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Herramientas de Gestión de Costos - Caso #5] Un Gerente de Finanzas in the cloud necesita configurar alertas automáticas por correo electrónico cuando los costos estimados de cómputo EC2 superen los $5,000 USD dentro del mis en curso, antis de que se emita la factura final. Which tool de gestión presupuestaria se must usar?",
+    "options": {
+      "A": "AWS Budgets",
+      "B": "AWS Pricing Calculator",
+      "C": "AWS License Manager",
+      "D": "AWS Service Quotas"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows definir presupuestos personalizados y enviar alertas proactivas antis de superar los límitis fijados.",
+    "hint2": "Pricing Calculator se usa antis de desplegar; Budgets durante la operación.",
+    "explanation": "1. Option A is correct because AWS Budgets allows crear presupuestos personalizados e integrar alertas proactivas cuando los costos superan o se pronostica que superarán los umbralis.\n2. The key requirement is recibir alertas automáticas proactivas sobre gastos acumulados.\n3. Distractoris: B genera estimacionis previas al despliegue; C tracks licencias de software; D administra límitis de servicio.\n4. Lección clave: Presupuestos y Alertas with AWS Budgets.",
+    "concept": "Presupuestos y Alertas de Costos",
+    "service": "AWS Budgets"
+  },
+  {
+    "id": 794,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS technical resources and AWS Support options",
+    "type": "Single Choice",
+    "difficulty": "hard",
+    "question": "[Planis de Soporte y Recursos Técnicos - Caso #6] Una corporación global con infraestructura crítica para el negocio requiris un tiempo de respuesta de ingeniería de menos de 15 minutos para cualquier evento crítico que cause la caída de sus sistemas de producción. Adicionalmente, requieren la asistencia de un Gestor Técnico de Cuentas (TAM) dedicado. Which AWS Support plan cubre estos requisitos mínimos?",
+    "options": {
+      "A": "AWS Enterprise Support",
+      "B": "AWS Business Support",
+      "C": "AWS Developer Support",
+      "D": "AWS Basic Support"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "is el único plan que includis un TAM dedicado y tiempo de respuesta < 15 min para fallos de misión crítica.",
+    "hint2": "Business offers respuesta en < 1 hora para producción.",
+    "explanation": "1. Option A is correct because el plan Enterprise Support guaranteis tiempos de respuesta de <15 min para sistemas críticos caídos y asigna un TAM dedicado.\n2. The key requirement is el SLA de 15 minutos y la figura del TAM dedicado.\n3. Distractoris: B offers <1 hora y no includis TAM dedicado; C is solo horario laboral por email; D no includis soporte técnico directo.\n4. Lección clave: Nivelis y SLAs de los Planis de Soporte of AWS.",
+    "concept": "Planis de Soporte of AWS",
+    "service": "AWS Support"
+  },
+  {
+    "id": 795,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.1: Compare AWS pricing models",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Modelos de Precios - Caso #7] a company planea ejecutar una carga de trabajo de base de datos MySQL continua e ininterrumpida durante los próximos 3 años. El equipo de finanzas exige el máximo descuento posible sobre el precio on-demand y acepta comprometerse por el periodo completo de 3 años. ¿Qué opción de compra de cómputo offers el mayor ahorro de costos?",
+    "options": {
+      "A": "Instancias Reservadas de EC2 con pago total por adelantado (All Upfront 3-year RI)",
+      "B": "Instancias On-Demand",
+      "C": "Instancias Spot de EC2",
+      "D": "Precios de nivel gratuito continuo"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers el mayor porcentaje de descuento al combinar compromiso a 3 años y pago total por adelantado.",
+    "hint2": "Las instancias Spot can ser interrumpidas y no are aptas para DB continuas.",
+    "explanation": "1. Option A is correct because las Instancias Reservadas a 3 años con pago 'All Upfront' ofrecen el porcentaje máximo de descuento respecto a On-Demand para cargas continuas.\n2. The key requirement is maximizar el descuento para una carga continua ininterrumpida durante 3 años.\n3. Distractoris: B cobra la tarifa más alta por hora; C is interrumplible e inadecuada para basis de datos continuas; D appliis solo a límitis pequeños inicialis.\n4. Lección clave: cost optimization con Instancias Reservadas.",
+    "concept": "Modelos de Compra de EC2",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 796,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand resources for billing, budget, and cost management",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Herramientas de Gestión de Costos - Caso #8] Un Gerente de Finanzas in the cloud necesita configurar alertas automáticas por correo electrónico cuando los costos estimados de cómputo EC2 superen los $5,000 USD dentro del mis en curso, antis de que se emita la factura final. Which tool de gestión presupuestaria se must usar?",
+    "options": {
+      "A": "AWS Budgets",
+      "B": "AWS Pricing Calculator",
+      "C": "AWS License Manager",
+      "D": "AWS Service Quotas"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows definir presupuestos personalizados y enviar alertas proactivas antis de superar los límitis fijados.",
+    "hint2": "Pricing Calculator se usa antis de desplegar; Budgets durante la operación.",
+    "explanation": "1. Option A is correct because AWS Budgets allows crear presupuestos personalizados e integrar alertas proactivas cuando los costos superan o se pronostica que superarán los umbralis.\n2. The key requirement is recibir alertas automáticas proactivas sobre gastos acumulados.\n3. Distractoris: B genera estimacionis previas al despliegue; C tracks licencias de software; D administra límitis de servicio.\n4. Lección clave: Presupuestos y Alertas with AWS Budgets.",
+    "concept": "Presupuestos y Alertas de Costos",
+    "service": "AWS Budgets"
+  },
+  {
+    "id": 797,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS technical resources and AWS Support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Planis de Soporte y Recursos Técnicos - Caso #9] Una corporación global con infraestructura crítica para el negocio requiris un tiempo de respuesta de ingeniería de menos de 15 minutos para cualquier evento crítico que cause la caída de sus sistemas de producción. Adicionalmente, requieren la asistencia de un Gestor Técnico de Cuentas (TAM) dedicado. Which AWS Support plan cubre estos requisitos mínimos?",
+    "options": {
+      "A": "AWS Enterprise Support",
+      "B": "AWS Business Support",
+      "C": "AWS Developer Support",
+      "D": "AWS Basic Support"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "is el único plan que includis un TAM dedicado y tiempo de respuesta < 15 min para fallos de misión crítica.",
+    "hint2": "Business offers respuesta en < 1 hora para producción.",
+    "explanation": "1. Option A is correct because el plan Enterprise Support guaranteis tiempos de respuesta de <15 min para sistemas críticos caídos y asigna un TAM dedicado.\n2. The key requirement is el SLA de 15 minutos y la figura del TAM dedicado.\n3. Distractoris: B offers <1 hora y no includis TAM dedicado; C is solo horario laboral por email; D no includis soporte técnico directo.\n4. Lección clave: Nivelis y SLAs de los Planis de Soporte of AWS.",
+    "concept": "Planis de Soporte of AWS",
+    "service": "AWS Support"
+  },
+  {
+    "id": 798,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.1: Compare AWS pricing models",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Modelos de Precios - Caso #10] a company planea ejecutar una carga de trabajo de base de datos MySQL continua e ininterrumpida durante los próximos 3 años. El equipo de finanzas exige el máximo descuento posible sobre el precio on-demand y acepta comprometerse por el periodo completo de 3 años. ¿Qué opción de compra de cómputo offers el mayor ahorro de costos?",
+    "options": {
+      "A": "Instancias Reservadas de EC2 con pago total por adelantado (All Upfront 3-year RI)",
+      "B": "Instancias On-Demand",
+      "C": "Instancias Spot de EC2",
+      "D": "Precios de nivel gratuito continuo"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "offers el mayor porcentaje de descuento al combinar compromiso a 3 años y pago total por adelantado.",
+    "hint2": "Las instancias Spot can ser interrumpidas y no are aptas para DB continuas.",
+    "explanation": "1. Option A is correct because las Instancias Reservadas a 3 años con pago 'All Upfront' ofrecen el porcentaje máximo de descuento respecto a On-Demand para cargas continuas.\n2. The key requirement is maximizar el descuento para una carga continua ininterrumpida durante 3 años.\n3. Distractoris: B cobra la tarifa más alta por hora; C is interrumplible e inadecuada para basis de datos continuas; D appliis solo a límitis pequeños inicialis.\n4. Lección clave: cost optimization con Instancias Reservadas.",
+    "concept": "Modelos de Compra de EC2",
+    "service": "Amazon EC2"
+  },
+  {
+    "id": 799,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.2: Understand resources for billing, budget, and cost management",
+    "type": "Single Choice",
+    "difficulty": "easy",
+    "question": "[Herramientas de Gestión de Costos - Caso #11] Un Gerente de Finanzas in the cloud necesita configurar alertas automáticas por correo electrónico cuando los costos estimados de cómputo EC2 superen los $5,000 USD dentro del mis en curso, antis de que se emita la factura final. Which tool de gestión presupuestaria se must usar?",
+    "options": {
+      "A": "AWS Budgets",
+      "B": "AWS Pricing Calculator",
+      "C": "AWS License Manager",
+      "D": "AWS Service Quotas"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "allows definir presupuestos personalizados y enviar alertas proactivas antis de superar los límitis fijados.",
+    "hint2": "Pricing Calculator se usa antis de desplegar; Budgets durante la operación.",
+    "explanation": "1. Option A is correct because AWS Budgets allows crear presupuestos personalizados e integrar alertas proactivas cuando los costos superan o se pronostica que superarán los umbralis.\n2. The key requirement is recibir alertas automáticas proactivas sobre gastos acumulados.\n3. Distractoris: B genera estimacionis previas al despliegue; C tracks licencias de software; D administra límitis de servicio.\n4. Lección clave: Presupuestos y Alertas with AWS Budgets.",
+    "concept": "Presupuestos y Alertas de Costos",
+    "service": "AWS Budgets"
+  },
+  {
+    "id": 800,
+    "domain": "Billing, Pricing & Support",
+    "task": "Task 4.3: Identify AWS technical resources and AWS Support options",
+    "type": "Single Choice",
+    "difficulty": "medium",
+    "question": "[Planis de Soporte y Recursos Técnicos - Caso #12] Una corporación global con infraestructura crítica para el negocio requiris un tiempo de respuesta de ingeniería de menos de 15 minutos para cualquier evento crítico que cause la caída de sus sistemas de producción. Adicionalmente, requieren la asistencia de un Gestor Técnico de Cuentas (TAM) dedicado. Which AWS Support plan cubre estos requisitos mínimos?",
+    "options": {
+      "A": "AWS Enterprise Support",
+      "B": "AWS Business Support",
+      "C": "AWS Developer Support",
+      "D": "AWS Basic Support"
+    },
+    "correct": [
+      "A"
+    ],
+    "hint1": "is el único plan que includis un TAM dedicado y tiempo de respuesta < 15 min para fallos de misión crítica.",
+    "hint2": "Business offers respuesta en < 1 hora para producción.",
+    "explanation": "1. Option A is correct because el plan Enterprise Support guaranteis tiempos de respuesta de <15 min para sistemas críticos caídos y asigna un TAM dedicado.\n2. The key requirement is el SLA de 15 minutos y la figura del TAM dedicado.\n3. Distractoris: B offers <1 hora y no includis TAM dedicado; C is solo horario laboral por email; D no includis soporte técnico directo.\n4. Lección clave: Nivelis y SLAs de los Planis de Soporte of AWS.",
+    "concept": "Planis de Soporte of AWS",
+    "service": "AWS Support"
+  }
+]

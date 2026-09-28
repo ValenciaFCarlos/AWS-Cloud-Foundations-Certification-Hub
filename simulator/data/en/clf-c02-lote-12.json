@@ -1,0 +1,2192 @@
+[
+{
+"id": 1101,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Economies of scale'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Infrastructure ensuring it allows reducing prices per gigabyte and compute hour as the global infrastructure grows.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Infrastructure supports the principle of economies of scale.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of economies of scale.\n2. Key requirement: It allows reducing prices per gigabyte and compute hour as the global infrastructure grows.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Cost savings from economies of scale",
+"service": "AWS Infrastructure"
+},
+{
+"id": 1102,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Agility'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Management Console / CLI ensuring it reduces infrastructure provisioning time from months to a few seconds.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Management Console / CLI supports the principle of Agility.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Agility.\n2. Key requirement: Reduces infrastructure provisioning time from months to a few seconds.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Agility in resource deployment",
+"service": "AWS Management Console / CLI"
+},
+{
+"id": 1103,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Low Latency'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Edge Locations ensuring it increases access speed for end users distributed across multiple continents.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Edge Locations supports the principle of Low Latency.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Low Latency.\n2. Key requirement: Increases access speed for end users distributed across multiple continents.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Global infrastructure and minimal latency",
+"service": "AWS Edge Locations"
+},
+{
+"id": 1104,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'OpEx Reduction'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Cloud ensuring it eliminates the costs of electricity, cooling, and physical maintenance of data centers.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Cloud supports the principle of OpEx Reduction.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of OpEx Reduction.\n2. Key requirement: Eliminates the costs of electricity, cooling, and physical maintenance of data centers.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Reduction of Data Center maintenance costs",
+"service": "AWS Cloud"
+},
+{
+"id": 1105,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Experimentation'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Free Tier ensuring it allows launching and testing architectures quickly and canceling resources without penalties.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Free Tier supports the principle of Experimentation.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Experimentation.\n2. Key requirement: Allows launching and testing architectures quickly and canceling resources without penalties.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Flexibility to test new ideas without risk",
+"service": "AWS Free Tier"
+},
+{
+"id": 1106,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Resilience'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Auto Scaling ensuring it automatically configures immediate replacements when an instance stops responding.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Auto Scaling supports the principle of Resilience.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Resilience.\n2. Key requirement: Automatically configures immediate replacements when an instance stops responding.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Design for fault resistance",
+"service": "AWS Auto Scaling"
+},
+{
+"id": 1107,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Automation'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing Amazon EventBridge ensuring it triggers automatic actions in response to state changes in AWS resources.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how Amazon EventBridge supports the principle of Automation.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Automation.\n2. Key requirement: Triggers automatic actions in response to state changes in AWS resources.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Automate response to infrastructure events",
+"service": "Amazon EventBridge"
+},
+{
+"id": 1108,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Horizontal Scaling'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing Amazon EC2 ASG ensuring it adds more small instances in parallel instead of increasing the size of a single machine.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how Amazon EC2 ASG supports the principle of Horizontal Scaling.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Horizontal Scaling.\n2. Key requirement: Adds more small instances in parallel instead of increasing the size of a single machine.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Scale horizontally instead of vertically",
+"service": "Amazon EC2 ASG"
+},
+{
+"id": 1109,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Security by Design'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS KMS ensuring it enforces mandatory encryption on all object storage and databases.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS KMS supports the principle of Security by Design.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Security by Design.\n2. Key requirement: Enforces mandatory encryption on all object storage and databases.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Protect data in transit and at rest",
+"service": "AWS KMS"
+},
+{
+"id": 1110,
+"domain": "Cloud Concepts",
+"task": "Task 1.3: Understand AWS Cloud Adoption Framework (AWS CAF)",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'CAF Operations'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS CAF ensuring it guarantees that cloud services are delivered meeting business needs.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS CAF supports the principle of CAF Operations.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of CAF Operations.\n2. Key requirement: Guarantees that cloud services are delivered meeting business needs.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Operations Perspective in CAF",
+"service": "AWS CAF"
+},
+{
+"id": 1111,
+"domain": "Cloud Concepts",
+"task": "Task 1.3: Understand AWS Cloud Adoption Framework (AWS CAF)",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'CAF Security'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS CAF ensuring it structures security governance, risk management, privacy, and regulatory compliance.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS CAF supports the principle of CAF Security.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of CAF Security.\n2. Key requirement: Structures security governance, risk management, privacy, and regulatory compliance.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Security Perspective in CAF",
+"service": "AWS CAF"
+},
+{
+"id": 1112,
+"domain": "Cloud Concepts",
+"task": "Task 1.3: Understand AWS Cloud Adoption Framework (AWS CAF)",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Digital Transformation'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS CAF ensuring it guides organizations to align technology adoption with business objectives.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS CAF supports the principle of Digital Transformation.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Digital Transformation.\n2. Key requirement: Guides organizations to align technology adoption with business objectives.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Digital transformation value chain",
+"service": "AWS CAF"
+},
+{
+"id": 1113,
+"domain": "Cloud Concepts",
+"task": "Task 1.3: Understand AWS Cloud Adoption Framework (AWS CAF)",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Relocate'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Outposts / VMware ensuring it moves hypervisors or workloads without changing the format or altering operations.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Outposts / VMware supports the principle of Relocate.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Relocate.\n2. Key requirement: Moves hypervisors or workloads without changing the format or altering operations.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Migration strategies: Relocate",
+"service": "AWS Outposts / VMware"
+},
+{
+"id": 1114,
+"domain": "Cloud Concepts",
+"task": "Task 1.3: Understand AWS Cloud Adoption Framework (AWS CAF)",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Refactor'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Fargate ensuring it restructures monolithic code to convert it into microservices or serverless architectures.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Fargate supports the principle of Refactor.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Refactor.\n2. Key requirement: Restructures monolithic code to convert it into microservices or serverless architectures.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Migration strategies: Refactor to microservices",
+"service": "AWS Fargate"
+},
+{
+"id": 1115,
+"domain": "Cloud Concepts",
+"task": "Task 1.3: Understand AWS Cloud Adoption Framework (AWS CAF)",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'MRA'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Migration Evaluator ensuring it provides cost analysis and technical preparation prior to starting the massive cloud migration.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Migration Evaluator supports the principle of MRA.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of MRA.\n2. Key requirement: Provides cost analysis and technical preparation prior to starting the massive cloud migration.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Migration Readiness Assessment (MRA)",
+"service": "AWS Migration Evaluator"
+},
+{
+"id": 1116,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Security Pillar'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Identity and Access Management ensuring it establishes a solid foundation of identity, traceability, and data inspection.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Identity and Access Management supports the principle of Security Pillar.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Security Pillar.\n2. Key requirement: Establishes a solid foundation of identity, traceability, and data inspection.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Security Pillar of Well-Architected Framework",
+"service": "AWS Identity and Access Management"
+},
+{
+"id": 1117,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Reliability Pillar'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Route 53 ensuring it recovers from disruptions and dynamically acquires resources to meet demand.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Route 53 supports the principle of Reliability Pillar.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Reliability Pillar.\n2. Key requirement: Recovers from disruptions and dynamically acquires resources to meet demand.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Reliability Pillar of Well-Architected Framework",
+"service": "AWS Route 53"
+},
+{
+"id": 1118,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Sustainability Pillar'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Graviton ensuring it maximizes the utilization of efficient resources and reduces energy consumption.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Graviton supports the principle of Sustainability Pillar.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Sustainability Pillar.\n2. Key requirement: Maximizes the utilization of efficient resources and reduces energy consumption.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Sustainability Pillar of Well-Architected Framework",
+"service": "AWS Graviton"
+},
+{
+"id": 1119,
+"domain": "Cloud Concepts",
+"task": "Task 1.2: Identify AWS Cloud design principles",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'WA Tool'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Well-Architected Tool ensuring it provides a free tool to review architectures against the best practices of the 6 pillars.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Well-Architected Tool supports the principle of WA Tool.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of WA Tool.\n2. Key requirement: Provides a free tool to review architectures against the best practices of the 6 pillars.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Workload assessment with Well-Architected Tool",
+"service": "AWS Well-Architected Tool"
+},
+{
+"id": 1120,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'High Availability'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Availability Zones ensuring it can withstand the complete failure of a data center without interrupting service.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Availability Zones supports the principle of High Availability.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of High Availability.\n2. Key requirement: Can withstand the complete failure of a data center without interrupting service.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "High Availability through Multi-AZ",
+"service": "AWS Availability Zones"
+},
+{
+"id": 1121,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Seasonal Elasticity'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing Amazon EC2 Auto Scaling ensuring it automatically increases capacity during major sales events such as Black Friday.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how Amazon EC2 Auto Scaling supports the principle of Seasonal Elasticity.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Seasonal Elasticity.\n2. Key requirement: Automatically increases capacity during major sales events such as Black Friday.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Elasticity for seasonal peaks",
+"service": "Amazon EC2 Auto Scaling"
+},
+{
+"id": 1122,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Serverless'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing AWS Lambda ensuring it pays only for the exact code execution time in milliseconds.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how AWS Lambda supports the principle of Serverless.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Serverless.\n2. Key requirement: Pays only for the exact code execution time in milliseconds.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Serverless computing model",
+"service": "AWS Lambda"
+},
+{
+"id": 1123,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Global Distribution'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing Amazon CloudFront ensuring it delivers video and static content with ultra-low latency worldwide.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how Amazon CloudFront supports the principle of Global Distribution.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Global Distribution.\n2. Key requirement: Delivers video and static content with ultra-low latency worldwide.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Instant global reach with CDN",
+"service": "Amazon CloudFront"
+},
+{
+"id": 1124,
+"domain": "Cloud Concepts",
+"task": "Task 1.1: Define the benefits of the AWS Cloud",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In cloud architecture design, a company wants to validate the benefit of 'Data-Driven Decisions'. Which of the following statements best describes how this advantage manifests in AWS?",
+"options": {
+"A": "Implementing Amazon CloudWatch ensuring it adjusts capacity according to real historical usage metrics.",
+"B": "Keeping infrastructure hosted on private physical servers with no Internet connection.",
+"C": "Manually increasing physical hardware by buying more RAM for local data centers.",
+"D": "Restricting cloud access to a single region without geographic redundancy."
+},
+"correct": [
+"A"
+],
+"hint1": "Focus on how Amazon CloudWatch supports the principle of Data-Driven Decisions.",
+"hint2": "Choose the option that leverages the elastic and global nature of AWS.",
+"explanation": "1. Option A clearly demonstrates the principle of Data-Driven Decisions.\n2. Key requirement: Adjusts capacity according to real historical usage metrics.\n3. The other alternatives represent limitations of the traditional On-Premises model.\n4. Key lesson: Cloud adoption transforms operating models into benefits of agility and scale.",
+"concept": "Data-driven architectural decisions",
+"service": "Amazon CloudWatch"
+},
+{
+"id": 1125,
+"domain": "Security & Compliance",
+"task": "Task 2.1: Understand the AWS Shared Responsibility Model",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Responsibility for hypervisor patching'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Hypervisor taking into account that AWS is responsible for maintaining and patching the underlying physical hypervisor.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Hypervisor supports the implementation of Responsibility for hypervisor patching.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Responsibility for hypervisor patching.\n2. Key requirement: AWS is responsible for maintaining and patching the underlying physical hypervisor.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Responsibility for hypervisor patching",
+"service": "AWS Hypervisor"
+},
+{
+"id": 1126,
+"domain": "Security & Compliance",
+"task": "Task 2.1: Understand the AWS Shared Responsibility Model",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Responsibility for customer application patching'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Customer Applications taking into account that the customer is 100% responsible for secure development and bug fixes in their code.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Customer Applications supports the implementation of Responsibility for customer application patching.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Responsibility for customer application patching.\n2. Key requirement: The customer is 100% responsible for secure development and bug fixes in their code.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Responsibility for customer application patching",
+"service": "Customer Applications"
+},
+{
+"id": 1127,
+"domain": "Security & Compliance",
+"task": "Task 2.1: Understand the AWS Shared Responsibility Model",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Responsibility for physical disk security'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Disk Disposal taking into account that AWS physically destroys or demagnetizes decommissioned hard drives in compliance with DOD standards.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Disk Disposal supports the implementation of Responsibility for physical disk security.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Responsibility for physical disk security.\n2. Key requirement: AWS physically destroys or demagnetizes decommissioned hard drives in compliance with DOD standards.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Responsibility for physical disk security",
+"service": "AWS Disk Disposal"
+},
+{
+"id": 1128,
+"domain": "Security & Compliance",
+"task": "Task 2.1: Understand the AWS Shared Responsibility Model",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Customer Firewall configuration (Security Groups)'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Security Groups taking into account that the customer is responsible for configuring the inbound and outbound rules of their security groups.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Security Groups supports the implementation of Customer Firewall configuration (Security Groups).",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Customer Firewall configuration (Security Groups).\n2. Key requirement: The customer is responsible for configuring the inbound and outbound rules of their Security Groups.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Customer Firewall configuration (Security Groups)",
+"service": "Security Groups"
+},
+{
+"id": 1129,
+"domain": "Security & Compliance",
+"task": "Task 2.1: Understand the AWS Shared Responsibility Model",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Responsibility in managed services such as DynamoDB'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Amazon DynamoDB taking into account that AWS manages the infrastructure, operating system, and database engine; the customer manages access to the tables.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Amazon DynamoDB supports the implementation of Responsibility in managed services such as DynamoDB.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Responsibility in managed services such as DynamoDB.\n2. Key requirement: AWS manages the infrastructure, operating system, and database engine; the customer manages access to the tables.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Responsibility in managed services such as DynamoDB",
+"service": "Amazon DynamoDB"
+},
+{
+"id": 1130,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'On-demand compliance reports with AWS Artifact'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Artifact taking into account that it is the official repository where SOC 1/2/3 and PCI-DSS reports of AWS infrastructure can be downloaded.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Artifact supports the implementation of On-demand compliance reports with AWS Artifact.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of On-demand compliance reports with AWS Artifact.\n2. Key requirement: Official repository where SOC 1/2/3 and PCI-DSS reports of AWS infrastructure can be downloaded.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "On-demand compliance reports with AWS Artifact",
+"service": "AWS Artifact"
+},
+{
+"id": 1131,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Continuous posture assessment with Security Hub'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Security Hub taking into account that it offers a consolidated view of security alerts and regulatory compliance indicators.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Security Hub supports the implementation of Continuous posture assessment with Security Hub.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Continuous posture assessment with Security Hub.\n2. Key requirement: Offers a consolidated view of security alerts and regulatory compliance indicators.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Continuous posture assessment with Security Hub",
+"service": "AWS Security Hub"
+},
+{
+"id": 1132,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Web application protection with AWS WAF'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS WAF taking into account that it filters incoming web traffic according to rules of IP addresses, HTTP headers, or injection patterns.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS WAF supports the implementation of Web application protection with AWS WAF.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Web application protection with AWS WAF.\n2. Key requirement: Filters incoming web traffic according to rules of IP addresses, HTTP headers, or injection patterns.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Web application protection with AWS WAF",
+"service": "AWS WAF"
+},
+{
+"id": 1133,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Automatic threat detection with GuardDuty'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Amazon GuardDuty taking into account that it analyzes data sources such as VPC Flow Logs and DNS Logs to detect malicious activity.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Amazon GuardDuty supports the implementation of Automatic threat detection with GuardDuty.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Automatic threat detection with GuardDuty.\n2. Key requirement: Analyzes data sources such as VPC Flow Logs and DNS Logs to detect malicious activity.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Automatic threat detection with GuardDuty",
+"service": "Amazon GuardDuty"
+},
+{
+"id": 1134,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Software vulnerability analysis with Inspector'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Amazon Inspector taking into account that it scans for known vulnerabilities (CVEs) in software packages installed on EC2 instances.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Amazon Inspector supports the implementation of Software vulnerability analysis with Inspector.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Software vulnerability analysis with Inspector.\n2. Key requirement: Scans for known vulnerabilities (CVEs) in software packages installed on EC2 instances.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Software vulnerability analysis with Inspector",
+"service": "Amazon Inspector"
+},
+{
+"id": 1135,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Data at rest encryption with KMS keys'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS KMS taking into account that it manages the creation and rotation of cryptographic keys natively integrated with S3, EBS, and RDS.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS KMS supports the implementation of Data at rest encryption with KMS keys.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Data at rest encryption with KMS keys.\n2. Key requirement: Manages the creation and rotation of cryptographic keys natively integrated with S3, EBS, and RDS.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Data at rest encryption with KMS keys",
+"service": "AWS KMS"
+},
+{
+"id": 1136,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Complete event history with AWS CloudTrail'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS CloudTrail taking into account that it maintains an immutable record of all API calls made in the AWS account.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS CloudTrail supports the implementation of Complete event history with AWS CloudTrail.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Complete event history with AWS CloudTrail.\n2. Key requirement: Maintains an immutable record of all API calls made in the AWS account.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Complete event history with AWS CloudTrail",
+"service": "AWS CloudTrail"
+},
+{
+"id": 1137,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Real-time monitoring and alarms with CloudWatch'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Amazon CloudWatch taking into account that it allows configuring alarms when metrics are exceeded or suspicious log patterns are detected.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Amazon CloudWatch supports the implementation of Real-time monitoring and alarms with CloudWatch.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Real-time monitoring and alarms with CloudWatch.\n2. Key requirement: Allows configuring alarms when metrics are exceeded or suspicious log patterns are detected.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Real-time monitoring and alarms with CloudWatch",
+"service": "Amazon CloudWatch"
+},
+{
+"id": 1138,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Advanced DDoS protection with AWS Shield Advanced'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Shield Advanced taking into account that it offers extended protection against volumetric attacks with 24/7 support from the AWS SRT team.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Shield Advanced supports the implementation of Advanced DDoS protection with AWS Shield Advanced.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Advanced DDoS protection with AWS Shield Advanced.\n2. Key requirement: Offers extended protection against volumetric attacks with 24/7 support from the AWS SRT team.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Advanced DDoS protection with AWS Shield Advanced",
+"service": "AWS Shield Advanced"
+},
+{
+"id": 1139,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Compliance auditing with AWS Audit Manager'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Audit Manager taking into account that it automates evidence collection to respond to regulatory audits agilely.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Audit Manager supports the implementation of Compliance auditing with AWS Audit Manager.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Compliance auditing with AWS Audit Manager.\n2. Key requirement: Automates evidence collection to respond to regulatory audits agilely.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Compliance auditing with AWS Audit Manager",
+"service": "AWS Audit Manager"
+},
+{
+"id": 1140,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Credential management with IAM User and Password Policy'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS IAM taking into account that it establishes complex rules for password length, expiration, and reuse for IAM users.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS IAM supports the implementation of Credential management with IAM User and Password Policy.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Credential management with IAM User and Password Policy.\n2. Key requirement: Establishes complex rules for password length, expiration, and reuse for IAM users.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Credential management with IAM User and Password Policy",
+"service": "AWS IAM"
+},
+{
+"id": 1141,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Temporary access through IAM Roles'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS STS taking into account that it provides temporary security credentials with automatic expiration using AWS STS.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS STS supports the implementation of Temporary access through IAM Roles.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Temporary access through IAM Roles.\n2. Key requirement: Provides temporary security credentials with automatic expiration using AWS STS.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Temporary access through IAM Roles",
+"service": "AWS STS"
+},
+{
+"id": 1142,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Strict protection of the Root User'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Root Account taking into account that it deletes access keys from the root user and restricts its use to emergencies.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Root Account supports the implementation of Strict protection of the Root User.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Strict protection of the Root User.\n2. Key requirement: Deletes access keys from the root user and restricts its use to emergencies.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Strict protection of the Root User",
+"service": "AWS Root Account"
+},
+{
+"id": 1143,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Boundary control with Service Control Policies (SCPs)'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Organizations taking into account that it prevents member accounts from using unauthorized services at the organization level.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Organizations supports the implementation of Boundary control with Service Control Policies (SCPs).",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Boundary control with Service Control Policies (SCPs).\n2. Key requirement: Prevents member accounts from using unauthorized services at the organization level.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Boundary control with Service Control Policies (SCPs)",
+"service": "AWS Organizations"
+},
+{
+"id": 1144,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Unintended access analysis with IAM Access Analyzer'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use IAM Access Analyzer taking into account that it identifies resources shared publicly or with unauthorized external accounts.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how IAM Access Analyzer supports the implementation of Unintended access analysis with IAM Access Analyzer.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Unintended access analysis with IAM Access Analyzer.\n2. Key requirement: Identifies resources shared publicly or with unauthorized external accounts.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Unintended access analysis with IAM Access Analyzer",
+"service": "IAM Access Analyzer"
+},
+{
+"id": 1145,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Centralized SSL certificate management with ACM'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Certificate Manager taking into account that it simplifies the creation and automatic renewal of SSL/TLS certificates for CloudFront and load balancers.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Certificate Manager supports the implementation of Centralized SSL certificate management with ACM.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Centralized SSL certificate management with ACM.\n2. Key requirement: Simplifies the creation and automatic renewal of SSL/TLS certificates for CloudFront and Load Balancers.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Centralized SSL certificate management with ACM",
+"service": "AWS Certificate Manager"
+},
+{
+"id": 1146,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Automatic classification of sensitive data with Macie'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Amazon Macie taking into account that it scans S3 buckets using AI algorithms to identify credit card numbers or exposed credentials.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Amazon Macie supports the implementation of Automatic classification of sensitive data with Macie.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Automatic classification of sensitive data with Macie.\n2. Key requirement: Scans S3 buckets using AI algorithms to identify credit card numbers or exposed credentials.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Automatic classification of sensitive data with Macie",
+"service": "Amazon Macie"
+},
+{
+"id": 1147,
+"domain": "Security & Compliance",
+"task": "Task 2.1: Understand the AWS Shared Responsibility Model",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Physical maintenance of network hardware'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Network Infrastructure taking into account that AWS is responsible for repairing switches, routers, and cabling in its data centers.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Network Infrastructure supports the implementation of Physical maintenance of network hardware.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Physical maintenance of network hardware.\n2. Key requirement: AWS is responsible for repairing switches, routers, and cabling in its data centers.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Physical maintenance of network hardware",
+"service": "AWS Network Infrastructure"
+},
+{
+"id": 1148,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Mandatory MFA for highly privileged accounts'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS MFA taking into account that it requires a multi-factor token to approve destructive or critical operations in the console.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS MFA supports the implementation of Mandatory MFA for highly privileged accounts.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Mandatory MFA for highly privileged accounts.\n2. Key requirement: Requires a multi-factor token to approve destructive or critical operations in the console.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Mandatory MFA for highly privileged accounts",
+"service": "AWS MFA"
+},
+{
+"id": 1149,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Automatic credential rotation with Secrets Manager'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Secrets Manager taking into account that it rotates database credentials on a scheduled basis without requiring manual restarts.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Secrets Manager supports the implementation of Automatic credential rotation with Secrets Manager.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Automatic credential rotation with Secrets Manager.\n2. Key requirement: Rotates database credentials on a scheduled basis without requiring manual restarts.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Automatic credential rotation with Secrets Manager",
+"service": "AWS Secrets Manager"
+},
+{
+"id": 1150,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'IAM Groups for bulk permission assignment'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use IAM Groups taking into account that it organizes users by roles (e.g., developers) and attaches policies to the group.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how IAM Groups supports the implementation of IAM Groups for bulk permission assignment.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of IAM Groups for bulk permission assignment.\n2. Key requirement: Organizes users by roles (e.g., Developers) and attaches policies to the group.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "IAM Groups for bulk permission assignment",
+"service": "IAM Groups"
+},
+{
+"id": 1151,
+"domain": "Security & Compliance",
+"task": "Task 2.1: Understand the AWS Shared Responsibility Model",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Data in transit encryption with HTTPS/TLS'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use Client Data Protection taking into account that the customer is responsible for configuring SSL/TLS on their web server to encrypt incoming traffic.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how Client Data Protection supports the implementation of Data in transit encryption with HTTPS/TLS.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Data in transit encryption with HTTPS/TLS.\n2. Key requirement: The customer is responsible for configuring SSL/TLS on their web server to encrypt incoming traffic.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Data in transit encryption with HTTPS/TLS",
+"service": "Client Data Protection"
+},
+{
+"id": 1152,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Security rule verification with AWS Config Rules'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Config Rules taking into account that it automatically checks whether the EBS volumes created are encrypted.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Config Rules supports the implementation of Security rule verification with AWS Config Rules.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Security rule verification with AWS Config Rules.\n2. Key requirement: Automatically checks whether the EBS volumes created are encrypted.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Security rule verification with AWS Config Rules",
+"service": "AWS Config Rules"
+},
+{
+"id": 1153,
+"domain": "Security & Compliance",
+"task": "Task 2.3: Identify AWS access management capabilities",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Federated access through SAML 2.0 / OIDC'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS IAM Identity Center taking into account that it allows employees to log in to AWS using their company credentials.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS IAM Identity Center supports the implementation of Federated access through SAML 2.0 / OIDC.",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Federated access through SAML 2.0 / OIDC.\n2. Key requirement: Allows employees to log in to AWS using their company credentials.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Federated access through SAML 2.0 / OIDC",
+"service": "AWS IAM Identity Center"
+},
+{
+"id": 1154,
+"domain": "Security & Compliance",
+"task": "Task 2.2: Understand AWS Cloud security, governance, and compliance concepts",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "In the context of security and compliance in the AWS cloud, an organization needs to implement 'Compliance with industry standards (PCI-DSS, SOC, HIPAA)'. What is the appropriate way to proceed?",
+"options": {
+"A": "Use AWS Compliance taking into account that audited international certifications validate AWS controls.",
+"B": "Ignore the company's security policies to speed up software development.",
+"C": "Assume that AWS automatically configures password policies for all IAM users.",
+"D": "Share the root user password with all members of the IT team."
+},
+"correct": [
+"A"
+],
+"hint1": "Analyze how AWS Compliance supports the implementation of Compliance with industry standards (PCI-DSS, SOC, HIPAA).",
+"hint2": "Remember the recommended practices of least privilege and isolation.",
+"explanation": "1. Option A represents the correct implementation of Compliance with industry standards (PCI-DSS, SOC, HIPAA).\n2. Key requirement: Audited international certifications validate AWS controls.\n3. The other alternatives expose the account to serious security vulnerabilities.\n4. Key lesson: Implementing adequate security controls protects the company's digital assets.",
+"concept": "Compliance with industry standards (PCI-DSS, SOC, HIPAA)",
+"service": "AWS Compliance"
+},
+{
+"id": 1155,
+"domain": "Technology & Services",
+"task": "Task 3.1: Define the AWS global infrastructure",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'AWS Regions and Global Infrastructure'. What is the correct choice?",
+"options": {
+"A": "Use AWS Infrastructure, since independent geographic regions are made up of multiple Availability Zones connected with ultra-low latency.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Infrastructure to solve AWS Regions and Global Infrastructure.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Infrastructure service.\n2. Key requirement: Independent geographic regions made up of multiple Availability Zones connected with ultra-low latency.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "AWS Regions and Global Infrastructure",
+"service": "AWS Infrastructure"
+},
+{
+"id": 1156,
+"domain": "Technology & Services",
+"task": "Task 3.1: Define the AWS global infrastructure",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Content delivery network with CloudFront'. What is the correct choice?",
+"options": {
+"A": "Use Amazon CloudFront, since it uses edge locations to distribute content with lower latency worldwide.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon CloudFront to solve Content delivery network with CloudFront.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon CloudFront service.\n2. Key requirement: Uses Edge Locations to distribute content with lower latency worldwide.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Content delivery network with CloudFront",
+"service": "Amazon CloudFront"
+},
+{
+"id": 1157,
+"domain": "Technology & Services",
+"task": "Task 3.2: Identify AWS compute services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Amazon EC2 and purchasing options (On-Demand, Spot, RIs)'. What is the correct choice?",
+"options": {
+"A": "Use Amazon EC2, since it provides flexible virtual servers with on-demand payment options, reservation discounts, or spot bidding.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon EC2 to solve Amazon EC2 and purchasing options (On-Demand, Spot, RIs).",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon EC2 service.\n2. Key requirement: Flexible virtual servers with on-demand payment options, reservation discounts, or spot bidding.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Amazon EC2 and purchasing options (On-Demand, Spot, RIs)",
+"service": "Amazon EC2"
+},
+{
+"id": 1158,
+"domain": "Technology & Services",
+"task": "Task 3.2: Identify AWS compute services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Serverless computing with AWS Lambda'. What is the correct choice?",
+"options": {
+"A": "Use AWS Lambda, since it is a serverless service that runs code only in response to events without managing infrastructure.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Lambda to solve Serverless computing with AWS Lambda.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Lambda service.\n2. Key requirement: Serverless service that runs code only in response to events without managing infrastructure.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Serverless computing with AWS Lambda",
+"service": "AWS Lambda"
+},
+{
+"id": 1159,
+"domain": "Technology & Services",
+"task": "Task 3.2: Identify AWS compute services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Container orchestration with Amazon ECS and EKS'. What is the correct choice?",
+"options": {
+"A": "Use Amazon ECS / EKS, since it provides simplified management of Docker containers (ECS) or managed Kubernetes (EKS).",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon ECS / EKS to solve Container orchestration with Amazon ECS and EKS.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon ECS / EKS service.\n2. Key requirement: Simplified management of Docker containers (ECS) or managed Kubernetes (EKS).\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Container orchestration with Amazon ECS and EKS",
+"service": "Amazon ECS / EKS"
+},
+{
+"id": 1160,
+"domain": "Technology & Services",
+"task": "Task 3.2: Identify AWS compute services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Serverless container execution with AWS Fargate'. What is the correct choice?",
+"options": {
+"A": "Use AWS Fargate, since it eliminates the need to provision or administer EC2 servers to run containers.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Fargate to solve Serverless container execution with AWS Fargate.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Fargate service.\n2. Key requirement: Eliminates the need to provision or administer EC2 servers to run containers.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Serverless container execution with AWS Fargate",
+"service": "AWS Fargate"
+},
+{
+"id": 1161,
+"domain": "Technology & Services",
+"task": "Task 3.3: Identify AWS database services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Relational databases with Amazon RDS'. What is the correct choice?",
+"options": {
+"A": "Use Amazon RDS, since it simplifies database administrative tasks such as patching, backups, and multi-AZ replication.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon RDS to solve Relational databases with Amazon RDS.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon RDS service.\n2. Key requirement: Simplifies database administrative tasks such as patching, backups, and Multi-AZ replication.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Relational databases with Amazon RDS",
+"service": "Amazon RDS"
+},
+{
+"id": 1162,
+"domain": "Technology & Services",
+"task": "Task 3.3: Identify AWS database services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Native relational database Amazon Aurora'. What is the correct choice?",
+"options": {
+"A": "Use Amazon Aurora, since it offers high availability with up to 6 copies of data across 3 Availability Zones and compatibility with MySQL/PostgreSQL.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon Aurora to solve Native relational database Amazon Aurora.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon Aurora service.\n2. Key requirement: Offers high availability with up to 6 copies of data across 3 Availability Zones and compatibility with MySQL/PostgreSQL.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Native relational database Amazon Aurora",
+"service": "Amazon Aurora"
+},
+{
+"id": 1163,
+"domain": "Technology & Services",
+"task": "Task 3.3: Identify AWS database services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Serverless NoSQL database Amazon DynamoDB'. What is the correct choice?",
+"options": {
+"A": "Use Amazon DynamoDB, since it offers guaranteed performance at any scale with single-digit millisecond latencies.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon DynamoDB to solve Serverless NoSQL database Amazon DynamoDB.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon DynamoDB service.\n2. Key requirement: Offers guaranteed performance at any scale with single-digit millisecond latencies.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Serverless NoSQL database Amazon DynamoDB",
+"service": "Amazon DynamoDB"
+},
+{
+"id": 1164,
+"domain": "Technology & Services",
+"task": "Task 3.3: Identify AWS database services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Acceleration with in-memory cache Amazon ElastiCache'. What is the correct choice?",
+"options": {
+"A": "Use Amazon ElastiCache, since it reduces database read times by storing the most queried data in memory.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon ElastiCache to solve Acceleration with in-memory cache Amazon ElastiCache.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon ElastiCache service.\n2. Key requirement: Reduces database read times by storing the most queried data in memory.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Acceleration with in-memory cache Amazon ElastiCache",
+"service": "Amazon ElastiCache"
+},
+{
+"id": 1165,
+"domain": "Technology & Services",
+"task": "Task 3.3: Identify AWS database services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Graph database Amazon Neptune'. What is the correct choice?",
+"options": {
+"A": "Use Amazon Neptune, since it is designed to query highly connected datasets such as knowledge graphs and social networks.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon Neptune to solve Graph database Amazon Neptune.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon Neptune service.\n2. Key requirement: Designed to query highly connected datasets such as knowledge graphs and social networks.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Graph database Amazon Neptune",
+"service": "Amazon Neptune"
+},
+{
+"id": 1166,
+"domain": "Technology & Services",
+"task": "Task 3.3: Identify AWS database services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'MongoDB-compatible database: Amazon DocumentDB'. What is the correct choice?",
+"options": {
+"A": "Use Amazon DocumentDB, since it is a managed service for storing and scaling JSON documents reliably.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon DocumentDB to solve MongoDB-compatible database: Amazon DocumentDB.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon DocumentDB service.\n2. Key requirement: Managed service for storing and scaling JSON documents reliably.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "MongoDB-compatible database: Amazon DocumentDB",
+"service": "Amazon DocumentDB"
+},
+{
+"id": 1167,
+"domain": "Technology & Services",
+"task": "Task 3.4: Identify AWS network services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Isolated Virtual Private Cloud with Amazon VPC'. What is the correct choice?",
+"options": {
+"A": "Use Amazon VPC, since it provides complete logical network isolation to deploy AWS resources in a secure environment.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon VPC to solve Isolated Virtual Private Cloud with Amazon VPC.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon VPC service.\n2. Key requirement: Provides complete logical network isolation to deploy AWS resources in a secure environment.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Isolated Virtual Private Cloud with Amazon VPC",
+"service": "Amazon VPC"
+},
+{
+"id": 1168,
+"domain": "Technology & Services",
+"task": "Task 3.4: Identify AWS network services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Traffic distribution with Elastic Load Balancing (ELB)'. What is the correct choice?",
+"options": {
+"A": "Use Elastic Load Balancing, since it automatically distributes incoming application traffic across multiple instances or containers.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Elastic Load Balancing to solve Traffic distribution with Elastic Load Balancing (ELB).",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Elastic Load Balancing service.\n2. Key requirement: Automatically distributes incoming application traffic across multiple instances or containers.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Traffic distribution with Elastic Load Balancing (ELB)",
+"service": "Elastic Load Balancing"
+},
+{
+"id": 1169,
+"domain": "Technology & Services",
+"task": "Task 3.4: Identify AWS network services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Global DNS service Amazon Route 53'. What is the correct choice?",
+"options": {
+"A": "Use Amazon Route 53, since it manages domain name resolution and offers server health checks.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon Route 53 to solve Global DNS service Amazon Route 53.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon Route 53 service.\n2. Key requirement: Manages domain name resolution and offers server health checks.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Global DNS service Amazon Route 53",
+"service": "Amazon Route 53"
+},
+{
+"id": 1170,
+"domain": "Technology & Services",
+"task": "Task 3.4: Identify AWS network services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Dedicated private connection with AWS Direct Connect'. What is the correct choice?",
+"options": {
+"A": "Use AWS Direct Connect, since it establishes a direct network connection independent of the public Internet between the company and AWS.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Direct Connect to solve Dedicated private connection with AWS Direct Connect.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Direct Connect service.\n2. Key requirement: Establishes a direct network connection independent of the public Internet between the company and AWS.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Dedicated private connection with AWS Direct Connect",
+"service": "AWS Direct Connect"
+},
+{
+"id": 1171,
+"domain": "Technology & Services",
+"task": "Task 3.4: Identify AWS network services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Global performance improvement with AWS Global Accelerator'. What is the correct choice?",
+"options": {
+"A": "Use AWS Global Accelerator, since it routes traffic through the AWS global infrastructure using static Anycast IP addresses.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Global Accelerator to solve Global performance improvement with AWS Global Accelerator.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Global Accelerator service.\n2. Key requirement: Routes traffic through the AWS global infrastructure using static Anycast IP addresses.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Global performance improvement with AWS Global Accelerator",
+"service": "AWS Global Accelerator"
+},
+{
+"id": 1172,
+"domain": "Technology & Services",
+"task": "Task 3.4: Identify AWS network services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Centralized interconnection with AWS Transit Gateway'. What is the correct choice?",
+"options": {
+"A": "Use AWS Transit Gateway, since it simplifies network topology by connecting multiple VPCs and corporate networks through a single hub.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Transit Gateway to solve Centralized interconnection with AWS Transit Gateway.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Transit Gateway service.\n2. Key requirement: Simplifies network topology by connecting multiple VPCs and corporate networks through a single hub.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Centralized interconnection with AWS Transit Gateway",
+"service": "AWS Transit Gateway"
+},
+{
+"id": 1173,
+"domain": "Technology & Services",
+"task": "Task 3.5: Identify AWS storage services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Unlimited object storage Amazon S3'. What is the correct choice?",
+"options": {
+"A": "Use Amazon S3, since it provides highly durable and scalable storage accessible from anywhere on the web.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon S3 to solve Unlimited object storage Amazon S3.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon S3 service.\n2. Key requirement: Provides highly durable and scalable storage accessible from anywhere on the web.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Unlimited object storage Amazon S3",
+"service": "Amazon S3"
+},
+{
+"id": 1174,
+"domain": "Technology & Services",
+"task": "Task 3.5: Identify AWS storage services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'S3 object lifecycle management'. What is the correct choice?",
+"options": {
+"A": "Use S3 Lifecycle Policies, since it automates the transition of data to lower-cost classes such as S3 Glacier or Glacier Deep Archive.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of S3 Lifecycle Policies to solve S3 object lifecycle management.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the S3 Lifecycle Policies service.\n2. Key requirement: Automates the transition of data to lower-cost classes such as S3 Glacier or Glacier Deep Archive.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "S3 object lifecycle management",
+"service": "S3 Lifecycle Policies"
+},
+{
+"id": 1175,
+"domain": "Technology & Services",
+"task": "Task 3.5: Identify AWS storage services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Persistent block disks Amazon EBS'. What is the correct choice?",
+"options": {
+"A": "Use Amazon EBS, since it offers high-performance block storage designed to connect to EC2 instances.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon EBS to solve Persistent block disks Amazon EBS.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon EBS service.\n2. Key requirement: Offers high-performance block storage designed to connect to EC2 instances.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Persistent block disks Amazon EBS",
+"service": "Amazon EBS"
+},
+{
+"id": 1176,
+"domain": "Technology & Services",
+"task": "Task 3.5: Identify AWS storage services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Shared POSIX file system Amazon EFS'. What is the correct choice?",
+"options": {
+"A": "Use Amazon EFS, since it is an elastic and shared file system accessible by multiple Linux instances simultaneously.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon EFS to solve Shared POSIX file system Amazon EFS.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon EFS service.\n2. Key requirement: Elastic and shared file system accessible by multiple Linux instances simultaneously.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Shared POSIX file system Amazon EFS",
+"service": "Amazon EFS"
+},
+{
+"id": 1177,
+"domain": "Technology & Services",
+"task": "Task 3.5: Identify AWS storage services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Native Windows/Lustre file systems with Amazon FSx'. What is the correct choice?",
+"options": {
+"A": "Use Amazon FSx, since it is a managed service for integrating native Windows Server file systems or HPC processing with Lustre.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon FSx to solve Native Windows/Lustre file systems with Amazon FSx.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon FSx service.\n2. Key requirement: Managed service for integrating native Windows Server file systems or HPC processing with Lustre.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Native Windows/Lustre file systems with Amazon FSx",
+"service": "Amazon FSx"
+},
+{
+"id": 1178,
+"domain": "Technology & Services",
+"task": "Task 3.5: Identify AWS storage services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Hybrid storage connectivity with AWS Storage Gateway'. What is the correct choice?",
+"options": {
+"A": "Use AWS Storage Gateway, since it allows on-premises applications to transparently use AWS cloud storage.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Storage Gateway to solve Hybrid storage connectivity with AWS Storage Gateway.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Storage Gateway service.\n2. Key requirement: Allows on-premises applications to transparently use AWS cloud storage.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Hybrid storage connectivity with AWS Storage Gateway",
+"service": "AWS Storage Gateway"
+},
+{
+"id": 1179,
+"domain": "Technology & Services",
+"task": "Task 3.6: Identify AWS AI/ML and analytics services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Analytical data warehouse Amazon Redshift'. What is the correct choice?",
+"options": {
+"A": "Use Amazon Redshift, since it is a columnar database optimized for complex business intelligence analysis at large scale.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon Redshift to solve Analytical data warehouse Amazon Redshift.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon Redshift service.\n2. Key requirement: Columnar database optimized for complex Business Intelligence analysis at large scale.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Analytical data warehouse Amazon Redshift",
+"service": "Amazon Redshift"
+},
+{
+"id": 1180,
+"domain": "Technology & Services",
+"task": "Task 3.6: Identify AWS AI/ML and analytics services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Ad-hoc SQL queries on S3 with Amazon Athena'. What is the correct choice?",
+"options": {
+"A": "Use Amazon Athena, since it allows analyzing large volumes of data in S3 using SQL without provisioning infrastructure.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon Athena to solve Ad-hoc SQL queries on S3 with Amazon Athena.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon Athena service.\n2. Key requirement: Allows analyzing large volumes of data in S3 using SQL without provisioning infrastructure.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Ad-hoc SQL queries on S3 with Amazon Athena",
+"service": "Amazon Athena"
+},
+{
+"id": 1181,
+"domain": "Technology & Services",
+"task": "Task 3.6: Identify AWS AI/ML and analytics services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Serverless data integration with AWS Glue'. What is the correct choice?",
+"options": {
+"A": "Use AWS Glue, since it is a managed data preparation and ETL service for creating integrated data catalogs.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Glue to solve Serverless data integration with AWS Glue.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Glue service.\n2. Key requirement: Managed data preparation and ETL service for creating integrated data catalogs.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Serverless data integration with AWS Glue",
+"service": "AWS Glue"
+},
+{
+"id": 1182,
+"domain": "Technology & Services",
+"task": "Task 3.6: Identify AWS AI/ML and analytics services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Business visualization and reporting with Amazon QuickSight'. What is the correct choice?",
+"options": {
+"A": "Use Amazon QuickSight, since it is a scalable AI-powered BI service for creating interactive dashboards and reports.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon QuickSight to solve Business visualization and reporting with Amazon QuickSight.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon QuickSight service.\n2. Key requirement: Scalable AI-powered BI service for creating interactive dashboards and reports.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Business visualization and reporting with Amazon QuickSight",
+"service": "Amazon QuickSight"
+},
+{
+"id": 1183,
+"domain": "Technology & Services",
+"task": "Task 3.7: Identify additional core AWS services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Asynchronous decoupling with Amazon SQS queues'. What is the correct choice?",
+"options": {
+"A": "Use Amazon SQS, since it stores messages in scalable queues to prevent failures in one component from affecting others.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon SQS to solve Asynchronous decoupling with Amazon SQS queues.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon SQS service.\n2. Key requirement: Stores messages in scalable queues to prevent failures in one component from affecting others.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Asynchronous decoupling with Amazon SQS queues",
+"service": "Amazon SQS"
+},
+{
+"id": 1184,
+"domain": "Technology & Services",
+"task": "Task 3.7: Identify additional core AWS services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Pub/Sub notifications with Amazon SNS'. What is the correct choice?",
+"options": {
+"A": "Use Amazon SNS, since it sends mass messages and notifications to multiple subscribers via email, SMS, or HTTP.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon SNS to solve Pub/Sub notifications with Amazon SNS.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon SNS service.\n2. Key requirement: Sends mass messages and notifications to multiple subscribers via email, SMS, or HTTP.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Pub/Sub notifications with Amazon SNS",
+"service": "Amazon SNS"
+},
+{
+"id": 1185,
+"domain": "Technology & Services",
+"task": "Task 3.7: Identify additional core AWS services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Declarative provisioning with AWS CloudFormation'. What is the correct choice?",
+"options": {
+"A": "Use AWS CloudFormation, since it automates the creation and updating of resources through code in JSON/YAML templates.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS CloudFormation to solve Declarative provisioning with AWS CloudFormation.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS CloudFormation service.\n2. Key requirement: Automates the creation and updating of resources through code in JSON/YAML templates.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Declarative provisioning with AWS CloudFormation",
+"service": "AWS CloudFormation"
+},
+{
+"id": 1186,
+"domain": "Technology & Services",
+"task": "Task 3.7: Identify additional core AWS services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Observability and metrics with Amazon CloudWatch'. What is the correct choice?",
+"options": {
+"A": "Use Amazon CloudWatch, since it monitors system performance, collects logs, and triggers automatic alarms.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of Amazon CloudWatch to solve Observability and metrics with Amazon CloudWatch.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the Amazon CloudWatch service.\n2. Key requirement: Monitors system performance, collects logs, and triggers automatic alarms.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Observability and metrics with Amazon CloudWatch",
+"service": "Amazon CloudWatch"
+},
+{
+"id": 1187,
+"domain": "Technology & Services",
+"task": "Task 3.7: Identify additional core AWS services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Centralized operational management with AWS Systems Manager'. What is the correct choice?",
+"options": {
+"A": "Use AWS Systems Manager, since it offers operational visibility and allows automating configuration tasks on EC2 and on-premises servers.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Systems Manager to solve Centralized operational management with AWS Systems Manager.",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Systems Manager service.\n2. Key requirement: Offers operational visibility and allows automating configuration tasks on EC2 and on-premises servers.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Centralized operational management with AWS Systems Manager",
+"service": "AWS Systems Manager"
+},
+{
+"id": 1188,
+"domain": "Technology & Services",
+"task": "Task 3.7: Identify additional core AWS services",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to select the appropriate AWS service to respond to the following architecture requirement: 'Physical devices for massive data transfer (AWS Snow Family)'. What is the correct choice?",
+"options": {
+"A": "Use AWS Snowball, since it transports petabytes of data to the cloud securely using rugged hardware.",
+"B": "Install a manual solution on a personal server without backups.",
+"C": "Use a test service not guaranteed for production environments.",
+"D": "Manually write network scripts on each customer computer without using the cloud."
+},
+"correct": [
+"A"
+],
+"hint1": "Evaluate the main function of AWS Snowball to solve Physical devices for massive data transfer (AWS Snow Family).",
+"hint2": "Choose the native and managed solution offered by AWS.",
+"explanation": "1. Option A correctly selects the AWS Snowball service.\n2. Key requirement: Transports petabytes of data to the cloud securely using rugged hardware.\n3. The discarded alternatives represent non-recommended or manual practices.\n4. Key lesson: Mastering AWS technical services guarantees the design of efficient architectures.",
+"concept": "Physical devices for massive data transfer (AWS Snow Family)",
+"service": "AWS Snowball"
+},
+{
+"id": 1189,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.1: Compare AWS pricing models",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Payment options for Reserved Instances'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Reserved Instances, since it offers All Upfront (largest discount), Partial Upfront, or No Upfront options to fit the budget.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Reserved Instances.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Reserved Instances solution.\n2. Key requirement: Offers All Upfront (largest discount), Partial Upfront, or No Upfront options to fit the budget.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Payment options for Reserved Instances",
+"service": "AWS Reserved Instances"
+},
+{
+"id": 1190,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.1: Compare AWS pricing models",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Usage commitment discounts with Savings Plans'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Savings Plans, since it offers significant discounts in exchange for an hourly spend commitment (/hour) for 1 or 3 years.", "B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.", "C": "Request technical support only through unverified social networks.", "D": "Disable all billing alarms to avoid receiving warning emails." }, "correct": [ "A" ], "hint1": "Identify the tool or feature of AWS Savings Plans.", "hint2": "Remember that AWS offers specific cost management resources and support plans.", "explanation": "1. Option A correctly selects the AWS Savings Plans solution.\n2. Key requirement: Offers significant discounts in exchange for an hourly spend commitment (/hour) for 1 or 3 years.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Usage commitment discounts with Savings Plans",
+"service": "AWS Savings Plans"
+},
+{
+"id": 1191,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.1: Compare AWS pricing models",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Use of spare capacity with Spot Instances'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use Amazon EC2 Spot Instances, since it allows leveraging unused EC2 capacity with up to 90% discount on the On-Demand price.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of Amazon EC2 Spot Instances.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the Amazon EC2 Spot Instances solution.\n2. Key requirement: Allows leveraging unused EC2 capacity with up to 90% discount on the On-Demand price.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Use of spare capacity with Spot Instances",
+"service": "Amazon EC2 Spot Instances"
+},
+{
+"id": 1192,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.2: Understand billing, budgeting, and cost management resources",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'AWS Free Tier monitoring'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Free Tier Dashboard, since it allows tracking the usage of services included in the free tier to avoid unexpected charges.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Free Tier Dashboard.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Free Tier Dashboard solution.\n2. Key requirement: Allows tracking the usage of services included in the free tier to avoid unexpected charges.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "AWS Free Tier monitoring",
+"service": "AWS Free Tier Dashboard"
+},
+{
+"id": 1193,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.2: Understand billing, budgeting, and cost management resources",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Cost analysis and forecasting with AWS Cost Explorer'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Cost Explorer, since it visualizes historical spending trends and projects future costs for up to the next 12 months.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Cost Explorer.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Cost Explorer solution.\n2. Key requirement: Visualizes historical spending trends and projects future costs for up to the next 12 months.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Cost analysis and forecasting with AWS Cost Explorer",
+"service": "AWS Cost Explorer"
+},
+{
+"id": 1194,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.2: Understand billing, budgeting, and cost management resources",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Creating budget alerts with AWS Budgets'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Budgets, since it allows receiving alerts when actual or forecasted costs exceed the established budget.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Budgets.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Budgets solution.\n2. Key requirement: Allows receiving alerts when actual or forecasted costs exceed the established budget.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Creating budget alerts with AWS Budgets",
+"service": "AWS Budgets"
+},
+{
+"id": 1195,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.2: Understand billing, budgeting, and cost management resources",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Cost anomaly detection with ML (AWS Cost Anomaly Detection)'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Cost Anomaly Detection, since it uses machine learning to identify unusual spending and alert proactively.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Cost Anomaly Detection.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Cost Anomaly Detection solution.\n2. Key requirement: Uses machine learning to identify unusual spending and alert proactively.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Cost anomaly detection with ML (AWS Cost Anomaly Detection)",
+"service": "AWS Cost Anomaly Detection"
+},
+{
+"id": 1196,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.2: Understand billing, budgeting, and cost management resources",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Centralized billing with AWS Organizations'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Organizations, since it combines billing from multiple accounts into a single consolidated invoice.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Organizations.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Organizations solution.\n2. Key requirement: Combines billing from multiple accounts into a single consolidated invoice.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Centralized billing with AWS Organizations",
+"service": "AWS Organizations"
+},
+{
+"id": 1197,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.2: Understand billing, budgeting, and cost management resources",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Cost estimates with the AWS Pricing Calculator'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Pricing Calculator, since it helps plan and create detailed cost estimates for new AWS projects.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Pricing Calculator.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Pricing Calculator solution.\n2. Key requirement: Helps plan and create detailed cost estimates for new AWS projects.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Cost estimates with the AWS Pricing Calculator",
+"service": "AWS Pricing Calculator"
+},
+{
+"id": 1198,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.3: Identify AWS technical resources and AWS Support options",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Guaranteed response times depending on the Support Plan'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Support Plans, since the Enterprise plan offers response times under 15 minutes for critical systems down.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Support Plans.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Support Plans solution.\n2. Key requirement: The Enterprise plan offers response times under 15 minutes for critical systems down.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Guaranteed response times depending on the Support Plan",
+"service": "AWS Support Plans"
+},
+{
+"id": 1199,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.3: Identify AWS technical resources and AWS Support options",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Automatic checks with AWS Trusted Advisor'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Trusted Advisor, since it continuously reviews the environment to identify cost waste and underutilized instances.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Trusted Advisor.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Trusted Advisor solution.\n2. Key requirement: Continuously reviews the environment to identify cost waste and underutilized instances.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Automatic checks with AWS Trusted Advisor",
+"service": "AWS Trusted Advisor"
+},
+{
+"id": 1200,
+"domain": "Billing, Pricing & Support",
+"task": "Task 4.3: Identify AWS technical resources and AWS Support options",
+"type": "Single Choice",
+"difficulty": "medium",
+"question": "A company needs to solve the following financial or support need on AWS: 'Concierge billing support in the Enterprise plan'. What is the most appropriate AWS tool or resource?",
+"options": {
+"A": "Use AWS Support Concierge, since it provides a dedicated team of billing specialists available to Enterprise plan customers.",
+"B": "Assume that all AWS services have the same fixed monthly cost regardless of consumption.",
+"C": "Request technical support only through unverified social networks.",
+"D": "Disable all billing alarms to avoid receiving warning emails."
+},
+"correct": [
+"A"
+],
+"hint1": "Identify the tool or feature of AWS Support Concierge.",
+"hint2": "Remember that AWS offers specific cost management resources and support plans.",
+"explanation": "1. Option A correctly selects the AWS Support Concierge solution.\n2. Key requirement: Provides a dedicated team of billing specialists available to Enterprise plan customers.\n3. The discarded options are contrary to cloud financial management practices.\n4. Key lesson: Knowing billing resources and support incentives allows effectively controlling the cloud budget.",
+"concept": "Concierge billing support in the Enterprise plan",
+"service": "AWS Support Concierge"
+}
+]
