@@ -16,7 +16,7 @@
 
 > 🎯 **A complete learning hub for AWS Cloud Foundations and AWS Certified Cloud Practitioner (CLF-C02).**
 >
-> Study guides, architecture notes, certification preparation resources, and an interactive practice simulator designed to help you understand cloud computing—not just memorize AWS services.
+> Study guides, architecture notes, certification preparation resources, and hands-on learning materials designed to help you understand cloud computing—not just memorize AWS services.
 
 <p align="center">
   <img src="./images/aws-certified-cloud-practitioner.svg" width="220" alt="AWS Certified Cloud Practitioner Badge">
@@ -27,12 +27,11 @@
 ## 📋 Table of Contents
 
 - [☁️ About This Project](#️-about-this-project)
+- [🚀 Interactive Practice Simulator](#-interactive-practice-simulator)
 - [📚 What's Included](#-whats-included)
 - [📊 AWS Certified Cloud Practitioner (CLF-C02)](#-aws-certified-cloud-practitioner-clf-c02)
-- [🧪 CLF-C02 Practice Simulator](#-clf-c02-practice-simulator)
 - [📖 Study Guide](#-study-guide)
 - [🏗️ Repository Structure](#️-repository-structure)
-- [🚀 Running the Simulator Locally](#-running-the-simulator-locally)
 - [📚 Recommended AWS Resources](#-recommended-aws-resources)
 - [🤝 Contributing](#-contributing)
 - [⚠️ Disclaimer](#️-disclaimer)
@@ -59,7 +58,45 @@ The objective is to understand:
 - Cloud architecture thinking
 - Certification preparation
 
-This repository combines structured learning material with hands-on practice and exam preparation.
+This repository combines structured learning material, architecture notes, study guides, and certification preparation resources.
+
+---
+
+# 🚀 Interactive Practice Simulator
+
+As part of this AWS learning journey, I designed and developed a complete interactive simulator for the AWS Certified Cloud Practitioner (CLF-C02) exam.
+
+The simulator contains:
+
+- 1,220+ original practice questions
+- English 🇺🇸 & Spanish 🇲🇽 support
+- Practice Mode & Exam Mode
+- AWS Level & Exam Readiness metrics
+- Learning Cycle concept reinforcement
+- Domain-based analytics
+- Light & Dark themes
+- Local progress persistence
+
+### 👈 Start Here, Launch Now! 👉
+
+<p align="center">
+  <a href="https://valenciafcarlos.github.io/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCarlosDevOps/">
+    <img src="https://img.shields.io/badge/🚀%20Launch%20Simulator-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Practice with 1,220+ AWS CLF-C02 Questions</strong><br>
+  English 🇺🇸 • Español 🇲🇽 • Exam Mode • Learning Cycle
+</p>
+
+### 🌐 Live Demo
+
+https://valenciafcarlos.github.io/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCarlosDevOps/
+
+### 💻 Source Code
+
+https://github.com/ValenciaFCarlos/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCarlosDevOps
 
 ---
 
@@ -67,7 +104,7 @@ This repository combines structured learning material with hands-on practice and
 
 | Resource | Description |
 |-----------|-------------|
-| 🎯 Practice Simulator | Interactive AWS CLF-C02 simulator with 1,220+ questions |
+| 🚀 Practice Simulator | Interactive CLF-C02 simulator with 1,220+ bilingual questions |
 | 📖 Study Guide | Structured learning path aligned with official exam domains |
 | 📝 Notes | Personal notes, summaries, and mental models |
 | 🔗 Resources | Curated AWS learning resources |
@@ -78,7 +115,7 @@ This repository combines structured learning material with hands-on practice and
 
 # 📊 AWS Certified Cloud Practitioner (CLF-C02)
 
-### Official AWS Resources
+## Official AWS Resources
 
 🔗 Certification Page
 
@@ -115,95 +152,11 @@ https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-
 
 ---
 
-# 🧪 CLF-C02 Practice Simulator
-
-The simulator included in this repository provides an interactive environment for learning and practicing AWS Cloud Practitioner concepts.
-
-Built with:
-
-- HTML
-- CSS
-- Vanilla JavaScript
-
-No frameworks.
-
-No backend.
-
-No external dependencies.
-
----
-
-## ✨ Simulator Features
-
-✅ 1,220+ Questions
-
-✅ Official Domain Weight Distribution
-
-✅ Practice Mode
-
-✅ Exam Mode
-
-✅ Learning Cycle
-
-✅ Hint System
-
-✅ Concept Insight
-
-✅ AWS Level
-
-✅ Exam Readiness
-
-✅ Success Estimate
-
-✅ Needs Review Tracking
-
-✅ Domain Performance Analysis
-
-✅ Dark Mode
-
-✅ Light Mode
-
-✅ Spanish & English Support
-
-✅ Local Progress Persistence
-
-✅ Fully Client-Side
-
----
-
-## 🧠 Learning Cycle
-
-One of the key features of the simulator.
-
-Instead of repeating the exact same failed question, the Learning Cycle reinforces weak concepts by generating a new question from the same topic.
-
-```text
-Incorrect Answer
-        ↓
-Hint
-        ↓
-Concept Review
-        ↓
-Learning Cycle
-        ↓
-New Question from Same Concept
-        ↓
-Concept Validation
-```
-
-This promotes understanding rather than memorization.
-
----
-
 # 📖 Study Guide
 
 The study guide covers all official CLF-C02 domains.
 
----
-
 ## 🌩️ Cloud Concepts
-
-Topics include:
 
 - What is Cloud Computing
 - Benefits of Cloud Computing
@@ -212,11 +165,7 @@ Topics include:
 - Cloud Service Models
 - AWS Global Infrastructure
 
----
-
 ## 🔒 Security & Compliance
-
-Topics include:
 
 - Shared Responsibility Model
 - AWS Identity and Access Management (IAM)
@@ -225,11 +174,7 @@ Topics include:
 - Compliance Programs
 - Security Best Practices
 
----
-
 ## ⚙️ Cloud Technology & Services
-
-Topics include:
 
 - Amazon EC2
 - AWS Lambda
@@ -243,11 +188,7 @@ Topics include:
 - Amazon Route 53
 - Elastic Load Balancing
 
----
-
 ## 💰 Billing, Pricing & Support
-
-Topics include:
 
 - AWS Pricing Models
 - AWS Cost Explorer
@@ -266,18 +207,8 @@ AWS-Cloud-Foundations-Certification-Hub
 │
 ├── images/
 │   ├── banner-main.png
-│   ├── banner-simulator.png
-│   ├── good-luck.png
-│   └── aws-certified-cloud-practitioner.svg
-│
-├── simulator/
-│   ├── index.html
-│   ├── app.js
-│   ├── aws-services.js
-│   ├── styles.css
-│   ├── data/
-│   ├── assets/
-│   └── icons/
+│   ├── aws-certified-cloud-practitioner.svg
+│   └── good-luck.png
 │
 ├── guide/
 ├── notes/
@@ -285,37 +216,9 @@ AWS-Cloud-Foundations-Certification-Hub
 └── README.md
 ```
 
----
-
-# 🚀 Running the Simulator Locally
-
-The simulator loads JSON files using `fetch()`.
-
-Because of this, it must be served through a local HTTP server.
-
-### Python
-
-```bash
-cd simulator
-python -m http.server 5500
-```
-
-### Node.js
-
-```bash
-cd simulator
-npx serve .
-```
-
-### VS Code
-
-Use the Live Server extension.
-
-Then open:
-
-```text
-http://localhost:5500
-```
+> The Practice Simulator is maintained in a dedicated repository:
+>
+> https://github.com/ValenciaFCarlos/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCarlosDevOps
 
 ---
 
@@ -325,25 +228,17 @@ http://localhost:5500
 
 https://skillbuilder.aws
 
-Official AWS learning platform.
-
 ### AWS Cloud Practitioner Essentials
 
 https://skillbuilder.aws/learn
-
-Official AWS foundational course for CLF-C02 candidates.
 
 ### AWS Documentation
 
 https://docs.aws.amazon.com
 
-Official AWS documentation.
-
 ### AWS Well-Architected Framework
 
 https://aws.amazon.com/architecture/well-architected/
-
-Learn AWS architectural best practices and design principles.
 
 ---
 
@@ -357,8 +252,8 @@ Ways to contribute:
 - Suggest improvements
 - Submit pull requests
 - Improve documentation
-- Report ambiguous questions
 - Share study resources
+- Report ambiguous questions
 
 ---
 
@@ -370,7 +265,7 @@ It is not affiliated with, endorsed by, sponsored by, or maintained by Amazon We
 
 AWS®, Amazon Web Services®, Cloud Practitioner®, and all related trademarks belong to Amazon.com, Inc. and its affiliates.
 
-Question content has been created and organized for educational purposes based on AWS Cloud Practitioner learning objectives and publicly available AWS training resources.
+Question content, notes, guides, and learning materials are provided for educational purposes only.
 
 ---
 
@@ -386,9 +281,9 @@ It helps more people discover free AWS learning resources.
 
 ## ValenciaF. Carlos DevOps
 
-AWS Certified Cloud Practitioner | Cloud Architecture Student | DevOps Engineer
-
-Passionate about AWS, Cloud Architecture, Infrastructure Design, Automation, and Continuous Learning.
+AWS Certified Cloud Practitioner   
+Cloud Architecture Student  
+DevOps Engineer
 
 🔗 GitHub  
 https://github.com/ValenciaFCarlos
@@ -397,8 +292,6 @@ https://github.com/ValenciaFCarlos
 https://www.linkedin.com/in/valencia-carlos-77a1b213b/
 
 ☁️ Feel free to connect, collaborate, or contribute to this project.
-
----
 
 ---
 
