@@ -1,152 +1,375 @@
-# AWS Cloud Foundations Certification Hub
+# 🚀 AWS Cloud Foundations & Certification Hub
 
-A comprehensive resource hub for the AWS Certified Cloud Practitioner (CLF-C02) certification. Includes an interactive practice simulator, study guide, personal notes, and curated resources.
+> <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/cc7766c3-a01e-4665-8748-59e3338fc1cd" />
 
-**Author:** [ValenciaF. Carlos DevOps](https://github.com/ValenciaFCarlos)
-**License:** MIT
+> 🎯 **A complete learning hub for AWS Cloud Foundations and AWS Certified Cloud Practitioner (CLF-C02).**
+>
+> Study guides, architecture notes, certification preparation resources, and an interactive practice simulator designed to help you understand cloud computing—not just memorize services.
+>
+---
+
+<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/aee58422-4682-45f3-b26f-30cb6b013a66" />
+
+
+## ☁️ About This Project
+
+AWS Cloud Foundations & Certification Hub is a learning repository created to help students, IT professionals, career changers, and cloud enthusiasts build a strong foundation in AWS.
+
+The goal is not simply to pass an exam.
+
+The goal is to understand:
+
+- Cloud Computing fundamentals
+- AWS architecture principles
+- Core AWS services
+- Security and compliance concepts
+- Cost optimization strategies
+- Real-world cloud use cases
+- Certification preparation
+
+This repository combines structured learning material with hands-on practice.
 
 ---
 
-## Table of Contents
+## 📚 What's Included
 
-- [What's Inside](#whats-inside)
-- [Exam Overview](#exam-overview)
-- [Simulator Highlights](#simulator-highlights)
-- [Getting Started](#getting-started)
-- [Repository Structure](#repository-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
----
-
-## What's Inside
-
-| Resource | Description | Status |
-|----------|-------------|:------:|
-| **[Practice Simulator](./simulator/)** | Interactive CLF-C02 simulator with 1,200 weighted questions, Learning Cycle, bilingual support, and dark mode. | Available |
-| **[Study Guide](./guide/)** | Comprehensive guide covering all 4 exam domains with examples and scenarios. | Coming soon |
-| **[Notes](./notes/)** | Personal notes, summaries, and mental models for the exam. | Coming soon |
-| **[Resources](./resources/)** | Curated links to courses, documentation, and practice exams. | Coming soon |
+| Resource | Description |
+|----------|-------------|
+| 🎯 Practice Simulator | Interactive AWS CLF-C02 simulator |
+| 📖 Study Guide | Structured learning path by exam domain |
+| 📝 Notes | Personal notes, summaries, and mental models |
+| 🔗 Resources | Curated AWS learning resources |
+| ☁️ Cloud Architecture Concepts | Foundational architecture knowledge |
+| 🎓 Certification Preparation | AWS certification study material |
 
 ---
 
-## Exam Overview
+# 📊 AWS Certified Cloud Practitioner (CLF-C02)
 
-### AWS Certified Cloud Practitioner (CLF-C02)
+🔗 **Official AWS Certification Page**
+
+https://aws.amazon.com/certification/certified-cloud-practitioner/
+
+📄 **Official Exam Guide (PDF)**
+
+https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
+
+---
+
+## 🎓 Exam Overview
 
 | Aspect | Details |
-|--------|---------|
-| Duration | 90 minutes |
-| Format | Multiple choice, multiple response |
+|----------|----------|
+| Duration | 90 Minutes |
 | Questions | 65 |
+| Format | Multiple Choice & Multiple Response |
 | Passing Score | 700 / 1000 |
 | Cost | $100 USD |
-| Validity | 3 years |
-| Prerequisites | None (entry-level) |
-
-### Exam Domains and Weights
-
-| Domain | Weight | Description |
-|--------|:------:|-------------|
-| 1. Cloud Concepts | 24% | Fundamentals of cloud computing |
-| 2. Security and Compliance | 30% | AWS security model and compliance |
-| 3. Cloud Technology and Services | 34% | Core AWS services and architecture |
-| 4. Billing, Pricing, and Support | 12% | Cost management and support options |
+| Validity | 3 Years |
+| Prerequisites | None |
 
 ---
 
-## Simulator Highlights
+## 🎯 Official Exam Domain Weights
 
-The **[CLF-C02 Simulator](./simulator/)** is a fully client-side web application. No backend, no dependencies, no build step.
-
-Features:
-
-- **1,200 weighted questions** across all 4 exam domains.
-- **Stratified sampling** using the official exam weights (24/30/34/12).
-- **Practice Mode** with progressive hints and Concept Insight.
-- **Exam Mode** with timer to simulate the real exam.
-- **Learning Cycle** to reinforce weak concepts with new questions.
-- **AWS Level, Exam Readiness, Success Estimate** metrics with transparent calculation.
-- **Final Report** with per-domain breakdown and Needs Review list.
-- **Bilingual** (Spanish / English) with automatic fallback.
-- **Dark mode** and **light mode**.
-- **Zero dependencies** — pure HTML, CSS, and vanilla JavaScript.
-
-[**Try the simulator**](./simulator/)
+| Domain | Weight |
+|----------|----------|
+| Cloud Concepts | 24% |
+| Security and Compliance | 30% |
+| Cloud Technology and Services | 34% |
+| Billing, Pricing and Support | 12% |
 
 ---
 
-## Getting Started
+# 🧪 CLF-C02 Practice Simulator
 
-### Run the simulator locally
+The simulator included in this repository provides an interactive environment for practicing AWS Cloud Practitioner concepts.
 
-The simulator requires a local HTTP server because it loads JSON files via `fetch()`.
+Built with:
 
-```bash
-# Navigate to the simulator folder
-cd simulator
+- HTML
+- CSS
+- Vanilla JavaScript
 
-# Option 1: Python 3
-python -m http.server 5500
+No frameworks.
+No backend.
+No dependencies.
 
-# Option 2: Node.js (npx)
-npx serve .
+---
 
-# Option 3: VS Code Live Server extension
-# Right-click index.html → "Open with Live Server"
+## ✨ Simulator Features
 
-Then open http://localhost:5500 in your browser.
+✅ 1,200 Questions
 
-Do not open index.html directly with file:// — the browser will block JSON loading due to CORS policies.
+✅ Official Domain Weight Distribution
 
-See the simulator README for more details.
+✅ Practice Mode
 
-Repository Structure
+✅ Exam Mode
 
-AWS-Cloud-Foundations-Certification-Hub/
-├── README.md                  This file
-├── LICENSE                    MIT License
-├── .gitignore                 Git ignore rules
+✅ Learning Cycle
+
+✅ Hint System
+
+✅ Concept Insight
+
+✅ AWS Level
+
+✅ Exam Readiness
+
+✅ Success Estimate
+
+✅ Needs Review Tracking
+
+✅ Domain Performance Analysis
+
+✅ Dark Mode
+
+✅ Light Mode
+
+✅ Spanish & English Support
+
+✅ Local Progress Persistence
+
+✅ Fully Client-Side
+
+---
+
+## 🧠 Learning Cycle
+
+One of the key features of the simulator.
+
+Instead of repeating the exact same failed question, the Learning Cycle generates new questions from the same weak concept.
+
+```text
+Incorrect Answer
+        ↓
+Hint
+        ↓
+Concept Review
+        ↓
+Learning Cycle
+        ↓
+New Question from Same Concept
+        ↓
+Concept Validation
+```
+
+This promotes understanding rather than memorization.
+
+---
+
+# 📖 Study Guide
+
+The study guide covers all official CLF-C02 domains.
+
+---
+
+## 🌩️ Cloud Concepts
+
+Topics include:
+
+- What is Cloud Computing
+- Benefits of the Cloud
+- Elasticity vs Scalability
+- Cloud Deployment Models
+- Cloud Service Models
+- AWS Global Infrastructure
+
+---
+
+## 🔒 Security & Compliance
+
+Topics include:
+
+- Shared Responsibility Model
+- Identity and Access Management (IAM)
+- MFA
+- Security Services
+- Compliance Programs
+- AWS Security Best Practices
+
+---
+
+## ⚙️ Cloud Technology & Services
+
+Topics include:
+
+- Amazon EC2
+- AWS Lambda
+- Amazon S3
+- Amazon EBS
+- Amazon EFS
+- Amazon RDS
+- DynamoDB
+- Amazon VPC
+- CloudFront
+- Route 53
+- Elastic Load Balancing
+
+---
+
+## 💰 Billing, Pricing & Support
+
+Topics include:
+
+- AWS Pricing Models
+- Cost Explorer
+- AWS Budgets
+- Reserved Instances
+- Savings Plans
+- Support Plans
+- AWS Organizations
+
+---
+
+# 🏗️ Repository Structure
+
+```text
+AWS-Cloud-Foundations-Certification-Hub
 │
-├── simulator/                 CLF-C02 practice simulator
-│   ├── README.md
-│   ├── LICENSE
-│   ├── .gitignore
+├── simulator/
 │   ├── index.html
 │   ├── app.js
-│   ├── styles.css
 │   ├── aws-services.js
-│   ├── assets/                AWS logos (SVG)
-│   ├── data/                  Question batches (ES + EN)
-│   └── icons/                 AWS service icons (SVG)
+│   ├── styles.css
+│   ├── data/
+│   ├── assets/
+│   └── icons/
 │
-├── guide/                     Study guide 
-├── notes/                     Personal notes 
-└── resources/                 Curated resources 
+├── guide/
+│
+├── notes/
+│
+├── resources/
+│
+└── README.md
+```
 
-Contributing
-Contributions are welcome and appreciated. Here's how you can help:
+---
 
-Report a bug or an incorrect question — open an issue.
+# 🚀 Running the Simulator Locally
 
-Suggest an improvement — start a discussion.
+The simulator loads JSON data using `fetch()`.
 
-Submit a pull request — follow the standard GitHub flow:
+Because of this, it must be served through a local web server.
 
-Fork the repository.
-Create a branch (git checkout -b feature/my-improvement).
-Commit your changes.
-Push to the branch.
-Open a Pull Request.
-License
-MIT License. See LICENSE for details.
+### Python
 
-AWS, Amazon Web Services, and all related logos are trademarks of Amazon.com, Inc. or its affiliates. Their use in this project is for educational purposes only.
+```bash
+cd simulator
+python -m http.server 5500
+```
 
-Contact
-GitHub: @ValenciaFCarlos
+### Node.js
 
-LinkedIn: valencia-carlos
+```bash
+npx serve .
+```
 
-If this hub helps you prepare for the CLF-C02 exam, consider giving it a star on GitHub....
+### VS Code
+
+Use the Live Server extension.
+
+---
+
+Then open:
+
+```text
+http://localhost:5500
+```
+
+---
+
+# 📚 Recommended AWS Resources
+
+## AWS Skill Builder
+
+https://skillbuilder.aws
+
+Official AWS learning platform.
+
+---
+
+## AWS Cloud Practitioner Essentials
+
+https://skillbuilder.aws/learn
+
+Official AWS foundational course for CLF-C02 candidates.
+
+---
+
+## AWS Documentation
+
+https://docs.aws.amazon.com
+
+Official AWS documentation.
+
+---
+
+## AWS Well-Architected Framework
+
+https://aws.amazon.com/architecture/well-architected/
+
+Learn AWS architectural best practices.
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Ways to contribute:
+
+- Report bugs
+- Suggest improvements
+- Submit pull requests
+- Improve documentation
+- Report ambiguous questions
+- Share study resources
+
+---
+
+# ⚠️ Disclaimer
+
+This project is an independent educational resource.
+
+It is not affiliated with, endorsed by, sponsored by, or maintained by Amazon Web Services (AWS).
+
+AWS®, Amazon Web Services®, Cloud Practitioner®, and all related trademarks belong to Amazon.com, Inc. and its affiliates.
+
+Question content has been created and organized for educational purposes based on AWS Cloud Practitioner learning objectives and publicly available AWS training resources.
+
+---
+
+# ⭐ Support the Project
+
+If this repository helps you in your AWS learning journey, consider giving it a star.
+
+It helps more people discover free AWS learning resources.
+
+---
+
+# 👨‍💻 Author
+
+## Carlos Valencia
+
+Cloud Architecture Student • AWS Learner • DevOps Enthusiast
+
+GitHub:
+https://github.com/ValenciaFCarlos
+
+LinkedIn:
+(Add your LinkedIn URL)
+
+---
+
+> ☁️ *Cloud is not about memorizing services. It is about understanding systems, architecture, trade-offs, and solving real business problems.*
+>
+> <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/a6a67059-b024-4e1c-8116-a7ccfc277ee9" />
+
+
+---
+
+**Last Updated:** September 2026  
+**Certification Version:** AWS Certified Cloud Practitioner (CLF-C02)
