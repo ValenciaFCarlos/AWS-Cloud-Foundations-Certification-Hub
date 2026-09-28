@@ -497,13 +497,17 @@ AWS®, Amazon Web Services®, Cloud Practitioner®, and all related trademarks b
 
 ## ValenciaF. Carlos DevOps
 
-Cloud Architecture Student • AWS Learner • DevOps Enthusiast
+AWS Certified Cloud Practitioner | Cloud Architecture Student | DevOps Engineer
+
+Passionate about AWS, Cloud Architecture, Infrastructure Design, Automation, and Continuous Learning.
 
 🔗 GitHub  
 https://github.com/ValenciaFCarlos
 
 🔗 LinkedIn  
-https://www.linkedin.com/in/carlos-valencia-f
+https://www.linkedin.com/in/valencia-carlos-77a1b213b/
+
+☁️ Feel free to connect, collaborate, or contribute to this project.
 
 ---
 
