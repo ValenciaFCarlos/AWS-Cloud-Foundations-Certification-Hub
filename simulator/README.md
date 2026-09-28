@@ -1,211 +1,415 @@
-# AWS CLF-C02 Practice Simulator
+# 🚀 AWS CLF-C02 Practice Simulator
 
-Practice simulator for the **AWS Certified Cloud Practitioner (CLF-C02)** exam, featuring 1,200 questions organized by domain and weighted according to the official exam distribution.
+![AWS CLF-C02 Practice Simulator](docs/banner-simulator.png)
 
-**Author:** [ValenciaF. Carlos DevOps](https://github.com/ValenciaFCarlos)
-**License:** MIT
-**Status:** v0.1 — Functional prototype
+> 🎯 **Interactive learning platform for the AWS Certified Cloud Practitioner (CLF-C02) certification.**
+>
+> Built to help learners understand AWS concepts, reinforce weak areas, and prepare for the exam through active practice rather than memorization.
+>
+> Featuring **1,220+ unique practice questions** available in **English and Spanish**, weighted according to the official AWS CLF-C02 exam blueprint.
 
----
-
-## ⚠️ Important Disclaimer
-
-This is an **independent educational project**. It is **NOT** related to, sponsored by, endorsed by, or affiliated with Amazon Web Services (AWS) or Amazon.com, Inc.
-
-- **It is not an official exam** nor a replacement for it.
-- All questions are **original practice material**, not leaked exam questions.
-- Internal metrics (AWS Level, Exam Readiness, Success Estimate) are **estimates** and do not represent official AWS scores.
-- The question bank **has not been reviewed by AWS** or by certified third parties.
-
-If you find an ambiguous, incorrect, or poorly worded question, please open an issue.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![AWS CLF-C02](https://img.shields.io/badge/AWS-CLF--C02-orange)
+![Questions](https://img.shields.io/badge/Questions-1220%2B-blue)
+![Languages](https://img.shields.io/badge/Languages-English%20%7C%20Spanish-green)
+![Built With](https://img.shields.io/badge/Built%20With-Vanilla%20JavaScript-black)
 
 ---
 
-## Features
+# ⚠️ Important Disclaimer
 
-- **1,200 questions** organized across the 4 official CLF-C02 domains.
-- **Stratified sampling** using official exam weights: Cloud Concepts (24%), Security & Compliance (30%), Technology & Services (34%), Billing Pricing & Support (12%).
-- **Practice Mode** (no time limit, progressive hints) and **Exam Mode** (timed, simulates the real exam).
-- **Learning Cycle**: retry failed concepts with new questions to demonstrate real understanding.
-- **Progressive hints** + contextual Concept Insight.
-- **Final Report** with metric transparency: AWS Level, Exam Readiness, Success Estimate, and Needs Review.
-- **Retry Report** and **Mastery Report** for concept recovery tracking.
-- **Progress persistence** using `localStorage`.
-- **Bilingual** (Spanish / English) with automatic fallback.
-- **Light and dark theme**.
+This is an **independent educational project**.
+
+It is **NOT** affiliated with, sponsored by, endorsed by, or maintained by Amazon Web Services (AWS).
+
+- This simulator is **not an official AWS exam**.
+- Questions are **original practice content** created for learning purposes.
+- Internal metrics (**AWS Level**, **Exam Readiness**, **Success Estimate**) are educational estimates and **do not represent official AWS scores**.
+- This project should be used as a **study companion**, not as a guarantee of certification success.
+
+If you find an ambiguous, incorrect, or misleading question, please open an issue.
 
 ---
 
-## Project Structure
+# 🎯 Target Certification
 
-.
-├── index.html # Main interface
-├── app.js # Simulator logic
-├── styles.css # Design system
-├── aws-services.js # AWS services catalog (ticker)
-├── icons/ # AWS service icons
+Designed for:
+
+### AWS Certified Cloud Practitioner (CLF-C02)
+
+🔗 Official Certification Page
+
+https://aws.amazon.com/certification/certified-cloud-practitioner/
+
+📄 Official Exam Guide
+
+https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
+
+---
+
+## Official Domain Distribution
+
+The simulator follows the official CLF-C02 exam blueprint:
+
+| Domain | Weight |
+|----------|----------|
+| Cloud Concepts | 24% |
+| Security & Compliance | 30% |
+| Cloud Technology & Services | 34% |
+| Billing, Pricing & Support | 12% |
+
+---
+
+# ✨ Why This Simulator?
+
+Most CLF-C02 simulators only tell you whether an answer is right or wrong.
+
+This simulator was designed to help learners understand **why**.
+
+Key learning features include:
+
+- 🧠 Learning Cycle
+- 🎯 Concept Recovery
+- 💡 Progressive Hints
+- 📚 Concept Insight
+- 🔍 Weak Concept Tracking
+- 📈 AWS Level
+- 🎓 Exam Readiness
+- 📊 Success Estimate
+- 🌎 Bilingual Question Bank
+- 📋 Transparent Metrics
+- 💾 Progress Persistence
+- 🌙 Dark Mode
+
+---
+
+# 🧪 Features
+
+### Question Bank
+
+✅ 1,220+ unique questions
+
+✅ English and Spanish support
+
+✅ Domain-based practice
+
+✅ Mixed exam sessions
+
+✅ Weighted according to AWS official distribution
+
+---
+
+### Practice Mode
+
+- No timer
+- Progressive hints
+- Concept explanations
+- Immediate feedback
+- Learning-focused experience
+
+---
+
+### Exam Mode
+
+- Timed session
+- Simulates exam pressure
+- Domain-balanced question selection
+- End-of-session performance analysis
+
+---
+
+### Learning Cycle
+
+One of the core differentiators of this simulator.
+
+Instead of repeating the same failed question, the simulator generates a different question from the same concept.
+
+```text
+Incorrect Answer
+        ↓
+Hint
+        ↓
+Concept Insight
+        ↓
+Learning Cycle
+        ↓
+New Question
+        ↓
+Concept Validation
+```
+
+This encourages understanding instead of memorization.
+
+---
+
+# 📊 Learning Metrics
+
+The simulator includes several performance metrics.
+
+---
+
+## AWS Level
+
+Measures:
+
+> Percentage of questions answered correctly on the first attempt without using hints.
+
+Represents immediate mastery.
+
+---
+
+## Exam Readiness
+
+Measures:
+
+> Overall preparation level considering both mastered and recovered concepts.
+
+Represents learning progress, not an official AWS score.
+
+---
+
+## Success Estimate
+
+Measures:
+
+> Alignment between your performance and the official CLF-C02 domain weighting.
+
+Designed to identify strengths and weaknesses across exam domains.
+
+---
+
+## Needs Review
+
+Tracks:
+
+> Unique concepts that presented difficulties during the session.
+
+Helps focus future study efforts.
+
+---
+
+## Transparency
+
+Every metric includes:
+
+- Tooltip explanations
+- Calculation details
+- FAQ references
+- Final Report documentation
+
+---
+
+# 🏗️ Project Structure
+
+```text
+simulator/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── aws-services.js
+│
+├── assets/
+│   ├── aws-logo.svg
+│   └── aws-black.svg
+│
 ├── data/
-│ ├── clf-c02-lote-1.json # Question batches (ES)
-│ ├── clf-c02-lote-2.json
-│ ├── ...
-│ ├── clf-c02-lote-12.json
-│ └── en/ # English version (optional)
-│ ├── clf-c02-lote-1.json
-│ └── ...
+│   ├── clf-c02-lote-1.json
+│   ├── clf-c02-lote-2.json
+│   ├── ...
+│   └── en/
+│
+├── icons/
+│
 └── README.md
-
-
+```
 
 ---
 
-## Installation and Usage
+# 🚀 Running Locally
 
-### Requirements
+The simulator loads question data using `fetch()`.
 
-- Modern browser (Chrome, Firefox, Edge, Safari).
-- A local server (do not open `index.html` directly via `file://`).
+Because of browser security policies, it must be served through a local web server.
 
-### Option 1: VS Code + Live Server (recommended)
+---
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/).
-2. Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
-3. Open the project folder in VS Code.
-4. Right-click `index.html` → **"Open with Live Server"**.
-5. The browser will open at `http://127.0.0.1:5500`.
+## Option 1 — VS Code + Live Server
 
-### Option 2: Python (no VS Code required)
+1. Open the project in VS Code
+2. Install Live Server
+3. Right-click `index.html`
+4. Select **Open with Live Server**
+
+---
+
+## Option 2 — Python
 
 ```bash
-# Python 3
-cd path/to/project
+cd simulator
 python -m http.server 5500
+```
 
-# Open in browser
-# http://localhost:5500
+Open:
 
-Option 3: Node.js
+```text
+http://localhost:5500
+```
 
+---
+
+## Option 3 — Node.js
+
+```bash
 npx serve .
-# or
+```
+
+or
+
+```bash
 npx http-server -p 5500
+```
 
-⚠️ Do not do this
-Do not open index.html directly by double-clicking it (file://). The browser will block JSON file loading due to CORS policies.
+---
 
-How to Use
-Configure your session: choose the number of questions (10, 25, 50, or 100) and mode (Practice or Exam).
+⚠️ Do NOT open:
 
-Select the domain: Mixed Exam (all) or a specific domain.
+```text
+file://index.html
+```
 
-Practice: answer, use hints if needed, review explanations.
+Modern browsers block JSON loading when using the file protocol.
 
-When finished: review your Final Report with preparation metrics.
+---
 
-Retry failed questions: use the Learning Cycle to recover weak concepts.
+# 📚 Recommended AWS Resources
 
-Simulator Metrics
-AWS Level
-Percentage of questions answered correctly on the first attempt, without hints. A strict metric of immediate mastery.
+### AWS Skill Builder
 
-Exam Readiness
-Preparation estimate that includes both mastered and recovered questions. Not a guarantee of passing the exam.
+https://skillbuilder.aws
 
-Success Estimate
-Alignment of your performance with the official weights of the 4 domains. Not a prediction of passing.
+Official AWS learning platform.
 
-Mastered / Recovered / Unresolved
-Mastered: correct on first attempt, without hints.
+---
 
-Recovered: missed first, corrected afterwards (with or without hint).
+### AWS Cloud Practitioner Essentials
 
-Unresolved: not resolved (neither with hint nor on second attempt).
+https://skillbuilder.aws/learn
 
-Needs Review
-Unique concepts that presented difficulty during the session. Not individual questions.
+Official foundational AWS course.
 
-More details available in the Final Report → "How are my metrics calculated?" section and in the About modal.
+---
 
-Tech Stack
-HTML5 + CSS3 (custom properties, grid, flexbox).
+### AWS Documentation
 
-Vanilla JavaScript (no frameworks, no build step).
+https://docs.aws.amazon.com
 
-localStorage for persistence.
+Official AWS documentation.
 
-Fetch API for data loading.
+---
 
-Custom Design System with tokens.
+### AWS Well-Architected Framework
 
-Browser Compatibility
-Chrome 90+
+https://aws.amazon.com/architecture/well-architected/
 
-Firefox 88+
+Architectural best practices and design principles.
 
-Edge 90+
+---
 
-Safari 14+
+# 🤝 Contributing
 
-Mobile: Responsive, but the experience is optimized for desktop.
+Contributions are welcome.
 
-Roadmap
-v0.2 (next)
-□ Question reporting mechanism.
-□ Formula update for Exam Readiness and Success Estimate (higher rigor).
-□ Persistent Learning Cycle badge.
-□ Results export (PDF / CSV).
-v0.3
-□ Spaced repetition.
-□ Historical statistics across sessions.
-□ Full keyboard navigation.
-□ Focus trap in modals.
-v1.0
-□ External question verification.
-□ Offline mode with Service Worker.
-□ AWS Skill Builder integration.
-Contributing
-Contributions are welcome, especially:
+You can help by:
 
-Reporting incorrect or ambiguous questions (open an issue with the question ID).
+- Reporting incorrect questions
+- Reporting ambiguous wording
+- Improving documentation
+- Suggesting UX improvements
+- Improving accessibility
+- Adding new learning resources
 
-Translations to other languages.
+---
 
-Accessibility improvements.
+## Reporting Question Issues
 
-UX suggestions.
+If you find a question that appears incorrect:
 
-Process
-Fork the repository.
+- Include the Question ID
+- Explain the issue
+- Provide supporting AWS documentation if possible
 
-Create a branch (git checkout -b feature/my-improvement).
+---
 
-Commit your changes (git commit -m "feat: add X").
+# 🛠️ Built With
 
-Push to the branch (git push origin feature/my-improvement).
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Fetch API
+- LocalStorage
+- Custom Design System
 
-Open a Pull Request.
+No frameworks.
 
-Known Limitations
-The question bank has not been verified by a certified instructor.
+No backend.
 
-Internal metrics may inflate the perception of preparation if hints are overused.
+No dependencies.
 
-No spaced repetition yet.
+---
 
-No results export yet.
+# 📱 Browser Support
 
-EN→ES fallback is silent (if an English question is missing, the Spanish version is used without warning).
+| Browser | Supported |
+|----------|----------|
+| Chrome | ✅ |
+| Firefox | ✅ |
+| Edge | ✅ |
+| Safari | ✅ |
 
-License
-MIT License. See LICENSE for details.
+Desktop experience is recommended.
 
-AWS, Amazon Web Services, and all related logos are trademarks of Amazon.com, Inc. or its affiliates. Their use in this project is for educational purposes only.
+---
 
-Contact
-GitHub: @ValenciaFCarlos
+# ⭐ Support The Project
 
-LinkedIn: valencia-carlos
+If this simulator helps you prepare for AWS certification:
 
-Buy Me a Coffee: valenciaf.carlos
+⭐ Star the repository
 
-If this project helps you prepare for the CLF-C02, consider giving it a ⭐ on GitHub.
+🐛 Report issues
 
+🔄 Share improvements
+
+📢 Share it with other AWS learners
+
+---
+
+# 👨‍💻 Author
+
+## ValenciaF. Carlos DevOps
+
+Cloud Architecture Student • AWS Learner • DevOps Enthusiast
+
+### GitHub
+
+https://github.com/ValenciaFCarlos
+
+### LinkedIn
+
+https://www.linkedin.com/in/carlos-valencia-f
+
+---
+
+![Good Luck](docs/good-luck.png)
+
+> ☁️ Cloud is not about memorizing services.
+>
+> It is about understanding systems, architecture, trade-offs, and solving real business problems.
+
+---
+
+**Version:** v15.3  
+**Questions:** 1,220+  
+**Languages:** English & Spanish  
+**Certification:** AWS Certified Cloud Practitioner (CLF-C02)
