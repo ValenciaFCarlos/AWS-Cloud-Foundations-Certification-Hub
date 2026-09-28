@@ -1,42 +1,74 @@
 # 🚀 AWS Cloud Foundations & Certification Hub
 
-<img width="1983" height="793" alt="35d94dec-c9df-4e08-a812-cfab5e667703" src="https://github.com/user-attachments/assets/0278d99e-ae9a-44b8-a4ca-db9254cfd467" />
+<p align="center">
+  <img src="./images/banner-main.png" alt="AWS Cloud Foundations & Certification Hub">
+</p>
 
+<p align="center">
+
+![AWS](https://img.shields.io/badge/AWS-Cloud%20Practitioner-orange)
+![Questions](https://img.shields.io/badge/Questions-1220%2B-blue)
+![Simulator](https://img.shields.io/badge/Simulator-Interactive-success)
+![Language](https://img.shields.io/badge/Language-EN%20%7C%20ES-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+</p>
 
 > 🎯 **A complete learning hub for AWS Cloud Foundations and AWS Certified Cloud Practitioner (CLF-C02).**
 >
-> Study guides, architecture notes, certification preparation resources, and an interactive practice simulator designed to help you understand cloud computing—not just memorize services.
->
+> Study guides, architecture notes, certification preparation resources, and an interactive practice simulator designed to help you understand cloud computing—not just memorize AWS services.
+
+<p align="center">
+  <img src="./images/aws-certified-cloud-practitioner.svg" width="220" alt="AWS Certified Cloud Practitioner Badge">
+</p>
+
 ---
-                    <img width="245" height="283" alt="image" src="https://github.com/user-attachments/assets/8fed5ef1-f8c0-461f-9627-b843d96ee159" />
 
+## 📋 Table of Contents
 
-## ☁️ About This Project
+- [☁️ About This Project](#️-about-this-project)
+- [📚 What's Included](#-whats-included)
+- [📊 AWS Certified Cloud Practitioner (CLF-C02)](#-aws-certified-cloud-practitioner-clf-c02)
+- [🧪 CLF-C02 Practice Simulator](#-clf-c02-practice-simulator)
+- [📖 Study Guide](#-study-guide)
+- [🏗️ Repository Structure](#️-repository-structure)
+- [🚀 Running the Simulator Locally](#-running-the-simulator-locally)
+- [📚 Recommended AWS Resources](#-recommended-aws-resources)
+- [🤝 Contributing](#-contributing)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [⭐ Support the Project](#-support-the-project)
+- [👨‍💻 Author](#-author)
 
-AWS Cloud Foundations & Certification Hub is a learning repository created to help students, IT professionals, career changers, and cloud enthusiasts build a strong foundation in AWS.
+---
 
-The goal is not simply to pass an exam.
+# ☁️ About This Project
 
-The goal is to understand:
+AWS Cloud Foundations & Certification Hub is a learning repository designed to help students, IT professionals, career changers, and cloud enthusiasts build a strong foundation in AWS Cloud.
+
+The objective is not simply to pass a certification exam.
+
+The objective is to understand:
 
 - Cloud Computing fundamentals
 - AWS architecture principles
 - Core AWS services
 - Security and compliance concepts
 - Cost optimization strategies
+- Cloud economics
 - Real-world cloud use cases
+- Cloud architecture thinking
 - Certification preparation
 
-This repository combines structured learning material with hands-on practice.
+This repository combines structured learning material with hands-on practice and exam preparation.
 
 ---
 
-## 📚 What's Included
+# 📚 What's Included
 
 | Resource | Description |
-|----------|-------------|
-| 🎯 Practice Simulator | Interactive AWS CLF-C02 simulator |
-| 📖 Study Guide | Structured learning path by exam domain |
+|-----------|-------------|
+| 🎯 Practice Simulator | Interactive AWS CLF-C02 simulator with 1,220+ questions |
+| 📖 Study Guide | Structured learning path aligned with official exam domains |
 | 📝 Notes | Personal notes, summaries, and mental models |
 | 🔗 Resources | Curated AWS learning resources |
 | ☁️ Cloud Architecture Concepts | Foundational architecture knowledge |
@@ -46,11 +78,13 @@ This repository combines structured learning material with hands-on practice.
 
 # 📊 AWS Certified Cloud Practitioner (CLF-C02)
 
-🔗 **Official AWS Certification Page**
+### Official AWS Resources
+
+🔗 Certification Page
 
 https://aws.amazon.com/certification/certified-cloud-practitioner/
 
-📄 **Official Exam Guide (PDF)**
+📄 Official Exam Guide (PDF)
 
 https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
 
@@ -77,13 +111,17 @@ https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-
 | Cloud Concepts | 24% |
 | Security and Compliance | 30% |
 | Cloud Technology and Services | 34% |
-| Billing, Pricing and Support | 12% |
+| Billing, Pricing, and Support | 12% |
 
 ---
 
 # 🧪 CLF-C02 Practice Simulator
 
-The simulator included in this repository provides an interactive environment for practicing AWS Cloud Practitioner concepts.
+<p align="center">
+  <img src="./images/banner-simulator.png" alt="AWS CLF-C02 Practice Simulator">
+</p>
+
+The simulator included in this repository provides an interactive environment for learning and practicing AWS Cloud Practitioner concepts.
 
 Built with:
 
@@ -92,14 +130,16 @@ Built with:
 - Vanilla JavaScript
 
 No frameworks.
+
 No backend.
-No dependencies.
+
+No external dependencies.
 
 ---
 
 ## ✨ Simulator Features
 
-✅ 1,200 Questions
+✅ 1,220+ Questions
 
 ✅ Official Domain Weight Distribution
 
@@ -139,7 +179,7 @@ No dependencies.
 
 One of the key features of the simulator.
 
-Instead of repeating the exact same failed question, the Learning Cycle generates new questions from the same weak concept.
+Instead of repeating the exact same failed question, the Learning Cycle reinforces weak concepts by generating a new question from the same topic.
 
 ```text
 Incorrect Answer
@@ -170,7 +210,7 @@ The study guide covers all official CLF-C02 domains.
 Topics include:
 
 - What is Cloud Computing
-- Benefits of the Cloud
+- Benefits of Cloud Computing
 - Elasticity vs Scalability
 - Cloud Deployment Models
 - Cloud Service Models
@@ -183,11 +223,11 @@ Topics include:
 Topics include:
 
 - Shared Responsibility Model
-- Identity and Access Management (IAM)
-- MFA
+- AWS Identity and Access Management (IAM)
+- Multi-Factor Authentication (MFA)
 - Security Services
 - Compliance Programs
-- AWS Security Best Practices
+- Security Best Practices
 
 ---
 
@@ -201,10 +241,10 @@ Topics include:
 - Amazon EBS
 - Amazon EFS
 - Amazon RDS
-- DynamoDB
+- Amazon DynamoDB
 - Amazon VPC
-- CloudFront
-- Route 53
+- Amazon CloudFront
+- Amazon Route 53
 - Elastic Load Balancing
 
 ---
@@ -214,11 +254,11 @@ Topics include:
 Topics include:
 
 - AWS Pricing Models
-- Cost Explorer
+- AWS Cost Explorer
 - AWS Budgets
 - Reserved Instances
 - Savings Plans
-- Support Plans
+- AWS Support Plans
 - AWS Organizations
 
 ---
@@ -227,6 +267,12 @@ Topics include:
 
 ```text
 AWS-Cloud-Foundations-Certification-Hub
+│
+├── images/
+│   ├── banner-main.png
+│   ├── banner-simulator.png
+│   ├── good-luck.png
+│   └── aws-certified-cloud-practitioner.svg
 │
 ├── simulator/
 │   ├── index.html
@@ -238,11 +284,8 @@ AWS-Cloud-Foundations-Certification-Hub
 │   └── icons/
 │
 ├── guide/
-│
 ├── notes/
-│
 ├── resources/
-│
 └── README.md
 ```
 
@@ -250,9 +293,9 @@ AWS-Cloud-Foundations-Certification-Hub
 
 # 🚀 Running the Simulator Locally
 
-The simulator loads JSON data using `fetch()`.
+The simulator loads JSON files using `fetch()`.
 
-Because of this, it must be served through a local web server.
+Because of this, it must be served through a local HTTP server.
 
 ### Python
 
@@ -264,14 +307,13 @@ python -m http.server 5500
 ### Node.js
 
 ```bash
+cd simulator
 npx serve .
 ```
 
 ### VS Code
 
 Use the Live Server extension.
-
----
 
 Then open:
 
@@ -283,35 +325,29 @@ http://localhost:5500
 
 # 📚 Recommended AWS Resources
 
-## AWS Skill Builder
+### AWS Skill Builder
 
 https://skillbuilder.aws
 
 Official AWS learning platform.
 
----
-
-## AWS Cloud Practitioner Essentials
+### AWS Cloud Practitioner Essentials
 
 https://skillbuilder.aws/learn
 
 Official AWS foundational course for CLF-C02 candidates.
 
----
-
-## AWS Documentation
+### AWS Documentation
 
 https://docs.aws.amazon.com
 
 Official AWS documentation.
 
----
-
-## AWS Well-Architected Framework
+### AWS Well-Architected Framework
 
 https://aws.amazon.com/architecture/well-architected/
 
-Learn AWS architectural best practices.
+Learn AWS architectural best practices and design principles.
 
 ---
 
@@ -344,7 +380,7 @@ Question content has been created and organized for educational purposes based o
 
 # ⭐ Support the Project
 
-If this repository helps you in your AWS learning journey, consider giving it a star.
+If this repository helps you in your AWS learning journey, consider giving it a ⭐.
 
 It helps more people discover free AWS learning resources.
 
@@ -356,17 +392,25 @@ It helps more people discover free AWS learning resources.
 
 Cloud Architecture Student • AWS Learner • DevOps Enthusiast
 
-GitHub:
+GitHub
+
 https://github.com/ValenciaFCarlos
 
-LinkedIn:
-(Add your LinkedIn URL)
+LinkedIn
+
+https://linkedin.com/in/valencia-carlos
 
 ---
 
-> ☁️ *Cloud is not about memorizing services. It is about understanding systems, architecture, trade-offs, and solving real business problems.*
+## 🎯 Good Luck
+
+<p align="center">
+  <img src="./images/good-luck.png" alt="Good Luck">
+</p>
+
+> ☁️ Cloud is not about memorizing services.
 >
-> <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/3362a902-aef9-42c8-a6a6-01b6a21b23ee" />
+> It is about understanding systems, architecture, trade-offs, and solving real business problems.
 
 ---
 
