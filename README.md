@@ -8,7 +8,7 @@
 > Study guides, architecture notes, certification preparation resources, and an interactive practice simulator designed to help you understand cloud computing—not just memorize services.
 >
 ---
-<img width="245" height="283" alt="image" src="https://github.com/user-attachments/assets/8fed5ef1-f8c0-461f-9627-b843d96ee159" />
+                    <img width="245" height="283" alt="image" src="https://github.com/user-attachments/assets/8fed5ef1-f8c0-461f-9627-b843d96ee159" />
 
 
 ## ☁️ About This Project
