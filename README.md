@@ -117,10 +117,6 @@ https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-
 
 # 🧪 CLF-C02 Practice Simulator
 
-<p align="center">
-  <img src="./images/banner-simulator.png" alt="AWS CLF-C02 Practice Simulator">
-</p>
-
 The simulator included in this repository provides an interactive environment for learning and practicing AWS Cloud Practitioner concepts.
 
 Built with:
