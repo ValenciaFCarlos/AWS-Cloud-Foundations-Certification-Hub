@@ -97,7 +97,11 @@ No ads.
 
 Just learning.
 
-### 👈 Start Here, Launch Now! 👉
+<p align="center">
+  <img src="./images/clf-c02-simulator-preview.png" alt="AWS CLF-C02 Simulator Preview">
+</p>
+
+### 👉 Start Here, Launch Now! 👈
 
 <p align="center">
   <a href="https://valenciafcarlos.github.io/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCarlosDevOps/">
@@ -121,10 +125,6 @@ https://github.com/ValenciaFCarlos/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCa
 ---
 
 # 📸 Simulator Screenshot
-
-<p align="center">
-  <img src="./images/clf-c02-simulator-preview.png" alt="AWS CLF-C02 Simulator Preview">
-</p>
 
 ---
 
