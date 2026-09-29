@@ -24,12 +24,6 @@
 
 ---
 
-# 🚀 Practice Simulator Preview
-
-<p align="center">
-  <img src="./images/practice.png.png" alt="AWS CLF-C02 Practice Simulator">
-</p>
-
 > A completely free interactive simulator designed to reinforce AWS Cloud Practitioner concepts through practice, repetition, and concept-based learning.
 
 ---
@@ -73,6 +67,10 @@ This repository combines structured learning material, architecture notes, study
 ---
 
 # 🚀 Interactive Practice Simulator
+
+<p align="center">
+  <img src="./images/practice.png.png" alt="AWS CLF-C02 Practice Simulator">
+</p>
 
 As part of this AWS learning journey, I designed and developed a complete interactive simulator for the AWS Certified Cloud Practitioner (CLF-C02) exam.
 
