@@ -126,6 +126,10 @@ https://github.com/ValenciaFCarlos/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCa
 
 # 📸 Simulator Screenshot
 
+<p align="center">
+  <img src="./images/dashboard-preview.png" width="900">
+</p>
+
 ---
 
 # 📚 What's Included
