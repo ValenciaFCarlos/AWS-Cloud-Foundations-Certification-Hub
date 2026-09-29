@@ -68,9 +68,12 @@ This repository combines structured learning material, architecture notes, study
 
 # 🚀 Interactive Practice Simulator
 
+
 <p align="center">
-  <img src="./images/practice.png.png" alt="AWS CLF-C02 Practice Simulator">
+  <img src="./images/clf-c02-simulator-preview.png" alt="AWS CLF-C02 Simulator Preview">
 </p>
+
+
 
 As part of this AWS learning journey, I designed and developed a complete interactive simulator for the AWS Certified Cloud Practitioner (CLF-C02) exam.
 
@@ -97,9 +100,6 @@ No ads.
 
 Just learning.
 
-<p align="center">
-  <img src="./images/clf-c02-simulator-preview.png" alt="AWS CLF-C02 Simulator Preview">
-</p>
 
 ### 👉 Start Here, Launch Now! 👈
 
@@ -126,9 +126,13 @@ https://github.com/ValenciaFCarlos/AWS-CLF-C02-Practice-Simulator-by-ValenciaFCa
 
 # 📸 Simulator Screenshot
 
+### Dashboard & Session Setup
+
 <p align="center">
-  <img src="./images/dashboard-preview.png" width="900">
+  <img src="./images/screenshot-dashboard.png" alt="Simulator Dashboard" width="100%">
 </p>
+
+The dashboard allows learners to configure exam sessions, choose question counts, select domains, track AWS Level progression, and estimate exam readiness before starting a practice session.
 
 ---
 
