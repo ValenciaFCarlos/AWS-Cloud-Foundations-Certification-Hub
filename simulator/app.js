@@ -2,6 +2,7 @@
    CARLOS LEARNING FRAMEWORK — AWS CLF-C02 SIMULATOR
    Motor completo v15.0 — Learning Cycle + Estado Simplificado
    v15.1 — Transparencia de métricas (tooltips + FAQ + tabla)
+   v15.2 — FIX CRÍTICO: Multiple Response (Select TWO/THREE)
    ============================================================= */
 
 const STORAGE_KEY = 'clf_c02_simulator_state_v6';
@@ -415,7 +416,7 @@ function getCanonicalConcept(record) {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// TRANSLATIONS — v15.1 con transparencia de métricas
+// TRANSLATIONS — v15.1 con transparencia de métricas + multi response
 // ═══════════════════════════════════════════════════════════════
 const TRANSLATIONS = {
   es: {
@@ -616,9 +617,10 @@ const TRANSLATIONS = {
     learningCycleInitial: 'Sesión inicial',
     learningCycleCompleted: 'Completado',
 
-    // ═══════════════════════════════════════════════════════════
+    // ═══ MULTIPLE RESPONSE ═══
+    multiSelectBadge: (n) => `Selecciona ${n} respuestas`,
+
     // v15.1 — TRANSPARENCIA DE MÉTRICAS
-    // ═══════════════════════════════════════════════════════════
     metricsExplainTitle: '¿Cómo se calculan mis métricas?',
     metricsExplainSubtitle: 'Entiende qué mide cada número y por qué pueden mostrar valores distintos.',
     metricsShowDetails: 'Ver detalles',
@@ -856,9 +858,10 @@ const TRANSLATIONS = {
     learningCycleInitial: 'Initial session',
     learningCycleCompleted: 'Completed',
 
-    // ═══════════════════════════════════════════════════════════
+    // ═══ MULTIPLE RESPONSE ═══
+    multiSelectBadge: (n) => `Select ${n} answers`,
+
     // v15.1 — METRICS TRANSPARENCY
-    // ═══════════════════════════════════════════════════════════
     metricsExplainTitle: 'How are my metrics calculated?',
     metricsExplainSubtitle: 'Understand what each number measures and why they can show different values.',
     metricsShowDetails: 'Show details',
@@ -914,7 +917,8 @@ const state = {
   correctAfterHint: 0,
   unresolved: 0,
   perQuestion: {},
-  selectedLetter: null,
+  selectedLetter: null,        // ═══ FIX MULTIPLE RESPONSE ═══ (retrocompatibilidad)
+  selectedLetters: [],         // ═══ FIX MULTIPLE RESPONSE ═══ (array de seleccionadas)
   currentAttempt: 0,
   answeredThisQuestion: false,
   hintUsedThisQuestion: false,
@@ -963,6 +967,32 @@ function getDomainDef(key) {
 
 function countRecovered(records) {
   return records.filter(r => r.state === Q_STATE.RECOVERED_WITH_HINT).length;
+}
+
+// ═══ FIX MULTIPLE RESPONSE ═══
+// Detecta si una pregunta es de tipo Multiple Response
+function isMultipleResponse(q) {
+  if (!q) return false;
+  if (Array.isArray(q.correct) && q.correct.length > 1) return true;
+  if (typeof q.type === 'string') {
+    const type = q.type.toLowerCase();
+    if (type.includes('two') || type.includes('three') || 
+        type.includes('multiple') || type.includes('multi')) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// ═══ FIX MULTIPLE RESPONSE ═══
+// Compara dos conjuntos de respuestas sin importar el orden
+function isAnswerCorrect(selectedLetters, correctLetters) {
+  if (!Array.isArray(selectedLetters) || !Array.isArray(correctLetters)) return false;
+  if (selectedLetters.length !== correctLetters.length) return false;
+  const selectedSet = new Set(selectedLetters);
+  const correctSet = new Set(correctLetters);
+  if (selectedSet.size !== correctSet.size) return false;
+  return [...selectedSet].every(letter => correctSet.has(letter));
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1231,9 +1261,8 @@ async function loadQuestions() {
 }
 
 // =============================================================
-// (RESTO DE FUNCIONES SIN CAMBIOS — saveState, loadState, etc.)
+// PERSISTENCIA
 // =============================================================
-
 function saveState() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
@@ -1309,9 +1338,6 @@ function clearSessionBackup() {
   localStorage.removeItem(SESSION_BACKUP_KEY);
 }
 
-// =============================================================
-// LEARNING CYCLE — Persistencia
-// =============================================================
 function saveLearningCycle() {
   try {
     if (!state.learningCycle) {
@@ -1592,7 +1618,9 @@ function renderQuestion() {
 
   const domainDef = getDomainDef(normalizeDomain(q.domain));
 
+  // ═══ FIX MULTIPLE RESPONSE ═══
   state.selectedLetter = null;
+  state.selectedLetters = [];
   state.currentAttempt = 0;
   state.answeredThisQuestion = false;
   state.hintUsedThisQuestion = false;
@@ -1606,6 +1634,18 @@ function renderQuestion() {
   domainBadge.innerHTML = `${DOMAIN_ICONS[domainDef.icon] || ''} ${normalizeDomain(q.domain)}`;
   domainBadge.className = `badge badge--${domainDef.color}`;
   document.getElementById('examWeightBadge').textContent = `${domainDef.weight}%`;
+
+  // ═══ FIX MULTIPLE RESPONSE ═══
+  // Mostrar badge de "Selecciona N respuestas" si aplica
+  const multiBadge = document.getElementById('multiSelectBadge');
+  if (multiBadge) {
+    if (isMultipleResponse(q)) {
+      multiBadge.textContent = t('multiSelectBadge', q.correct.length);
+      multiBadge.classList.remove('hidden');
+    } else {
+      multiBadge.classList.add('hidden');
+    }
+  }
 
   document.getElementById('questionText').textContent = q.question;
 
@@ -1649,32 +1689,73 @@ function renderQuestion() {
   bindPracticeEvents();
 }
 
+// ═══ FIX MULTIPLE RESPONSE ═══
+// Ahora soporta toggle para Multiple Response
 function selectOption(letter, btn) {
   if (state.answeredThisQuestion) return;
-  state.selectedLetter = letter;
-  document.querySelectorAll('.option').forEach(b => b.classList.remove('selected'));
-  btn.classList.add('selected');
-  document.getElementById('submitBtn').disabled = false;
+
+  const q = state.activeQuestions[state.currentIndex];
+  const isMultiple = isMultipleResponse(q);
+
+  if (!isMultiple) {
+    // Single Choice: comportamiento original
+    state.selectedLetters = [letter];
+    state.selectedLetter = letter;
+    document.querySelectorAll('.option').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+  } else {
+    // Multiple Response: toggle
+    const idx = state.selectedLetters.indexOf(letter);
+    if (idx >= 0) {
+      // Deseleccionar
+      state.selectedLetters.splice(idx, 1);
+      btn.classList.remove('selected');
+      if (state.selectedLetters.length === 0) {
+        state.selectedLetter = null;
+      } else {
+        state.selectedLetter = state.selectedLetters[state.selectedLetters.length - 1];
+      }
+    } else {
+      // Seleccionar (si no se alcanzó el máximo)
+      const maxSelections = q.correct.length;
+      if (state.selectedLetters.length >= maxSelections) {
+        return; // Ignorar click si ya hay N seleccionadas
+      }
+      state.selectedLetters.push(letter);
+      state.selectedLetter = letter;
+      btn.classList.add('selected');
+    }
+  }
+
+  document.getElementById('submitBtn').disabled = state.selectedLetters.length === 0;
 }
 
 // =============================================================
 // SUBMIT
+// ═══ FIX MULTIPLE RESPONSE ═══ — Comparación por conjuntos
 // =============================================================
 function submitAnswer() {
-  if (state.answeredThisQuestion || !state.selectedLetter) return;
+  if (state.answeredThisQuestion || state.selectedLetters.length === 0) return;
 
   const q = state.activeQuestions[state.currentIndex];
   const record = state.perQuestion[q.id];
-  const letter = state.selectedLetter;
-  const isCorrect = Array.isArray(q.correct) && q.correct.length === 1 && q.correct[0] === letter;
+
+  // ═══ FIX MULTIPLE RESPONSE ═══
+  // Compara conjuntos sin importar el orden
+  const isCorrect = isAnswerCorrect(state.selectedLetters, q.correct);
 
   state.currentAttempt += 1;
   state.totalAttempts += 1;
   record.attempts += 1;
-  record.history.push({ attempt: state.currentAttempt, letter, correct: isCorrect, usedHint: state.hintUsedThisQuestion });
+  record.history.push({
+    attempt: state.currentAttempt,
+    letters: [...state.selectedLetters],
+    correct: isCorrect,
+    usedHint: state.hintUsedThisQuestion
+  });
 
-  if (isCorrect) handleCorrectAnswer(q, record, letter);
-  else handleIncorrectAnswer(q, record, letter);
+  if (isCorrect) handleCorrectAnswer(q, record, state.selectedLetters);
+  else handleIncorrectAnswer(q, record, state.selectedLetters);
 
   updateAwsLevel();
   saveState();
@@ -1684,7 +1765,8 @@ function submitAnswer() {
   renderReviewList();
 }
 
-function handleCorrectAnswer(q, record, letter) {
+// ═══ FIX MULTIPLE RESPONSE ═══ — Acepta array
+function handleCorrectAnswer(q, record, letters) {
   const isFirstAttempt = state.currentAttempt === 1;
   const usedHint = record.usedHint === true;
 
@@ -1729,7 +1811,8 @@ function handleCorrectAnswer(q, record, letter) {
   state.answeredThisQuestion = true;
 }
 
-function handleIncorrectAnswer(q, record, letter) {
+// ═══ FIX MULTIPLE RESPONSE ═══ — Acepta array y maneja múltiples incorrectas
+function handleIncorrectAnswer(q, record, letters) {
   const isFirstAttempt = state.currentAttempt === 1;
   if (!record.hadError) record.hadError = true;
   updateStreak(false);
@@ -1738,21 +1821,25 @@ function handleIncorrectAnswer(q, record, letter) {
     record.state = Q_STATE.REVIEW;
     updateConceptInsight(record);
 
-    const wrongBtn = document.querySelector(`.option[data-letter="${letter}"]`);
-    if (wrongBtn) {
-      wrongBtn.classList.remove('selected');
-      wrongBtn.classList.add('incorrect');
-      wrongBtn.disabled = true;
-    }
+    // ═══ FIX MULTIPLE RESPONSE ═══ — Marcar TODAS las seleccionadas incorrectas
+    letters.forEach(letter => {
+      const wrongBtn = document.querySelector(`.option[data-letter="${letter}"]`);
+      if (wrongBtn) {
+        wrongBtn.classList.remove('selected');
+        wrongBtn.classList.add('incorrect');
+        wrongBtn.disabled = true;
+      }
+    });
 
     const feedback = document.getElementById('feedbackArea');
     feedback.className = 'feedback hint-open';
     feedback.innerHTML = `<strong>${t('incorrectTitle')}</strong>${t('incorrectBody')}`;
 
     state.selectedLetter = null;
+    state.selectedLetters = [];
     document.getElementById('submitBtn').disabled = true;
     document.querySelectorAll('.option').forEach(btn => {
-      if (btn.dataset.letter !== letter) btn.disabled = false;
+      if (!letters.includes(btn.dataset.letter)) btn.disabled = false;
     });
 
     const hintBtn = document.getElementById('hintBtn');
@@ -1772,7 +1859,7 @@ function handleIncorrectAnswer(q, record, letter) {
     document.querySelectorAll('.option').forEach(btn => {
       btn.disabled = true;
       btn.classList.remove('selected');
-      if (btn.dataset.letter === letter) btn.classList.add('incorrect');
+      if (letters.includes(btn.dataset.letter)) btn.classList.add('incorrect');
       if (q.correct.includes(btn.dataset.letter)) btn.classList.add('correct');
     });
 
@@ -1893,15 +1980,17 @@ function showSessionFoundModal(count, saved) {
   document.body.style.overflow = 'hidden';
 }
 
+// ═══ FIX MULTIPLE RESPONSE ═══ — Mostrar TODAS las correctas
 function showUnresolvedModal(q) {
   const overlay = document.getElementById('unresolvedOverlay');
   if (!overlay) return;
 
-  const correctLetter = q.correct[0];
-  const correctText = q.options[correctLetter] || '';
+  const correctTexts = q.correct
+    .map(letter => `${letter}) ${q.options[letter] || ''}`)
+    .join(' · ');
   const conceptLabel = getCanonicalConcept(state.pendingUnresolvedQuestion.record);
 
-  document.getElementById('unresolvedCorrectAnswer').textContent = `${correctLetter}) ${correctText}`;
+  document.getElementById('unresolvedCorrectAnswer').textContent = correctTexts;
   document.getElementById('unresolvedExplanation').textContent = q.explanation || '';
   document.getElementById('unresolvedConcept').textContent = conceptLabel;
 
@@ -2422,7 +2511,7 @@ function showFinalReport() {
 }
 
 // =============================================================
-// LEARNING CYCLE — Pre-validación de disponibilidad
+// LEARNING CYCLE
 // =============================================================
 function countAvailableQuestionsForCycle(weakConcepts) {
   if (!weakConcepts || weakConcepts.length === 0) return 0;
@@ -2451,9 +2540,6 @@ function countAvailableQuestionsForCycle(weakConcepts) {
   return count;
 }
 
-// =============================================================
-// LEARNING CYCLE — Start / Retry / Mastery
-// =============================================================
 function startLearningCycle() {
   const weakConceptsMap = new Map();
   Object.values(state.perQuestion).forEach(r => {
@@ -3502,6 +3588,7 @@ function getPracticeTemplate() {
         <span class="quiz-meta__percent" id="questionPercent">0%</span>
       </div>
       <div class="quiz-meta__right">
+        <span class="badge badge--orange hidden" id="multiSelectBadge">Selecciona 2 respuestas</span>
         <span class="badge badge--green" id="domainBadge">Cargando...</span>
         <span class="badge badge--gray" id="examWeightBadge">--%</span>
       </div>
@@ -3811,6 +3898,8 @@ window.showRetryReport = showRetryReport;
 window.showMasteryReport = showMasteryReport;
 window.clearLearningCycle = clearLearningCycle;
 window.countAvailableQuestionsForCycle = countAvailableQuestionsForCycle;
+window.isMultipleResponse = isMultipleResponse;
+window.isAnswerCorrect = isAnswerCorrect;
 
 window.__debug = {
   showModal: () => document.getElementById('welcomeOverlay')?.classList.remove('hidden'),
